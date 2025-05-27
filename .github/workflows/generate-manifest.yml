@@ -27,22 +27,20 @@ jobs:
         const path = require('path');
 
         function globToRegex(glob) {
-          const specialChars = ['.', '+', '?', '^', '$', '{', '}', '(', ')', '|', '[', ']', '\\'];
-          let regexString = glob.replace(/\./g, '\\.'); // Escape literal dots first
-          regexString = regexString.replace(/\*/g, '.*'); // Convert * to .* (wildcard)
-          // Escape other special regex characters
-          specialChars.forEach(char => {
-            if (char !== '.' && char !== '*') { // Avoid re-escaping already handled chars
-                 regexString = regexString.replace(new RegExp('\\'+char, 'g'), '\\'+char);
-            }
-          });
+          // Escape special regex characters first, but preserve * for wildcard conversion
+          let regexString = glob
+            .replace(/[.+?^${}()|[\]\\]/g, '\\$&') // Escape special chars except *
+            .replace(/\*/g, '.*'); // Convert * to .* (wildcard)
           return new RegExp('^' + regexString + '$');
         }
 
         let ignorePatterns = [];
         try {
           const ignoreContent = fs.readFileSync('.manifestignore', 'utf8');
-          ignorePatterns = ignoreContent.split(/\r?\n/).filter(line => line.trim() !== '' && !line.startsWith('#')).map(globToRegex);
+          const patterns = ignoreContent.split(/\r?\n/).filter(line => line.trim() !== '' && !line.startsWith('#'));
+          ignorePatterns = patterns.map(globToRegex);
+          console.log("Ignore patterns:", patterns);
+          console.log("Regex patterns:", ignorePatterns.map(r => r.toString()));
         } catch (err) {
           // .manifestignore might not exist, which is fine
           if (err.code !== 'ENOENT') {
@@ -57,7 +55,15 @@ jobs:
             const relativePath = path.relative(baseDir, fullPath).replace(/\\/g, '/');
 
             // Check against ignore patterns
-            if (ignorePatterns.some(regex => regex.test(relativePath))) {
+            const isIgnored = ignorePatterns.some(regex => {
+              const matches = regex.test(relativePath);
+              if (matches) {
+                console.log(`Ignoring: ${relativePath} (matched pattern: ${regex})`);
+              }
+              return matches;
+            });
+
+            if (isIgnored) {
               return []; // Exclude if it matches any pattern - for directories, this skips all contents
             }
 
