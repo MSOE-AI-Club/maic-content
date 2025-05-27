@@ -26,19 +26,56 @@ jobs:
         const fs = require('fs');
         const path = require('path');
 
+        function globToRegex(glob) {
+          const specialChars = ['.', '+', '?', '^', '$', '{', '}', '(', ')', '|', '[', ']', '\\'];
+          let regexString = glob.replace(/\./g, '\\.'); // Escape literal dots first
+          regexString = regexString.replace(/\*/g, '.*'); // Convert * to .* (wildcard)
+          // Escape other special regex characters
+          specialChars.forEach(char => {
+            if (char !== '.' && char !== '*') { // Avoid re-escaping already handled chars
+                 regexString = regexString.replace(new RegExp('\\'+char, 'g'), '\\'+char);
+            }
+          });
+          return new RegExp('^' + regexString + '$');
+        }
+
+        let ignorePatterns = [];
+        try {
+          const ignoreContent = fs.readFileSync('.manifestignore', 'utf8');
+          ignorePatterns = ignoreContent.split(/\r?\n/).filter(line => line.trim() !== '' && !line.startsWith('#')).map(globToRegex);
+        } catch (err) {
+          // .manifestignore might not exist, which is fine
+          if (err.code !== 'ENOENT') {
+            console.error("Error reading .manifestignore:", err);
+          }
+        }
+
         function walkDir(dir, baseDir = dir) {
           const files = fs.readdirSync(dir, { withFileTypes: true });
           return files.flatMap(file => {
             const fullPath = path.join(dir, file.name);
+            const relativePath = path.relative(baseDir, fullPath).replace(/\\/g, '/');
+
+            // Check against ignore patterns
+            if (ignorePatterns.some(regex => regex.test(relativePath))) {
+              return []; // Exclude if it matches any pattern
+            }
+
             if (file.isDirectory()) {
+              // For directories, also check if the directory itself is ignored.
+              // If not, recurse. If it is, all its contents are implicitly ignored.
               return walkDir(fullPath, baseDir);
             } else {
-              return [path.relative(baseDir, fullPath).replace(/\\/g, '/')];
+              return [relativePath];
             }
           });
         }
 
-        const fileList = walkDir('.');
+        const fileList = walkDir('.').filter(file => {
+            // Second pass for files, ensuring they are not matched if a directory pattern already got them.
+            // This also handles cases where a file might be explicitly listed after a directory pattern.
+            return !ignorePatterns.some(regex => regex.test(file));
+        });
         const manifest = { generated_at: new Date().toISOString(), files: fileList };
         fs.writeFileSync('manifest.json', JSON.stringify(manifest, null, 2));
         EOF
