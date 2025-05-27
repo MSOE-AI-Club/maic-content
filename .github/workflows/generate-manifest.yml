@@ -1,5 +1,9 @@
 name: Generate manifest.json
 
+on:
+  push:
+    branches: '*'
+
 jobs:
   generate-manifest:
     runs-on: ubuntu-latest
