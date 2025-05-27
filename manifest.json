@@ -1,6 +1,7 @@
 {
-  "generated_at": "2025-05-27T23:43:09.830Z",
+  "generated_at": "2025-05-27T23:45:01.264Z",
   "files": [
+    "article_template.md",
     "articles/dummy/dummy-article/dummy.md",
     "articles/dummy/dummy-article/metadata.json",
     "images/thumbnails/dummy.png",
