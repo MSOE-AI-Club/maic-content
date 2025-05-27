@@ -58,12 +58,11 @@ jobs:
 
             // Check against ignore patterns
             if (ignorePatterns.some(regex => regex.test(relativePath))) {
-              return []; // Exclude if it matches any pattern
+              return []; // Exclude if it matches any pattern - for directories, this skips all contents
             }
 
             if (file.isDirectory()) {
-              // For directories, also check if the directory itself is ignored.
-              // If not, recurse. If it is, all its contents are implicitly ignored.
+              // Directory is not ignored, so recurse into it
               return walkDir(fullPath, baseDir);
             } else {
               return [relativePath];
@@ -71,11 +70,7 @@ jobs:
           });
         }
 
-        const fileList = walkDir('.').filter(file => {
-            // Second pass for files, ensuring they are not matched if a directory pattern already got them.
-            // This also handles cases where a file might be explicitly listed after a directory pattern.
-            return !ignorePatterns.some(regex => regex.test(file));
-        });
+        const fileList = walkDir('.');
         const manifest = { generated_at: new Date().toISOString(), files: fileList };
         fs.writeFileSync('manifest.json', JSON.stringify(manifest, null, 2));
         EOF
