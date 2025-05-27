@@ -1,12 +1,3 @@
-title: Introduction to Webscraping 
-date: 1/30/2025 
-authors: Adam Haile 
-summary: This article will teach you the basics on how to build a webscraper and what technology is used to get results from any webpage! 
-thumbnail: images/thumbnails/dummy.png 
-type: md 
-difficulty: advanced 
-categories: webscraping, python
-
 ## Why Read?
 This is a beginner's introduction for how to perform webscraping using Python. Once you are able to webscrape, you will have a mountain of near limitless data at your fingertips. It's just up to you then on what data you need and how you'll format it!
 
