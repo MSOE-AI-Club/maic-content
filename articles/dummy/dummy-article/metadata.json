@@ -1,0 +1,10 @@
+{
+  "title": "Introduction to Webscraping",
+  "date": "1/30/2025",
+  "authors": "Adam Haile",
+  "summary": "This article will teach you the basics on how to build a webscraper and what technology is used to get results from any webpage!",
+  "thumbnail": "images/thumbnails/dummy.png",
+  "type": "md",
+  "difficulty": "advanced",
+  "categories": ["webscraping", "python"]
+}
