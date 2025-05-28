@@ -1,8 +1,9 @@
 {
-  "generated_at": "2025-05-27T23:46:18.122Z",
+  "generated_at": "2025-05-28T00:10:46.013Z",
   "files": [
     "articles/dummy/dummy-article/dummy.md",
     "articles/dummy/dummy-article/metadata.json",
+    "images/general/Logo.png",
     "images/thumbnails/dummy.png",
     "manifest.json"
   ]
