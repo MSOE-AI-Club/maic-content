@@ -1,0 +1,42 @@
+[
+  {
+    "points": "1 point",
+    "description": "for every MAIC workshop/speaker-event you attend."
+  },
+  {
+    "points": "1 point",
+    "description": "for every research meeting you attend."
+  },
+  {
+    "points": "1 point",
+    "description": "for every <span style=\"color:green; font-weight: bold;\">easy &#9646;</span> challenge problem you complete."
+  },
+  {
+    "points": "2 points",
+    "description": "for every <span style=\"color:yellow; font-weight: bold;\">medium &#9646;</span> challenge problem you complete."
+  },
+  {
+    "points": "3 points",
+    "description": "for every <span style=\"color:red; font-weight: bold;\">hard &#9646;</span> challenge problem you complete."
+  },
+  {
+    "points": "4 points",
+    "description": "for every <span style=\"color:rgb(187, 10, 187); font-weight: bold;\">advanced &#9646;</span> challenge problem you complete."
+  },
+  {
+    "points": "5 points",
+    "description": "for every research conference attended."
+  },
+  {
+    "points": "5 points",
+    "description": "for publishing a research paper."
+  },
+  {
+    "points": "5 points",
+    "description": "for presenting in the ROSIE Competition."
+  },
+  {
+    "points": "5 points minimum",
+    "description": "for posting a new learning resource to the website."
+  }
+] 
