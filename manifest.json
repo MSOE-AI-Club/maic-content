@@ -1,11 +1,14 @@
 {
-  "generated_at": "2025-06-10T22:38:04.260Z",
+  "generated_at": "2025-06-10T22:44:12.965Z",
   "files": [
     "articles/dummy/dummy-article/dummy.md",
     "articles/dummy/dummy-article/metadata.json",
     "data/achievements/achievementsData.json",
     "data/points/pointsData.json",
     "data/points/user_data.csv",
+    "images/about/DirectSupply_Logo.png",
+    "images/about/NVIDIA_Logo.jpg",
+    "images/about/msoe_logo_transparent.png",
     "images/general/Logo.png",
     "images/thumbnails/dummy.png",
     "manifest.json"
