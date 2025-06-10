@@ -1,11 +1,12 @@
 {
-  "generated_at": "2025-06-10T22:56:59.237Z",
+  "generated_at": "2025-06-10T23:01:48.877Z",
   "files": [
     "articles/dummy/dummy-article/dummy.md",
     "articles/dummy/dummy-article/metadata.json",
     "data/about/faq.md",
     "data/about/partnersData.json",
     "data/achievements/achievementsData.json",
+    "data/contact/eboard.json",
     "data/points/pointsData.json",
     "data/points/user_data.csv",
     "images/about/DirectSupply_Logo.png",
