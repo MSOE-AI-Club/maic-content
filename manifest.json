@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-06-10T23:03:54.213Z",
+  "generated_at": "2025-06-10T23:38:05.233Z",
   "files": [
     "articles/dummy/dummy-article/dummy.md",
     "articles/dummy/dummy-article/metadata.json",
@@ -7,6 +7,7 @@
     "data/about/partnersData.json",
     "data/achievements/achievementsData.json",
     "data/contact/eboard.json",
+    "data/merch/merchData.json",
     "data/points/pointsData.json",
     "data/points/user_data.csv",
     "images/about/DirectSupply_Logo.png",
@@ -35,6 +36,12 @@
     "images/contact/Travis Jankowski Portrait.png",
     "images/contact/Tyge Plater Portrait.jpg",
     "images/general/Logo.png",
+    "images/merch/Brains.jpg",
+    "images/merch/MAIC-Basic-Hoodie.png",
+    "images/merch/MAIC-Polo.png",
+    "images/merch/MAIC-QuarterZip.png",
+    "images/merch/MAIC-Researcher-Hoodie.png",
+    "images/merch/MAIC-Tshirt.png",
     "images/thumbnails/dummy.png",
     "manifest.json"
   ]
