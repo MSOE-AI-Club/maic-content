@@ -1,9 +1,10 @@
 {
-  "generated_at": "2025-05-28T01:02:12.767Z",
+  "generated_at": "2025-06-10T22:38:04.260Z",
   "files": [
     "articles/dummy/dummy-article/dummy.md",
     "articles/dummy/dummy-article/metadata.json",
     "data/achievements/achievementsData.json",
+    "data/points/pointsData.json",
     "data/points/user_data.csv",
     "images/general/Logo.png",
     "images/thumbnails/dummy.png",
