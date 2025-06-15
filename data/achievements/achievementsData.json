@@ -1,37 +1,44 @@
 [
   {
     "imageUrl": "images/achievements/current_eboard.png",
-    "title": "2023 Eboard",
-    "altText": "Current Eboard",
-    "name": "Current Eboard",
-    "description": "Be a member of the current 2023 MAIC Eboard"
+    "title": "eboard2024",
+    "altText": "Eboard 2024",
+    "name": "Eboard 2024",
+    "description": "Member of the 2024-2025 MAIC Eboard"
   },
   {
     "imageUrl": "images/achievements/old_eboard.png",
-    "title": "Previous Eboard",
-    "altText": "Previous Eboard",
-    "name": "Previous Eboard",
-    "description": "Was previously a member of the MAIC eboard"
+    "title": "eboard2023",
+    "altText": "Eboard 2023",
+    "name": "Eboard 2023",
+    "description": "Member of the 2023-2024 MAIC Eboard"
+  },
+  {
+    "imageUrl": "images/achievements/old_eboard.png",
+    "title": "eboard2022",
+    "altText": "Eboard 2022",
+    "name": "Eboard 2022",
+    "description": "Member of the 2022-2023 MAIC Eboard"
   },
   {
     "imageUrl": "images/achievements/ROSIE2023.png",
-    "title": "ROSIE 2023",
-    "altText": "ROSIE 2023",
-    "name": "ROSIE 2023",
+    "title": "ROSIE Competition Finalist 2023",
+    "altText": "ROSIE Finalist 2023",
+    "name": "ROSIE Finalist 2023",
     "description": "Was a finalist or winner of the 2023 ROSIE Supercomputer Challenge"
   },
   {
     "imageUrl": "images/achievements/ROSIE2024.png",
-    "title": "ROSIE 2024",
-    "altText": "ROSIE 2024",
-    "name": "ROSIE 2024",
+    "title": "ROSIE Competition Finalist 2024",
+    "altText": "ROSIE Finalist 2024",
+    "name": "ROSIE Finalist 2024",
     "description": "Was a finalist or winner of the 2024 ROSIE Supercomputer Challenge"
   },
   {
     "imageUrl": "images/achievements/ROSIE2022.png",
-    "title": "ROSIE 2022",
-    "altText": "ROSIE 2022",
-    "name": "ROSIE 2022",
+    "title": "ROSIE Competition Finalist 2022",
+    "altText": "ROSIE Finalist 2022",
+    "name": "ROSIE Finalist 2022",
     "description": "Was a finalist or winner of the 2022 ROSIE Supercomputer Challenge"
   },
   {
@@ -39,56 +46,56 @@
     "title": "ROSIE Presenter",
     "altText": "ROSIE Presenter",
     "name": "ROSIE Presenter",
-    "description": "Presented their project in the Atrium for the 2023 ROSIE Supercomputer Challenge"
+    "description": "Presented their project in the Atrium for a ROSIE Supercomputer Challenge"
   },
   {
     "imageUrl": "images/achievements/2023MICS.png",
-    "title": "MICS 2023",
+    "title": "2023 MICS Attendee",
     "altText": "MICS 2023",
     "name": "MICS 2023",
     "description": "Presented at the 2023 MICS Conference at Iowa University"
   },
   {
     "imageUrl": "images/achievements/2024MICS.png",
-    "title": "MICS 2024",
+    "title": "2024 MICS Attendee",
     "altText": "MICS 2024",
     "name": "MICS 2024",
     "description": "Presented at the 2024 MICS Conference"
   },
   {
     "imageUrl": "images/achievements/2022MICS.png",
-    "title": "MICS 2022",
+    "title": "2022 MICS Attendee",
     "altText": "MICS 2022",
     "name": "MICS 2022",
     "description": "Presented at the 2022 MICS Conference at MSOE"
   },
   {
     "imageUrl": "images/achievements/2023Researcher.png",
-    "title": "2023 AI Researcher",
+    "title": "2023 Researcher",
     "altText": "2023 AI Researcher",
     "name": "2023 AI Researcher",
     "description": "Actively pursued AI-research in a MAIC research group throughout the 2023 school year"
   },
   {
     "imageUrl": "images/achievements/2024Researcher.png",
-    "title": "2024 AI Researcher",
+    "title": "2024 Researcher",
     "altText": "2024 AI Researcher",
     "name": "2024 AI Researcher",
     "description": "Actively pursued AI-research in a MAIC research group throughout the 2024 school year"
   },
   {
     "imageUrl": "images/achievements/2022Researcher.png",
-    "title": "2022 AI Researcher",
+    "title": "2022 Researcher",
     "altText": "2022 AI Researcher",
     "name": "2022 AI Researcher",
     "description": "Actively pursued AI-research in a MAIC research group throughout the 2022 school year"
   },
   {
     "imageUrl": "images/achievements/NVIDIA_DLI.jpg",
-    "title": "NVIDIA DLI",
+    "title": "NVIDIA DLI 2023",
     "altText": "NVIDIA DLI",
     "name": "NVIDIA DLI",
-    "description": "Attended an NVIDIA DLI Workshop"
+    "description": "Attended an NVIDIA DLI Workshop in 2023"
   },
   {
     "imageUrl": "images/achievements/hacksgiving.png",
