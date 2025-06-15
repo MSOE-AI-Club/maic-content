@@ -1,65 +1,114 @@
 [
   {
-    "imageUrl": "https://maic-fastapi-lambda.s3.amazonaws.com/data/custom_icons/current_eboard.png",
+    "imageUrl": "images/achievements/current_eboard.png",
     "title": "2023 Eboard",
     "altText": "Current Eboard",
     "name": "Current Eboard",
     "description": "Be a member of the current 2023 MAIC Eboard"
   },
   {
-    "imageUrl": "https://maic-fastapi-lambda.s3.amazonaws.com/data/custom_icons/old_eboard.png",
-    "title": "2023 Eboard",
+    "imageUrl": "images/achievements/old_eboard.png",
+    "title": "Previous Eboard",
     "altText": "Previous Eboard",
     "name": "Previous Eboard",
     "description": "Was previously a member of the MAIC eboard"
   },
   {
-    "imageUrl": "https://maic-fastapi-lambda.s3.amazonaws.com/data/custom_icons/ROSIE2023.png",
+    "imageUrl": "images/achievements/ROSIE2023.png",
     "title": "ROSIE 2023",
     "altText": "ROSIE 2023",
     "name": "ROSIE 2023",
     "description": "Was a finalist or winner of the 2023 ROSIE Supercomputer Challenge"
   },
   {
-    "imageUrl": "https://maic-fastapi-lambda.s3.amazonaws.com/data/custom_icons/ROSIE2022.png",
+    "imageUrl": "images/achievements/ROSIE2024.png",
+    "title": "ROSIE 2024",
+    "altText": "ROSIE 2024",
+    "name": "ROSIE 2024",
+    "description": "Was a finalist or winner of the 2024 ROSIE Supercomputer Challenge"
+  },
+  {
+    "imageUrl": "images/achievements/ROSIE2022.png",
     "title": "ROSIE 2022",
     "altText": "ROSIE 2022",
     "name": "ROSIE 2022",
     "description": "Was a finalist or winner of the 2022 ROSIE Supercomputer Challenge"
   },
   {
-    "imageUrl": "https://maic-fastapi-lambda.s3.amazonaws.com/data/custom_icons/ROSIE_Presenter.png",
+    "imageUrl": "images/achievements/ROSIE_Presenter.png",
     "title": "ROSIE Presenter",
     "altText": "ROSIE Presenter",
     "name": "ROSIE Presenter",
     "description": "Presented their project in the Atrium for the 2023 ROSIE Supercomputer Challenge"
   },
   {
-    "imageUrl": "https://maic-fastapi-lambda.s3.amazonaws.com/data/custom_icons/2023MICS.png",
+    "imageUrl": "images/achievements/2023MICS.png",
     "title": "MICS 2023",
     "altText": "MICS 2023",
     "name": "MICS 2023",
     "description": "Presented at the 2023 MICS Conference at Iowa University"
   },
   {
-    "imageUrl": "https://maic-fastapi-lambda.s3.amazonaws.com/data/custom_icons/2022MICS.png",
+    "imageUrl": "images/achievements/2024MICS.png",
+    "title": "MICS 2024",
+    "altText": "MICS 2024",
+    "name": "MICS 2024",
+    "description": "Presented at the 2024 MICS Conference"
+  },
+  {
+    "imageUrl": "images/achievements/2022MICS.png",
     "title": "MICS 2022",
     "altText": "MICS 2022",
     "name": "MICS 2022",
     "description": "Presented at the 2022 MICS Conference at MSOE"
   },
   {
-    "imageUrl": "https://maic-fastapi-lambda.s3.amazonaws.com/data/custom_icons/2023Researcher.png",
+    "imageUrl": "images/achievements/2023Researcher.png",
     "title": "2023 AI Researcher",
     "altText": "2023 AI Researcher",
     "name": "2023 AI Researcher",
     "description": "Actively pursued AI-research in a MAIC research group throughout the 2023 school year"
   },
   {
-    "imageUrl": "https://maic-fastapi-lambda.s3.amazonaws.com/data/custom_icons/2022Researcher.png",
-    "title": "2023 AI Researcher",
+    "imageUrl": "images/achievements/2024Researcher.png",
+    "title": "2024 AI Researcher",
+    "altText": "2024 AI Researcher",
+    "name": "2024 AI Researcher",
+    "description": "Actively pursued AI-research in a MAIC research group throughout the 2024 school year"
+  },
+  {
+    "imageUrl": "images/achievements/2022Researcher.png",
+    "title": "2022 AI Researcher",
     "altText": "2022 AI Researcher",
     "name": "2022 AI Researcher",
     "description": "Actively pursued AI-research in a MAIC research group throughout the 2022 school year"
+  },
+  {
+    "imageUrl": "images/achievements/NVIDIA_DLI.jpg",
+    "title": "NVIDIA DLI",
+    "altText": "NVIDIA DLI",
+    "name": "NVIDIA DLI",
+    "description": "Attended an NVIDIA DLI Workshop"
+  },
+  {
+    "imageUrl": "images/achievements/hacksgiving.png",
+    "title": "Hacksgiving",
+    "altText": "Hacksgiving",
+    "name": "Hacksgiving",
+    "description": "Participated in Hacksgiving"
+  },
+  {
+    "imageUrl": "images/achievements/Founder.png",
+    "title": "Founder",
+    "altText": "Founder",
+    "name": "Founder",
+    "description": "A founder of the MSOE AI Club"
+  },
+  {
+    "imageUrl": "images/achievements/Overlord.png",
+    "title": "Overlord",
+    "altText": "Overlord",
+    "name": "Overlord",
+    "description": "An overlord of the MSOE AI Club"
   }
 ] 
