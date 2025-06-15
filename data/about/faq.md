@@ -15,5 +15,3 @@ You can get achievements by completing certain tasks, such as attending a certai
 
 ### How do I get on the leaderboard?
 You can get on the leaderboard by getting points! The more points you have, the higher you are on the leaderboard. If you are not on the leaderboard, please notify an eboard member and ensure you are a member of our Teams. 
-
-# THIS IS A TEST
