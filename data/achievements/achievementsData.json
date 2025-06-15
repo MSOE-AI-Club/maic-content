@@ -1,6 +1,13 @@
 [
   {
     "imageUrl": "images/achievements/current_eboard.png",
+    "title": "eboard2025",
+    "altText": "Eboard 2025",
+    "name": "Eboard 2025",
+    "description": "Member of the 2025-2026 MAIC Eboard"
+  },
+  {
+    "imageUrl": "images/achievements/old_eboard.png",
     "title": "eboard2024",
     "altText": "Eboard 2024",
     "name": "Eboard 2024",
