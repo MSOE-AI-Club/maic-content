@@ -2,7 +2,7 @@ summary: Our project focuses on developing an AI model that can accurately predi
 type: anchor - Research
 date: 2023-2024
 title: NourishNet
-image: images/thumbnails/Nourish_Team_Logo.png
+image: content/research/Nourish_team_Logo.png
 difficulty: easy
 authors: Ben Paulson
 files: Proactive Severity State Forecasting of Food Commodity Prices for Global Warning Systems, NourishNet ROSIE Presentation, NourishNet Recording 
