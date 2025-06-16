@@ -2,7 +2,7 @@ summary: The presentation provided by the NourishNet team during the ROSIE Compe
 type: link
 date: 2/4/2024
 title: NourishNet Presentation
-image: ./img/thumbnails/NN_preso.png
+image: images/content/research/file-thumbnails/NN_preso.png
 difficulty: easy
 authors: Sydney Balboni, Grace Ivey, Brett Storoe, John Cisler, Tyge Plater, Caitlyn Grant, Ella Bruce, Benjamin Paulson
 categories: Research,Time Series Forecasting,Deep Learning,LLM,RAG

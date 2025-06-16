@@ -2,7 +2,7 @@ summary: The presentation provided by the NourishNet team during the MICS Confer
 type: link
 date: 2/4/2024
 title: NourishNet Recording
-image: ./img/thumbnails/NN_UN.png
+image: images/content/research/file-thumbnails/NN_UN.png
 difficulty: easy
 authors: Sydney Balboni, Grace Ivey, Brett Storoe, John Cisler, Tyge Plater, Caitlyn Grant, Ella Bruce, Benjamin Paulson
 categories: Research,Time Series Forecasting,Deep Learning,LLM,RAG

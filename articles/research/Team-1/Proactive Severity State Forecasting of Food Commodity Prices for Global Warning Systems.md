@@ -2,7 +2,7 @@ summary: Price volatility in global food commodities is a critical signal indica
 type: pdf
 date: 30/6/2024
 title: NourishNet: Proactive Severity State Forecasting of Food Commodity Prices for Global Warning Systems
-image: ./img/thumbnails/NourishNet-Front.png
+image: images/content/research/file-thumbnails/NourishNet-Front.png
 difficulty: easy
 authors: Sydney Balboni, Grace Ivery, Brett Storoe, John Cisler, Tyge Plater, Caitlyn Grant, Ella Bruce, Benjamin Paulson
 categories: Research,Time Series Forecasting,Deep Learning,LLM,RAG

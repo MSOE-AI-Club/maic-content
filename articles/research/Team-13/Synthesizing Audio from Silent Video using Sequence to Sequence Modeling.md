@@ -2,7 +2,7 @@ summary: Generating audio from a video's visual context has multiple practical a
 type: pdf
 date: 25/5/2025
 title: Synthesizing Audio from Silent Video using Sequence to Sequence Modeling
-image: ./img/thumbnails/2404.17608.jpg
+image: images/content/research/file-thumbnails/2404.17608.jpg
 difficulty: easy
 authors: Hugo Garrido-Lestache Belinchon, Helina Mulugeta, Adam Haile
 categories: Research,VQ-VAE,Seq2Seq
