@@ -1,9 +1,14 @@
 {
-  "generated_at": "2025-06-16T03:06:28.176Z",
+  "generated_at": "2025-06-16T03:12:37.127Z",
   "files": [
     "articles/dummy/dummy-article/dummy.md",
     "articles/dummy/dummy-article/metadata.json",
     "articles/research/Research-50NourishNet.md",
+    "articles/research/Research-50Silent-Sound-Synthesizers.md",
+    "articles/research/Team-1/NourishNet ROSIE Presentation.md",
+    "articles/research/Team-1/NourishNet Recording.md",
+    "articles/research/Team-1/Proactive Severity State Forecasting of Food Commodity Prices for Global Warning Systems.md",
+    "articles/research/Team-13/Synthesizing Audio from Silent Video using Sequence to Sequence Modeling.md",
     "data/about/faq.md",
     "data/about/partnersData.json",
     "data/achievements/achievementsData.json",
@@ -60,6 +65,7 @@
     "images/contact/Travis Jankowski Portrait.png",
     "images/contact/Tyge Plater Portrait.jpg",
     "images/content/research/Nourish_Team_Logo.png",
+    "images/content/research/Silent_Sound_Synthesizers.png",
     "images/general/Logo.png",
     "images/home/2024_ROSIE_MAIC.jpg",
     "images/home/hacksgiving-2023.jpg",
