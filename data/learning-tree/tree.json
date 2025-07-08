@@ -1,0 +1,2847 @@
+{
+  "categories": {
+    "Introduction": {
+      "category_color": "gray",
+      "nodes": [
+        {
+          "id": "4",
+          "filename": "ai-at-msoe-4-3",
+          "name": "Why Learn AI with AI-Club?",
+          "description": "Given you understand the basics of AI's history and applications, let's now dive into how you would typically learn about AI at MSOE given you don't join MAIC.",
+          "category": "Introduction",
+          "api_image_path": "./img/tree-thumbnails/ai_in_school.png",
+          "link": "/library?nav=Articles&article=004_Learning_AI_at_School",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 500
+          },
+          "parents": [
+            "3"
+          ],
+          "children": [
+            "5",
+            "10"
+          ]
+        },
+        {
+          "id": "1",
+          "filename": "learning-tree-1",
+          "name": "What is the Learning Tree?",
+          "description": "The learning tree is a visual representation of the world of AI, built by pulling from reliable sources students before you have identified as useful and structure in an easy-to-visualize way.",
+          "category": "Introduction",
+          "api_image_path": "./img/tree-thumbnails/learning-tree.png",
+          "link": "/library?nav=Articles&article=001_What_is_the_Learning_Tree",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "parents": [],
+          "children": [
+            "2"
+          ]
+        },
+        {
+          "id": "3",
+          "filename": "what-is-ai-3-2",
+          "name": "What is AI?",
+          "description": "Let's get some contextual info on AI and how it's used in the real world!",
+          "category": "Introduction",
+          "api_image_path": "./img/tree-thumbnails/what_is_ai.png",
+          "link": "/library?nav=Articles&article=003_What_is_AI",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 500
+          },
+          "parents": [
+            "2"
+          ],
+          "children": [
+            "4"
+          ]
+        },
+        {
+          "id": "2",
+          "filename": "what-is-programming-2-1",
+          "name": "What is Programming?",
+          "description": "Before getting to AI development, let's start with the basics of programming. We'll also dive into how learning about programming works at college!",
+          "category": "Introduction",
+          "api_image_path": "./img/tree-thumbnails/what_is_programming.png",
+          "link": "/library?nav=Articles&article=002_What_is_Programming",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 500
+          },
+          "parents": [
+            "1"
+          ],
+          "children": [
+            "3"
+          ]
+        }
+      ]
+    },
+    "AI Basics": {
+      "category_color": "violet",
+      "nodes": [
+        {
+          "id": "19",
+          "filename": "ai-basics-19-9-14",
+          "name": "What is a Neural Network?",
+          "description": "Before diving into how AI learns, let's get a general understanding of what a neural network is.",
+          "category": "AI Basics",
+          "api_image_path": "./img/tree-thumbnails/what_is_a_nn.png",
+          "link": "/library?nav=Articles&article=010_What_is_a_NN",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 500
+          },
+          "parents": [
+            "9",
+            "14"
+          ],
+          "children": [
+            "20"
+          ]
+        },
+        {
+          "id": "20",
+          "filename": "ai-basics-20-19",
+          "name": "How Do Neural Networks Learn?",
+          "description": "AI is all about learning, but how do models interpret data and actually learn from it?",
+          "category": "AI Basics",
+          "api_image_path": "./img/tree-thumbnails/how_nn_learn.png",
+          "link": "/library?nav=Articles&article=011_How_NN_Learn",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 500
+          },
+          "parents": [
+            "19"
+          ],
+          "children": [
+            "21"
+          ]
+        },
+        {
+          "id": "21",
+          "filename": "ai-basics-21-20",
+          "name": "What is 'Backpropagation'?",
+          "description": "Given our model understands what's right and wrong, how does it improve itself over time?",
+          "category": "AI Basics",
+          "api_image_path": "./img/tree-thumbnails/understanding_back_prop.png",
+          "link": "/library?nav=Articles&article=012_Fully_Understanding_Training",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 500
+          },
+          "parents": [
+            "20"
+          ],
+          "children": [
+            "22",
+            "29"
+          ]
+        }
+      ]
+    },
+    "Generative AI": {
+      "category_color": "limegreen",
+      "nodes": [
+        {
+          "id": "36",
+          "filename": "gen-ai-36-31",
+          "name": "Intro to Generative AI",
+          "description": "COMING SOON",
+          "category": "Generative AI",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": -2000,
+            "y": 0
+          },
+          "parents": [
+            "31"
+          ],
+          "children": [
+            "37"
+          ]
+        },
+        {
+          "id": "37",
+          "filename": "gen-ai-37-36",
+          "name": "GANs",
+          "description": "COMING SOON",
+          "category": "Generative AI",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": -500,
+            "y": 0
+          },
+          "parents": [
+            "36"
+          ],
+          "children": [
+            "38",
+            "39",
+            "53"
+          ]
+        },
+        {
+          "id": "38",
+          "filename": "gen-ai-38-37",
+          "name": "DCGANs",
+          "description": "COMING SOON",
+          "category": "Generative AI",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": -2700,
+            "y": 0
+          },
+          "parents": [
+            "37"
+          ],
+          "children": [
+            "54"
+          ]
+        },
+        {
+          "id": "39",
+          "filename": "gen-ai-39-37",
+          "name": "Conditional GANs",
+          "description": "COMING SOON",
+          "category": "Generative AI",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": -2150,
+            "y": 0
+          },
+          "parents": [
+            "37"
+          ],
+          "children": [
+            "54"
+          ]
+        },
+        {
+          "id": "53",
+          "filename": "gen-ai-53-37-35-52",
+          "name": "Making Your Own Chat-GPT (Pt1)",
+          "description": "COMING SOON",
+          "category": "Generative AI",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": -1500,
+            "y": 3000
+          },
+          "parents": [
+            "37",
+            "35",
+            "52"
+          ],
+          "children": [
+            "55"
+          ]
+        },
+        {
+          "id": "54",
+          "filename": "gen-ai-54-39-38",
+          "name": "VAEs",
+          "description": "COMING SOON",
+          "category": "Generative AI",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": -475,
+            "y": 0
+          },
+          "parents": [
+            "39",
+            "38"
+          ],
+          "children": []
+        },
+        {
+          "id": "55",
+          "filename": "gen-ai-55-53",
+          "name": "Making Your Own Chat-GPT (Pt2)",
+          "description": "COMING SOON",
+          "category": "Generative AI",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": -500,
+            "y": 0
+          },
+          "parents": [
+            "53"
+          ],
+          "children": [
+            "56"
+          ]
+        },
+        {
+          "id": "56",
+          "filename": "gen-ai-56-55-52",
+          "name": "Making a RAG Chat-Bot",
+          "description": "COMING SOON",
+          "category": "Generative AI",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": -1000,
+            "y": 0
+          },
+          "parents": [
+            "55",
+            "52"
+          ],
+          "children": [
+            "72"
+          ]
+        }
+      ]
+    },
+    "NLP": {
+      "category_color": "orange",
+      "nodes": [
+        {
+          "id": "32",
+          "filename": "nlp-32-31",
+          "name": "Intro to Natural Language Processing (NLP)",
+          "description": "Learn the basics of how computers can process and understand natural language, a foundational skill for all natural language processing tasks.",
+          "category": "NLP",
+          "api_image_path": "./img/tree-thumbnails/IntroNLP.png",
+          "link": "/library?nav=Articles&article=001_nlp-intro",
+          "highlighted_path": "True",
+          "position": {
+            "x": -750,
+            "y": 0
+          },
+          "parents": [
+            "31"
+          ],
+          "children": [
+            "33"
+          ]
+        },
+        {
+          "id": "33",
+          "filename": "nlp-33-32",
+          "name": "Text Preprocessing",
+          "description": "Discover key techniques like Text Cleaning, Tokenization, and Stop Word Removal to prepare text for analysis by machine learning models.",
+          "category": "NLP",
+          "api_image_path": "./img/tree-thumbnails/text-preprocessing.png",
+          "link": "/library?nav=Articles&article=002_nlp-text-preprocessing",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "parents": [
+            "32"
+          ],
+          "children": [
+            "34"
+          ]
+        },
+        {
+          "id": "34",
+          "filename": "nlp-34-33",
+          "name": "Bag of Words",
+          "description": "Learn the concept of Bag of Words in a simple, high-level, way and then dive into learning how to implement Bag of Words in Python.",
+          "category": "NLP",
+          "api_image_path": "./img/tree-thumbnails/bag-of-words.png",
+          "link": "/library?nav=Articles&article=003_nlp-bag-of-words",
+          "highlighted_path": "True",
+          "position": {
+            "x": -750,
+            "y": 0
+          },
+          "parents": [
+            "33"
+          ],
+          "children": [
+            "35"
+          ]
+        },
+        {
+          "id": "35",
+          "filename": "nlp-35-34",
+          "name": "Embeddings",
+          "description": "Learn the concepts of Vector Stores and Embeddings",
+          "category": "NLP",
+          "api_image_path": "./img/tree-thumbnails/embeddings.png",
+          "link": "/library?nav=Articles&article=004_npl-embeddings",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "parents": [
+            "34"
+          ],
+          "children": [
+            "53",
+            "47",
+            "48"
+          ]
+        },
+        {
+          "id": "47",
+          "filename": "nlp-47-35",
+          "name": "Gated Recurrent Unit (GRU)",
+          "description": "COMING SOON",
+          "category": "NLP",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": -1450,
+            "y": 0
+          },
+          "parents": [
+            "35"
+          ],
+          "children": [
+            "51"
+          ]
+        },
+        {
+          "id": "48",
+          "filename": "nlp-48-35-46",
+          "name": "Long Short-Term Memory (LSTM)",
+          "description": "COMING SOON",
+          "category": "NLP",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": -750,
+            "y": 0
+          },
+          "parents": [
+            "35",
+            "46"
+          ],
+          "children": [
+            "51",
+            "49",
+            "50"
+          ]
+        },
+        {
+          "id": "51",
+          "filename": "nlp-51-47-48-49",
+          "name": "Attention",
+          "description": "COMING SOON",
+          "category": "NLP",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": 25,
+            "y": 0
+          },
+          "parents": [
+            "47",
+            "48",
+            "49"
+          ],
+          "children": [
+            "52"
+          ]
+        },
+        {
+          "id": "52",
+          "filename": "nlp-52-51",
+          "name": "Transformers",
+          "description": "COMING SOON",
+          "category": "NLP",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": -525,
+            "y": 0
+          },
+          "parents": [
+            "51"
+          ],
+          "children": [
+            "53",
+            "56",
+            "72",
+            "64"
+          ]
+        },
+        {
+          "id": "72",
+          "filename": "nlp-72-71-52-56",
+          "name": "LLM Communication",
+          "description": "COMING SOON",
+          "category": "NLP",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": 250,
+            "y": 2500
+          },
+          "parents": [
+            "71",
+            "52",
+            "56"
+          ],
+          "children": []
+        }
+      ]
+    },
+    "RL": {
+      "category_color": "yellow",
+      "nodes": [
+        {
+          "id": "65",
+          "filename": "rl-65-31",
+          "name": "Intro to Reinforcement Learning (RL)",
+          "description": "COMING SOON",
+          "category": "RL",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "/library?nav=Articles&article=RL",
+          "highlighted_path": "True",
+          "position": {
+            "x": 3000,
+            "y": 0
+          },
+          "parents": [
+            "31"
+          ],
+          "children": [
+            "66"
+          ]
+        },
+        {
+          "id": "66",
+          "filename": "rl-66-65",
+          "name": "Markov Decision Making Process",
+          "description": "COMING SOON",
+          "category": "RL",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "parents": [
+            "65"
+          ],
+          "children": [
+            "67"
+          ]
+        },
+        {
+          "id": "67",
+          "filename": "rl-67-66",
+          "name": "Markov Decision Making Process",
+          "description": "COMING SOON",
+          "category": "RL",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": 3000,
+            "y": 0
+          },
+          "parents": [
+            "66"
+          ],
+          "children": [
+            "68"
+          ]
+        },
+        {
+          "id": "68",
+          "filename": "rl-68-67",
+          "name": "Q-Learning",
+          "description": "COMING SOON",
+          "category": "RL",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "parents": [
+            "67"
+          ],
+          "children": [
+            "69",
+            "70"
+          ]
+        },
+        {
+          "id": "69",
+          "filename": "rl-69-68",
+          "name": "Deep Q-Learning",
+          "description": "COMING SOON",
+          "category": "RL",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": 3300,
+            "y": 0
+          },
+          "parents": [
+            "68"
+          ],
+          "children": [
+            "71"
+          ]
+        },
+        {
+          "id": "70",
+          "filename": "rl-70-68",
+          "name": "Policy Gradient",
+          "description": "COMING SOON",
+          "category": "RL",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": 2700,
+            "y": 0
+          },
+          "parents": [
+            "68"
+          ],
+          "children": [
+            "71"
+          ]
+        },
+        {
+          "id": "71",
+          "filename": "rl-71-70-69",
+          "name": "Multi-Agent RL",
+          "description": "COMING SOON",
+          "category": "RL",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "parents": [
+            "70",
+            "69"
+          ],
+          "children": [
+            "72"
+          ]
+        }
+      ]
+    },
+    "ROSIE": {
+      "category_color": "red",
+      "nodes": [
+        {
+          "id": "15",
+          "filename": "rosie-15-7",
+          "name": "Global Protect",
+          "description": "If you need to use ROSIE while off-campus, you will need to install Global Protect!",
+          "category": "ROSIE",
+          "api_image_path": "./img/thumbnails/GlobalProtect-icon.png",
+          "link": "/library?nav=Articles&article=global-protect",
+          "highlighted_path": "True",
+          "position": {
+            "x": -400,
+            "y": 500
+          },
+          "parents": [
+            "7"
+          ],
+          "children": []
+        },
+        {
+          "id": "16",
+          "filename": "rosie-16-9",
+          "name": "Advanced Slurm Usage",
+          "description": "There are often cases where you need to know how to use Slurm (Rosie's job scheduling software). This article details some basic and more advanced use cases.",
+          "category": "ROSIE",
+          "api_image_path": "./img/thumbnails/advabced_slurm.webp",
+          "link": "/library?nav=Articles&article=6-slurm",
+          "highlighted_path": "True",
+          "position": {
+            "x": -400,
+            "y": 500
+          },
+          "parents": [
+            "9"
+          ],
+          "children": []
+        },
+        {
+          "id": "17",
+          "filename": "rosie-17-9",
+          "name": "Running VSCode Jupyter Notebooks on Rosie",
+          "description": "This article is for you if you find that VSCode is a better tool than Rosie's dashboard for running Jupyter notebooks.",
+          "category": "ROSIE",
+          "api_image_path": "./img/thumbnails/jernel.png",
+          "link": "/library?nav=Articles&article=6-jernel",
+          "highlighted_path": "True",
+          "position": {
+            "x": -700,
+            "y": 500
+          },
+          "parents": [
+            "9"
+          ],
+          "children": []
+        },
+        {
+          "id": "18",
+          "filename": "rosie-18-9",
+          "name": "Connecting to Rosie in VSCode via SSH",
+          "description": "This article walks through the process of connecting VSCode to Rosie via SSH, and explains why you might want to do so in the first place.",
+          "category": "ROSIE",
+          "api_image_path": "./img/thumbnails/ssh_with_vsc.png",
+          "link": "/library?nav=Articles&article=6-rosie-ssh",
+          "highlighted_path": "True",
+          "position": {
+            "x": -1000,
+            "y": 500
+          },
+          "parents": [
+            "9"
+          ],
+          "children": []
+        },
+        {
+          "id": "5",
+          "filename": "rosie-5-4",
+          "name": "ROSIE Pt1: Getting Access",
+          "description": "Let's get you access to that fancy supercomputer in Diercks Hall, no matter your major/year!",
+          "category": "ROSIE",
+          "api_image_path": "./img/thumbnails/ROSIE Tutorial Icon 1.png",
+          "link": "/library?nav=Articles&article=1-getting-rosie-access",
+          "highlighted_path": "True",
+          "position": {
+            "x": -200,
+            "y": 500
+          },
+          "parents": [
+            "4"
+          ],
+          "children": [
+            "6"
+          ]
+        },
+        {
+          "id": "6",
+          "filename": "rosie-6-5",
+          "name": "ROSIE Pt2: First Login",
+          "description": "Now you have an email from ROSIE, let's get you logged in for the first time!",
+          "category": "ROSIE",
+          "api_image_path": "./img/thumbnails/ROSIE Tutorial Icon 2.png",
+          "link": "/library?nav=Articles&article=2-first-login",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 500
+          },
+          "parents": [
+            "5"
+          ],
+          "children": [
+            "7"
+          ]
+        },
+        {
+          "id": "7",
+          "filename": "rosie-7-6",
+          "name": "ROSIE Pt3: Using ROSIE Web Portal",
+          "description": "Now that you have access to ROSIE with your own password, you can start using the online ROSIE interface!",
+          "category": "ROSIE",
+          "api_image_path": "./img/thumbnails/ROSIE Tutorial Icon 3.png",
+          "link": "/library?nav=Articles&article=3-rosie-web",
+          "highlighted_path": "True",
+          "position": {
+            "x": -200,
+            "y": 500
+          },
+          "parents": [
+            "6"
+          ],
+          "children": [
+            "15",
+            "8"
+          ]
+        },
+        {
+          "id": "73",
+          "filename": "rosie-73-9",
+          "name": "Using the Rosie FastAPI Template",
+          "description": "Do you want to build a quick, scaleable application on Rosie, but don't know how to do it? This article details how to setup the Rosie FastAPI Template!",
+          "category": "ROSIE",
+          "api_image_path": "./img/thumbnails/rosie-fastapi-template.png",
+          "link": "/library?nav=Articles&article=using-fastapi-template",
+          "highlighted_path": "True",
+          "position": {
+            "x": -100,
+            "y": 500
+          },
+          "parents": [
+            "9"
+          ],
+          "children": []
+        },
+        {
+          "id": "8",
+          "filename": "rosie-8-7",
+          "name": "ROSIE Pt4: Starting Your First ROSIE Job",
+          "description": "Now that you have access to ROSIE with your own password, you can start using the online ROSIE interface!",
+          "category": "ROSIE",
+          "api_image_path": "./img/thumbnails/ROSIE Tutorial Icon 4.png",
+          "link": "/library?nav=Articles&article=4-first-rosie-job",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 500
+          },
+          "parents": [
+            "7"
+          ],
+          "children": [
+            "9"
+          ]
+        },
+        {
+          "id": "9",
+          "filename": "rosie-9-8",
+          "name": "ROSIE Pt5: Using the ROSIE Terminal",
+          "description": "Now that you have access to ROSIE with your own password, you can start using the online ROSIE interface!",
+          "category": "ROSIE",
+          "api_image_path": "./img/thumbnails/ROSIE Tutorial Icon 5.png",
+          "link": "/library?nav=Articles&article=5-rosie-terminal",
+          "highlighted_path": "True",
+          "position": {
+            "x": -200,
+            "y": 500
+          },
+          "parents": [
+            "8"
+          ],
+          "children": [
+            "19",
+            "16",
+            "17",
+            "18",
+            "73"
+          ]
+        }
+      ]
+    },
+    "Supervised Learning": {
+      "category_color": "teal",
+      "nodes": [
+        {
+          "id": "22",
+          "filename": "sl-22-21",
+          "name": "All Machine Learning Models Explained",
+          "description": "Introduction to supervised machine learning",
+          "category": "Supervised Learning",
+          "api_image_path": "./img/tree-thumbnails/sl-intro.png",
+          "link": "/library?nav=Articles&article=001_sl-intro",
+          "highlighted_path": "True",
+          "position": {
+            "x": -200,
+            "y": 400
+          },
+          "parents": [
+            "21"
+          ],
+          "children": [
+            "23",
+            "24"
+          ]
+        },
+        {
+          "id": "23",
+          "filename": "sl-23-22",
+          "name": "Learning How Machines Learn",
+          "description": "How AI 'learns",
+          "category": "Supervised Learning",
+          "api_image_path": "./img/tree-thumbnails/sl-learning.png",
+          "link": "/library?nav=Articles&article=002_sl-learning",
+          "highlighted_path": "True",
+          "position": {
+            "x": -600,
+            "y": 400
+          },
+          "parents": [
+            "22"
+          ],
+          "children": [
+            "28"
+          ]
+        },
+        {
+          "id": "24",
+          "filename": "sl-24-22",
+          "name": "Picking Which Model to Use",
+          "description": "We have so many models, when should you use each one?",
+          "category": "Supervised Learning",
+          "api_image_path": "./img/tree-thumbnails/sl-which-model.png",
+          "link": "/library?nav=Articles&article=003_sl-which-model",
+          "highlighted_path": "True",
+          "position": {
+            "x": -200,
+            "y": 400
+          },
+          "parents": [
+            "22"
+          ],
+          "children": [
+            "25"
+          ]
+        },
+        {
+          "id": "25",
+          "filename": "sl-25-24",
+          "name": "Linear Regression using SKlearn",
+          "description": "Linear Regression using SKlearn",
+          "category": "Supervised Learning",
+          "api_image_path": "./img/tree-thumbnails/sl-lin-reg.png",
+          "link": "/library?nav=Articles&article=004_sl-lin-reg",
+          "highlighted_path": "True",
+          "position": {
+            "x": -400,
+            "y": 400
+          },
+          "parents": [
+            "24"
+          ],
+          "children": [
+            "26"
+          ]
+        },
+        {
+          "id": "26",
+          "filename": "sl-26-25",
+          "name": "Using Sklearn to Use Solutions Already Found",
+          "description": "Don't remake the wheel! Let's pull from the wider AI community and use the models which have been proven to solve problems!",
+          "category": "Supervised Learning",
+          "api_image_path": "./img/tree-thumbnails/sl-solved-models.png",
+          "link": "/library?nav=Articles&article=005_sl-solved-models",
+          "highlighted_path": "True",
+          "position": {
+            "x": -400,
+            "y": 400
+          },
+          "parents": [
+            "25"
+          ],
+          "children": [
+            "27"
+          ]
+        },
+        {
+          "id": "27",
+          "filename": "sl-27-26",
+          "name": "Introduction to Neural Networks",
+          "description": "Let's recap Neural Networks in the scope of Supervised Learning",
+          "category": "Supervised Learning",
+          "api_image_path": "./img/tree-thumbnails/sl-intro-nn.png",
+          "link": "/library?nav=Articles&article=006_sl-intro-nn",
+          "highlighted_path": "True",
+          "position": {
+            "x": -600,
+            "y": 400
+          },
+          "parents": [
+            "26"
+          ],
+          "children": [
+            "28"
+          ]
+        },
+        {
+          "id": "28",
+          "filename": "sl-28-27-23",
+          "name": "Creating Your Own Neural Network",
+          "description": "Let's recap Neural Networks in the scope of Supervised Learning",
+          "category": "Supervised Learning",
+          "api_image_path": "./img/tree-thumbnails/sl-own-NN.png",
+          "link": "/library?nav=Articles&article=007_sl-own-NN",
+          "highlighted_path": "True",
+          "position": {
+            "x": -600,
+            "y": 400
+          },
+          "parents": [
+            "27",
+            "23"
+          ],
+          "children": [
+            "31"
+          ]
+        },
+        {
+          "id": "31",
+          "filename": "sl-31-28",
+          "name": "Series-Based Data",
+          "description": "Something to know before getting to advanced AI topics is series-based data. This is an incredibly important concept that many concepts rely on.",
+          "category": "Supervised Learning",
+          "api_image_path": "./img/tree-thumbnails/series-data.png",
+          "link": "/library?nav=Articles&article=008_sl-series-data",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "parents": [
+            "28"
+          ],
+          "children": [
+            "36",
+            "32",
+            "65",
+            "44",
+            "58"
+          ]
+        },
+        {
+          "id": "29",
+          "filename": "unsup-29-21",
+          "name": "Difference Between Supervised and Unsupervised Learnin",
+          "description": "In machine learning (ML), there are typically two broad categories of AI models that people typically think of: supervised and unsupervised learning.",
+          "category": "Supervised Learning",
+          "api_image_path": "./img/tree-thumbnails/ul-intro.png",
+          "link": "/library?nav=Articles&article=001_ul-own-NN",
+          "highlighted_path": "True",
+          "position": {
+            "x": 200,
+            "y": 400
+          },
+          "parents": [
+            "21"
+          ],
+          "children": [
+            "30"
+          ]
+        }
+      ]
+    },
+    "Time Series": {
+      "category_color": "beige",
+      "nodes": [
+        {
+          "id": "44",
+          "filename": "time-44-31",
+          "name": "Intro to Time Series Analysis",
+          "description": "COMING SOON",
+          "category": "Time Series",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": 500,
+            "y": 0
+          },
+          "parents": [
+            "31"
+          ],
+          "children": [
+            "45"
+          ]
+        },
+        {
+          "id": "45",
+          "filename": "time-45-44",
+          "name": "ARIMA",
+          "description": "COMING SOON",
+          "category": "Time Series",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "parents": [
+            "44"
+          ],
+          "children": [
+            "46"
+          ]
+        },
+        {
+          "id": "46",
+          "filename": "time-46-45",
+          "name": "Seasonal Decomposition",
+          "description": "COMING SOON",
+          "category": "Time Series",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": 500,
+            "y": 0
+          },
+          "parents": [
+            "45"
+          ],
+          "children": [
+            "48",
+            "49"
+          ]
+        },
+        {
+          "id": "49",
+          "filename": "time-49-46-48",
+          "name": "Recurrent Neural Network (RNN)",
+          "description": "COMING SOON",
+          "category": "Time Series",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": 625,
+            "y": 975
+          },
+          "parents": [
+            "46",
+            "48"
+          ],
+          "children": [
+            "51",
+            "50"
+          ]
+        },
+        {
+          "id": "50",
+          "filename": "time-50-49-48",
+          "name": "Time Series Forecasting",
+          "description": "COMING SOON",
+          "category": "Time Series",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": 300,
+            "y": 0
+          },
+          "parents": [
+            "49",
+            "48"
+          ],
+          "children": [
+            "57"
+          ]
+        },
+        {
+          "id": "57",
+          "filename": "time-57-50",
+          "name": "Anomaly Detection",
+          "description": "COMING SOON",
+          "category": "Time Series",
+          "api_image_path": "./img/tree-thumbnails/article-soon.png",
+          "link": "",
+          "highlighted_path": "True",
+          "position": {
+            "x": -67,
+            "y": 0
+          },
+          "parents": [
+            "50"
+          ],
+          "children": []
+        }
+      ]
+    },
+    "Unsupervised Clustering": {
+      "category_color": "brown",
+      "nodes": [
+        {
+          "id": "30",
+          "filename": "unsup-30-29",
+          "name": "Difference Between Supervised and Unsupervised Learnin",
+          "description": "With unsupervised learning, a common algorithm is \"clustering\" data points together based on their similarities. This article will explain the concept of unsupervised clustering.",
+          "category": "Unsupervised Clustering",
+          "api_image_path": "./img/tree-thumbnails/ul-clustering.png",
+          "link": "/library?nav=Articles&article=002_ul-clustering",
+          "highlighted_path": "True",
+          "position": {
+            "x": 200,
+            "y": 400
+          },
+          "parents": [
+            "29"
+          ],
+          "children": []
+        }
+      ]
+    },
+    "Computer Vision": {
+      "category_color": "cyan",
+      "nodes": [
+        {
+          "id": "58",
+          "filename": "vision-58-31",
+          "name": "Intro to Computer Vision",
+          "description": "“Learn the basics of how computers can process and understand images, a foundational skill for all computer vision tasks.”",
+          "category": "Computer Vision",
+          "api_image_path": "./img/tree-thumbnails/intro-comp-vis.png",
+          "link": "/library?nav=Articles&article=001_comp-vis",
+          "highlighted_path": "True",
+          "position": {
+            "x": 1750,
+            "y": 0
+          },
+          "parents": [
+            "31"
+          ],
+          "children": [
+            "59"
+          ]
+        },
+        {
+          "id": "59",
+          "filename": "vision-59-58",
+          "name": "Image Preprocessing",
+          "description": "“Discover key techniques like resizing, normalization, and augmentation to prepare images for analysis by machine learning models.”",
+          "category": "Computer Vision",
+          "api_image_path": "./img/tree-thumbnails/image-preprocessing.png",
+          "link": "/library?nav=Articles&article=002_comp-vis",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "parents": [
+            "58"
+          ],
+          "children": [
+            "60"
+          ]
+        },
+        {
+          "id": "60",
+          "filename": "vision-60-59",
+          "name": "Convolutional Neural Network (CNN)",
+          "description": "“Understand the structure and functionality of CNNs, the model architecture used in most modern computer vision tasks.”",
+          "category": "Computer Vision",
+          "api_image_path": "./img/tree-thumbnails/cnn.png",
+          "link": "/library?nav=Articles&article=003_comp-vis",
+          "highlighted_path": "True",
+          "position": {
+            "x": 1750,
+            "y": 0
+          },
+          "parents": [
+            "59"
+          ],
+          "children": [
+            "61"
+          ]
+        },
+        {
+          "id": "61",
+          "filename": "vision-61-60",
+          "name": "Image Classification",
+          "description": "“Learn how models are trained to classify images into categories, one of the most common applications of computer vision.”",
+          "category": "Computer Vision",
+          "api_image_path": "./img/tree-thumbnails/image-classification.png",
+          "link": "/library?nav=Articles&article=004_comp-vis",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "parents": [
+            "60"
+          ],
+          "children": [
+            "62"
+          ]
+        },
+        {
+          "id": "62",
+          "filename": "vision-62-61",
+          "name": "Segmentation",
+          "description": "“Explore how machines can identify the exact boundaries of objects within an image, making segmentation key for precision tasks.”",
+          "category": "Computer Vision",
+          "api_image_path": "./img/tree-thumbnails/image-segmentation.png",
+          "link": "/library?nav=Articles&article=005_comp-vis",
+          "highlighted_path": "True",
+          "position": {
+            "x": 1750,
+            "y": 0
+          },
+          "parents": [
+            "61"
+          ],
+          "children": [
+            "63"
+          ]
+        },
+        {
+          "id": "63",
+          "filename": "vision-63-62",
+          "name": "Object Detection",
+          "description": "Dive into the methods for identifying and locating objects within images, a crucial skill for real-time applications like autonomous driving.",
+          "category": "Computer Vision",
+          "api_image_path": "./img/tree-thumbnails/object-detection.png",
+          "link": "/library?nav=Articles&article=006_comp-vis",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "parents": [
+            "62"
+          ],
+          "children": [
+            "64"
+          ]
+        },
+        {
+          "id": "64",
+          "filename": "vision-64-63-52",
+          "name": "Vision Transformer",
+          "description": "Explore the cutting-edge transformer architecture that is quickly becoming a leading method for tasks like image classification.",
+          "category": "Computer Vision",
+          "api_image_path": "./img/tree-thumbnails/vision-transformer.png",
+          "link": "/library?nav=Articles&article=007_comp-vis",
+          "highlighted_path": "True",
+          "position": {
+            "x": 1250,
+            "y": 1000
+          },
+          "parents": [
+            "63",
+            "52"
+          ],
+          "children": []
+        }
+      ]
+    },
+    "VS-Code (VSC)": {
+      "category_color": "blue",
+      "nodes": [
+        {
+          "id": "10",
+          "filename": "vsc-10-4",
+          "name": "VSC Pt1: How to Use Visual Studio Code",
+          "description": "A starting point for learning about how to use VSCode for machine learning on your local machine.",
+          "category": "VS-Code (VSC)",
+          "api_image_path": "./img/thumbnails/VSC_Tutorial_1.png",
+          "link": "/library?nav=Articles&article=1-how-use-vscode",
+          "highlighted_path": "True",
+          "position": {
+            "x": 200,
+            "y": 500
+          },
+          "parents": [
+            "4"
+          ],
+          "children": [
+            "11"
+          ]
+        },
+        {
+          "id": "11",
+          "filename": "vsc-11-10",
+          "name": "VSC Pt2: Installing Languages / Extensions in VSCode",
+          "description": "A starting point for learning about how to use VSCode for machine learning on your local machine.",
+          "category": "VS-Code (VSC)",
+          "api_image_path": "./img/thumbnails/VSC_Tutorial_2.png",
+          "link": "/library?nav=Articles&article=2-vscode-extensions",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 500
+          },
+          "parents": [
+            "10"
+          ],
+          "children": [
+            "12"
+          ]
+        },
+        {
+          "id": "12",
+          "filename": "vsc-12-11",
+          "name": "VSC Pt3: Using VSCode's Terminal",
+          "description": "A starting point for learning about how to use VSCode for machine learning on your local machine.",
+          "category": "VS-Code (VSC)",
+          "api_image_path": "./img/thumbnails/VSC_Tutorial_3.png",
+          "link": "/library?nav=Articles&article=3-vscode-terminal",
+          "highlighted_path": "True",
+          "position": {
+            "x": 200,
+            "y": 500
+          },
+          "parents": [
+            "11"
+          ],
+          "children": [
+            "13"
+          ]
+        },
+        {
+          "id": "13",
+          "filename": "vsc-13-12",
+          "name": "VSC Pt4: Using an Environment in VSCode",
+          "description": "A starting point for learning about how to use VSCode for machine learning on your local machine.",
+          "category": "VS-Code (VSC)",
+          "api_image_path": "./img/thumbnails/VSC_Tutorial_4.png",
+          "link": "/library?nav=Articles&article=4-vscode-environments",
+          "highlighted_path": "True",
+          "position": {
+            "x": 0,
+            "y": 500
+          },
+          "parents": [
+            "12"
+          ],
+          "children": [
+            "14"
+          ]
+        },
+        {
+          "id": "14",
+          "filename": "vsc-14-13",
+          "name": "VSC Pt5: Using VSCode's Version Control",
+          "description": "A starting point for learning about how to use VSCode for machine learning on your local machine.",
+          "category": "VS-Code (VSC)",
+          "api_image_path": "./img/thumbnails/VSC_Tutorial_5.png",
+          "link": "/library?nav=Articles&article=5-vscode-version-control",
+          "highlighted_path": "True",
+          "position": {
+            "x": 200,
+            "y": 500
+          },
+          "parents": [
+            "13"
+          ],
+          "children": [
+            "19"
+          ]
+        }
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "id": "4",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 500
+      },
+      "data": {
+        "name": "Why Learn AI with AI-Club?",
+        "api_image_path": "./img/tree-thumbnails/ai_in_school.png",
+        "description": "Given you understand the basics of AI's history and applications, let's now dive into how you would typically learn about AI at MSOE given you don't join MAIC.",
+        "category": "Introduction",
+        "category_color": "gray",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=004_Learning_AI_at_School"
+      },
+      "children": [
+        "5",
+        "10"
+      ]
+    },
+    {
+      "id": "19",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 500
+      },
+      "data": {
+        "name": "What is a Neural Network?",
+        "api_image_path": "./img/tree-thumbnails/what_is_a_nn.png",
+        "description": "Before diving into how AI learns, let's get a general understanding of what a neural network is.",
+        "category": "AI Basics",
+        "category_color": "violet",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=010_What_is_a_NN"
+      },
+      "children": [
+        "20"
+      ]
+    },
+    {
+      "id": "20",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 500
+      },
+      "data": {
+        "name": "How Do Neural Networks Learn?",
+        "api_image_path": "./img/tree-thumbnails/how_nn_learn.png",
+        "description": "AI is all about learning, but how do models interpret data and actually learn from it?",
+        "category": "AI Basics",
+        "category_color": "violet",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=011_How_NN_Learn"
+      },
+      "children": [
+        "21"
+      ]
+    },
+    {
+      "id": "21",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 500
+      },
+      "data": {
+        "name": "What is 'Backpropagation'?",
+        "api_image_path": "./img/tree-thumbnails/understanding_back_prop.png",
+        "description": "Given our model understands what's right and wrong, how does it improve itself over time?",
+        "category": "AI Basics",
+        "category_color": "violet",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=012_Fully_Understanding_Training"
+      },
+      "children": [
+        "22",
+        "29"
+      ]
+    },
+    {
+      "id": "36",
+      "type": "treeNode",
+      "position": {
+        "x": -2000,
+        "y": 0
+      },
+      "data": {
+        "name": "Intro to Generative AI",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "Generative AI",
+        "category_color": "limegreen",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "37"
+      ]
+    },
+    {
+      "id": "37",
+      "type": "treeNode",
+      "position": {
+        "x": -500,
+        "y": 0
+      },
+      "data": {
+        "name": "GANs",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "Generative AI",
+        "category_color": "limegreen",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "38",
+        "39",
+        "53"
+      ]
+    },
+    {
+      "id": "38",
+      "type": "treeNode",
+      "position": {
+        "x": -2700,
+        "y": 0
+      },
+      "data": {
+        "name": "DCGANs",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "Generative AI",
+        "category_color": "limegreen",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "54"
+      ]
+    },
+    {
+      "id": "39",
+      "type": "treeNode",
+      "position": {
+        "x": -2150,
+        "y": 0
+      },
+      "data": {
+        "name": "Conditional GANs",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "Generative AI",
+        "category_color": "limegreen",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "54"
+      ]
+    },
+    {
+      "id": "53",
+      "type": "treeNode",
+      "position": {
+        "x": -1500,
+        "y": 3000
+      },
+      "data": {
+        "name": "Making Your Own Chat-GPT (Pt1)",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "Generative AI",
+        "category_color": "limegreen",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "55"
+      ]
+    },
+    {
+      "id": "54",
+      "type": "treeNode",
+      "position": {
+        "x": -475,
+        "y": 0
+      },
+      "data": {
+        "name": "VAEs",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "Generative AI",
+        "category_color": "limegreen",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": []
+    },
+    {
+      "id": "55",
+      "type": "treeNode",
+      "position": {
+        "x": -500,
+        "y": 0
+      },
+      "data": {
+        "name": "Making Your Own Chat-GPT (Pt2)",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "Generative AI",
+        "category_color": "limegreen",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "56"
+      ]
+    },
+    {
+      "id": "56",
+      "type": "treeNode",
+      "position": {
+        "x": -1000,
+        "y": 0
+      },
+      "data": {
+        "name": "Making a RAG Chat-Bot",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "Generative AI",
+        "category_color": "limegreen",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "72"
+      ]
+    },
+    {
+      "id": "1",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "name": "What is the Learning Tree?",
+        "api_image_path": "./img/tree-thumbnails/learning-tree.png",
+        "description": "The learning tree is a visual representation of the world of AI, built by pulling from reliable sources students before you have identified as useful and structure in an easy-to-visualize way.",
+        "category": "Introduction",
+        "category_color": "gray",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=001_What_is_the_Learning_Tree"
+      },
+      "children": [
+        "2"
+      ]
+    },
+    {
+      "id": "32",
+      "type": "treeNode",
+      "position": {
+        "x": -750,
+        "y": 0
+      },
+      "data": {
+        "name": "Intro to Natural Language Processing (NLP)",
+        "api_image_path": "./img/tree-thumbnails/IntroNLP.png",
+        "description": "Learn the basics of how computers can process and understand natural language, a foundational skill for all natural language processing tasks.",
+        "category": "NLP",
+        "category_color": "orange",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=001_nlp-intro"
+      },
+      "children": [
+        "33"
+      ]
+    },
+    {
+      "id": "33",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "name": "Text Preprocessing",
+        "api_image_path": "./img/tree-thumbnails/text-preprocessing.png",
+        "description": "Discover key techniques like Text Cleaning, Tokenization, and Stop Word Removal to prepare text for analysis by machine learning models.",
+        "category": "NLP",
+        "category_color": "orange",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=002_nlp-text-preprocessing"
+      },
+      "children": [
+        "34"
+      ]
+    },
+    {
+      "id": "34",
+      "type": "treeNode",
+      "position": {
+        "x": -750,
+        "y": 0
+      },
+      "data": {
+        "name": "Bag of Words",
+        "api_image_path": "./img/tree-thumbnails/bag-of-words.png",
+        "description": "Learn the concept of Bag of Words in a simple, high-level, way and then dive into learning how to implement Bag of Words in Python.",
+        "category": "NLP",
+        "category_color": "orange",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=003_nlp-bag-of-words"
+      },
+      "children": [
+        "35"
+      ]
+    },
+    {
+      "id": "35",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "name": "Embeddings",
+        "api_image_path": "./img/tree-thumbnails/embeddings.png",
+        "description": "Learn the concepts of Vector Stores and Embeddings",
+        "category": "NLP",
+        "category_color": "orange",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=004_npl-embeddings"
+      },
+      "children": [
+        "53",
+        "47",
+        "48"
+      ]
+    },
+    {
+      "id": "47",
+      "type": "treeNode",
+      "position": {
+        "x": -1450,
+        "y": 0
+      },
+      "data": {
+        "name": "Gated Recurrent Unit (GRU)",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "NLP",
+        "category_color": "orange",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "51"
+      ]
+    },
+    {
+      "id": "48",
+      "type": "treeNode",
+      "position": {
+        "x": -750,
+        "y": 0
+      },
+      "data": {
+        "name": "Long Short-Term Memory (LSTM)",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "NLP",
+        "category_color": "orange",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "51",
+        "49",
+        "50"
+      ]
+    },
+    {
+      "id": "51",
+      "type": "treeNode",
+      "position": {
+        "x": 25,
+        "y": 0
+      },
+      "data": {
+        "name": "Attention",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "NLP",
+        "category_color": "orange",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "52"
+      ]
+    },
+    {
+      "id": "52",
+      "type": "treeNode",
+      "position": {
+        "x": -525,
+        "y": 0
+      },
+      "data": {
+        "name": "Transformers",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "NLP",
+        "category_color": "orange",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "53",
+        "56",
+        "72",
+        "64"
+      ]
+    },
+    {
+      "id": "72",
+      "type": "treeNode",
+      "position": {
+        "x": 250,
+        "y": 2500
+      },
+      "data": {
+        "name": "LLM Communication",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "NLP",
+        "category_color": "orange",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": []
+    },
+    {
+      "id": "65",
+      "type": "treeNode",
+      "position": {
+        "x": 3000,
+        "y": 0
+      },
+      "data": {
+        "name": "Intro to Reinforcement Learning (RL)",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "RL",
+        "category_color": "yellow",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=RL"
+      },
+      "children": [
+        "66"
+      ]
+    },
+    {
+      "id": "66",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "name": "Markov Decision Making Process",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "RL",
+        "category_color": "yellow",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "67"
+      ]
+    },
+    {
+      "id": "67",
+      "type": "treeNode",
+      "position": {
+        "x": 3000,
+        "y": 0
+      },
+      "data": {
+        "name": "Markov Decision Making Process",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "RL",
+        "category_color": "yellow",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "68"
+      ]
+    },
+    {
+      "id": "68",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "name": "Q-Learning",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "RL",
+        "category_color": "yellow",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "69",
+        "70"
+      ]
+    },
+    {
+      "id": "69",
+      "type": "treeNode",
+      "position": {
+        "x": 3300,
+        "y": 0
+      },
+      "data": {
+        "name": "Deep Q-Learning",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "RL",
+        "category_color": "yellow",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "71"
+      ]
+    },
+    {
+      "id": "70",
+      "type": "treeNode",
+      "position": {
+        "x": 2700,
+        "y": 0
+      },
+      "data": {
+        "name": "Policy Gradient",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "RL",
+        "category_color": "yellow",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "71"
+      ]
+    },
+    {
+      "id": "71",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "name": "Multi-Agent RL",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "RL",
+        "category_color": "yellow",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "72"
+      ]
+    },
+    {
+      "id": "15",
+      "type": "treeNode",
+      "position": {
+        "x": -400,
+        "y": 500
+      },
+      "data": {
+        "name": "Global Protect",
+        "api_image_path": "./img/thumbnails/GlobalProtect-icon.png",
+        "description": "If you need to use ROSIE while off-campus, you will need to install Global Protect!",
+        "category": "ROSIE",
+        "category_color": "red",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=global-protect"
+      },
+      "children": []
+    },
+    {
+      "id": "16",
+      "type": "treeNode",
+      "position": {
+        "x": -400,
+        "y": 500
+      },
+      "data": {
+        "name": "Advanced Slurm Usage",
+        "api_image_path": "./img/thumbnails/advabced_slurm.webp",
+        "description": "There are often cases where you need to know how to use Slurm (Rosie's job scheduling software). This article details some basic and more advanced use cases.",
+        "category": "ROSIE",
+        "category_color": "red",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=6-slurm"
+      },
+      "children": []
+    },
+    {
+      "id": "17",
+      "type": "treeNode",
+      "position": {
+        "x": -700,
+        "y": 500
+      },
+      "data": {
+        "name": "Running VSCode Jupyter Notebooks on Rosie",
+        "api_image_path": "./img/thumbnails/jernel.png",
+        "description": "This article is for you if you find that VSCode is a better tool than Rosie's dashboard for running Jupyter notebooks.",
+        "category": "ROSIE",
+        "category_color": "red",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=6-jernel"
+      },
+      "children": []
+    },
+    {
+      "id": "18",
+      "type": "treeNode",
+      "position": {
+        "x": -1000,
+        "y": 500
+      },
+      "data": {
+        "name": "Connecting to Rosie in VSCode via SSH",
+        "api_image_path": "./img/thumbnails/ssh_with_vsc.png",
+        "description": "This article walks through the process of connecting VSCode to Rosie via SSH, and explains why you might want to do so in the first place.",
+        "category": "ROSIE",
+        "category_color": "red",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=6-rosie-ssh"
+      },
+      "children": []
+    },
+    {
+      "id": "5",
+      "type": "treeNode",
+      "position": {
+        "x": -200,
+        "y": 500
+      },
+      "data": {
+        "name": "ROSIE Pt1: Getting Access",
+        "api_image_path": "./img/thumbnails/ROSIE Tutorial Icon 1.png",
+        "description": "Let's get you access to that fancy supercomputer in Diercks Hall, no matter your major/year!",
+        "category": "ROSIE",
+        "category_color": "red",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=1-getting-rosie-access"
+      },
+      "children": [
+        "6"
+      ]
+    },
+    {
+      "id": "6",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 500
+      },
+      "data": {
+        "name": "ROSIE Pt2: First Login",
+        "api_image_path": "./img/thumbnails/ROSIE Tutorial Icon 2.png",
+        "description": "Now you have an email from ROSIE, let's get you logged in for the first time!",
+        "category": "ROSIE",
+        "category_color": "red",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=2-first-login"
+      },
+      "children": [
+        "7"
+      ]
+    },
+    {
+      "id": "7",
+      "type": "treeNode",
+      "position": {
+        "x": -200,
+        "y": 500
+      },
+      "data": {
+        "name": "ROSIE Pt3: Using ROSIE Web Portal",
+        "api_image_path": "./img/thumbnails/ROSIE Tutorial Icon 3.png",
+        "description": "Now that you have access to ROSIE with your own password, you can start using the online ROSIE interface!",
+        "category": "ROSIE",
+        "category_color": "red",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=3-rosie-web"
+      },
+      "children": [
+        "15",
+        "8"
+      ]
+    },
+    {
+      "id": "73",
+      "type": "treeNode",
+      "position": {
+        "x": -100,
+        "y": 500
+      },
+      "data": {
+        "name": "Using the Rosie FastAPI Template",
+        "api_image_path": "./img/thumbnails/rosie-fastapi-template.png",
+        "description": "Do you want to build a quick, scaleable application on Rosie, but don't know how to do it? This article details how to setup the Rosie FastAPI Template!",
+        "category": "ROSIE",
+        "category_color": "red",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=using-fastapi-template"
+      },
+      "children": []
+    },
+    {
+      "id": "8",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 500
+      },
+      "data": {
+        "name": "ROSIE Pt4: Starting Your First ROSIE Job",
+        "api_image_path": "./img/thumbnails/ROSIE Tutorial Icon 4.png",
+        "description": "Now that you have access to ROSIE with your own password, you can start using the online ROSIE interface!",
+        "category": "ROSIE",
+        "category_color": "red",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=4-first-rosie-job"
+      },
+      "children": [
+        "9"
+      ]
+    },
+    {
+      "id": "9",
+      "type": "treeNode",
+      "position": {
+        "x": -200,
+        "y": 500
+      },
+      "data": {
+        "name": "ROSIE Pt5: Using the ROSIE Terminal",
+        "api_image_path": "./img/thumbnails/ROSIE Tutorial Icon 5.png",
+        "description": "Now that you have access to ROSIE with your own password, you can start using the online ROSIE interface!",
+        "category": "ROSIE",
+        "category_color": "red",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=5-rosie-terminal"
+      },
+      "children": [
+        "19",
+        "16",
+        "17",
+        "18",
+        "73"
+      ]
+    },
+    {
+      "id": "22",
+      "type": "treeNode",
+      "position": {
+        "x": -200,
+        "y": 400
+      },
+      "data": {
+        "name": "All Machine Learning Models Explained",
+        "api_image_path": "./img/tree-thumbnails/sl-intro.png",
+        "description": "Introduction to supervised machine learning",
+        "category": "Supervised Learning",
+        "category_color": "teal",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=001_sl-intro"
+      },
+      "children": [
+        "23",
+        "24"
+      ]
+    },
+    {
+      "id": "23",
+      "type": "treeNode",
+      "position": {
+        "x": -600,
+        "y": 400
+      },
+      "data": {
+        "name": "Learning How Machines Learn",
+        "api_image_path": "./img/tree-thumbnails/sl-learning.png",
+        "description": "How AI 'learns",
+        "category": "Supervised Learning",
+        "category_color": "teal",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=002_sl-learning"
+      },
+      "children": [
+        "28"
+      ]
+    },
+    {
+      "id": "24",
+      "type": "treeNode",
+      "position": {
+        "x": -200,
+        "y": 400
+      },
+      "data": {
+        "name": "Picking Which Model to Use",
+        "api_image_path": "./img/tree-thumbnails/sl-which-model.png",
+        "description": "We have so many models, when should you use each one?",
+        "category": "Supervised Learning",
+        "category_color": "teal",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=003_sl-which-model"
+      },
+      "children": [
+        "25"
+      ]
+    },
+    {
+      "id": "25",
+      "type": "treeNode",
+      "position": {
+        "x": -400,
+        "y": 400
+      },
+      "data": {
+        "name": "Linear Regression using SKlearn",
+        "api_image_path": "./img/tree-thumbnails/sl-lin-reg.png",
+        "description": "Linear Regression using SKlearn",
+        "category": "Supervised Learning",
+        "category_color": "teal",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=004_sl-lin-reg"
+      },
+      "children": [
+        "26"
+      ]
+    },
+    {
+      "id": "26",
+      "type": "treeNode",
+      "position": {
+        "x": -400,
+        "y": 400
+      },
+      "data": {
+        "name": "Using Sklearn to Use Solutions Already Found",
+        "api_image_path": "./img/tree-thumbnails/sl-solved-models.png",
+        "description": "Don't remake the wheel! Let's pull from the wider AI community and use the models which have been proven to solve problems!",
+        "category": "Supervised Learning",
+        "category_color": "teal",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=005_sl-solved-models"
+      },
+      "children": [
+        "27"
+      ]
+    },
+    {
+      "id": "27",
+      "type": "treeNode",
+      "position": {
+        "x": -600,
+        "y": 400
+      },
+      "data": {
+        "name": "Introduction to Neural Networks",
+        "api_image_path": "./img/tree-thumbnails/sl-intro-nn.png",
+        "description": "Let's recap Neural Networks in the scope of Supervised Learning",
+        "category": "Supervised Learning",
+        "category_color": "teal",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=006_sl-intro-nn"
+      },
+      "children": [
+        "28"
+      ]
+    },
+    {
+      "id": "28",
+      "type": "treeNode",
+      "position": {
+        "x": -600,
+        "y": 400
+      },
+      "data": {
+        "name": "Creating Your Own Neural Network",
+        "api_image_path": "./img/tree-thumbnails/sl-own-NN.png",
+        "description": "Let's recap Neural Networks in the scope of Supervised Learning",
+        "category": "Supervised Learning",
+        "category_color": "teal",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=007_sl-own-NN"
+      },
+      "children": [
+        "31"
+      ]
+    },
+    {
+      "id": "31",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "name": "Series-Based Data",
+        "api_image_path": "./img/tree-thumbnails/series-data.png",
+        "description": "Something to know before getting to advanced AI topics is series-based data. This is an incredibly important concept that many concepts rely on.",
+        "category": "Supervised Learning",
+        "category_color": "teal",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=008_sl-series-data"
+      },
+      "children": [
+        "36",
+        "32",
+        "65",
+        "44",
+        "58"
+      ]
+    },
+    {
+      "id": "44",
+      "type": "treeNode",
+      "position": {
+        "x": 500,
+        "y": 0
+      },
+      "data": {
+        "name": "Intro to Time Series Analysis",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "Time Series",
+        "category_color": "beige",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "45"
+      ]
+    },
+    {
+      "id": "45",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "name": "ARIMA",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "Time Series",
+        "category_color": "beige",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "46"
+      ]
+    },
+    {
+      "id": "46",
+      "type": "treeNode",
+      "position": {
+        "x": 500,
+        "y": 0
+      },
+      "data": {
+        "name": "Seasonal Decomposition",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "Time Series",
+        "category_color": "beige",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "48",
+        "49"
+      ]
+    },
+    {
+      "id": "49",
+      "type": "treeNode",
+      "position": {
+        "x": 625,
+        "y": 975
+      },
+      "data": {
+        "name": "Recurrent Neural Network (RNN)",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "Time Series",
+        "category_color": "beige",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "51",
+        "50"
+      ]
+    },
+    {
+      "id": "50",
+      "type": "treeNode",
+      "position": {
+        "x": 300,
+        "y": 0
+      },
+      "data": {
+        "name": "Time Series Forecasting",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "Time Series",
+        "category_color": "beige",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": [
+        "57"
+      ]
+    },
+    {
+      "id": "57",
+      "type": "treeNode",
+      "position": {
+        "x": -67,
+        "y": 0
+      },
+      "data": {
+        "name": "Anomaly Detection",
+        "api_image_path": "./img/tree-thumbnails/article-soon.png",
+        "description": "COMING SOON",
+        "category": "Time Series",
+        "category_color": "beige",
+        "highlighted_path": "True",
+        "link": ""
+      },
+      "children": []
+    },
+    {
+      "id": "29",
+      "type": "treeNode",
+      "position": {
+        "x": 200,
+        "y": 400
+      },
+      "data": {
+        "name": "Difference Between Supervised and Unsupervised Learnin",
+        "api_image_path": "./img/tree-thumbnails/ul-intro.png",
+        "description": "In machine learning (ML), there are typically two broad categories of AI models that people typically think of: supervised and unsupervised learning.",
+        "category": "Supervised Learning",
+        "category_color": "brown",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=001_ul-own-NN"
+      },
+      "children": [
+        "30"
+      ]
+    },
+    {
+      "id": "30",
+      "type": "treeNode",
+      "position": {
+        "x": 200,
+        "y": 400
+      },
+      "data": {
+        "name": "Difference Between Supervised and Unsupervised Learnin",
+        "api_image_path": "./img/tree-thumbnails/ul-clustering.png",
+        "description": "With unsupervised learning, a common algorithm is \"clustering\" data points together based on their similarities. This article will explain the concept of unsupervised clustering.",
+        "category": "Unsupervised Clustering",
+        "category_color": "brown",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=002_ul-clustering"
+      },
+      "children": []
+    },
+    {
+      "id": "58",
+      "type": "treeNode",
+      "position": {
+        "x": 1750,
+        "y": 0
+      },
+      "data": {
+        "name": "Intro to Computer Vision",
+        "api_image_path": "./img/tree-thumbnails/intro-comp-vis.png",
+        "description": "“Learn the basics of how computers can process and understand images, a foundational skill for all computer vision tasks.”",
+        "category": "Computer Vision",
+        "category_color": "cyan",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=001_comp-vis"
+      },
+      "children": [
+        "59"
+      ]
+    },
+    {
+      "id": "59",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "name": "Image Preprocessing",
+        "api_image_path": "./img/tree-thumbnails/image-preprocessing.png",
+        "description": "“Discover key techniques like resizing, normalization, and augmentation to prepare images for analysis by machine learning models.”",
+        "category": "Computer Vision",
+        "category_color": "cyan",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=002_comp-vis"
+      },
+      "children": [
+        "60"
+      ]
+    },
+    {
+      "id": "60",
+      "type": "treeNode",
+      "position": {
+        "x": 1750,
+        "y": 0
+      },
+      "data": {
+        "name": "Convolutional Neural Network (CNN)",
+        "api_image_path": "./img/tree-thumbnails/cnn.png",
+        "description": "“Understand the structure and functionality of CNNs, the model architecture used in most modern computer vision tasks.”",
+        "category": "Computer Vision",
+        "category_color": "cyan",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=003_comp-vis"
+      },
+      "children": [
+        "61"
+      ]
+    },
+    {
+      "id": "61",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "name": "Image Classification",
+        "api_image_path": "./img/tree-thumbnails/image-classification.png",
+        "description": "“Learn how models are trained to classify images into categories, one of the most common applications of computer vision.”",
+        "category": "Computer Vision",
+        "category_color": "cyan",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=004_comp-vis"
+      },
+      "children": [
+        "62"
+      ]
+    },
+    {
+      "id": "62",
+      "type": "treeNode",
+      "position": {
+        "x": 1750,
+        "y": 0
+      },
+      "data": {
+        "name": "Segmentation",
+        "api_image_path": "./img/tree-thumbnails/image-segmentation.png",
+        "description": "“Explore how machines can identify the exact boundaries of objects within an image, making segmentation key for precision tasks.”",
+        "category": "Computer Vision",
+        "category_color": "cyan",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=005_comp-vis"
+      },
+      "children": [
+        "63"
+      ]
+    },
+    {
+      "id": "63",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "name": "Object Detection",
+        "api_image_path": "./img/tree-thumbnails/object-detection.png",
+        "description": "Dive into the methods for identifying and locating objects within images, a crucial skill for real-time applications like autonomous driving.",
+        "category": "Computer Vision",
+        "category_color": "cyan",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=006_comp-vis"
+      },
+      "children": [
+        "64"
+      ]
+    },
+    {
+      "id": "64",
+      "type": "treeNode",
+      "position": {
+        "x": 1250,
+        "y": 1000
+      },
+      "data": {
+        "name": "Vision Transformer",
+        "api_image_path": "./img/tree-thumbnails/vision-transformer.png",
+        "description": "Explore the cutting-edge transformer architecture that is quickly becoming a leading method for tasks like image classification.",
+        "category": "Computer Vision",
+        "category_color": "cyan",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=007_comp-vis"
+      },
+      "children": []
+    },
+    {
+      "id": "10",
+      "type": "treeNode",
+      "position": {
+        "x": 200,
+        "y": 500
+      },
+      "data": {
+        "name": "VSC Pt1: How to Use Visual Studio Code",
+        "api_image_path": "./img/thumbnails/VSC_Tutorial_1.png",
+        "description": "A starting point for learning about how to use VSCode for machine learning on your local machine.",
+        "category": "VS-Code (VSC)",
+        "category_color": "blue",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=1-how-use-vscode"
+      },
+      "children": [
+        "11"
+      ]
+    },
+    {
+      "id": "11",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 500
+      },
+      "data": {
+        "name": "VSC Pt2: Installing Languages / Extensions in VSCode",
+        "api_image_path": "./img/thumbnails/VSC_Tutorial_2.png",
+        "description": "A starting point for learning about how to use VSCode for machine learning on your local machine.",
+        "category": "VS-Code (VSC)",
+        "category_color": "blue",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=2-vscode-extensions"
+      },
+      "children": [
+        "12"
+      ]
+    },
+    {
+      "id": "12",
+      "type": "treeNode",
+      "position": {
+        "x": 200,
+        "y": 500
+      },
+      "data": {
+        "name": "VSC Pt3: Using VSCode's Terminal",
+        "api_image_path": "./img/thumbnails/VSC_Tutorial_3.png",
+        "description": "A starting point for learning about how to use VSCode for machine learning on your local machine.",
+        "category": "VS-Code (VSC)",
+        "category_color": "blue",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=3-vscode-terminal"
+      },
+      "children": [
+        "13"
+      ]
+    },
+    {
+      "id": "13",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 500
+      },
+      "data": {
+        "name": "VSC Pt4: Using an Environment in VSCode",
+        "api_image_path": "./img/thumbnails/VSC_Tutorial_4.png",
+        "description": "A starting point for learning about how to use VSCode for machine learning on your local machine.",
+        "category": "VS-Code (VSC)",
+        "category_color": "blue",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=4-vscode-environments"
+      },
+      "children": [
+        "14"
+      ]
+    },
+    {
+      "id": "14",
+      "type": "treeNode",
+      "position": {
+        "x": 200,
+        "y": 500
+      },
+      "data": {
+        "name": "VSC Pt5: Using VSCode's Version Control",
+        "api_image_path": "./img/thumbnails/VSC_Tutorial_5.png",
+        "description": "A starting point for learning about how to use VSCode for machine learning on your local machine.",
+        "category": "VS-Code (VSC)",
+        "category_color": "blue",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=5-vscode-version-control"
+      },
+      "children": [
+        "19"
+      ]
+    },
+    {
+      "id": "3",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 500
+      },
+      "data": {
+        "name": "What is AI?",
+        "api_image_path": "./img/tree-thumbnails/what_is_ai.png",
+        "description": "Let's get some contextual info on AI and how it's used in the real world!",
+        "category": "Introduction",
+        "category_color": "gray",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=003_What_is_AI"
+      },
+      "children": [
+        "4"
+      ]
+    },
+    {
+      "id": "2",
+      "type": "treeNode",
+      "position": {
+        "x": 0,
+        "y": 500
+      },
+      "data": {
+        "name": "What is Programming?",
+        "api_image_path": "./img/tree-thumbnails/what_is_programming.png",
+        "description": "Before getting to AI development, let's start with the basics of programming. We'll also dive into how learning about programming works at college!",
+        "category": "Introduction",
+        "category_color": "gray",
+        "highlighted_path": "True",
+        "link": "/library?nav=Articles&article=002_What_is_Programming"
+      },
+      "children": [
+        "3"
+      ]
+    }
+  ],
+  "metadata": {
+    "total_nodes": 69,
+    "total_categories": 11,
+    "generated_at": "2025-07-08"
+  }
+}
