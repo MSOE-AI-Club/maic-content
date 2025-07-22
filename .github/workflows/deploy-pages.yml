@@ -91,16 +91,15 @@ jobs:
           cp -r images dist/ 2>/dev/null || true
           cp manifest.json dist/
           
-          # Copy index.html and headers for GitHub Pages
+          # Copy index.html for GitHub Pages
           cp index.html dist/
-          cp _headers dist/
           
-          # Create API endpoint structure with proper content-type
+          # Create API endpoint structure
           mkdir -p dist/api
           cp manifest.json dist/api/manifest.json
           
-          # Create .htaccess file for better API serving (if supported)
-          echo 'AddType application/json .json' > dist/.htaccess
+          # Create .nojekyll file to disable Jekyll and serve files directly
+          touch dist/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
