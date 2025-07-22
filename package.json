@@ -1,0 +1,35 @@
+{
+  "name": "maic-content",
+  "version": "1.0.0",
+  "description": "MAIC Content CDN - Educational AI/ML content delivery network",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "node scripts/generate-manifest.js",
+    "serve": "npm run build && npm run dev",
+    "validate": "node scripts/validate-content.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MSOE-AI-Club/maic-content.git"
+  },
+  "homepage": "https://msoe-ai-club.github.io/maic-content/",
+  "keywords": [
+    "ai",
+    "machine-learning",
+    "education",
+    "content",
+    "articles",
+    "cdn",
+    "api"
+  ],
+  "author": "MSOE AI Club",
+  "license": "MIT",
+  "files": [
+    "articles/**/*",
+    "data/**/*", 
+    "images/**/*",
+    "manifest.json",
+    "index.html"
+  ]
+} 

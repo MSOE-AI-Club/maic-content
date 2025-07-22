@@ -1,0 +1,25 @@
+# Enable CORS for all files
+/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+  Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Cache-Control
+  Access-Control-Max-Age: 86400
+
+# Cache static assets
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/articles/*
+  Cache-Control: public, max-age=3600
+
+/data/*
+  Cache-Control: public, max-age=3600
+
+# API endpoints
+/api/*
+  Content-Type: application/json
+  Cache-Control: public, max-age=300
+
+/manifest.json
+  Content-Type: application/json
+  Cache-Control: public, max-age=300 

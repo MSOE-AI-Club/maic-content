@@ -1,2 +1,5 @@
-.*
-README.md
+.git/**
+.github/**
+index.html
+_headers
+dist/**

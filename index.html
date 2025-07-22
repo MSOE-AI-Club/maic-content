@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIC Content CDN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .api-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .endpoint {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+        
+        .endpoint h3 {
+            color: #495057;
+            margin-bottom: 1rem;
+        }
+        
+        .endpoint code {
+            background: #e9ecef;
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            display: block;
+            margin: 0.5rem 0;
+            word-break: break-all;
+        }
+        
+        .endpoint .method {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .stat {
+            text-align: center;
+            padding: 1rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 8px;
+        }
+        
+        .stat h3 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .usage-example {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+        
+        .usage-example code {
+            color: #a0aec0;
+            font-family: 'Monaco', 'Menlo', monospace;
+            white-space: pre-wrap;
+        }
+        
+        .feature-list {
+            list-style: none;
+            margin: 1rem 0;
+        }
+        
+        .feature-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .feature-list li:before {
+            content: "✅ ";
+            margin-right: 0.5rem;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 3rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧠 MAIC Content CDN</h1>
+            <p>Milwaukee AI Club's Educational Content Delivery Network</p>
+        </div>
+        
+        <div class="card">
+            <h2>📡 API Endpoints</h2>
+            <p>Access educational content, articles, and resources through our REST API:</p>
+            
+            <div class="api-grid">
+                <div class="endpoint">
+                    <div class="method">GET</div>
+                    <h3>Content Manifest</h3>
+                    <code id="manifest-url">Loading...</code>
+                    <p>Get a complete list of all available content files with metadata.</p>
+                </div>
+                
+                <div class="endpoint">
+                    <div class="method">GET</div>
+                    <h3>Articles</h3>
+                    <code id="articles-url">Loading...</code>
+                    <p>Access educational articles on AI, ML, Computer Vision, NLP, and more.</p>
+                </div>
+                
+                <div class="endpoint">
+                    <div class="method">GET</div>
+                    <h3>Images & Assets</h3>
+                    <code id="images-url">Loading...</code>
+                    <p>Thumbnails, diagrams, and visual resources for content.</p>
+                </div>
+                
+                <div class="endpoint">
+                    <div class="method">GET</div>
+                    <h3>Data</h3>
+                    <code id="data-url">Loading...</code>
+                    <p>Structured data files including JSON configurations and CSV datasets.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>🚀 Features</h2>
+            <ul class="feature-list">
+                <li>CORS-enabled for cross-origin requests</li>
+                <li>Automatic content discovery and indexing</li>
+                <li>Fast global CDN delivery via GitHub Pages</li>
+                <li>RESTful API for programmatic access</li>
+                <li>Organized educational content structure</li>
+                <li>Real-time manifest updates</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>💻 Usage Examples</h2>
+            
+            <h3>Fetch Content Manifest</h3>
+            <div class="usage-example">
+                <code id="fetch-example">Loading...</code>
+            </div>
+            
+            <h3>Load Specific Article</h3>
+            <div class="usage-example">
+                <code id="article-example">Loading...</code>
+            </div>
+            
+            <h3>Get Image Asset</h3>
+            <div class="usage-example">
+                <code id="image-example">Loading...</code>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>📊 Content Statistics</h2>
+            <div class="stats">
+                <div class="stat">
+                    <h3 id="total-files">Loading...</h3>
+                    <p>Total Files</p>
+                </div>
+                <div class="stat">
+                    <h3 id="article-count">Loading...</h3>
+                    <p>Articles</p>
+                </div>
+                <div class="stat">
+                    <h3 id="image-count">Loading...</h3>
+                    <p>Images</p>
+                </div>
+                <div class="stat">
+                    <h3 id="last-updated">Loading...</h3>
+                    <p>Last Updated</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>🎓 Milwaukee School of Engineering AI Club | Open Source Educational Content</p>
+            <p>Powered by GitHub Pages | <a href="https://github.com/MSOE-AI-Club/maic-content" style="color: #a0aec0;">View Source</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Get the current page URL to build API endpoints
+        const baseUrl = window.location.origin + window.location.pathname.replace(/\/$/, '');
+        
+        // Update endpoint URLs
+        document.getElementById('manifest-url').textContent = `${baseUrl}/api/manifest.json`;
+        document.getElementById('articles-url').textContent = `${baseUrl}/articles/[category]/[file].md`;
+        document.getElementById('images-url').textContent = `${baseUrl}/images/[category]/[file].[ext]`;
+        document.getElementById('data-url').textContent = `${baseUrl}/data/[category]/[file].json`;
+        
+        // Update usage examples
+        document.getElementById('fetch-example').textContent = `// Fetch content manifest
+fetch('${baseUrl}/api/manifest.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log('Available files:', data.files);
+    console.log('CDN Base URL:', data.cdn_base_url);
+  });`;
+
+        document.getElementById('article-example').textContent = `// Load a specific article
+fetch('${baseUrl}/articles/Basic AI/001_What_is_the_Learning_Tree.md')
+  .then(response => response.text())
+  .then(markdown => {
+    console.log('Article content:', markdown);
+  });`;
+
+        document.getElementById('image-example').textContent = `// Display an image
+const imageUrl = '${baseUrl}/images/thumbnails/ai_basics.png';
+document.getElementById('myImage').src = imageUrl;`;
+        
+        // Load manifest and update stats
+        fetch(`${baseUrl}/manifest.json`)
+            .then(response => response.json())
+            .then(data => {
+                const files = data.files || [];
+                const articles = files.filter(f => f.startsWith('articles/')).length;
+                const images = files.filter(f => f.startsWith('images/')).length;
+                
+                document.getElementById('total-files').textContent = files.length;
+                document.getElementById('article-count').textContent = articles;
+                document.getElementById('image-count').textContent = images;
+                
+                if (data.generated_at) {
+                    const date = new Date(data.generated_at);
+                    document.getElementById('last-updated').textContent = date.toLocaleDateString();
+                }
+            })
+            .catch(err => {
+                console.log('Could not load manifest:', err);
+                document.getElementById('total-files').textContent = 'N/A';
+                document.getElementById('article-count').textContent = 'N/A';
+                document.getElementById('image-count').textContent = 'N/A';
+                document.getElementById('last-updated').textContent = 'N/A';
+            });
+    </script>
+</body>
+</html> 
