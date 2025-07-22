@@ -10,7 +10,8 @@ Milwaukee AI Club's Educational Content Delivery Network - A fast, reliable CDN 
 
 ### Content Manifest
 ```
-GET /api/manifest.json
+GET /manifest.json
+GET /api/manifest.json  (alternative endpoint)
 ```
 Returns a JSON manifest with all available files, metadata, and CDN information.
 
@@ -45,7 +46,7 @@ Structured data including configurations, achievements, contact info, and datase
 ### JavaScript/TypeScript
 ```javascript
 // Fetch content manifest
-const response = await fetch('https://msoe-ai-club.github.io/maic-content/api/manifest.json');
+const response = await fetch('https://msoe-ai-club.github.io/maic-content/manifest.json');
 const manifest = await response.json();
 console.log('Available files:', manifest.files);
 
@@ -63,7 +64,7 @@ document.getElementById('myImage').src = imageUrl;
 import requests
 
 # Get manifest
-response = requests.get('https://msoe-ai-club.github.io/maic-content/api/manifest.json')
+response = requests.get('https://msoe-ai-club.github.io/maic-content/manifest.json')
 manifest = response.json()
 
 # Download article
@@ -74,7 +75,7 @@ content = article.text
 ### cURL
 ```bash
 # Get manifest
-curl https://msoe-ai-club.github.io/maic-content/api/manifest.json
+curl https://msoe-ai-club.github.io/maic-content/manifest.json
 
 # Download specific file
 curl https://msoe-ai-club.github.io/maic-content/articles/Computer Vision/001_comp-vis.md

@@ -95,9 +95,12 @@ jobs:
           cp index.html dist/
           cp _headers dist/
           
-          # Create API endpoint structure
+          # Create API endpoint structure with proper content-type
           mkdir -p dist/api
           cp manifest.json dist/api/manifest.json
+          
+          # Create .htaccess file for better API serving (if supported)
+          echo 'AddType application/json .json' > dist/.htaccess
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

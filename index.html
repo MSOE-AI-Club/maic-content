@@ -255,14 +255,14 @@
         const baseUrl = window.location.origin + window.location.pathname.replace(/\/$/, '');
         
         // Update endpoint URLs
-        document.getElementById('manifest-url').textContent = `${baseUrl}/api/manifest.json`;
+        document.getElementById('manifest-url').textContent = `${baseUrl}/manifest.json`;
         document.getElementById('articles-url').textContent = `${baseUrl}/articles/[category]/[file].md`;
         document.getElementById('images-url').textContent = `${baseUrl}/images/[category]/[file].[ext]`;
         document.getElementById('data-url').textContent = `${baseUrl}/data/[category]/[file].json`;
         
         // Update usage examples
         document.getElementById('fetch-example').textContent = `// Fetch content manifest
-fetch('${baseUrl}/api/manifest.json')
+fetch('${baseUrl}/manifest.json')
   .then(response => response.json())
   .then(data => {
     console.log('Available files:', data.files);
