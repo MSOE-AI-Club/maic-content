@@ -1,6 +1,8 @@
 {
-  "generated_at": "2025-07-22T22:55:43.678Z",
+  "generated_at": "2025-07-22T23:25:29.691Z",
   "files": [
+    ".manifestignore",
+    "README.md",
     "articles/Basic AI/001_What_is_the_Learning_Tree.md",
     "articles/Basic AI/002_What_is_Programming.md",
     "articles/Basic AI/003_What_is_AI.md",
@@ -299,6 +301,9 @@
     "images/tree-thumbnails/what_is_a_nn.png",
     "images/tree-thumbnails/what_is_ai.png",
     "images/tree-thumbnails/what_is_programming.png",
-    "manifest.json"
+    "manifest.json",
+    "package.json",
+    "scripts/generate-manifest.js",
+    "scripts/validate-content.js"
   ]
 }
