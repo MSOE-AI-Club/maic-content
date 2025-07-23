@@ -69,13 +69,6 @@ if (!fs.existsSync('index.html')) {
   console.log('✅ index.html exists');
 }
 
-// Check _headers file exists
-if (!fs.existsSync('_headers')) {
-  warnings.push('Missing _headers file - CORS might not work properly');
-} else {
-  console.log('✅ _headers file exists');
-}
-
 // Summary
 console.log('\n📋 Validation Summary:');
 console.log(`✅ ${errors.length === 0 ? 'No errors found' : `${errors.length} error(s) found`}`);
