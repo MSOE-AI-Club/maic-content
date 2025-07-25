@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-07-23T00:21:00.958Z",
+  "generated_at": "2025-07-25T01:04:55.218Z",
   "files": [
     ".manifestignore",
     "README.md",
@@ -75,6 +75,7 @@
     "data/about/partnersData.json",
     "data/achievements/achievementsData.json",
     "data/contact/eboard.json",
+    "data/events/events.json",
     "data/home/cards.json",
     "data/learning-tree/tree.json",
     "data/merch/merchData.json",
