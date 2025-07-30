@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-07-30T03:07:09.056Z",
+  "generated_at": "2025-07-30T03:11:37.945Z",
   "files": [
     ".manifestignore",
     "README.md",
@@ -11,9 +11,12 @@
     "articles/Basic AI/003-what-is-ai/metadata.json",
     "articles/Basic AI/004-learning-ai-at-school/004_Learning_AI_at_School.md",
     "articles/Basic AI/004-learning-ai-at-school/metadata.json",
-    "articles/Basic AI/010_What_is_a_NN.md",
-    "articles/Basic AI/011_How_NN_Learn.md",
-    "articles/Basic AI/012_Fully_Understanding_Training.md",
+    "articles/Basic AI/010-what-is-a-nn/010_What_is_a_NN.md",
+    "articles/Basic AI/010-what-is-a-nn/metadata.json",
+    "articles/Basic AI/011-how-nn-learn/011_How_NN_Learn.md",
+    "articles/Basic AI/011-how-nn-learn/metadata.json",
+    "articles/Basic AI/012-fully-understanding-training/012_Fully_Understanding_Training.md",
+    "articles/Basic AI/012-fully-understanding-training/metadata.json",
     "articles/Computer Vision/001_comp-vis.md",
     "articles/Computer Vision/002_comp-vis.md",
     "articles/Computer Vision/003_comp-vis.md",
