@@ -1,12 +1,3 @@
-summary: Learn the basics of how computers can process and understand natural language, a foundational skill for all natural language processing tasks.
-type: md
-date: 19/2/2025
-title: Intro to Natural Language Processing (NLP)
-image: ./img/tree-thumbnails/IntroNLP.png
-difficulty: easy
-authors: Tyge Plater
-categories: supervised learning, NLP
-
 <br>
 <a href='/learning-tree?node=32' style='
     background-color: #31313a;

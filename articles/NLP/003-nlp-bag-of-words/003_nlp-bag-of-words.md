@@ -1,12 +1,3 @@
-summary: Learn the concept of Bag of Words in a simple, high-level, way and then dive into learning how to implement Bag of Words in Python.
-type: md
-date: 19/2/2025
-title: Bag of Words
-image: ./img/tree-thumbnails/bag-of-words.png
-difficulty: medium
-authors: Tyge Plater
-categories: supervised learning, NLP
-
 <br>
 <a href='/learning-tree?node=34' style='
     background-color: #31313a;

@@ -1,12 +1,3 @@
-summary: Learn the concepts of Vector Stores and Embeddings
-type: md
-date: 19/2/2025
-title: Embeddings
-image: ./img/tree-thumbnails/embeddings.png
-difficulty: medium
-authors: Tyge Plater
-categories: supervised learning, NLP
-
 <br>
 <a href='/learning-tree?node=35' style='
     background-color: #31313a;
