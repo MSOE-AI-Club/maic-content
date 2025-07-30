@@ -1,0 +1,10 @@
+{
+    "summary": "Using Jupyter notebooks is a skill that every data scientist and computer scientist should have!",
+    "type": "md",
+    "date": "28/8/2023",
+    "title": "How to use Jupyter notebooks",
+    "image": "./img/thumbnails/Jupyter_logo.png",
+    "difficulty": "easy",
+    "authors": "Thomas Benzshawel,Ben Paulson",
+    "categories": ["Jupyter", "Topic Introduction"]
+}

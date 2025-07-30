@@ -1,12 +1,3 @@
-summary: Using Jupyter notebooks is a skill that every data scientist and computer scientist should have!
-type: md
-date: 28/8/2023
-title: How to use Jupyter notebooks
-image: ./img/thumbnails/Jupyter_logo.png
-difficulty: easy
-authors: Thomas Benzshawel,Ben Paulson
-categories: Jupyter,Topic Introduction
-
 ## Working with Jupyer notebooks
 
 The simplest way to start up a jupyter notebook is to open up an anaconda session. You can get anaconda [here].(https://www.anaconda.com/download)
