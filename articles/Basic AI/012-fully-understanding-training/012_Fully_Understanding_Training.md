@@ -1,12 +1,3 @@
-summary: Given our model understands what's right and wrong, how does it improve itself over time?           
-type: md
-date: 31/8/2024
-title: What is "Backpropagation"?
-image: ./img/tree-thumbnails/understanding_back_prop.png
-difficulty: easy
-authors: Ben Paulson
-categories: Basics of AI, 3Blue1Brown
-
 <br>
 <a href='/learning-tree?node=20' style='
     background-color: #31313a;
