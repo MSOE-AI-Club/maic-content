@@ -1,12 +1,3 @@
-summary: Before getting to AI development, let's start with the basics of programming. We'll also dive into how learning about programming works at college!
-type: md
-date: 31/8/2024
-title: What is Programming?
-image: ./img/tree-thumbnails/what_is_programming.png
-difficulty: easy
-authors: Ben Paulson
-categories: Tutorial, AI-Club, Getting Started
-
 <br>
 <a href='/learning-tree?node=2' style='
     background-color: #31313a;

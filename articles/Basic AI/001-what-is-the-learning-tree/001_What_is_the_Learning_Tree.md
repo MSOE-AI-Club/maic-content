@@ -1,12 +1,3 @@
-summary: The learning tree is a visual representation of the world of AI, built by pulling from reliable sources students before you have identified as useful and structure in an easy-to-visualize way.
-type: md
-date: 31/8/2024
-title: What is the Learning Tree?
-image: ./img/tree-thumbnails/learning-tree.png
-difficulty: easy
-authors: Ben Paulson
-categories: Tutorial, AI-Club, Getting Started
-
 <br>
 <a href='/learning-tree?node=1' style='
     background-color: #31313a;

@@ -1,12 +1,3 @@
-summary: Given you now understand some programming and AI basics, let's dive into how you would typically learn about AI at MSOE alongside the education you would get by joining MAIC.
-type: md
-date: 31/8/2024
-title: Why Learn AI with AI-Club?
-image: ./img/tree-thumbnails/ai_in_school.png
-difficulty: easy
-authors: Ben Paulson
-categories: Tutorial, AI-Club, Getting Started
-
 <br>
 <a href='/learning-tree?node=4' style='
     background-color: #31313a;
