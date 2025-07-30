@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-07-30T03:21:34.253Z",
+  "generated_at": "2025-07-30T03:28:04.676Z",
   "files": [
     ".manifestignore",
     "README.md",
@@ -73,8 +73,10 @@
     "articles/done articles/ControlTheory.md",
     "articles/dummy/dummy-article/dummy.md",
     "articles/dummy/dummy-article/metadata.json",
-    "articles/jupyter/Learning_Resources-how-to-use-jupyter-notebooks.md",
-    "articles/news/Learning_Resources-Kai-Weekly1.md",
+    "articles/jupyter/how-to-use-jupyter-notebooks/Learning_Resources-how-to-use-jupyter-notebooks.md",
+    "articles/jupyter/how-to-use-jupyter-notebooks/metadata.json",
+    "articles/news/generative-ai-in-simulated-environments/Learning_Resources-Kai-Weekly1.md",
+    "articles/news/generative-ai-in-simulated-environments/metadata.json",
     "articles/python/Learning_Resources-pyintro.md",
     "articles/research/Research-50Brain-Alignment-Innovators.md",
     "articles/research/Research-50NourishNet.md",
