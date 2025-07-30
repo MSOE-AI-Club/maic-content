@@ -1,12 +1,3 @@
-summary: Dive into the methods for identifying and locating objects within images, a crucial skill for real-time applications like autonomous driving.
-type: md
-date: 10/6/24
-title: Object Detection
-image: ./img/tree-thumbnails/object-detection.png
-difficulty: easy
-authors: Ben Paulson, Tyge Plater
-categories: supervised learning, regression, classification
-
 <br>
 <a href='/learning-tree?node=63' style='
     background-color: #31313a;

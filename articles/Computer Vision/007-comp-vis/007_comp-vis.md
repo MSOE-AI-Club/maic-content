@@ -1,12 +1,3 @@
-summary: Explore the cutting-edge transformer architecture that is quickly becoming a leading method for tasks like image classification.
-type: md
-date: 10/6/24
-title: Vision Transformer
-image: ./img/tree-thumbnails/vision-transformer.png
-difficulty: easy
-authors: Ben Paulson, Tyge Plater
-categories: supervised learning, regression, classification
-
 <br>
 <a href='/learning-tree?node=64' style='
     background-color: #31313a;

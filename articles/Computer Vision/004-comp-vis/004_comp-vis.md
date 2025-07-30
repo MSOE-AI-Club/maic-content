@@ -1,12 +1,3 @@
-summary: Learn how models are trained to classify images into categories, one of the most common applications of computer vision.
-type: md
-date: 10/6/24
-title: Image Classification
-image: ./img/tree-thumbnails/image-classification.png
-difficulty: easy
-authors: Ben Paulson, Tyge Plater
-categories: supervised learning, regression, classification
-
 <br>
 <a href='/learning-tree?node=61' style='
     background-color: #31313a;

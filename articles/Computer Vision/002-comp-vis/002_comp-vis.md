@@ -1,12 +1,3 @@
-summary: Discover key techniques like resizing, normalization, and augmentation to prepare images for analysis by machine learning models.
-type: md
-date: 10/6/24
-title: Image Preprocessing
-image: ./img/tree-thumbnails/image-preprocessing.png
-difficulty: easy
-authors: Ben Paulson, Tyge Plater
-categories: supervised learning, regression, classification
-
 <br>
 <a href='/learning-tree?node=59' style='
     background-color: #31313a;

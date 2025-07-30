@@ -1,12 +1,3 @@
-summary: Understand the structure and functionality of CNNs, the model architecture used in most modern computer vision tasks.
-type: md
-date: 10/6/24
-title: Convolutional Neural Network (CNN)
-image: ./img/tree-thumbnails/cnn.png
-difficulty: easy
-authors: Ben Paulson, Tyge Plater
-categories: supervised learning, regression, classification
-
 <br>
 <a href='/learning-tree?node=60' style='
     background-color: #31313a;

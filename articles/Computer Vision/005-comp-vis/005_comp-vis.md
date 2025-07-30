@@ -1,12 +1,3 @@
-summary: Explore how machines can identify the exact boundaries of objects within an image, making segmentation key for precision tasks.
-type: md
-date: 10/6/24
-title: Segmentation
-image: ./img/tree-thumbnails/image-segmentation.png
-difficulty: easy
-authors: Ben Paulson, Tyge Plater
-categories: supervised learning, regression, classification
-
 <br>
 <a href='/learning-tree?node=62' style='
     background-color: #31313a;
