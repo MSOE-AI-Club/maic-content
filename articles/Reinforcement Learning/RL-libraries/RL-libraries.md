@@ -1,12 +1,3 @@
-summary: A list of projects and resources to help you get hands-on experience with reinforcement learning.
-type: md
-date: 09/01/2024
-title: Reinforcement Learning: Projects
-image: [Image URL: ./img/thumbnails/your_image.png]
-difficulty: [easy, intermediate, advanced]
-authors: Leigh Goetsch
-categories: Reinforcement Learning, Projects
-
 ## Why Read?
 
 This article provides a list of libraries to help you get hands-on experience with reinforcement learning. Projects are a great way to apply the concepts you've learned and gain practical experience in the field.

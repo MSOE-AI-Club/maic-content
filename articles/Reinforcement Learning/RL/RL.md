@@ -1,12 +1,3 @@
-summary: A broad overview of Reinforcement Learning. This is the parent page for all RL content.
-type: md
-date: 09/01/2024
-title: Reinforcement Learning
-image: [Image URL: ./img/thumbnails/your_image.png]
-difficulty: intermediate
-authors: Leigh Goetsch
-categories: [List of categories separated by commas]
-
 ## Why Read?
 
 Reinforcement Learning (RL) is a type of machine learning where an agent learns to make decisions by interacting with its environment. This is particularly useful in domains where the agent must learn to make sequential decisions, such as playing games or controlling robots. This subfield of machine learning has seen rapid growth in recent years, with many exciting applications in areas such as robotics, finance, and healthcare.

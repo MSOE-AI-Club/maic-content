@@ -1,12 +1,3 @@
-summary: Covers a brief introduction to Deep Q Networks (DQN) and its applications in reinforcement learning.
-type: md
-date: 09/01/2024
-title: Deep Q Networks
-image: [Image URL: ./img/thumbnails/your_image.png]
-difficulty: [easy, intermediate, advanced]
-authors: Leigh Goetsch
-categories: Reinforcement Learning, Projects
-
 ## Why Read?
 
 Deep Q Networks (DQN) are a class of deep reinforcement learning algorithms that combine deep learning with Q-learning. DQN is one of the most popular algorithms in the field of reinforcement learning and is a great starting point for beginners to understand deep reinforcement learning.

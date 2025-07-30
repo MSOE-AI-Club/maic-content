@@ -1,12 +1,3 @@
-summary: A deep dive into advanced topics in Reinforcement Learning for those looking to expand their knowledge beyond the basics.
-type: md
-date: 09/01/2024
-title: Reinforcement Learning: Advanced Topics
-image: [Image URL: ./img/thumbnails/your_image.png]
-difficulty: [easy, intermediate, advanced]
-authors: Leigh Goetsch
-categories: Reinforcement Learning, Advanced Topics
-
 ## Why Read?
 
 This article provides heavy-duty reinforcement learning enthusiasts with a deep dive into more advanced resources and topics in the field. If you're looking to expand your knowledge beyond the basics, this article is for you.

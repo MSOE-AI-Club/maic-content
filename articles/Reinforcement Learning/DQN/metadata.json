@@ -1,0 +1,10 @@
+{
+    "summary": "Covers a brief introduction to Deep Q Networks (DQN) and its applications in reinforcement learning.",
+    "type": "md",
+    "date": "09/01/2024",
+    "title": "Deep Q Networks",
+    "image": "./img/thumbnails/your_image.png",
+    "difficulty": "easy, intermediate, advanced",
+    "authors": "Leigh Goetsch",
+    "categories": "Reinforcement Learning, Projects"
+}
