@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-07-31T02:08:11.893Z",
+  "generated_at": "2025-07-31T02:10:23.286Z",
   "files": [
     ".manifestignore",
     "README.md",
@@ -99,7 +99,8 @@
     "articles/research/Team-1/NourishNet-Recording/metadata.json",
     "articles/research/Team-1/NourishNet-Research-Paper/Proactive Severity State Forecasting of Food Commodity Prices for Global Warning Systems.md",
     "articles/research/Team-1/NourishNet-Research-Paper/metadata.json",
-    "articles/research/Team-13/Synthesizing Audio from Silent Video using Sequence to Sequence Modeling.md",
+    "articles/research/Team-13/Synthesizing-Audio-Paper/Synthesizing Audio from Silent Video using Sequence to Sequence Modeling.md",
+    "articles/research/Team-13/Synthesizing-Audio-Paper/metadata.json",
     "articles/research/Team-7/Brain-Alignment-Paper/Brain Alignment.md",
     "articles/research/Team-7/Brain-Alignment-Paper/metadata.json",
     "articles/research/Team-7/Gray-Matter-Presentation/Gray Matter Preso.md",
