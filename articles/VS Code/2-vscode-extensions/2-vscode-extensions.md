@@ -1,12 +1,3 @@
-summary: A starting point for learning about how to use VSCode for machine learning on your local machine. 
-type: md
-date: 5/9/2024
-title: VSC Pt2: Installing Languages / Extensions in VSCode
-image: ./img/thumbnails/VSC_Tutorial_2.png
-difficulty: easy
-authors: John Cisler
-categories: VSCode
-
 <br>
 <a href='/learning-tree?node=11' style='
     background-color: #31313a;

@@ -1,14 +1,5 @@
-summary: A starting point for learning about how to use VSCode for machine learning on your local machine. 
-type: md
-date: 5/9/2024
-title: VSC Pt5: Using VSCode's Version Control
-image: ./img/thumbnails/VSC_Tutorial_5.png
-difficulty: easy
-authors: John Cisler
-categories: VSCode
-
 <br>
-<a href='/learning-tree?node=14' style='
+<a href='/learning-tree?node=12' style='
     background-color: #31313a;
     color: gainsboro;
     padding: 6px 16px;
@@ -47,7 +38,7 @@ categories: VSCode
   </text>
 </svg>
 
-<p style='color: white; margin-top: 2px;'>By reading this article, you will understand how to interact with a git repository within VSCode.
+<p style='color: white; margin-top: 2px;'>By reading this article, you will understand how VSCode's terminal works, allowing you to not have the leave the application to run commands.  
 </p>
 
 </div>
@@ -57,13 +48,13 @@ categories: VSCode
 <br/>
 
 
-VS-Code themselves have a great video on how to use version control in VS Code. Check it out [here](https://code.visualstudio.com/docs/introvideos/versioncontrol). 
+## The Integrated Terminal
+The integrated terminal enables you to run shell commands, manage processes, interact with version control systems like Git, and more, all without leaving the editor.
 
+A shortcut to the terminal is VSCode is using Cntrl+(or Cmd+ on Mac)
 
-
-
-
-
+# Quickstart Guide From the People Who Made VSCode
+For more specifics, [here is a link to explore the terminal is vscode](https://code.visualstudio.com/docs/terminal/getting-started). 
 
 
 
