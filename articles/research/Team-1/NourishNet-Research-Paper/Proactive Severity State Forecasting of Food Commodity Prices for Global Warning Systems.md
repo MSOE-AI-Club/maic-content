@@ -1,14 +1,3 @@
-summary: Price volatility in global food commodities is a critical signal indicating potential disruptions in the food market. Understanding forthcoming changes in these prices is essential for bolstering food security, particularly for nations at risk. The Food and Agriculture Organization of the United Nations (FAO) previously developed sophisticated statistical frameworks for the proactive prediction of food commodity prices, aiding in the creation of global early warning systems. These frameworks utilize food security indicators to produce accurate forecasts, thereby facilitating preparations against potential food shortages. Our research builds on these foundations by integrating robust price security indicators with cutting-edge deep learning (DL) methodologies to reveal complex interdependencies. DL techniques examine intricate dynamics among diverse factors affecting food prices. Through sophisticated time-series forecasting models coupled with a classification model, our approach enhances existing models to better support communities worldwide in advancing their food security initiatives.
-type: pdf
-date: 30/6/2024
-title: NourishNet: Proactive Severity State Forecasting of Food Commodity Prices for Global Warning Systems
-image: images/content/research/file-thumbnails/NourishNet-Front.png
-difficulty: easy
-authors: Sydney Balboni, Grace Ivery, Brett Storoe, John Cisler, Tyge Plater, Caitlyn Grant, Ella Bruce, Benjamin Paulson
-categories: Research,Time Series Forecasting,Deep Learning,LLM,RAG
-pdf: https://arxiv.org/pdf/2407.00698
-pages: 15
-
 MSOE Artificial Intelligence Research Paper
 * Team Lead In Collaboration With
 NourishNet: Proactive Severity State Forecasting of Food
