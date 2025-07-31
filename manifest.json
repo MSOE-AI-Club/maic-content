@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-07-31T03:27:24.329Z",
+  "generated_at": "2025-07-31T03:31:20.445Z",
   "files": [
     ".manifestignore",
     "About-Pages/About-Direct-Supply/About-Direct Supply.md",
@@ -232,9 +232,12 @@
     "articles/research/Team-7/Brain-Alignment-Paper/metadata.json",
     "articles/research/Team-7/Gray-Matter-Presentation/Gray Matter Preso.md",
     "articles/research/Team-7/Gray-Matter-Presentation/metadata.json",
-    "competitions/HacksGiving/HacksGiving with Discovery World.md",
-    "competitions/Innovation Labs/Fintech Startup.md",
-    "competitions/Innovation Labs/Fun with Liquids.md",
+    "competitions/HacksGiving/Discovery-World-2024/HacksGiving with Discovery World.md",
+    "competitions/HacksGiving/Discovery-World-2024/metadata.json",
+    "competitions/Innovation Labs/Brady-Fall-2024/Brady-Fall-2024.md",
+    "competitions/Innovation Labs/Brady-Fall-2024/metadata.json",
+    "competitions/Innovation Labs/Juno-Spring-2025/Juno-Spring-2025.md",
+    "competitions/Innovation Labs/Juno-Spring-2025/metadata.json",
     "data/about/faq.md",
     "data/about/partnersData.json",
     "data/achievements/achievementsData.json",
