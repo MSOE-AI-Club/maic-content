@@ -1,12 +1,3 @@
-summary: Structuring Webscraped Data
-type: md
-date: 1/30/2025
-title: Structuring Webscraped Data
-image: ./img/tree-thumbnails/sl-intro.png
-difficulty: advanced
-authors: Adam Haile
-categories: webscraping, python
-
 <br>
 <a href='/learning-tree?node=23' style='
     background-color: #31313a;

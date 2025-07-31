@@ -1,12 +1,3 @@
-summary: Searching with Serper
-type: md
-date: 1/30/2025
-title: Searching with Serper
-image: ./img/tree-thumbnails/sl-intro.png
-difficulty: advanced
-authors: Adam Haile
-categories: webscraping, python
-
 <br>
 <a href='/learning-tree?node=24' style='
     background-color: #31313a;

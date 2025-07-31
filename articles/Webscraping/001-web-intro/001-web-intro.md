@@ -1,12 +1,3 @@
-summary: Introduction to Webscraping
-type: md
-date: 1/30/2025
-title: Introduction to Webscraping
-image: ./img/tree-thumbnails/sl-intro.png
-difficulty: advanced
-authors: Adam Haile
-categories: webscraping, python
-
 <br>
 <a href='/learning-tree?node=22' style='
     background-color: #31313a;
