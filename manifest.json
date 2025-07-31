@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-07-31T03:13:26.244Z",
+  "generated_at": "2025-07-31T03:15:43.970Z",
   "files": [
     ".manifestignore",
     "About-Pages/About-Direct Supply.md",
@@ -220,8 +220,10 @@
     "articles/research/Team-14/Agent-Sim-Preso/metadata.json",
     "articles/research/Team-14/Synergistic-Simulations-Paper/Synergistic Simulations Multi-Agent Problem Solving with Large Language Models.md",
     "articles/research/Team-14/Synergistic-Simulations-Paper/metadata.json",
-    "articles/research/Team-15/Reading Between the Lungs.md",
-    "articles/research/Team-19/Deep Learning in Embedded Systems with an Emphasis on Convolutional Drone Intelligence.md",
+    "articles/research/Team-15/Reading-Between-the-Lungs-Paper/Reading Between the Lungs.md",
+    "articles/research/Team-15/Reading-Between-the-Lungs-Paper/metadata.json",
+    "articles/research/Team-19/Deep-Learning-in-Embedded-Systems-Paper/Deep Learning in Embedded Systems with an Emphasis on Convolutional Drone Intelligence.md",
+    "articles/research/Team-19/Deep-Learning-in-Embedded-Systems-Paper/metadata.json",
     "articles/research/Team-6/Heart of AI.md",
     "articles/research/Team-7/Brain-Alignment-Paper/Brain Alignment.md",
     "articles/research/Team-7/Brain-Alignment-Paper/metadata.json",
