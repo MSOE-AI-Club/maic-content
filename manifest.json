@@ -1,10 +1,13 @@
 {
-  "generated_at": "2025-07-31T03:15:43.970Z",
+  "generated_at": "2025-07-31T03:27:24.329Z",
   "files": [
     ".manifestignore",
-    "About-Pages/About-Direct Supply.md",
-    "About-Pages/About-Milwaukee School of Engineering (MSOE).md",
-    "About-Pages/About-NVIDIA.md",
+    "About-Pages/About-Direct-Supply/About-Direct Supply.md",
+    "About-Pages/About-Direct-Supply/metadata.json",
+    "About-Pages/About-MSOE/About-Milwaukee School of Engineering (MSOE).md",
+    "About-Pages/About-MSOE/metadata.json",
+    "About-Pages/About-NVIDIA/About-NVIDIA.md",
+    "About-Pages/About-NVIDIA/metadata.json",
     "Contact-Pages/Contact-Adam Haile (Vice President).md",
     "Contact-Pages/Contact-Adam Swedlund (Campus Outreach).md",
     "Contact-Pages/Contact-Andrew Needham (Technical Strategist).md",
