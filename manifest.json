@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-07-31T02:35:26.023Z",
+  "generated_at": "2025-07-31T02:38:54.173Z",
   "files": [
     ".manifestignore",
     "README.md",
@@ -103,9 +103,12 @@
     "articles/VS Code/4-vscode-environments/metadata.json",
     "articles/VS Code/5-vscode-version-control/5-vscode-version-control.md",
     "articles/VS Code/5-vscode-version-control/metadata.json",
-    "articles/Webscraping/001-web-intro.md",
-    "articles/Webscraping/002-structured-web.md",
-    "articles/Webscraping/003-serp-web.md",
+    "articles/Webscraping/001-web-intro/001-web-intro.md",
+    "articles/Webscraping/001-web-intro/metadata.json",
+    "articles/Webscraping/002-structured-web/002-structured-web.md",
+    "articles/Webscraping/002-structured-web/metadata.json",
+    "articles/Webscraping/003-serp-web/003-serp-web.md",
+    "articles/Webscraping/003-serp-web/metadata.json",
     "articles/done articles/ControlTheory.md",
     "articles/dummy/dummy-article/dummy.md",
     "articles/dummy/dummy-article/metadata.json",
