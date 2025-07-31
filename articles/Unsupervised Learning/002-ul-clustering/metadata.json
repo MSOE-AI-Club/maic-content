@@ -1,0 +1,10 @@
+{
+    "summary": "With unsupervised learning, a common algorithm is 'clustering' data points together based on their similarities. This article will explain the concept of unsupervised clustering.",
+    "type": "md",
+    "date": "9/4/24",
+    "title": "Unsupervised Clustering",
+    "image": "./img/tree-thumbnails/ul-clustering.png",
+    "difficulty": "easy",
+    "authors": "Ben Paulson, Aiden Miller",
+    "categories": ["unsupervised learning"]
+}

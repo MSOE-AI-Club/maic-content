@@ -1,12 +1,3 @@
-summary: In machine learning (ML), there are typically two broad categories of AI models that people typically think of: supervised and unsupervised learning. This article will explain the differences between the two and provide examples of each.
-type: md
-date: 9/4/24
-title: Difference Between Supervised and Unsupervised Learning
-image: ./img/tree-thumbnails/ul-intro.png
-difficulty: easy
-authors: Ben Paulson, Aiden Miller
-categories: unsupervised learning
-
 <br>
 <a href='/learning-tree?node=29' style='
     background-color: #31313a;
