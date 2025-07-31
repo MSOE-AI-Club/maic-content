@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-07-31T03:08:35.332Z",
+  "generated_at": "2025-07-31T03:13:26.244Z",
   "files": [
     ".manifestignore",
     "About-Pages/About-Direct Supply.md",
@@ -216,8 +216,10 @@
     "articles/research/Team-1/NourishNet-Research-Paper/metadata.json",
     "articles/research/Team-13/Synthesizing-Audio-Paper/Synthesizing Audio from Silent Video using Sequence to Sequence Modeling.md",
     "articles/research/Team-13/Synthesizing-Audio-Paper/metadata.json",
-    "articles/research/Team-14/Agent Sim Preso.md",
-    "articles/research/Team-14/Synergistic Simulations Multi-Agent Problem Solving with Large Language Models.md",
+    "articles/research/Team-14/Agent-Sim-Preso/Agent Sim Preso.md",
+    "articles/research/Team-14/Agent-Sim-Preso/metadata.json",
+    "articles/research/Team-14/Synergistic-Simulations-Paper/Synergistic Simulations Multi-Agent Problem Solving with Large Language Models.md",
+    "articles/research/Team-14/Synergistic-Simulations-Paper/metadata.json",
     "articles/research/Team-15/Reading Between the Lungs.md",
     "articles/research/Team-19/Deep Learning in Embedded Systems with an Emphasis on Convolutional Drone Intelligence.md",
     "articles/research/Team-6/Heart of AI.md",
