@@ -1,12 +1,3 @@
-summary: Creating your own Neural network
-type: md
-date: 9/4/24
-title: Creating Your Own Neural network
-image: ./img/tree-thumbnails/sl-own-NN.png
-difficulty: medium
-authors: Thomas Benzshawel
-categories: supervised learning, regression, classification, neural networks
-
 <br>
 <a href='/learning-tree?node=28' style='
     background-color: #31313a;

@@ -1,0 +1,10 @@
+{
+    "summary": "Something to know before getting to advanced AI topics is series-based data. This is an incredibly important concept that many concepts rely on.",
+    "type": "md",
+    "date": "9/4/24",
+    "title": "Series-Based Data",
+    "image": "./img/tree-thumbnails/series-data.png",
+    "difficulty": "medium",
+    "authors": "Ben Paulson",
+    "categories": ["supervised learning", "regression", "classification", "neural networks"]
+}

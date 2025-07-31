@@ -1,0 +1,10 @@
+{
+    "summary": "Finding which models are already 'solved'",
+    "type": "md",
+    "date": "9/4/24",
+    "title": "Using Sklearn to skip doing what has already been done",
+    "image": "./img/tree-thumbnails/sl-solved-models.png",
+    "difficulty": "easy",
+    "authors": "Thomas Benzshawel",
+    "categories": ["supervised learning", "regression", "classification"]
+}

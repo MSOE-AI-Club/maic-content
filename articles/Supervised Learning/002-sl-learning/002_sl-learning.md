@@ -1,14 +1,5 @@
-summary: Introduction to supervised machine learning
-type: md
-date: 9/4/24
-title: All Machine Learning Models Explained 
-image: ./img/tree-thumbnails/sl-intro.png
-difficulty: easy
-authors: Thomas Benzshawel
-categories: supervised learning, regression, classification
-
 <br>
-<a href='/learning-tree?node=22' style='
+<a href='/learning-tree?node=23' style='
     background-color: #31313a;
     color: gainsboro;
     padding: 6px 16px;
@@ -47,14 +38,13 @@ categories: supervised learning, regression, classification
   </text>
 </svg>
 
-<p style='color: white; margin-top: 2px;'>This is an important primer for the different types of supervised learning models that exist. One model CANNOT be used for all types of problems. As an AI researcher, you need to be fluent in all the different ways to solve problems with AI.</p>
+<p style='color: white; margin-top: 2px;'>AI doesn't learn the same we do, AI learns through slowly adjusting its "idea" of the solution to a problem is. All linear models are just trying their best to score the highest on their accuracy, and optimizing themselves to do so.</p>
 
 </div>
 
 <br/>
 
+ 
+[How Neural Networks "Learn"](https://www.youtube.com/watch?v=4qVRBYAdLAo)
 <br/>
- 
-### The Different Machine Learning Models
- 
-[Intro to all machine learning models](https://www.youtube.com/watch?v=yN7ypxC7838)
+In reality, all supervised learning models learn very similarly, the main difference is what the model output is.

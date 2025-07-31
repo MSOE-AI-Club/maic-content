@@ -1,0 +1,10 @@
+{
+    "summary": "Introduction to Neural Networks",
+    "type": "md",
+    "date": "9/4/24",
+    "title": "Introduction to Neural Networks",
+    "image": "./img/tree-thumbnails/sl-own-NN.png",
+    "difficulty": "medium",
+    "authors": "Thomas Benzshawel",
+    "categories": "supervised learning, regression, classification"
+}

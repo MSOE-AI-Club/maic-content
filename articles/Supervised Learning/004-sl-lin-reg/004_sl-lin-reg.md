@@ -1,14 +1,5 @@
-summary: We have so many models, when should you use each one?
-type: md
-date: 9/4/24
-title: Picking which model to use
-image: ./img/tree-thumbnails/sl-which-model.png
-difficulty: easy
-authors: Thomas Benzshawel
-categories: supervised learning, regression, classification
- 
 <br>
-<a href='/learning-tree?node=24' style='
+<a href='/learning-tree?node=25' style='
     background-color: #31313a;
     color: gainsboro;
     padding: 6px 16px;
@@ -47,10 +38,12 @@ categories: supervised learning, regression, classification
   </text>
 </svg>
 
-<p style='color: white; margin-top: 2px;'>Its hard to choose which model fits which problem at first. Eventually. you will gain an intuition of which problem is best solved by which model. For now though, we will use this guide to pick it out.</p>
+<p style='color: white; margin-top: 2px;'>Some would consider linear regressions as the first form of AI, although it is really just applied math.</p>
 
 </div>
 
 <br/>
  
-[When should you use a supervised model?](https://www.youtube.com/watch?v=iUUSamG4P80)
+[The most basic supervised model](https://www.youtube.com/watch?v=b0L47BeklTE)
+ 
+Most "regression" models are implimented in sklearn, and can be quite helpful!

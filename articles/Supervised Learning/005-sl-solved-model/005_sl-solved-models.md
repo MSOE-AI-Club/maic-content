@@ -1,14 +1,5 @@
-summary: Linear Regression using SKlearn
-type: md
-date: 9/4/24
-title: Linear Regression using SKlearn
-image: ./img/tree-thumbnails/sl-lin-reg.png
-difficulty: easy
-authors: Thomas Benzshawel
-categories: supervised learning, regression, classification
- 
 <br>
-<a href='/learning-tree?node=25' style='
+<a href='/learning-tree?node=26' style='
     background-color: #31313a;
     color: gainsboro;
     padding: 6px 16px;
@@ -47,12 +38,10 @@ categories: supervised learning, regression, classification
   </text>
 </svg>
 
-<p style='color: white; margin-top: 2px;'>Some would consider linear regressions as the first form of AI, although it is really just applied math.</p>
+<p style='color: white; margin-top: 2px;'>Why waste time doing something that has been done a million times before? SKlearn has prebuilt models for all "basic" models, so you don't have to monkey around with your own implementation.</p>
 
 </div>
 
 <br/>
  
-[The most basic supervised model](https://www.youtube.com/watch?v=b0L47BeklTE)
- 
-Most "regression" models are implimented in sklearn, and can be quite helpful!
+[Scikit learn official code examples](https://scikit-learn.org/stable/auto_examples/index.html)

@@ -1,14 +1,5 @@
-summary: Introduction to Neural Networks
-type: md
-date: 9/4/24
-title: Introduction to Neural Networks
-image: ./img/tree-thumbnails/sl-own-NN.png
-difficulty: medium
-authors: Thomas Benzshawel
-categories: supervised learning, regression, classification
- 
 <br>
-<a href='/learning-tree?node=27' style='
+<a href='/learning-tree?node=22' style='
     background-color: #31313a;
     color: gainsboro;
     padding: 6px 16px;
@@ -47,10 +38,14 @@ categories: supervised learning, regression, classification
   </text>
 </svg>
 
-<p style='color: white; margin-top: 2px;'>Lets say you can't find any SKlearn or "prebuilt" solution to the problem you are facing. Then its time to make your own model! Right now the most popular way of doing this is through Neural Networks, which you will learn about in this section.</p>
+<p style='color: white; margin-top: 2px;'>This is an important primer for the different types of supervised learning models that exist. One model CANNOT be used for all types of problems. As an AI researcher, you need to be fluent in all the different ways to solve problems with AI.</p>
 
 </div>
 
 <br/>
+
+<br/>
  
-[Neural Network Architectures and Deep Learning](https://www.youtube.com/watch?v=oJNHXPs0XDk)
+### The Different Machine Learning Models
+ 
+[Intro to all machine learning models](https://www.youtube.com/watch?v=yN7ypxC7838)

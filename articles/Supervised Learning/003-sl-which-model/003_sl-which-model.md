@@ -1,14 +1,5 @@
-summary: Finding which models are already "solved"
-type: md
-date: 9/4/24
-title: Using Sklearn to skip doing what has already been done
-image: ./img/tree-thumbnails/sl-solved-models.png
-difficulty: easy
-authors: Thomas Benzshawel
-categories: supervised learning, regression, classification
- 
 <br>
-<a href='/learning-tree?node=26' style='
+<a href='/learning-tree?node=24' style='
     background-color: #31313a;
     color: gainsboro;
     padding: 6px 16px;
@@ -47,10 +38,10 @@ categories: supervised learning, regression, classification
   </text>
 </svg>
 
-<p style='color: white; margin-top: 2px;'>Why waste time doing something that has been done a million times before? SKlearn has prebuilt models for all "basic" models, so you don't have to monkey around with your own implementation.</p>
+<p style='color: white; margin-top: 2px;'>Its hard to choose which model fits which problem at first. Eventually. you will gain an intuition of which problem is best solved by which model. For now though, we will use this guide to pick it out.</p>
 
 </div>
 
 <br/>
  
-[Scikit learn official code examples](https://scikit-learn.org/stable/auto_examples/index.html)
+[When should you use a supervised model?](https://www.youtube.com/watch?v=iUUSamG4P80)

@@ -1,14 +1,5 @@
-summary: How AI "learns"
-type: md
-date: 9/4/24
-title: Learning How Machines Learn
-image: ./img/tree-thumbnails/sl-learning.png
-difficulty: easy
-authors: Thomas Benzshawel
-categories: supervised learning, regression, classification. AI, Neural Networks
-
 <br>
-<a href='/learning-tree?node=23' style='
+<a href='/learning-tree?node=27' style='
     background-color: #31313a;
     color: gainsboro;
     padding: 6px 16px;
@@ -47,13 +38,10 @@ categories: supervised learning, regression, classification. AI, Neural Networks
   </text>
 </svg>
 
-<p style='color: white; margin-top: 2px;'>AI doesn't learn the same we do, AI learns through slowly adjusting its "idea" of the solution to a problem is. All linear models are just trying their best to score the highest on their accuracy, and optimizing themselves to do so.</p>
+<p style='color: white; margin-top: 2px;'>Lets say you can't find any SKlearn or "prebuilt" solution to the problem you are facing. Then its time to make your own model! Right now the most popular way of doing this is through Neural Networks, which you will learn about in this section.</p>
 
 </div>
 
 <br/>
-
  
-[How Neural Networks "Learn"](https://www.youtube.com/watch?v=4qVRBYAdLAo)
-<br/>
-In reality, all supervised learning models learn very similarly, the main difference is what the model output is.
+[Neural Network Architectures and Deep Learning](https://www.youtube.com/watch?v=oJNHXPs0XDk)
