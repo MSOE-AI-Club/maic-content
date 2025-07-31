@@ -1,14 +1,3 @@
-summary: Simulating human (and/or non-human) agents in an interactive environment to build upon a similar prior work (https://arxiv.org/pdf/2304.03442.pdf). In having agents powered by an LLM, we expect to see emergent social and physical properties of the environment as they interact with it. Our hope is that this agent-based approach can be applied to more problem domains than only the simulation of human communities.
-type: pdf
-date: 30/6/2024
-title: Synergistic Simulations: Multi-Agent Problem Solving with Large Language Models
-image: ./img/thumbnails/syn_front.png
-difficulty: easy
-authors: Asher Sprigler, Andy Dao, Keagan Weinstock, Wendpanga Tapsoba, Gavin Childress, Lucas Gral
-categories: Research,Time Series Forecasting,Deep Learning,LLM,RAG
-pdf: https://arxiv.org/pdf/2409.13753
-pages: 15
-
 * Team Lead
 Synergistic Simulations: Multi-Agent Problem Solving with Large Language Models
 Asher Sprigler, Alexander Drobek, Keagan Weinstock, Wendpanga Tapsoba,
