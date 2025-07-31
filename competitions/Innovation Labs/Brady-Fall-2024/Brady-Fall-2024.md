@@ -1,12 +1,3 @@
-summary: Innovation Labs 2024, hosted by AI-Club in collaboration with Brady Corporation, is a dynamic program that challenges students to solve real-world industry problems using AI. This hands-on experience equips participants with technical, project management, and communication skills, preparing them for impactful careers.
-type: md
-date: 12/12/2024
-title: Innovation Labs 2024 with Brady Corporation
-image: ./img/thumbnails/IL_MAIC_Logo_grad.png
-difficulty: medium
-authors: Ben Paulson
-categories: Innovation Labs, AI, Project
-
 ## Innovation Labs 2024: Hands-On Industry AI Innovations
 
 **Innovation Labs 2024**, hosted by the MSOE Artificial Intelligence Club (MAIC) in collaboration with Brady Corporation, is a unique opportunity for students to develop practical AI solutions while tackling industry-relevant challenges. Designed to bridge the gap between academia and real-world applications, this program emphasizes creativity, teamwork, and technical excellence.

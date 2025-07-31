@@ -1,0 +1,10 @@
+{
+    "summary": "HacksGiving 2024, a three-day hackathon hosted by the MSOE AI-Club in collaboration with Discovery World, brought together students to create innovative AI solutions for improving visitor experiences at Milwaukee’s science and technology center.",
+    "type": "md",
+    "date": "11/26/2024",
+    "title": "HacksGiving 2024 with Discovery World",
+    "image": "https://maic-fastapi-lambda.s3.amazonaws.com/img/thumbnails/discovery_world.png",
+    "difficulty": "easy",
+    "authors": "Ben Paulson",
+    "categories": "HacksGiving, Competition, Project"
+}
