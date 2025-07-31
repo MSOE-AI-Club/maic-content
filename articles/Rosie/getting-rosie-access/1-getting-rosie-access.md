@@ -1,12 +1,3 @@
-summary: Let's get you access to that fancy supercomputer in Diercks Hall, no matter your major/year!
-type: md
-date: 5/9/2024
-title: ROSIE Pt1: Getting Access
-image: ./img/thumbnails/ROSIE Tutorial Icon 1.png
-difficulty: easy
-authors: John Cisler, Thomas Benzshawel, Ben Paulson
-categories: ROSIE
-
 <br>
 <a href='/learning-tree?node=5' style='
     background-color: #31313a;

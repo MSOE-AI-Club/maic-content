@@ -1,12 +1,3 @@
-summary: Now that you have access to ROSIE with your own password, you can start using the online ROSIE interface!
-type: md
-date: 5/9/2024
-title: ROSIE Pt3: Using ROSIE Web Portal
-image: ./img/thumbnails/ROSIE Tutorial Icon 3.png
-difficulty: easy
-authors: John Cisler, Thomas Benzshawel, Ben Paulson
-categories: ROSIE
-
 <br>
 <a href='/learning-tree?node=7' style='
     background-color: #31313a;

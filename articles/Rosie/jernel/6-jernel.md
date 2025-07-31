@@ -1,12 +1,3 @@
-summary: This article is for you if you find that VSCode is a better tool than Rosie's dashboard for running Jupyter notebooks.
-type: md
-date: 4/9/2024
-title: Jernel: Running VSCode Jupyter Notebooks on Rosie
-image: ./img/thumbnails/jernel.png
-difficulty: intermediate
-authors: Lucas Gral
-categories: Rosie,SSH,Jupyter
-
 ## Why Read?
 
 You've likely run Jupyter notebooks on Rosie via the dashboard website. If you've also run notebooks on VSCode, then you're likely aware of how much better the experience is compared to using the Rosie dashboard. Jernel is a tool that allows you to run Jupyter Notebooks connected to Rosie on VSCode. It gives you all the benefits of working with notebooks in VSCode, and it also gives you the benefits of running notebooks on Rosie.

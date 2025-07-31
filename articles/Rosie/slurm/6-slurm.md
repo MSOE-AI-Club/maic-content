@@ -1,12 +1,3 @@
-summary: There are often cases where you need to know how to use Slurm (Rosie's job scheduling software). This article details some basic and more advanced use cases.
-type: md
-date: 4/9/2024
-title: Advanced Slurm Usage
-image: ./img/thumbnails/advabced_slurm.webp
-difficulty: advanced
-authors: Lucas Gral
-categories: Rosie,Slurm
-
 <br>
 <a href='/learning-tree?node=16' style='
     background-color: #31313a;
