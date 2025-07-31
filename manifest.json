@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-07-31T02:30:16.012Z",
+  "generated_at": "2025-07-31T02:32:00.859Z",
   "files": [
     ".manifestignore",
     "README.md",
@@ -89,8 +89,10 @@
     "articles/Supervised Learning/007-sl-own-NN/metadata.json",
     "articles/Supervised Learning/008-sl-series-data/008_sl-series-data.md",
     "articles/Supervised Learning/008-sl-series-data/metadata.json",
-    "articles/Unsupervised Learning/001_ul-intro.md",
-    "articles/Unsupervised Learning/002_ul-clustering.md",
+    "articles/Unsupervised Learning/001-ul-intro/001_ul-intro.md",
+    "articles/Unsupervised Learning/001-ul-intro/metadata.json",
+    "articles/Unsupervised Learning/002-ul-clustering/002_ul-clustering.md",
+    "articles/Unsupervised Learning/002-ul-clustering/metadata.json",
     "articles/VS Code/1-how-use-vscode.md",
     "articles/VS Code/2-vscode-extensions.md",
     "articles/VS Code/3-vscode-terminal.md",
