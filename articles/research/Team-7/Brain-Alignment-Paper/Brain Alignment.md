@@ -1,14 +1,3 @@
-summary: MICS Presentation from the Brain Alignment Team lead by Bart Gebka.
-type: link
-date: 24/9/2024
-title: Mind Over (Gray) Matter Presentation
-image: images/content/research/gray-matter-preso.png
-difficulty: easy
-authors: Caleb Gray, Alexander Neher, Sonia Grade, Mikolaj Sordyl, Abigail Draper, John Bukowy, Bart Gebka
-categories: Transfer Learning, Medical Imaging, Previous Paper
-link: https://drive.google.com/file/d/1t4pyVAFvtybcNKCWB_59Um2NXOYalb9l/view?usp=sharing
-pages: 8
-
 Mind Over (Gray) Matter: Homologous Point
 Transform Applications to Brain Histology and MR
 
