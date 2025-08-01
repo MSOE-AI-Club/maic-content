@@ -1,9 +1,3 @@
-img: https://maic-fastapi-lambda.s3.amazonaws.com/img/thumbnails/aiIntro.png
-summary: Intro to AI and Keras
-date: 21/9/2023
-title: Intro to AI and Keras
-authors: Lucas Gral
-
 How does one actually _do_ AI? Explore the industry standard tool that we use at MAIC: Keras. Learn how to make a very simple network in Keras, and how we can run our network on Rosie as a "SLURM" job.
 
 To get the workshop on Rosie:

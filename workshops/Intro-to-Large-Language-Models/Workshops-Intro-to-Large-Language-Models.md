@@ -1,9 +1,3 @@
-img: https://maic-fastapi-lambda.s3.amazonaws.com/img/thumbnails/llm.jpg
-summary: Learn the basics of LLama, ChatGPT, and how to use them in your projects
-date: 9/11/2023
-title: Basics of Large Language Models
-authors: Lucas Gral, Thomas Benzshawel
-
 Follow along in the LLM notebook [HERE](https://drive.google.com/file/d/1C1xPki6FL7EoMrb3AXO2X7j280y-MyxQ/view?usp=drive_link)!
 
 # Methods of running LLMs locally
