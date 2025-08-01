@@ -1,7 +1,3 @@
-img: https://maic-fastapi-lambda.s3.amazonaws.com/img/thumbnails/MAIC-Researcher-Hoodie.png
-date: 14/11/2023
-not_in_recent:
-
 **Research Group Member Exclusive**
 
 Introducing the MAIC Researcher Hoodie – the quintessential cloak for those who dance with data and tango with tensors! 
