@@ -1,0 +1,1 @@
+Based on the brain waves collected from ECG scanners placed on a subject's head, we are able to read someone's mind! Well, more accurately recreate the images that their brain is seeing. We are experimenting with the MNIST dataset to reconstruct the image that a human perceives when looking at a number.
