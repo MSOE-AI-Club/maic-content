@@ -3,7 +3,7 @@
     "type": "md",
     "date": "9/8/2023",
     "title": "What's Python?",
-    "image": "./img/thumbnails/Python_Introduction.png",
+    "image": "./images/thumbnails/Python_Introduction.png",
     "difficulty": "easy",
     "authors": "Lucas Gral, Sydney Balboni",
     "categories": ["Python", "Topic Introduction"]

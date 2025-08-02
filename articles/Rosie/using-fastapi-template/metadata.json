@@ -3,7 +3,7 @@
     "type": "md",
     "date": "16/11/2024",
     "title": "Using the Rosie FastAPI Template",
-    "image": "./img/thumbnails/rosie-fastapi-template.png",
+    "image": "./images/thumbnails/rosie-fastapi-template.png",
     "difficulty": "advanced",
     "authors": "Adam Haile",
     "categories": "Rosie, Slurm"

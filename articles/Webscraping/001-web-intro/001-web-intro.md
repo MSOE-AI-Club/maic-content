@@ -171,7 +171,7 @@ print(get_page_content("https://msoe-maic.com/library?nav=Articles&article=001_W
 ```
 
 We see that when we run this, with using the link given, we get something similar to the following:
-![webscraping results](https://maic-fastapi-lambda.s3.amazonaws.com/img/misc/webscraping_output.png)
+![webscraping results](./images/misc/webscraping_output.png)
 
 Great! We just scraped our first website! We can now use this same function to scrape more websites and get their content!
 

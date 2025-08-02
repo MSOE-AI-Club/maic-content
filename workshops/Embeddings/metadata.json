@@ -3,7 +3,7 @@
     "type": "marimo",
     "date": "4/25/2025",
     "title": "Intro to Embeddings",
-    "image": "./img/article_content/embeddings.png",
+    "image": "./images/article_content/embeddings.png",
     "difficulty": "advanced",
     "authors": "Adam Haile, Lucas Gral",
     "categories": "workshop, python, webscraping",

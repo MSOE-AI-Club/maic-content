@@ -3,7 +3,7 @@
     "type": "md",
     "date": "9/4/24",
     "title": "Unsupervised Clustering",
-    "image": "./img/tree-thumbnails/ul-clustering.png",
+    "image": "./images/tree-thumbnails/ul-clustering.png",
     "difficulty": "easy",
     "authors": "Ben Paulson, Aiden Miller",
     "categories": ["unsupervised learning"]

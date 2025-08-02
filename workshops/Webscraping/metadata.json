@@ -3,7 +3,7 @@
     "type": "marimo",
     "date": "4/25/2025",
     "title": "Intro to Webscraping",
-    "image": "./img/article_content/webscraping.png",
+    "image": "./images/article_content/webscraping.png",
     "difficulty": "advanced",
     "authors": "Adam Haile",
     "categories": "workshop, python, webscraping",

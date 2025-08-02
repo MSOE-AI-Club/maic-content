@@ -3,7 +3,7 @@
     "type": "md",
     "date": "4/9/2024",
     "title": "Jernel: Running VSCode Jupyter Notebooks on Rosie",
-    "image": "./img/thumbnails/jernel.png",
+    "image": "./images/thumbnails/jernel.png",
     "difficulty": "intermediate",
     "authors": "Lucas Gral",
     "categories": "Rosie, SSH, Jupyter"

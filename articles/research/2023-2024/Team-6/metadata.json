@@ -3,7 +3,7 @@
     "type": "link",
     "date": "30/6/2024",
     "title": "Heart of AI",
-    "image": "./img/thumbnails/hearts_ai_front.png",
+    "image": "./images/thumbnails/hearts_ai_front.png",
     "difficulty": "easy",
     "authors": "Sam Keyser, Zach Wentz, Charles Nortrup, Franklin Cole, Mitchell Johnstone",
     "categories": "Reinforcement Learning, Game Playing",

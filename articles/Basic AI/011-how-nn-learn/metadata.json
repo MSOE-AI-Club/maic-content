@@ -3,7 +3,7 @@
     "type": "md",
     "date": "31/8/2024",
     "title": "How Do Neural Networks Learn?",
-    "image": "./img/tree-thumbnails/how_nn_learn.png",
+    "image": "./images/tree-thumbnails/how_nn_learn.png",
     "difficulty": "easy",
     "authors": "Ben Paulson",
     "categories": ["Basics of AI", "3Blue1Brown"]

@@ -3,7 +3,7 @@
     "type": "md",
     "date": "26/05/2025",
     "title": "Innovation Labs Spring 2025 with Juno",
-    "image": "https://maic-fastapi-lambda.s3.amazonaws.com/img/thumbnails/IL_MAIC_Logo_grad.png",
+    "image": "./images/thumbnails/IL_MAIC_Logo_grad.png",
     "difficulty": "medium",
     "authors": "Brett Storoe",
     "categories": "Innovation Labs, AI, Project"

@@ -3,7 +3,7 @@
     "type": "md",
     "date": "9/4/24",
     "title": "Linear Regression using SKlearn",
-    "image": "./img/tree-thumbnails/sl-lin-reg.png",
+    "image": "./images/tree-thumbnails/sl-lin-reg.png",
     "difficulty": "easy",
     "authors": "Thomas Benzshawel",
     "categories": ["supervised learning", "regression", "classification"]

@@ -3,7 +3,7 @@
     "type": "md",
     "date": "19/2/2025",
     "title": "Text Preprocessing",
-    "image": "./img/tree-thumbnails/text-preprocessing.png",
+    "image": "./images/tree-thumbnails/text-preprocessing.png",
     "difficulty": "medium",
     "authors": "Tyge Plater",
     "categories": ["supervised learning", "NLP"]

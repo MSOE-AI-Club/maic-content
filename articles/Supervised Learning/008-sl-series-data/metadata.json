@@ -3,7 +3,7 @@
     "type": "md",
     "date": "9/4/24",
     "title": "Series-Based Data",
-    "image": "./img/tree-thumbnails/series-data.png",
+    "image": "./images/tree-thumbnails/series-data.png",
     "difficulty": "medium",
     "authors": "Ben Paulson",
     "categories": ["supervised learning", "regression", "classification", "neural networks"]

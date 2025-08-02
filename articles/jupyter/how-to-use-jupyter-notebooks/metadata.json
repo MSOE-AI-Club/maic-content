@@ -3,7 +3,7 @@
     "type": "md",
     "date": "28/8/2023",
     "title": "How to use Jupyter notebooks",
-    "image": "./img/thumbnails/Jupyter_logo.png",
+    "image": "./images/thumbnails/Jupyter_logo.png",
     "difficulty": "easy",
     "authors": "Thomas Benzshawel,Ben Paulson",
     "categories": ["Jupyter", "Topic Introduction"]

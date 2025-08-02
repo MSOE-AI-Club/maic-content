@@ -3,7 +3,7 @@
         "title": "Basics of Large Language Models",
         "type": "workshop",
         "date": "2023-11-09",
-        "image": "https://maic-fastapi-lambda.s3.amazonaws.com/img/thumbnails/llm.jpg",
+        "image": "./images/thumbnails/llm.jpg",
         "description": "Follow along in the LLM notebook! Llama.cpp is a solution for running LLMs locally! It could only run Llama initially, but it can now run most open source LLMs...",
         "content": "### Basics of Large Language Models\n\n**Workshop - November 09, 2023**\n\nFollow along in the LLM notebook [HERE](https://drive.google.com/file/d/1C1xPki6FL7EoMrb3AXO2X7j280y-MyxQ/view?usp=drive_link)!\n\nLlama.cpp is a solution for running LLMs locally!  \nIt could only run Llama initially, but it can now run most open source LLMs. Fun fact: llama.cpp does not depend on any machine learning or tensor libraries (like Tensorflow or Pytorch, each of which are hundereds of megabytes); it was written from scratch in C/C++.\n\nAnother solution for running LLMs locally: [Hugging Face Transformers](https://huggingface.co/docs/transformers/index).\n\n## Loading Llama on Rosie with pre-trained weights\n\nllm = Llama('/data/ai_club/llms/llama-2-7b-chat.Q5_K_M.gguf', n_gpu_layers=-1, verbose=False)\n\n- You can make predictions, a lot of them, through: result = llm('Text')\n- The model result is a dictionary -- like an array, but you can index it at things other than numbers. The thing you index it at is called the key, and the thing the key stores is called the value.\n- The key can be almost any datatype, and the value can be *any* datatype.\n- result['choices'] is an array of dictionaries\n- Use result['choices'][0]['text'] to get the text of the result\n\n**What about chatting?**\n\nOn top of text-completion abilities, we can also do chat-like inputs with the `create_chat_completion` method.\n\n**Developer:** Lucas Gral, Thomas Benzshawel\n\n**Date:** Nov 09, 2023"
     },
@@ -11,7 +11,7 @@
         "title": "AI Ethics in Modern Applications",
         "type": "speaker",
         "date": "2025-06-15",
-        "image": "https://maic-fastapi-lambda.s3.amazonaws.com/img/thumbnails/ethics.jpg",
+        "image": "./images/thumbnails/ethics.jpg",
         "description": "Join us for an insightful discussion on the ethical implications of AI in today's technology landscape. Our guest speaker will explore real-world case studies and future considerations.",
         "content": "### AI Ethics in Modern Applications\n\n**Speaker Event - June 15, 2025**\n\nJoin us for an insightful discussion on the ethical implications of AI in today's technology landscape. Our guest speaker will explore real-world case studies and future considerations for responsible AI development.\n\n## Topics Covered:\n\n- Bias in AI systems\n- Privacy and data protection\n- Transparency and explainability\n- Future regulatory frameworks\n\n**Speaker:** Dr. Sarah Johnson, AI Ethics Researcher\n\n**Date:** June 15, 2025"
     },
@@ -19,7 +19,7 @@
         "title": "MAIC Racing Hackathon",
         "type": "competition",
         "date": "2023-01-21",
-        "image": "https://maic-fastapi-lambda.s3.amazonaws.com/img/thumbnails/racing.jpg",
+        "image": "./images/thumbnails/racing.jpg",
         "description": "Compete in our exciting racing AI hackathon! Build autonomous racing algorithms and compete against other teams in this fast-paced competition.",
         "content": "### MAIC Racing Hackathon\n\n**Competition - January 21, 2023**\n\nCompete in our exciting racing AI hackathon! Build autonomous racing algorithms and compete against other teams in this fast-paced competition.\n\n## Competition Details:\n\n- Team-based competition (2-4 members)\n- 24-hour development window\n- Prizes for top 3 teams\n- Mentorship from MAIC leaders\n\n**Organizer:** MAIC Competition Committee\n\n**Date:** January 21, 2023"
     },
@@ -27,7 +27,7 @@
         "title": "Introduction to Neural Networks",
         "type": "intro",
         "date": "2025-07-10",
-        "image": "https://maic-fastapi-lambda.s3.amazonaws.com/img/thumbnails/neural-nets.jpg",
+        "image": "./images/thumbnails/neural-nets.jpg",
         "description": "Perfect for beginners! Learn the fundamentals of neural networks, from basic concepts to hands-on implementation. No prior experience required.",
         "content": "### Introduction to Neural Networks\n\n**Intro Series - July 10, 2025**\n\nPerfect for beginners! Learn the fundamentals of neural networks, from basic concepts to hands-on implementation. No prior experience required.\n\n## What You'll Learn:\n\n- Basic neuron model and activation functions\n- Forward and backward propagation\n- Building your first neural network\n- Common architectures and applications\n\n**Instructor:** MAIC Teaching Team\n\n**Date:** July 10, 2025"
     },
@@ -35,7 +35,7 @@
         "title": "Computer Vision with CNNs",
         "type": "workshop",
         "date": "2024-04-15",
-        "image": "https://maic-fastapi-lambda.s3.amazonaws.com/img/thumbnails/cnn.jpg",
+        "image": "./images/thumbnails/cnn.jpg",
         "description": "Dive deep into computer vision using Convolutional Neural Networks. Learn about image classification, object detection, and modern CNN architectures.",
         "content": "### Computer Vision with CNNs\n\n**Workshop - April 15, 2024**\n\nDive deep into computer vision using Convolutional Neural Networks. Learn about image classification, object detection, and modern CNN architectures.\n\n## Workshop Content:\n\n- CNN architecture fundamentals\n- Image preprocessing techniques\n- Transfer learning with pre-trained models\n- Hands-on image classification project\n\n**Instructor:** Dr. Alex Chen\n\n**Date:** April 15, 2024"
     },
@@ -43,7 +43,7 @@
         "title": "Industry Panel: AI in Healthcare",
         "type": "speaker",
         "date": "2025-08-20",
-        "image": "https://maic-fastapi-lambda.s3.amazonaws.com/img/thumbnails/healthcare.jpg",
+        "image": "./images/thumbnails/healthcare.jpg",
         "description": "Join industry experts as they discuss the current state and future of AI applications in healthcare, from diagnostic imaging to drug discovery.",
         "content": "### Industry Panel: AI in Healthcare\n\n**Speaker Event - August 20, 2025**\n\nJoin industry experts as they discuss the current state and future of AI applications in healthcare, from diagnostic imaging to drug discovery.\n\n## Panelists:\n\n- Dr. Maria Rodriguez - Chief AI Officer, HealthTech Solutions\n- Dr. James Liu - Research Director, Medical AI Lab\n- Sarah Kim - Product Manager, MedTech Innovations\n\n**Date:** August 20, 2025"
     }

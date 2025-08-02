@@ -3,7 +3,7 @@
     "type": "md",
     "date": "12/12/2024",
     "title": "Innovation Labs 2024 with Brady Corporation",
-    "image": "https://maic-fastapi-lambda.s3.amazonaws.com/img/thumbnails/IL_MAIC_Logo_grad.png",
+    "image": "./images/thumbnails/IL_MAIC_Logo_grad.png",
     "difficulty": "medium",
     "authors": "Ben Paulson",
     "categories": "Innovation Labs, AI, Project"
