@@ -1,0 +1,10 @@
+{
+    "summary": "This article walks through the process of connecting VSCode to Rosie via SSH, and explains why you might want to do so in the first place.",
+    "type": "md",
+    "date": "4/9/2024",
+    "title": "Connecting to Rosie in VSCode via SSH",
+    "image": "./images/thumbnails/ssh_with_vsc.png",
+    "difficulty": "easy",
+    "authors": "Lucas Gral",
+    "categories": "Rosie, SSH"
+}

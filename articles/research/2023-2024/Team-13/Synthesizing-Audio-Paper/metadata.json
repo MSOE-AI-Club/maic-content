@@ -1,0 +1,12 @@
+{
+    "summary": "Generating audio from a video's visual context has multiple practical applications in improving how we interact with audio-visual media - for example, enhancing CCTV footage analysis, restoring historical videos (e.g., silent movies), and improving video generation models. We propose a novel method to generate audio from video using a sequence-to-sequence model, improving on prior work that used CNNs and WaveNet and faced sound diversity and generalization challenges. Our approach employs a 3D Vector Quantized Variational Autoencoder (VQ-VAE) to capture the video's spatial and temporal structures, decoding with a custom audio decoder for a broader range of sounds. Trained on the Youtube8M dataset segment, focusing on specific domains, our model aims to enhance applications like CCTV footage analysis, silent movie restoration, and video generation models.",
+    "type": "pdf",
+    "date": "25/5/2025",
+    "title": "Synthesizing Audio from Silent Video using Sequence to Sequence Modeling",
+    "image": "images/content/research/file-thumbnails/2404.17608.jpg",
+    "difficulty": "easy",
+    "authors": "Hugo Garrido-Lestache Belinchon, Helina Mulugeta, Adam Haile",
+    "categories": "Research,VQ-VAE,Seq2Seq",
+    "pdf": "https://arxiv.org/pdf/2404.17608",
+    "pages": 9
+}

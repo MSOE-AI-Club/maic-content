@@ -1,0 +1,10 @@
+{
+    "summary": "The Rosie FastAPI template is a preconfigured starting point for creating a new Python application via FastAPI, designed to be deployed both locally and on Rosie. It includes built-in security to ensure that users cannot access endpoints without credentials, templating for easily adding, modifying, or removing API endpoints, and documentation on how to deploy your application on Rosie. The template offers a basic directory structure, example code, and all necessary configurations to leverage the full capabilities of Rosie while keeping your API secure.",
+    "type": "md",
+    "date": "16/11/2024",
+    "title": "Using the Rosie FastAPI Template",
+    "image": "./images/thumbnails/rosie-fastapi-template.png",
+    "difficulty": "advanced",
+    "authors": "Adam Haile",
+    "categories": "Rosie, Slurm"
+}

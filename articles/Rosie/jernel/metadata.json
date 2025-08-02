@@ -1,0 +1,10 @@
+{
+    "summary": "This article is for you if you find that VSCode is a better tool than Rosie's dashboard for running Jupyter notebooks.",
+    "type": "md",
+    "date": "4/9/2024",
+    "title": "Jernel: Running VSCode Jupyter Notebooks on Rosie",
+    "image": "./images/thumbnails/jernel.png",
+    "difficulty": "intermediate",
+    "authors": "Lucas Gral",
+    "categories": "Rosie, SSH, Jupyter"
+}

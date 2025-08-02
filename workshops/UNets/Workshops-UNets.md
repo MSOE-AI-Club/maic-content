@@ -1,0 +1,1 @@
+Discover UNets: Join our workshop on U-shaped neural networks. Learn image segmentation, architecture, and applications through practical sessions. Unlock the power of AI in this immersive learning experience.

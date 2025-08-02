@@ -1,0 +1,1 @@
+Rev up your AI skills in the 'Q-Learning Racing Hackathon'. Accelerate through hands-on challenges as you harness Q-learning algorithms to optimize racing strategies. Join fellow enthusiasts to master the intersection of reinforcement learning and racing dynamics, and compete for exhilarating prizes in this high-octane workshop.

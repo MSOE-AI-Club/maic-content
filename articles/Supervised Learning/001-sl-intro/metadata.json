@@ -1,0 +1,10 @@
+{
+    "summary": "Introduction to supervised machine learning",
+    "type": "md",
+    "date": "9/4/24",
+    "title": "All Machine Learning Models Explained",
+    "image": "./images/tree-thumbnails/sl-intro.png",
+    "difficulty": "easy",
+    "authors": "Thomas Benzshawel",
+    "categories": "supervised learning, regression, classification"
+}

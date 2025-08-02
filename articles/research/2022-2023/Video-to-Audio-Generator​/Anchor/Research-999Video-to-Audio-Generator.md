@@ -1,0 +1,1 @@
+Problem:​ Take video frames, predict the audio​<br/> Approach​: Deep learning: Frame encoder and Audio Decoder​<br/> Progress​: Have a script written that extracts frames from videos with manually applied labels​, Jupyter Notebook to train a CNN meant to categorize the frames of video and predict what category of video is shown​<br/> ​

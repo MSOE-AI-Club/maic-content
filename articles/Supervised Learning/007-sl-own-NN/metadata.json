@@ -1,0 +1,10 @@
+{
+    "summary": "Creating your own Neural network",
+    "type": "md",
+    "date": "9/4/24",
+    "title": "Creating Your Own Neural network",
+    "image": "./images/tree-thumbnails/sl-own-NN.png",
+    "difficulty": "medium",
+    "authors": "Thomas Benzshawel",
+    "categories": ["supervised learning", "regression", "classification", "neural networks"]
+}

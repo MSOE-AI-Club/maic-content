@@ -1,0 +1,10 @@
+{
+    "summary": "Linear Regression using SKlearn",
+    "type": "md",
+    "date": "9/4/24",
+    "title": "Linear Regression using SKlearn",
+    "image": "./images/tree-thumbnails/sl-lin-reg.png",
+    "difficulty": "easy",
+    "authors": "Thomas Benzshawel",
+    "categories": ["supervised learning", "regression", "classification"]
+}

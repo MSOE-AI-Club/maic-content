@@ -1,0 +1,1 @@
+Problem​: Music be hard​<br/> Approach:​ Sequence to Sequence Transformer​, Take in part of a midi song, fill in the rest​<br/> Progress​: We have data​, Setting up data processing pipeline​, Setting up model<br/>
