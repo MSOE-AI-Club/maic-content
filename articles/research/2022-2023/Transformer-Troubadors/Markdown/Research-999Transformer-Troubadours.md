@@ -1,11 +1,5 @@
 # img: ./img/thumbnails/Transformer-Troubadours.png
 
-# date: 9999999
-
-not_in_recent:
-title: The Transformer Troubadors
-img: ./img/thumbnails/Transformer-Troubadours.png
-
 **Members:** Luke Harwood, Code Steinmetz, Adam Buker, Andy Dao, Jiri Liska, Lucas Gral<br/>
 **Year:** 2022-2023<br/>
 **Problem​:** Music be hard​<br/>

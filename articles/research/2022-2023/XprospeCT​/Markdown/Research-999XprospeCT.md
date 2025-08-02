@@ -1,8 +1,4 @@
 # img: ./img/thumbnails/Transformer-Troubadours.png
-# date: 9999999
-not_in_recent:
-title: XprospeCT​
-img: ./img/thumbnails/v3_ROSIE_BP_Model.gif
 
 **Members:** Ben Paulson, Sydney Balboni, John Cisler, Theodore Colwell, Natalia Bukowski, Joshua Goldshteyn, Julia Kalish, Andrew Crisler<br/>
 **Year:** 2022-2023<br/>

@@ -1,8 +1,4 @@
 # img: ./img/thumbnails/Transformer-Troubadours.png
-# date: 9999999
-not_in_recent:
-title: Bot Automated Response Technology​ (BART): MSOE Chat Bot ​
-img: ./img/thumbnails/chat_bot.jpg
 
 **Members:** Mazen Hamid, Nikhil Gajghate, Bart Gebka, Matej Koncos, Justin Benning<br/>
 **Year:** 2022-2023<br/>
