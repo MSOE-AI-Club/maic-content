@@ -548,31 +548,11 @@
                     "link": "",
                     "highlighted_path": "True",
                     "position": {
-                        "x": 0,
-                        "y": 0
-                    },
-                    "parents": [
-                        "65"
-                    ],
-                    "children": [
-                        "67"
-                    ]
-                },
-                {
-                    "id": "67",
-                    "filename": "rl-67-66",
-                    "name": "Markov Decision Making Process",
-                    "description": "COMING SOON",
-                    "category": "RL",
-                    "api_image_path": "images/tree-thumbnails/article-soon.png",
-                    "link": "",
-                    "highlighted_path": "True",
-                    "position": {
                         "x": 3000,
                         "y": 0
                     },
                     "parents": [
-                        "66"
+                        "65"
                     ],
                     "children": [
                         "68"
@@ -588,7 +568,7 @@
                     "link": "",
                     "highlighted_path": "True",
                     "position": {
-                        "x": 0,
+                        "x": 3000,
                         "y": 0
                     },
                     "parents": [
@@ -649,7 +629,7 @@
                     "link": "",
                     "highlighted_path": "True",
                     "position": {
-                        "x": 0,
+                        "x": 3000,
                         "y": 0
                     },
                     "parents": [
@@ -1925,26 +1905,6 @@
             "id": "66",
             "type": "treeNode",
             "position": {
-                "x": 0,
-                "y": 0
-            },
-            "data": {
-                "name": "Markov Decision Making Process",
-                "api_image_path": "images/tree-thumbnails/article-soon.png",
-                "description": "COMING SOON",
-                "category": "RL",
-                "category_color": "yellow",
-                "highlighted_path": "True",
-                "link": ""
-            },
-            "children": [
-                "67"
-            ]
-        },
-        {
-            "id": "67",
-            "type": "treeNode",
-            "position": {
                 "x": 3000,
                 "y": 0
             },
@@ -1965,7 +1925,7 @@
             "id": "68",
             "type": "treeNode",
             "position": {
-                "x": 0,
+                "x": 3000,
                 "y": 0
             },
             "data": {
@@ -2026,7 +1986,7 @@
             "id": "71",
             "type": "treeNode",
             "position": {
-                "x": 0,
+                "x": 3000,
                 "y": 0
             },
             "data": {
