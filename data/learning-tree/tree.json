@@ -693,7 +693,7 @@
                     "link": "/library?nav=Articles&article=6-slurm",
                     "highlighted_path": "True",
                     "position": {
-                        "x": -400,
+                        "x": -800,
                         "y": 500
                     },
                     "parents": [
@@ -711,7 +711,7 @@
                     "link": "/library?nav=Articles&article=6-jernel",
                     "highlighted_path": "True",
                     "position": {
-                        "x": -700,
+                        "x": -1200,
                         "y": 500
                     },
                     "parents": [
@@ -729,7 +729,7 @@
                     "link": "/library?nav=Articles&article=6-rosie-ssh",
                     "highlighted_path": "True",
                     "position": {
-                        "x": -1000,
+                        "x": -1600,
                         "y": 500
                     },
                     "parents": [
@@ -808,7 +808,7 @@
                     "link": "/library?nav=Articles&article=using-fastapi-template",
                     "highlighted_path": "True",
                     "position": {
-                        "x": -100,
+                        "x": -400,
                         "y": 500
                     },
                     "parents": [
@@ -2046,7 +2046,7 @@
             "id": "15",
             "type": "treeNode",
             "position": {
-                "x": -400,
+                "x": -600,
                 "y": 500
             },
             "data": {
@@ -2064,7 +2064,7 @@
             "id": "16",
             "type": "treeNode",
             "position": {
-                "x": -400,
+                "x": -800,
                 "y": 500
             },
             "data": {
@@ -2082,7 +2082,7 @@
             "id": "17",
             "type": "treeNode",
             "position": {
-                "x": -700,
+                "x": -1200,
                 "y": 500
             },
             "data": {
@@ -2100,7 +2100,7 @@
             "id": "18",
             "type": "treeNode",
             "position": {
-                "x": -1000,
+                "x": -1600,
                 "y": 500
             },
             "data": {
@@ -2179,7 +2179,7 @@
             "id": "73",
             "type": "treeNode",
             "position": {
-                "x": -100,
+                "x": -400,
                 "y": 500
             },
             "data": {
