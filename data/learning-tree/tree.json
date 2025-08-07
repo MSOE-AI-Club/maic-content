@@ -896,7 +896,7 @@
                     "link": "/library?nav=Articles&article=002_sl-learning",
                     "highlighted_path": "True",
                     "position": {
-                        "x": -600,
+                        "x": -800,
                         "y": 400
                     },
                     "parents": [
@@ -916,7 +916,7 @@
                     "link": "/library?nav=Articles&article=003_sl-which-model",
                     "highlighted_path": "True",
                     "position": {
-                        "x": -200,
+                        "x": -400,
                         "y": 400
                     },
                     "parents": [
@@ -936,7 +936,7 @@
                     "link": "/library?nav=Articles&article=004_sl-lin-reg",
                     "highlighted_path": "True",
                     "position": {
-                        "x": -400,
+                        "x": -600,
                         "y": 400
                     },
                     "parents": [
@@ -956,7 +956,7 @@
                     "link": "/library?nav=Articles&article=005_sl-solved-models",
                     "highlighted_path": "True",
                     "position": {
-                        "x": -400,
+                        "x": -800,
                         "y": 400
                     },
                     "parents": [
@@ -976,7 +976,7 @@
                     "link": "/library?nav=Articles&article=006_sl-intro-nn",
                     "highlighted_path": "True",
                     "position": {
-                        "x": -600,
+                        "x": -1000,
                         "y": 400
                     },
                     "parents": [
@@ -996,7 +996,7 @@
                     "link": "/library?nav=Articles&article=007_sl-own-NN",
                     "highlighted_path": "True",
                     "position": {
-                        "x": -600,
+                        "x": -1200,
                         "y": 400
                     },
                     "parents": [
@@ -1017,7 +1017,7 @@
                     "link": "/library?nav=Articles&article=008_sl-series-data",
                     "highlighted_path": "True",
                     "position": {
-                        "x": 0,
+                        "x": -600,
                         "y": 0
                     },
                     "parents": [
@@ -2262,7 +2262,7 @@
             "id": "23",
             "type": "treeNode",
             "position": {
-                "x": -600,
+                "x": -800,
                 "y": 400
             },
             "data": {
@@ -2282,7 +2282,7 @@
             "id": "24",
             "type": "treeNode",
             "position": {
-                "x": -200,
+                "x": -400,
                 "y": 400
             },
             "data": {
@@ -2302,7 +2302,7 @@
             "id": "25",
             "type": "treeNode",
             "position": {
-                "x": -400,
+                "x": -600,
                 "y": 400
             },
             "data": {
@@ -2322,7 +2322,7 @@
             "id": "26",
             "type": "treeNode",
             "position": {
-                "x": -400,
+                "x": -800,
                 "y": 400
             },
             "data": {
@@ -2342,7 +2342,7 @@
             "id": "27",
             "type": "treeNode",
             "position": {
-                "x": -600,
+                "x": -1000,
                 "y": 400
             },
             "data": {
@@ -2362,7 +2362,7 @@
             "id": "28",
             "type": "treeNode",
             "position": {
-                "x": -600,
+                "x": -1200,
                 "y": 400
             },
             "data": {
@@ -2382,7 +2382,7 @@
             "id": "31",
             "type": "treeNode",
             "position": {
-                "x": 0,
+                "x": -600,
                 "y": 0
             },
             "data": {
