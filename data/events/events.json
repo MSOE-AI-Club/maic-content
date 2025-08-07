@@ -1,9 +1,9 @@
 [
     {
-        "title": "Basics of Large Language Models",
+        "title": "Diercks Hall",
         "type": "workshop",
         "date": "2023-11-09",
-        "image": "images/thumbnails/llm.jpg",
+        "image": "images/thumbnails/DH.jpg",
         "description": "Follow along in the LLM notebook! Llama.cpp is a solution for running LLMs locally! It could only run Llama initially, but it can now run most open source LLMs...",
         "content": "### Basics of Large Language Models\n\n**Workshop - November 09, 2023**\n\nFollow along in the LLM notebook [HERE](https://drive.google.com/file/d/1C1xPki6FL7EoMrb3AXO2X7j280y-MyxQ/view?usp=drive_link)!\n\nLlama.cpp is a solution for running LLMs locally!  \nIt could only run Llama initially, but it can now run most open source LLMs. Fun fact: llama.cpp does not depend on any machine learning or tensor libraries (like Tensorflow or Pytorch, each of which are hundereds of megabytes); it was written from scratch in C/C++.\n\nAnother solution for running LLMs locally: [Hugging Face Transformers](https://huggingface.co/docs/transformers/index).\n\n## Loading Llama on Rosie with pre-trained weights\n\nllm = Llama('/data/ai_club/llms/llama-2-7b-chat.Q5_K_M.gguf', n_gpu_layers=-1, verbose=False)\n\n- You can make predictions, a lot of them, through: result = llm('Text')\n- The model result is a dictionary -- like an array, but you can index it at things other than numbers. The thing you index it at is called the key, and the thing the key stores is called the value.\n- The key can be almost any datatype, and the value can be *any* datatype.\n- result['choices'] is an array of dictionaries\n- Use result['choices'][0]['text'] to get the text of the result\n\n**What about chatting?**\n\nOn top of text-completion abilities, we can also do chat-like inputs with the `create_chat_completion` method.\n\n**Developer:** Lucas Gral, Thomas Benzshawel\n\n**Date:** Nov 09, 2023"
     },
