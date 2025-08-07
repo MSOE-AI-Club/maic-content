@@ -1034,11 +1034,11 @@
                 {
                     "id": "29",
                     "filename": "unsup-29-21",
-                    "name": "Difference Between Supervised and Unsupervised Learnin",
+                    "name": "Difference Between Supervised and Unsupervised Learning",
                     "description": "In machine learning (ML), there are typically two broad categories of AI models that people typically think of: supervised and unsupervised learning.",
                     "category": "Supervised Learning",
                     "api_image_path": "images/tree-thumbnails/ul-intro.png",
-                    "link": "/library?nav=Articles&article=001_ul-own-NN",
+                    "link": "/library?nav=Articles&article=001_ul-intro",
                     "highlighted_path": "True",
                     "position": {
                         "x": 200,
@@ -1180,20 +1180,20 @@
                 }
             ]
         },
-        "Unsupervised Clustering": {
+        "Unsupervised Learning": {
             "category_color": "brown",
             "nodes": [
                 {
                     "id": "30",
                     "filename": "unsup-30-29",
-                    "name": "Difference Between Supervised and Unsupervised Learnin",
+                    "name": "Unsupervised Clustering",
                     "description": "With unsupervised learning, a common algorithm is \"clustering\" data points together based on their similarities. This article will explain the concept of unsupervised clustering.",
-                    "category": "Unsupervised Clustering",
+                    "category": "Unsupervised Learning",
                     "api_image_path": "images/tree-thumbnails/ul-clustering.png",
                     "link": "/library?nav=Articles&article=002_ul-clustering",
                     "highlighted_path": "True",
                     "position": {
-                        "x": 200,
+                        "x": 400,
                         "y": 400
                     },
                     "parents": [
@@ -2530,13 +2530,13 @@
                 "y": 400
             },
             "data": {
-                "name": "Difference Between Supervised and Unsupervised Learnin",
+                "name": "Difference Between Supervised and Unsupervised Learning",
                 "api_image_path": "images/tree-thumbnails/ul-intro.png",
                 "description": "In machine learning (ML), there are typically two broad categories of AI models that people typically think of: supervised and unsupervised learning.",
                 "category": "Supervised Learning",
                 "category_color": "brown",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=001_ul-own-NN"
+                "link": "/library?nav=Articles&article=001_ul-intro"
             },
             "children": [
                 "30"
@@ -2546,14 +2546,14 @@
             "id": "30",
             "type": "treeNode",
             "position": {
-                "x": 200,
+                "x": 400,
                 "y": 400
             },
             "data": {
-                "name": "Difference Between Supervised and Unsupervised Learnin",
+                "name": "Unsupervised Clustering",
                 "api_image_path": "images/tree-thumbnails/ul-clustering.png",
                 "description": "With unsupervised learning, a common algorithm is \"clustering\" data points together based on their similarities. This article will explain the concept of unsupervised clustering.",
-                "category": "Unsupervised Clustering",
+                "category": "Unsupervised Learning",
                 "category_color": "brown",
                 "highlighted_path": "True",
                 "link": "/library?nav=Articles&article=002_ul-clustering"
