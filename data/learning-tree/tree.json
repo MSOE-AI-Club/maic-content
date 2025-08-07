@@ -247,7 +247,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -1800,
-                        "y": 3000
+                        "y": 12400
                     },
                     "parents": [
                         "37",
@@ -504,7 +504,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -200,
-                        "y": 2500
+                        "y": 13900
                     },
                     "parents": [
                         "71",
@@ -569,7 +569,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 3000,
-                        "y": 0
+                        "y": 10400
                     },
                     "parents": [
                         "67"
@@ -1108,7 +1108,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 500,
-                        "y": 975
+                        "y": 10900
                     },
                     "parents": [
                         "46",
@@ -1603,7 +1603,7 @@
             "type": "treeNode",
             "position": {
                 "x": -1800,
-                "y": 3000
+                "y": 12400
             },
             "data": {
                 "name": "Making Your Own Chat-GPT (Pt1)",
@@ -1868,7 +1868,7 @@
             "type": "treeNode",
             "position": {
                 "x": -200,
-                "y": 2500
+                "y": 13900
             },
             "data": {
                 "name": "LLM Communication",
@@ -1926,7 +1926,7 @@
             "type": "treeNode",
             "position": {
                 "x": 3000,
-                "y": 0
+                "y": 10400
             },
             "data": {
                 "name": "Q-Learning",
@@ -2428,7 +2428,7 @@
             "type": "treeNode",
             "position": {
                 "x": 500,
-                "y": 975
+                "y": 10900
             },
             "data": {
                 "name": "Recurrent Neural Network (RNN)",
