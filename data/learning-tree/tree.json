@@ -14,7 +14,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 0,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "3"
@@ -53,7 +53,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 0,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "2"
@@ -73,7 +73,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 0,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "1"
@@ -98,7 +98,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 0,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "9",
@@ -119,7 +119,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 0,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "19"
@@ -139,7 +139,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 0,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "20"
@@ -656,7 +656,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -600,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "7"
@@ -674,7 +674,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -800,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "9"
@@ -692,7 +692,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -1200,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "9"
@@ -710,7 +710,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -1600,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "9"
@@ -728,7 +728,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -200,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "4"
@@ -748,7 +748,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 0,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "5"
@@ -768,7 +768,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -200,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "6"
@@ -807,7 +807,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 0,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "7"
@@ -827,7 +827,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -200,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "8"
@@ -856,7 +856,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -200,
-                        "y": 400
+                        "y": 0
                     },
                     "parents": [
                         "21"
@@ -877,7 +877,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -800,
-                        "y": 400
+                        "y": 0
                     },
                     "parents": [
                         "22"
@@ -897,7 +897,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -400,
-                        "y": 400
+                        "y": 0
                     },
                     "parents": [
                         "22"
@@ -917,7 +917,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -600,
-                        "y": 400
+                        "y": 0
                     },
                     "parents": [
                         "24"
@@ -937,7 +937,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -800,
-                        "y": 400
+                        "y": 0
                     },
                     "parents": [
                         "25"
@@ -957,7 +957,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -1000,
-                        "y": 400
+                        "y": 0
                     },
                     "parents": [
                         "26"
@@ -977,7 +977,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -1200,
-                        "y": 400
+                        "y": 0
                     },
                     "parents": [
                         "27",
@@ -1022,7 +1022,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 200,
-                        "y": 400
+                        "y": 0
                     },
                     "parents": [
                         "21"
@@ -1174,7 +1174,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 400,
-                        "y": 400
+                        "y": 0
                     },
                     "parents": [
                         "29"
@@ -1341,7 +1341,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 200,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "4"
@@ -1361,7 +1361,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 0,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "10"
@@ -1381,7 +1381,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 200,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "11"
@@ -1401,7 +1401,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 0,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "12"
@@ -1421,7 +1421,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 200,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "13"
@@ -1439,7 +1439,7 @@
             "type": "treeNode",
             "position": {
                 "x": 0,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "Why Learn AI with AI-Club?",
@@ -1460,7 +1460,7 @@
             "type": "treeNode",
             "position": {
                 "x": 0,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "What is a Neural Network?",
@@ -1480,7 +1480,7 @@
             "type": "treeNode",
             "position": {
                 "x": 0,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "How Do Neural Networks Learn?",
@@ -1500,7 +1500,7 @@
             "type": "treeNode",
             "position": {
                 "x": 0,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "What is 'Backpropagation'?",
@@ -2007,7 +2007,7 @@
             "type": "treeNode",
             "position": {
                 "x": -600,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "Global Protect",
@@ -2025,7 +2025,7 @@
             "type": "treeNode",
             "position": {
                 "x": -800,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "Advanced Slurm Usage",
@@ -2043,7 +2043,7 @@
             "type": "treeNode",
             "position": {
                 "x": -1200,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "Running VSCode Jupyter Notebooks on Rosie",
@@ -2061,7 +2061,7 @@
             "type": "treeNode",
             "position": {
                 "x": -1600,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "Connecting to Rosie in VSCode via SSH",
@@ -2079,7 +2079,7 @@
             "type": "treeNode",
             "position": {
                 "x": -200,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "ROSIE Pt1: Getting Access",
@@ -2099,7 +2099,7 @@
             "type": "treeNode",
             "position": {
                 "x": 0,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "ROSIE Pt2: First Login",
@@ -2119,7 +2119,7 @@
             "type": "treeNode",
             "position": {
                 "x": -200,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "ROSIE Pt3: Using ROSIE Web Portal",
@@ -2158,7 +2158,7 @@
             "type": "treeNode",
             "position": {
                 "x": 0,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "ROSIE Pt4: Starting Your First ROSIE Job",
@@ -2178,7 +2178,7 @@
             "type": "treeNode",
             "position": {
                 "x": -200,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "ROSIE Pt5: Using the ROSIE Terminal",
@@ -2202,7 +2202,7 @@
             "type": "treeNode",
             "position": {
                 "x": -200,
-                "y": 400
+                "y": 0
             },
             "data": {
                 "name": "All Machine Learning Models Explained",
@@ -2223,7 +2223,7 @@
             "type": "treeNode",
             "position": {
                 "x": -800,
-                "y": 400
+                "y": 0
             },
             "data": {
                 "name": "Learning How Machines Learn",
@@ -2243,7 +2243,7 @@
             "type": "treeNode",
             "position": {
                 "x": -400,
-                "y": 400
+                "y": 0
             },
             "data": {
                 "name": "Picking Which Model to Use",
@@ -2263,7 +2263,7 @@
             "type": "treeNode",
             "position": {
                 "x": -600,
-                "y": 400
+                "y": 0
             },
             "data": {
                 "name": "Linear Regression using SKlearn",
@@ -2283,7 +2283,7 @@
             "type": "treeNode",
             "position": {
                 "x": -800,
-                "y": 400
+                "y": 0
             },
             "data": {
                 "name": "Using Sklearn to Use Solutions Already Found",
@@ -2303,7 +2303,7 @@
             "type": "treeNode",
             "position": {
                 "x": -1000,
-                "y": 400
+                "y": 0
             },
             "data": {
                 "name": "Introduction to Neural Networks",
@@ -2323,7 +2323,7 @@
             "type": "treeNode",
             "position": {
                 "x": -1200,
-                "y": 400
+                "y": 0
             },
             "data": {
                 "name": "Creating Your Own Neural Network",
@@ -2487,7 +2487,7 @@
             "type": "treeNode",
             "position": {
                 "x": 200,
-                "y": 400
+                "y": 0
             },
             "data": {
                 "name": "Difference Between Supervised and Unsupervised Learning",
@@ -2507,7 +2507,7 @@
             "type": "treeNode",
             "position": {
                 "x": 400,
-                "y": 400
+                "y": 0
             },
             "data": {
                 "name": "Unsupervised Clustering",
@@ -2663,7 +2663,7 @@
             "type": "treeNode",
             "position": {
                 "x": 200,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "VSC Pt1: How to Use Visual Studio Code",
@@ -2683,7 +2683,7 @@
             "type": "treeNode",
             "position": {
                 "x": 0,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "VSC Pt2: Installing Languages / Extensions in VSCode",
@@ -2703,7 +2703,7 @@
             "type": "treeNode",
             "position": {
                 "x": 200,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "VSC Pt3: Using VSCode's Terminal",
@@ -2723,7 +2723,7 @@
             "type": "treeNode",
             "position": {
                 "x": 0,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "VSC Pt4: Using an Environment in VSCode",
@@ -2743,7 +2743,7 @@
             "type": "treeNode",
             "position": {
                 "x": 200,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "VSC Pt5: Using VSCode's Version Control",
@@ -2763,7 +2763,7 @@
             "type": "treeNode",
             "position": {
                 "x": 0,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "What is AI?",
@@ -2783,7 +2783,7 @@
             "type": "treeNode",
             "position": {
                 "x": 0,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "What is Programming?",
