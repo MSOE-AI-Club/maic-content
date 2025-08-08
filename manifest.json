@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-08-08T00:33:53.914Z",
+  "generated_at": "2025-08-08T00:50:05.256Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -395,11 +395,16 @@
     "images/content/research/gray-matter.png",
     "images/general/Logo.png",
     "images/home/2024_ROSIE_MAIC.jpg",
+    "images/home/Innovation_Labs_Proposal.pdf",
     "images/home/hacksgiving-2023.jpg",
+    "images/home/innovation_labs.png",
     "images/home/joe_poeschl.jpg",
     "images/home/learning_tree_logo.png",
     "images/home/logo.png",
     "images/home/maic_eboard_25.jpg",
+    "images/home/mock_leaderboard.png",
+    "images/home/research_groups.png",
+    "images/home/speaker_events.png",
     "images/merch/Brains.jpg",
     "images/merch/MAIC-Basic-Hoodie.png",
     "images/merch/MAIC-Polo.png",
