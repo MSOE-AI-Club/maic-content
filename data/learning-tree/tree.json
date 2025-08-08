@@ -789,7 +789,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -400,
-                        "y": 500
+                        "y": 0
                     },
                     "parents": [
                         "9"
@@ -1317,7 +1317,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 900,
-                        "y": 1500
+                        "y": 12500
                     },
                     "parents": [
                         "63",
@@ -2140,7 +2140,7 @@
             "type": "treeNode",
             "position": {
                 "x": -400,
-                "y": 500
+                "y": 0
             },
             "data": {
                 "name": "Using the Rosie FastAPI Template",
@@ -2645,7 +2645,7 @@
             "type": "treeNode",
             "position": {
                 "x": 900,
-                "y": 1500
+                "y": 12500
             },
             "data": {
                 "name": "Vision Transformer",
