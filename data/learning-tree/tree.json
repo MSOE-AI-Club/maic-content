@@ -503,8 +503,8 @@
                     "link": "",
                     "highlighted_path": "True",
                     "position": {
-                        "x": 500,
-                        "y": 13900
+                        "x": 750,
+                        "y": 14000
                     },
                     "parents": [
                         "71",
@@ -1867,8 +1867,8 @@
             "id": "72",
             "type": "treeNode",
             "position": {
-                "x": 500,
-                "y": 13900
+                "x": 750,
+                "y": 14000
             },
             "data": {
                 "name": "LLM Communication",
