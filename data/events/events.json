@@ -1,50 +1,163 @@
 [
     {
-        "title": "Diercks Hall",
-        "type": "workshop",
-        "date": "2023-11-09",
-        "image": "images/thumbnails/DH.jpg",
-        "description": "Follow along in the LLM notebook! Llama.cpp is a solution for running LLMs locally! It could only run Llama initially, but it can now run most open source LLMs...",
-        "content": "### Basics of Large Language Models\n\n**Workshop - November 09, 2023**\n\nFollow along in the LLM notebook [HERE](https://drive.google.com/file/d/1C1xPki6FL7EoMrb3AXO2X7j280y-MyxQ/view?usp=drive_link)!\n\nLlama.cpp is a solution for running LLMs locally!  \nIt could only run Llama initially, but it can now run most open source LLMs. Fun fact: llama.cpp does not depend on any machine learning or tensor libraries (like Tensorflow or Pytorch, each of which are hundereds of megabytes); it was written from scratch in C/C++.\n\nAnother solution for running LLMs locally: [Hugging Face Transformers](https://huggingface.co/docs/transformers/index).\n\n## Loading Llama on Rosie with pre-trained weights\n\nllm = Llama('/data/ai_club/llms/llama-2-7b-chat.Q5_K_M.gguf', n_gpu_layers=-1, verbose=False)\n\n- You can make predictions, a lot of them, through: result = llm('Text')\n- The model result is a dictionary -- like an array, but you can index it at things other than numbers. The thing you index it at is called the key, and the thing the key stores is called the value.\n- The key can be almost any datatype, and the value can be *any* datatype.\n- result['choices'] is an array of dictionaries\n- Use result['choices'][0]['text'] to get the text of the result\n\n**What about chatting?**\n\nOn top of text-completion abilities, we can also do chat-like inputs with the `create_chat_completion` method.\n\n**Developer:** Lucas Gral, Thomas Benzshawel\n\n**Date:** Nov 09, 2023"
-    },
-    {
-        "title": "AI Ethics in Modern Applications",
+        "title": "5th Anniversary of Diercks Hall",
         "type": "speaker",
-        "date": "2025-06-15",
-        "image": "images/thumbnails/ethics.jpg",
-        "description": "Join us for an insightful discussion on the ethical implications of AI in today's technology landscape. Our guest speaker will explore real-world case studies and future considerations.",
-        "content": "### AI Ethics in Modern Applications\n\n**Speaker Event - June 15, 2025**\n\nJoin us for an insightful discussion on the ethical implications of AI in today's technology landscape. Our guest speaker will explore real-world case studies and future considerations for responsible AI development.\n\n## Topics Covered:\n\n- Bias in AI systems\n- Privacy and data protection\n- Transparency and explainability\n- Future regulatory frameworks\n\n**Speaker:** Dr. Sarah Johnson, AI Ethics Researcher\n\n**Date:** June 15, 2025"
+        "date": "2024-09-13",
+        "image": "images/events/DH.jpg",
+        "description": "Milwaukee School of Engineering is celebrating five years of being at the forefront of applied artificial intelligence education. In 2019, Dwight and Dian Diercks Computational Science Hall opened at MSOE, giving students, faculty, staff and the university’s corporate partners access to state-of-the-art classrooms, laboratories, and Rosie the supercomputer."
     },
     {
-        "title": "MAIC Racing Hackathon",
-        "type": "competition",
-        "date": "2023-01-21",
-        "image": "images/thumbnails/racing.jpg",
-        "description": "Compete in our exciting racing AI hackathon! Build autonomous racing algorithms and compete against other teams in this fast-paced competition.",
-        "content": "### MAIC Racing Hackathon\n\n**Competition - January 21, 2023**\n\nCompete in our exciting racing AI hackathon! Build autonomous racing algorithms and compete against other teams in this fast-paced competition.\n\n## Competition Details:\n\n- Team-based competition (2-4 members)\n- 24-hour development window\n- Prizes for top 3 teams\n- Mentorship from MAIC leaders\n\n**Organizer:** MAIC Competition Committee\n\n**Date:** January 21, 2023"
-    },
-    {
-        "title": "Introduction to Neural Networks",
+        "title": "MSOE Involvement Fair",
         "type": "intro",
-        "date": "2025-07-10",
-        "image": "images/thumbnails/neural-nets.jpg",
-        "description": "Perfect for beginners! Learn the fundamentals of neural networks, from basic concepts to hands-on implementation. No prior experience required.",
-        "content": "### Introduction to Neural Networks\n\n**Intro Series - July 10, 2025**\n\nPerfect for beginners! Learn the fundamentals of neural networks, from basic concepts to hands-on implementation. No prior experience required.\n\n## What You'll Learn:\n\n- Basic neuron model and activation functions\n- Forward and backward propagation\n- Building your first neural network\n- Common architectures and applications\n\n**Instructor:** MAIC Teaching Team\n\n**Date:** July 10, 2025"
+        "date": "2024-09-06",
+        "image": "images/events/2024orgfair.jpg",
+        "description": "Come to the MSOE Involvement Fair to learn about the many clubs and organizations at MSOE!"
     },
     {
-        "title": "Computer Vision with CNNs",
-        "type": "workshop",
-        "date": "2024-04-15",
-        "image": "images/thumbnails/cnn.jpg",
-        "description": "Dive deep into computer vision using Convolutional Neural Networks. Learn about image classification, object detection, and modern CNN architectures.",
-        "content": "### Computer Vision with CNNs\n\n**Workshop - April 15, 2024**\n\nDive deep into computer vision using Convolutional Neural Networks. Learn about image classification, object detection, and modern CNN architectures.\n\n## Workshop Content:\n\n- CNN architecture fundamentals\n- Image preprocessing techniques\n- Transfer learning with pre-trained models\n- Hands-on image classification project\n\n**Instructor:** Dr. Alex Chen\n\n**Date:** April 15, 2024"
+        "title": "AI Club Kickoff!",
+        "type": "intro",
+        "date": "2024-09-12",
+        "image": "images/home/logo.png",
+        "description": "Welcome to the AI Club! We will be discussing who we are, what we do, and how you can get involved."
     },
     {
-        "title": "Industry Panel: AI in Healthcare",
+        "title": "Introduction to Hands-on Projects",
+        "type": "intro",
+        "date": "2024-09-19",
+        "image": "images/events/Research.png",
+        "description": "We will be discussing the many hands-on projects AI Club has to offer. Come hear about Research Groups and Innovation Labs!"
+    },
+    {
+        "title": "Jacob Fink",
         "type": "speaker",
-        "date": "2025-08-20",
-        "image": "images/thumbnails/healthcare.jpg",
-        "description": "Join industry experts as they discuss the current state and future of AI applications in healthcare, from diagnostic imaging to drug discovery.",
-        "content": "### Industry Panel: AI in Healthcare\n\n**Speaker Event - August 20, 2025**\n\nJoin industry experts as they discuss the current state and future of AI applications in healthcare, from diagnostic imaging to drug discovery.\n\n## Panelists:\n\n- Dr. Maria Rodriguez - Chief AI Officer, HealthTech Solutions\n- Dr. James Liu - Research Director, Medical AI Lab\n- Sarah Kim - Product Manager, MedTech Innovations\n\n**Date:** August 20, 2025"
+        "date": "2024-10-03",
+        "image": "images/events/jacobfink.jpg",
+        "description": "Jacob Fink, Lead Data Analyst at Geneva Capital Management LLC, will be speaking about AI impacts his role in the financial investment industry."
+    },
+    {
+        "title": "Innovation Lab & Research Group Kickoff",
+        "type": "competition",
+        "date": "2024-10-10",
+        "image": "images/events/RGLogoNew.png",
+        "description": "Kickoff for the Brady Corp Innovation Lab! Come meet your Research Group and Innovation Lab Mentors."
+    },
+    {
+        "title": "Industry Hiring Panel",
+        "type": "speaker",
+        "date": "2024-10-24",
+        "image": "images/events/MAIC_10-24_Poster.png",
+        "description": "Join us for a panel discussion with industry professionals from various companies to learn about the latest trends in AI and how to prepare for the job market."
+    },
+    {
+        "title": "Molly Slawson w/ Michael Best",
+        "type": "speaker",
+        "date": "2024-11-14",
+        "image": "images/events/Michael-Best-logo.png",
+        "description": "Welcoming Michael Best (A law firm!) for a talk on AI Intellectual Property! This is VERY important for the future of AI, as the debate for who owns what becomes more and more heated!"
+    },
+    {
+        "title": "HacksGiving Kick-off",
+        "type": "competition",
+        "date": "2024-11-21",
+        "image": "images/events/wide_med_2024-news-msoe-hacksgiving-kickoff-diercks-hall-1.jpg",
+        "description": "Kickoff for HacksGiving! Come compete is the Thanksgiving Hackathon partnered w/ Non-Profit Discovery World!"
+    },
+    {
+        "title": "HacksGiving Finals",
+        "type": "competition",
+        "date": "2024-11-23",
+        "image": "images/events/DiscoveryWorld.png",
+        "description": "Come present your HacksGiving projects! Discovery World is incredibly grateful for the work you all did!"
+    },
+    {
+        "title": "Winter Semester Celebration",
+        "type": "speaker",
+        "date": "2024-12-07",
+        "image": "images/events/ITCChristmas.jpeg",
+        "description": "Come celebrate all the hard work you did this semester! We will be playing games, eating food, and having an AI Club Raffle!"
+    },
+    {
+        "title": "Paul Rinaldi Career Advice",
+        "type": "speaker",
+        "date": "2025-01-30",
+        "image": "images/events/paul.jpg",
+        "description": "Paul Rinaldi, a MSOE Alumm, consultant at Thoughtworks, will be speaking about his career path and how he got to where he is today."
+    },
+    {
+        "title": "Web Scraping Workshop",
+        "type": "workshop",
+        "date": "2025-02-06",
+        "image": "images/events/webscraping.jpg",
+        "description": "Come learn how to scrape the web for data! This is an incredible useful and common tool in the AI industry."
+    },
+    {
+        "title": "Mercury Marine",
+        "type": "speaker",
+        "date": "2025-02-20",
+        "image": "images/events/mercurymarine.jpg",
+        "description": "Come hear from Mercury Marine about their use of AI in their manufacturing process!"
+    },
+    {
+        "title": "Innovation Lab Kick-Off",
+        "type": "competition",
+        "date": "2025-03-06",
+        "image": "images/events/JunoLogo.jpg",
+        "description": "Kickoff for the Juno Innovation Lab! Come see how AI is disrupting the tax industry."
+    },
+    {
+        "title": "Spring Break Celebration & Elections",
+        "type": "speaker",
+        "date": "2025-03-13",
+        "image": "images/events/PalmTree.jpg",
+        "description": "As the year is coming to an end, we will be electing the new AI Club eboard. Come vote, eat, play games, and win raffle prizes!"
+    },
+    {
+        "title": "Joe Poeschl w/ MKE Tech Hub",
+        "type": "speaker",
+        "date": "2025-03-27",
+        "image": "images/events/Milwaukee-Tech-Hub.png",
+        "description": "Come hear from Joe Poeschl, the Director of MKE Tech Hub, about the future of AI in Milwaukee!"
+    },
+    {
+        "title": "MICS Practice Preso",
+        "type": "speaker",
+        "date": "2025-04-03",
+        "image": "images/events/MicsPracticePresentation.png",
+        "description": "Come learn about the incredible work our Research Groups have been doing over the past year!"
+    },
+    {
+        "title": "MICS Research Conference",
+        "type": "competition",
+        "date": "2025-04-05",
+        "image": "images/events/Hagfors21x.jpg",
+        "description": "Research Groups will be showing off their work at a regional AI Research Conference!"
+    },
+    {
+        "title": "SVP of AI w/ Associated Bank",
+        "type": "speaker",
+        "date": "2025-04-10",
+        "image": "images/events/Associated_Logo.jpg",
+        "description": "Come hear from the SVP of AI at Associated Bank about the future of AI in the banking industry!"
+    },
+    {
+        "title": "Consulting Advice w/ Sabrina Stangler",
+        "type": "speaker",
+        "date": "2025-04-17",
+        "image": "images/events/curiousbean.jpg",
+        "description": "Come hear from Sabrina Stangler, the CEO of Curious Bean, about her career path and how she got to where she is today as a software consultant."
+    },
+    {
+        "title": "Rosie Competition",
+        "type": "competition",
+        "date": "2025-04-23",
+        "image": "images/thumbnails/ROSIE Supercomputer.jpg",
+        "description": "Come support the AI Club as all 5 finalists are from AI Club!"
+    },
+    {
+        "title": "End of the Semester Celebration",
+        "type": "speaker",
+        "date": "2025-05-01",
+        "image": "images/events/rubberduck.png",
+        "description": "Come celebrate all the hard work you did all year! We will be playing games, eating food, and having an AI Club Raffle!"
     }
 ]
