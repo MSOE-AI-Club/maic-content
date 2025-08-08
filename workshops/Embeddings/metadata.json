@@ -3,9 +3,10 @@
     "type": "marimo",
     "date": "4/25/2025",
     "title": "Intro to Embeddings",
-    "image": "./images/article_content/embeddings.png",
+    "image": "./images/thumbnails/embeddings.png",
     "difficulty": "advanced",
     "authors": "Adam Haile, Lucas Gral",
     "categories": "workshop, python, webscraping",
+    "duration": 60,
     "url": "https://msoe-ai-club.github.io/workshops-marimo/embeddings.html"
 }

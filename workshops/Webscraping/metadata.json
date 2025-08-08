@@ -3,9 +3,10 @@
     "type": "marimo",
     "date": "4/25/2025",
     "title": "Intro to Webscraping",
-    "image": "./images/article_content/webscraping.png",
+    "image": "./images/thumbnails/web-scraping.png",
     "difficulty": "advanced",
     "authors": "Adam Haile",
     "categories": "workshop, python, webscraping",
+    "duration": 30,
     "url": "https://msoe-ai-club.github.io/workshops-marimo/webscraping.html"
 }
