@@ -503,7 +503,7 @@
                     "link": "",
                     "highlighted_path": "True",
                     "position": {
-                        "x": -200,
+                        "x": 200,
                         "y": 13900
                     },
                     "parents": [
@@ -1317,7 +1317,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 900,
-                        "y": 12500
+                        "y": 13500
                     },
                     "parents": [
                         "63",
@@ -1867,7 +1867,7 @@
             "id": "72",
             "type": "treeNode",
             "position": {
-                "x": -200,
+                "x": 200,
                 "y": 13900
             },
             "data": {
@@ -2645,7 +2645,7 @@
             "type": "treeNode",
             "position": {
                 "x": 900,
-                "y": 12500
+                "y": 13500
             },
             "data": {
                 "name": "Vision Transformer",
