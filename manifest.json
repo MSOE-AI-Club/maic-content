@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-08-08T19:36:24.102Z",
+  "generated_at": "2025-08-08T20:48:42.957Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -518,6 +518,7 @@
     "images/thumbnails/chat_bot.jpg",
     "images/thumbnails/discovery_world.png",
     "images/thumbnails/drone_front.png",
+    "images/thumbnails/embeddings.png",
     "images/thumbnails/evolution.png",
     "images/thumbnails/gray-matter-preso.png",
     "images/thumbnails/gray-matter.png",
@@ -537,6 +538,7 @@
     "images/thumbnails/syn_front.png",
     "images/thumbnails/synergistic_sim.png",
     "images/thumbnails/v3_ROSIE_BP_Model.gif",
+    "images/thumbnails/web-scraping.png",
     "images/thumbnails/what_is_ai.png",
     "images/thumbnails/what_is_ai_2.png",
     "images/thumbnails/what_is_ai_3.png",
