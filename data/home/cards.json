@@ -4,7 +4,7 @@
     "subtitle": "Learning About the \"WHY\" of AI",
     "description": "AI-Club hosts weekly Speaker Events where industry experts and leaders share insights into cutting-edge AI technologies and their real-world applications. These events foster a sense of community, provide members with the latest AI industry trends, and highlight the importance of pursuing a technology-driven education.",
     "sub_description": "Join us every week at the <a href='https://maps.app.goo.gl/QQbGUNRQrcK8dZpHA' style='font-weight:bold;'>Direct Supply ITC</a> from 6:30-7:30 PM for valuable industry insights—and enjoy some free food!",
-    "imageUrl": "images/home/joe_poeschl.jpg",
+    "imageUrl": "images/home/speaker_events.png",
     "borderColor": "rgb(var(--hl-2))",
     "imageOnLeft": true
   },
@@ -13,7 +13,7 @@
     "subtitle": "Getting Hands-on With Industry",
     "description": "The Innovation Labs offer a hands-on, industry-sponsored platform where teams of 8-12 students tackle real-world AI challenges. These 2-month \"hackathon-style\" projects emphasize practical applications over novel technology, with $5000 in prizes and direct feedback from industry sponsors.",
     "sub_description": "Teams meet for one hour each week and spend another hour on development. This is a great opportunity to build your AI portfolio, work alongside mentors, and gain industry experience! For more details, <a href='https://drive.google.com/file/d/1kNZouHtwEL0uxEgGWr5qynHw7G9GEfGE/view?usp=sharing' style='font-weight: bold;'>check out this overview document.</a>",
-    "imageUrl": "images/home/hacksgiving-2023.jpg",
+    "imageUrl": "images/home/innovation_labs.png",
     "borderColor": "#FFC000",
     "imageOnLeft": false
   },
@@ -22,7 +22,7 @@
     "subtitle": "Publishing Novel AI Applications",
     "description": "Research Groups are designed for students to work collaboratively on AI projects that often lead to published research. Guided by mentors, these groups dive into advanced AI topics, with a focus on innovative solutions and practical experience across 6 months. We even offer for-credit opportunities!",
     "sub_description": "Teams meet weekly to collaborate and develop research papers, often presented at conferences. Interested in making an impact? <a href='/library?nav=Research' style='font-weight: bold;'>See our previous projects here.</a>",
-    "imageUrl": "images/home/2024_ROSIE_MAIC.jpg",
+    "imageUrl": "images/home/research_groups.png",
     "borderColor": "#4BECFD",
     "imageOnLeft": true
   },
@@ -31,7 +31,7 @@
     "subtitle": "Your Pathway to Mastering AI",
     "description": "The Learning Tree is a structured resource guide that helps both beginners and advanced learners navigate AI concepts. Covering fundamental topics through to advanced areas like computer vision and natural language processing, it provides curated resources for self-paced learning -- often used by our hands-on project mentors!",
     "sub_description": "Explore various AI topics and take control of your learning journey by understanding the path ahead. <a href='/learning-tree' style='font-weight: bold;'>Jump to the Learning Tree!</a>",
-    "imageUrl": "images/home/learning_tree_logo.png",
+    "imageUrl": "images/home/learning_tree.png",
     "borderColor": "#00FA86",
     "imageOnLeft": false
   }
