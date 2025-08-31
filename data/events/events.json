@@ -159,5 +159,12 @@
         "date": "2025-05-01",
         "image": "images/events/rubberduck.png",
         "description": "Come celebrate all the hard work you did all year! We will be playing games, eating food, and having an AI Club Raffle!"
+    },
+    {
+        "title": "Org Fair 2025!",
+        "type": "intro",
+        "date": "2025-09-05",
+        "image": "images/events/orgfair.jpg",
+        "description": "Come to the MSOE Involvement Fair to learn about the many clubs and organizations at MSOE! Stop by the AI Club booth for a free AI Club Stress Brain & Candy!"
     }
 ]
