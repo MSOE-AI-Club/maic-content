@@ -164,14 +164,14 @@
         "title": "Org Fair 2025!",
         "type": "intro",
         "date": "2025-09-05",
-        "image": "images/events/2024orgfair.jpg",
+        "image": "images/events/msoe_logo.png",
         "description": "Come to the MSOE Involvement Fair to learn about the many clubs and organizations at MSOE! Stop by the AI Club booth for a free AI Club Stress Brain & Candy!"
     },
     {
         "title": "MSOE AI Club 2025 Kickoff!",
         "type": "intro",
         "date": "2025-09-11",
-        "image": "images/about/msoe_logo.png",
+        "image": "images/home/logo.png",
         "description": "Welcome to the AI Club! Open to all majors-freshmen encouraged! Come learn who we are, what we do, and how YOU can get involved."
     }
 ]
