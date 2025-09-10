@@ -51,7 +51,7 @@
 
 [msoe.dev](https://msoe.dev/#/about) supplies a diagram (also shown below) showing how the Rosie cluster is arranged. However, it might not be clear how the concept of a "Slurm job" plays into this structure.
 
-![diagram](./img/article_content/cluster_overview.png)
+![diagram](/images/article_content/cluster_overview.png)
 
 When you initially connect to Rosie (e.g., via SSH, or the web-based dashboard), you connect from the "Campus Network" cloud in the diagram to the "Login and management servers." Rosie is actually made up of multiple separate computers connected over a private network, and several of these computers are the management nodes. `dh-mgmt2` is an example of a specific management node.
 
@@ -139,7 +139,7 @@ Once you have a job ID, simply run `scancel <JOB ID>`. For instance, `scancel 12
 ## Using Singularity Containers
 
 If you start a containerized notebook on the Rosie dashboard, you are provided with the option to run your code in a certain environment:
-![Dashboard Environments](./img/article-content/dashboard-singularity-options.png)
+![Dashboard Environments](/images/article-content/dashboard-singularity-options.png)
 
 Each of these options correspond to a **singularity** container image. What is singularity? Singularity provides a way to run a fully self-contained environment with its own libraries/software that your code can use without depending on anything being globally-installed. You may be thinking this sounds familiar to Docker or virtual machines if you're familiar with those tools, and you would be correct to think so.
 

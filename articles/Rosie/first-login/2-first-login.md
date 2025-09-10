@@ -66,7 +66,7 @@ If on Mac, git might already by installed if you have xcode. If you are not sure
 ### Installing Git Bash Correctly 
 Open the download and accept all changes, you will then see the below screen...
 
-![alt text](./img/rosie_article_images/git_bash_setup.png)
+![alt text](/images/rosie_article_images/git_bash_setup.png)
 
 
 In the following screens, accept all default selections
@@ -95,7 +95,7 @@ Open up terminal if not already open and then enter the following command, repla
 
 Regardless of your machine's OS, you should be shown something like the following, where you are prompted for your password: 
 
-![alt text](./img/rosie_article_images/ssh_1.png)
+![alt text](/images/rosie_article_images/ssh_1.png)
 
 
 ### 2. Enter the One Time Password
@@ -107,7 +107,7 @@ Perform the same steps as above, writing your new password instead. Again, you w
 ## You're In!
 You should see the following screen! You're in! You can now use ROSIE!
 
-![alt text](./img/rosie_article_images/rosie_success.png)
+![alt text](/images/rosie_article_images/rosie_success.png)
 
 
 Once you see the message that it's creating directory 'home/username' followed by the big ROSIE, you're all set!

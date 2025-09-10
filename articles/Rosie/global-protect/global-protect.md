@@ -55,7 +55,7 @@ Choose the Windows 64bit download and follow the installation instructions
 When you first open global protect, you will need to enter the address you wish to connect to at the bottom of the window.
 For us, this is **vpn.msoe.edu**
 
-![Alt text](./img/article_content/global_protect.png)
+![Alt text](/images/article_content/global_protect.png)
 
 When you hit connect you may be asked for your msoe credentials.
 Afterwards your global protect window will say you are connected. Then you should be able to connect to the ROSIE portal from anywhere!

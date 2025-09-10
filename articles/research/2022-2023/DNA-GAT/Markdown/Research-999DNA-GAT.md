@@ -1,4 +1,4 @@
-# img: ./img/thumbnails/Transformer-Troubadours.png
+# img: /images/thumbnails/Transformer-Troubadours.png
 
 **Members:** Alex Drobek, Arman Hossain, Collin Schmocker, Alex Moran<br/>
 **Year:** 2022-2023

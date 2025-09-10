@@ -2,8 +2,8 @@
 
 **Innovation Labs Spring 2025**, hosted by the MSOE Artificial Intelligence Club (MAIC) in collaboration with Juno (formerly TruePrep.ai), gave students the chance to tackle pressing fintech problems while honing their AI expertise. Designed to bridge the gap between academia and industry, the program emphasized creativity, teamwork, and technical excellence.
 
-<img src = './img/article_content/taxjuno_logo.jpg' height = 100px>
-<img src = './img/thumbnails/IL_MAIC_Logo_grad.png' height = 100px>
+<img src = '/images/article_content/taxjuno_logo.jpg' height = 100px>
+<img src = '/images/thumbnails/IL_MAIC_Logo_grad.png' height = 100px>
 <br/>
 
 ## The Challenge: Modernizing Tax Accounting
@@ -55,7 +55,7 @@ One of the standout successes of this collaboration is the recent rebranding of 
 ## Presentation Day
 On **May 10th, 2025**, selected top teams presented their solutions to a panel of judges from Juno and other industry leaders. This final event is not only a competition but also a celebration of creativity, collaboration, and the practical application of AI.
 
-<img src = './img/article_content/IL_2025_Group.jpg' height = 300px>
+<img src = '/images/article_content/IL_2025_Group.jpg' height = 300px>
 <br/><br/>
 
 ## Congratulations to the Finalists!

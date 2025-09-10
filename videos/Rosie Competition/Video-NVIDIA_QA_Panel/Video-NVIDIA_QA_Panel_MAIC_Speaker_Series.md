@@ -2,7 +2,7 @@ summary: A recording of the livestream for the the NVIDIA Q&A Panel hosted by MA
 type: video
 date: 2/3/2024
 title: NVIDIA Q&A Panel | MAIC Speaker Series
-image: ./img/thumbnails/CNYYRouJ_wk-MQ.jpg
+image: /images/thumbnails/CNYYRouJ_wk-MQ.jpg
 difficulty: easy
 authors: MSOE AI Club
 categories: Videos, NVIDIA, MAIC Speaker Series

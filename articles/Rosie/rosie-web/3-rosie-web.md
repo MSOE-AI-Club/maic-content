@@ -55,7 +55,7 @@ NOTE: You may be prompted to enter your ROSIE credentials again. It is the same 
 
 
 You should see a page like this:
-![alt text](./img/rosie_article_images/rosie_portal.png)
+![alt text](/images/rosie_article_images/rosie_portal.png)
 
 Tab Overview
 From here, you will interact with ROSIE using the five tabs at the top of the screen, here's a breakdown of each:

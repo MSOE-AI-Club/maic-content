@@ -50,11 +50,11 @@
 
 1. Open VSCode
 2. Click the "Extensions" icon in the left toolbar (pictured below).  
-![extension icon](./img/article_content/extensions-view-icon.png) 
+![extension icon](/images/article_content/extensions-view-icon.png) 
 3. Search for "Remote SSH" and click the "Remote - SSH" extension (pictured below)  
-![remote ssh](./img/article_content/remote-ssh.png)
+![remote ssh](/images/article_content/remote-ssh.png)
 4. Click install, and then you should have a blue icon on the bottom-left (pictured below)  
-![blue icon](./img/ssh-icon.png)
+![blue icon](/images/article_content/ssh-icon.png)
 
 ## Start a Connection + Enter Your Info
 

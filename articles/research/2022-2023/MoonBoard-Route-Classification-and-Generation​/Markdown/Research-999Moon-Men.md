@@ -1,4 +1,4 @@
-# img: ./img/thumbnails/Transformer-Troubadours.png
+# img: /images/thumbnails/Transformer-Troubadours.png
 
 **Members:** Aiden Miller, Joshua Grant, Carter ulschmid, Aydin Ruppe, Michael Kirkton, Benjamin Weber<br/>
 **Year:** 2022-2023<br/>

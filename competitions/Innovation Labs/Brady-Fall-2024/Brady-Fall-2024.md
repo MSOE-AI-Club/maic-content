@@ -2,8 +2,8 @@
 
 **Innovation Labs 2024**, hosted by the MSOE Artificial Intelligence Club (MAIC) in collaboration with Brady Corporation, is a unique opportunity for students to develop practical AI solutions while tackling industry-relevant challenges. Designed to bridge the gap between academia and real-world applications, this program emphasizes creativity, teamwork, and technical excellence.
 
-<img src = './img/article_content/brady.png' height = 100px>
-<img src = './img/thumbnails/IL_MAIC_Logo_grad.png' height = 100px>
+<img src = '/images/article_content/brady.png' height = 100px>
+<img src = '/images/thumbnails/IL_MAIC_Logo_grad.png' height = 100px>
 <br/><br/>
 
 ## The Challenge: Getting Creative with Liquids
@@ -42,8 +42,8 @@ This partnership highlights the importance of connecting students with industry 
 ## Presentation Day
 On **December 7th, 2024**, teams presented their solutions to a panel of judges from Brady Corporation and other industry leaders. This final event is not only a competition but also a celebration of creativity, collaboration, and the practical application of AI.
 
-<img src = './img/article_content/IL_2024_Working.jpeg' height = 300px>
-<img src = './img/article_content/IL_2024_Group.jpeg' height = 300px>
+<img src = '/images/article_content/IL_2024_Working.jpeg' height = 300px>
+<img src = '/images/article_content/IL_2024_Group.jpeg' height = 300px>
 <br/><br/>
 
 ## Connect and Stay Updated

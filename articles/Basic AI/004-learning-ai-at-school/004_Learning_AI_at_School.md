@@ -55,4 +55,4 @@ In fact, by participating in AI-Club, you will be able to learn a lot in a short
 
 Referencing the image below, this is our learning philosophy: we believe by providing students a pathway for "diving into the deep end of AI", motivated students will be able to learn incredibly complex topics in a short amount of time they would have otherwise waited years to see.
 
-<img src = './img/article_content/AI-Club-Learning-Philosophy.png' height = 300px><br/><br/>
+<img src = '/images/article_content/AI-Club-Learning-Philosophy.png' height = 300px><br/><br/>
