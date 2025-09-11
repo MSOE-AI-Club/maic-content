@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-11T03:22:42.974Z",
+  "generated_at": "2025-09-11T03:46:49.414Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -597,6 +597,7 @@
     "images/tree-thumbnails/ROSIE Tutorial Icon 3.png",
     "images/tree-thumbnails/ROSIE Tutorial Icon 4.png",
     "images/tree-thumbnails/ROSIE Tutorial Icon 5.png",
+    "images/tree-thumbnails/Reinforcement-Learning-Intro.png",
     "images/tree-thumbnails/VSC_Tutorial_1.png",
     "images/tree-thumbnails/VSC_Tutorial_2.png",
     "images/tree-thumbnails/VSC_Tutorial_3.png",
