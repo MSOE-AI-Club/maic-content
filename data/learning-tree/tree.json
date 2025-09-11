@@ -390,7 +390,7 @@
                     "description": "Learn the concepts of Vector Stores and Embeddings",
                     "category": "NLP",
                     "api_image_path": "images/tree-thumbnails/embeddings.png",
-                    "link": "/library?nav=Articles&article=004_npl-embeddings",
+                    "link": "/library?nav=Articles&article=004_nlp-embeddings",
                     "highlighted_path": "True",
                     "position": {
                         "x": -750,
@@ -1770,7 +1770,7 @@
                 "category": "NLP",
                 "category_color": "orange",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=004_npl-embeddings"
+                "link": "/library?nav=Articles&article=004_nlp-embeddings"
             },
             "children": [
                 "53",
