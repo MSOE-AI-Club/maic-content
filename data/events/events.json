@@ -173,5 +173,19 @@
         "date": "2025-09-11",
         "image": "images/home/logo.png",
         "description": "Welcome to the AI Club! Open to all majors-freshmen encouraged! Come learn who we are, what we do, and how YOU can get involved."
+    },
+    {
+        "title": "Rosie Access For Everyone!",
+        "type": "intro",
+        "date": "2025-09-18",
+        "image": "images/achievements/ROSIE2022.png",
+        "description": "Come learn how to get access to ROSIE, the supercomputer in Diercks Hall! Get your AI journey started with ROSIE!"
+    },
+    {
+        "title": "Intro to Hands-on Projects",
+        "type": "intro",
+        "date": "2025-09-25",
+        "image": "images/events/Research.png",
+        "description": "Come learn about the many hands-on projects the AI Club has to offer. Join an Innovation Lab or a Research Group to work with your peers, build an incredible portfolio piece with a student mentor, and compete for large cash prizes!"
     }
 ]
