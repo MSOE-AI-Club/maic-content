@@ -38,7 +38,8 @@
   </text>
 </svg>
 
-<p style='color: white; margin-top: 2px;'>[Slurm](https://slurm.schedmd.com/) is the job scheduling software that Rosie uses, so understanding how to use it is crucial to getting the most effective use out of Rosie. You may already know the basics - using the `squeue` command to see everyone's currently running jobs, using `srun` to start jobs - and even if you don't know the basics, you're already using Slurm under the hood of Jupyter notebooks running on the Rosie dashboard. That being said, knowing the more advanced aspects of Slurm can come in handy when you need more flexibility in how you run code. Furthermore, you *need* to manually run Slurm commands to use the better GPUs on Rosie!</p>
+<p style='color: white; margin-top: 2px;'> 
+<a href="https://slurm.schedmd.com" target="_blank">Slurm</a> is the job scheduling software that Rosie uses, so understanding how to use it is crucial to getting the most effective use out of Rosie. You may already know the basics - using the `squeue` command to see everyone's currently running jobs, using `srun` to start jobs - and even if you don't know the basics, you're already using Slurm under the hood of Jupyter notebooks running on the Rosie dashboard. That being said, knowing the more advanced aspects of Slurm can come in handy when you need more flexibility in how you run code. Furthermore, you *need* to manually run Slurm commands to use the better GPUs on Rosie!</p>
 
 </div>
 
