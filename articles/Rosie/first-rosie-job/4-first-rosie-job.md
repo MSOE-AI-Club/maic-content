@@ -50,7 +50,7 @@
 ## Starting a Jupyter Notebook
 To start a job, you should go to the My Interactive Sessions tab on the home-screen of the ROSIE web portal. This will open the following menu:
 
-![alt text](/images/rosie_article_images/empty_interactive_sessions.png)
+![alt text](/images/article_content/empty_interactive_sessions.png)
 
 The section highlighted in blue is what we will be interacting with most of the time. The other sections are for more advanced users, and we will not be covering them in this article. However, here is a breakdown for the different types of Jupyter Notebooks:
 
@@ -65,7 +65,7 @@ Jupyter Notebook - Rosie: Simply start up a Jupyter Notebook with your own packa
 Composing Your Project Jupyter Server
 Now that we've broken-down each of the three Jupyter-Server options, we'll select the Jupyter Notebook - Containerized option. This will open the following menu:
 
-![alt text](/images/rosie_article_images/jupyter-containerized.png)
+![alt text](/images/article_content/jupyter-containerized.png)
 
 
 The info filled in for each text box and drop down may look different depending on the project you're starting an instance for. However, the info I've added is usually the configuration we will use for AI-Club. Here is a breakdown of each of the text boxes and drop downs:
@@ -89,12 +89,12 @@ Once you've configured your Jupyter Notebook appropriately, click the Launch but
 ## Connecting To Your Jupyter Notebook
 After you've clicked the Launch button, you will be taken to the following page:
 
-![alt text](/images/rosie_article_images/jupyter-not-started.png)
+![alt text](/images/article_content/jupyter-not-started.png)
 
 
 Just like the notify says, you must wait for your instance to start. After waiting a bit (usually less than a minute), you should see the following page:
 
-![alt text](/images/rosie_article_images/jupyter-started.png)
+![alt text](/images/article_content/jupyter-started.png)
 
 To connect, simply click the Connect to Jupyter Notebook button.
 
@@ -103,7 +103,7 @@ To connect, simply click the Connect to Jupyter Notebook button.
 ## The ROSIE File-Explorer
 After you've clicked the Connect to Jupyter Notebook button, you will be taken to the following page:
 
-![alt text](/images/rosie_article_images/jupyter_launch.png)
+![alt text](/images/article_content/jupyter_launch.png)
 
 
 This is the ROSIE file explorer! Specifically, your Home Directory! On ROSIE, there are two different file systems: Home Directory and Shared Data. I'm sure you can guess the purpose of each, but Home Directory is where all your personal/private files are stored, and Shared Data is where you can share other folders to the rest of MSOE (or keep it partially private, like for the other members in your research team!).
@@ -119,7 +119,7 @@ If you've never interacted with a Jupyter Notebook before, this artice we put to
 
 However, we're talking about ROSIE Jupyter Notebooks, which have the exact-same interface as Jupyter Notebooks you can use with Anaconda, but there are some important notes you should know when using them on ROSIE.
 
-![alt text](/images/rosie_article_images/jupyter-notebook-page.png)
+![alt text](/images/article_content/jupyter-notebook-page.png)
 
 
 
