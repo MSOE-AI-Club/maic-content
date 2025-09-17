@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-11T13:24:57.528Z",
+  "generated_at": "2025-09-17T12:45:36.126Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -394,11 +394,13 @@
     "images/article_content/rosie-file-system.png",
     "images/article_content/rosie_portal.png",
     "images/article_content/rosie_success.png",
+    "images/article_content/rosie_success_old.png",
     "images/article_content/rosieapi_output.png",
     "images/article_content/rosieapi_password.png",
     "images/article_content/rosieapi_root.png",
     "images/article_content/ssh-icon.png",
     "images/article_content/ssh_1.png",
+    "images/article_content/ssh_1_old.png",
     "images/article_content/ssh_2.png",
     "images/article_content/taxjuno_logo.jpg",
     "images/article_content/true_prep_logo.png",
