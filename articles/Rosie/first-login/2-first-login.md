@@ -50,10 +50,10 @@
 
 Logging into ROSIE for the first time is a bit of a pain and requires a few steps. This guide will walk you through the process of logging in for the first time and resetting your password.
 
-ROSIE can only be accessed through MSOE's campus network. If you are anywhere else, including the ITC, you need to use Global Protect, MSOE's VPN. This should come with your MSOE issued laptop, however if you would rather use a personal machine, you can install Global Protect [here](https://vpn.msoe.edu/global-protect/getsoftwarepage.esp). 
+ROSIE can only be accessed through MSOE's campus network. If you are anywhere else, including the ITC, you need to use Global Protect, MSOE's VPN. This should come with your MSOE issued laptop, however if you would rather use a personal machine, you can install Global Protect by reading [this](https://msoe-maic.com/library/?nav=Articles&article=global-protect) article.
 
 
-In order to log in to Rosie for the first time and reset your password, you must do so via SSH (Secure Shell)
+In order to log in to Rosie for the first time, you must do so via SSH (Secure Shell)
 SSH-ing to a computer cluster provides secure remote access, enabling efficient management, data analysis, and collaboration, crucial for scalable, high-performance computing and research in various fields.
 
 However, in order to use SSH, you will need an SSH client. Our tool of choice (that you'll later learn to use in-class as well) is Git.
@@ -76,9 +76,8 @@ In the following screens, accept all default selections
 
 Here's an overview of what we will be doing throughout the rest of the article:
 
-1. SSH into Rosie (ssh username@dh-mgmt2.hpc.msoe.edu)
-2. Enter the one time password that you recieved from Dr. Retert, then reenter this password
-3. Create a new password, then confirm this new password
+1. SSH into Rosie `ssh "username@ad.msoe.edu"@dh-mgmt2.hpc.msoe.edu`
+2. Enter your password.  
 
 ### 1. SSH Into ROSIE
 Once you have Git Bash open, type the following command, replacing username with your username (your email without the msoe.edu)
@@ -86,11 +85,11 @@ Look at the console entries next to the red stars *
 
 #### Using Git Bash (if on Windows)
 Open up the new program by typing git in your search bar, and clicking git bash. Then enter the following command, replacing username with your username (your email without the msoe.edu)
-'ssh username@dh-mgmt2.hpc.msoe.edu'
+`ssh "username@ad.msoe.edu"@dh-mgmt2.hpc.msoe.edu`
 
 #### Using Terminal (if on mac)
 Open up terminal if not already open and then enter the following command, replacing username with your username (your email without the msoe.edu)
-'ssh username@dh-mgmt2.hpc.msoe.edu'
+`ssh "username@ad.msoe.edu"@dh-mgmt2.hpc.msoe.edu`
 
 
 Regardless of your machine's OS, you should be shown something like the following, where you are prompted for your password: 
@@ -98,11 +97,8 @@ Regardless of your machine's OS, you should be shown something like the followin
 ![alt text](/images/article_content/ssh_1.png)
 
 
-### 2. Enter the One Time Password
-You should have recieved an email from Dr. Retert, our ROSIE admin, containing your one time password. It might have a subject along the lines of "Rosie Access Request." Enter this password into your terminal/git bash. As you're entering your password you will not see you password appear. That's OK, the characters will not appear due to security reasons, so please keep entering your password and hit enter when you're done. You will then be prompted to reenter your password, do so and hit enter again.
-
-### 3. Create a New Password & Confirm
-Perform the same steps as above, writing your new password instead. Again, you will not see your password appear as you type it in due to the security features on ROSIE. 
+### 2. Enter your password
+Rosie has switched to using your default msoe login. Enter this password into your terminal/git bash. As you're entering your password you will not see you password appear. That's OK, the characters will not appear due to security reasons, so please keep entering your password and hit enter when you're done.
 
 ## You're In!
 You should see the following screen! You're in! You can now use ROSIE!
@@ -110,11 +106,11 @@ You should see the following screen! You're in! You can now use ROSIE!
 ![alt text](/images/article_content/rosie_success.png)
 
 
-Once you see the message that it's creating directory 'home/username' followed by the big ROSIE, you're all set!
+Once you see the message that it's creating directory 'home/username@ad.msoe.edu' followed by the big ROSIE, you're all set!
 
 
 ## What To Do Moving Forward?
-Now, we aren't actually going to use this terminal interface to interact with ROSIE (that's gross 🤧); instead, we'll be using the online interface, using Jupyter Notebooks and starting up your own ROSIE instances. Find out more in the next article: Using The ROSIE Dev Page.
+Now, we aren't actually going to use this terminal interface to interact with ROSIE (that's gross 🤧); instead, we'll be using the online interface, using Jupyter Notebooks and starting up your own ROSIE instances. Find out more in the next article: [Using The ROSIE Dev Page](https://msoe-maic.com/library/?nav=Articles&article=3-rosie-web).
 
 
 

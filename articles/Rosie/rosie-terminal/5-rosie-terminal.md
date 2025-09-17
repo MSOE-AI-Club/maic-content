@@ -50,18 +50,18 @@
 ## Understanding How To Move Via Command Line
 There are a few conceptual commands you must know to even start interacting with this Linux-based terminal. Those commands are:
 
-cd - Change Directory
-ls - List files in current directory
-pwd - Print Working Directory
-mkdir - Make Directory
-touch - Create File
-rm - Remove File
+`cd` - Change Directory. 
+`ls` - List files in current directory. 
+`pwd` - Print Working Directory. 
+`mkdir` - Make Directory.
+`touch` - Create File. 
+`rm` - Remove File. 
 
 bash - Run a bash script
 
 python - Run a python script
 sbatch - Run a slurm script
-For example cd ../home/my_stuff will take you "up" one folder, then go into the home and my_stuff folder from that "up" (Parent) folder.
+For example `cd ../home/my_stuff` will take you "up" one folder, then go into the home and my_stuff folder from that "up" (Parent) folder.
 
 ## Useful SLURM Commands
 SLURM is the job scheduler that ROSIE uses to manage jobs. It is a very powerful tool that allows you to run jobs on ROSIE without having to keep your laptop running for the job to continue going. Here are some useful commands:
