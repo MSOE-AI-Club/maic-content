@@ -61,19 +61,19 @@ Only those who have reason to use ROSIE can get access to its resources. As an M
 
 Towards the end of the form, there might be some questions that you might not know how to answer. Below are those questions and responses:
 
-Question 4: `Please describe why you are requesting access to Rosie. In this description, please include why Rosie is needed beyond what your campus-issued laptop provides.`
+**Question 4:** `Please describe why you are requesting access to Rosie. In this description, please include why Rosie is needed beyond what your campus-issued laptop provides.`
 Answer: **AI-Club**
 
 
-Question 5: `Please select all the tools you need to use for the request you are making.`
+**Question 5:** `Please select all the tools you need to use for the request you are making.`
 Answer: **Select All Boxes (except for the last one)**
 
 
-Question 6: `If you plan to use GPUs, please describe what acceleration libraries you need.`
+**Question 6:** `If you plan to use GPUs, please describe what acceleration libraries you need.`
 Answer: **tensorflow/keras**
 
 
-Question 7: `How much storage do you require (list MB, GB, TB)?`
+**Question 7:** `How much storage do you require (list MB, GB, TB)?`
 Answer: **10GB**
 
 
