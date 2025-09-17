@@ -129,3 +129,8 @@ You can run command-line commands with ! before your code. For example, `!ls` wi
 Another command is `!nvidia-smi`, which will list all the GPUs you currently have reserved for your current Jupyter Notebook. This is important because you can see if you have the correct number of GPUs reserved for your Jupyter Notebook. If you don't, you can go back to the ROSIE web portal and start a new Jupyter Notebook with the correct number of GPUs.
 
 Knowing all this, you are now ready to start making projects using ROSIE! Have fun! We hope to see you at future AI-Club events to learn even more about how ROSIE can accelerate your future AI projects!
+
+## What's Next?
+Now that you understand how to run a job, you can start using ROSIE to build your AI models. If you want to learn more about using ROSIE, read Part 5: [Using the Rosie Terminal](https://msoe-maic.com/library/?nav=Articles&article=5-rosie-terminal).
+
+For additional technical details about ROSIE access, you can also reference the [official HPC documentation](https://docs.hpc.msoe.edu/#/access).

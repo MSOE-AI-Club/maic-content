@@ -88,3 +88,4 @@ After requesting access you will likely get a response from Dr. Retert with inst
 ## What's Next?
 Once you get his email, read the following article: [First Log In](https://msoe-maic.com/library/?nav=Articles&article=2-first-login)
 
+For additional technical details about ROSIE access, you can also reference the [official HPC documentation](https://docs.hpc.msoe.edu/#/access).

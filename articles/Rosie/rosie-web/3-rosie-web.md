@@ -73,3 +73,4 @@ My Interactive Sessions: This is where you can start up your own ROSIE instance 
 ## What's Next?
 If you're wanting to understand how you can immediately start coding and getting your projects to run on ROSIE, move onto Part 4: [Starting Your First ROSIE Job](https://msoe-maic.com/library/?nav=Articles&article=4-first-rosie-job).
 
+For additional technical details about ROSIE access, you can also reference the [official HPC documentation](https://docs.hpc.msoe.edu/#/access).
