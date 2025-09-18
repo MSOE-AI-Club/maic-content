@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-18T01:44:22.765Z",
+  "generated_at": "2025-09-18T14:43:22.520Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -454,6 +454,7 @@
     "images/events/jacobfink.jpg",
     "images/events/mercurymarine.jpg",
     "images/events/paul.jpg",
+    "images/events/resume_blitz.png",
     "images/events/rubberduck.png",
     "images/events/webscraping.jpg",
     "images/events/wide_med_2024-news-msoe-hacksgiving-kickoff-diercks-hall-1.jpg",
