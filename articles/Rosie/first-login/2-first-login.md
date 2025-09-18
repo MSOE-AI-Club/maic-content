@@ -108,14 +108,12 @@ Enter your standard MSOE login password. **Important notes:**
 - Press Enter when finished typing your password
 
 ## You're Connected!
-
-## You're In!
 You should see the following screen -- you can now use ROSIE!
 
 ![alt text](/images/article_content/rosie_success.png)
 
 
-Once you see the message about creating the directory `/home/username@ad.msoe.edu` followed by the ROSIE banner, you're successfully connected!
+Once you see the ROSIE banner, you are successfully connected, and your personal directory has been created at `/home/ad.msoe.edu/{msoe username}`.
 
 ### Test Your Connection
 

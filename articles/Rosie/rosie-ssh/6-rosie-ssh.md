@@ -62,7 +62,7 @@ Once the extension is installed, click the blue icon on the bottom-left to open 
 
 You may be prompted to choose a configuration file location at this point or in later steps. The default option is fine.
 
-Once you select a connection option click "+ Add New SSH Host..." then enter `username@dh-mgmt2.hpc.msoe.edu` where `username` is your regular MSOE username. Now whenever you try connecting to a host again, the host you just added (Rosie's management node dh-mgmt2) will be an option along side "+ Add New SSH Host..."
+Once you select a connection option click "+ Add New SSH Host..." then enter `"username@ad.msoe.edu"@dh-mgmt2.hpc.msoe.edu` where `username` is your regular MSOE username. Now whenever you try connecting to a host again, the host you just added (Rosie's management node dh-mgmt2) will be an option along side "+ Add New SSH Host...". Note: the quotes are required for the ssh connection. 
 
 Next: Click the bottom-left SSH icon, connect to a host (possibly in the current window), and then select the host you just added. You need to be using global protect now if you're not on MSOE's campus network. If you're prompted to choose an OS, choose "Linux". Finally, enter your Rosie password when prompted, and then you will be connected to Rosie in VSCode once everything finishes loading!
 
@@ -72,7 +72,7 @@ These same steps can be followed to connect in the future, minus the part where 
 
 Once you are connected, you can open a terminal the way you normally would in VSCode. However, this terminal will be running on Rosie rather than on your local machine! Since the terminal is on Rosie, you can do anything you may want to do from the Rosie dashboard terminal or from a local terminal that you ran `ssh` in. For instance, you can run `squeue` to see running jobs.
 
-To use the standard VSCode file browser, you have to press "Open Folder" and manually navigate to a folder to open (`/home/your_username` is a good first choice). Then, you have to enter your Rosie password again.
+To use the standard VSCode file browser, you have to press "Open Folder" and manually navigate to a folder to open (`/home/ad.msoe.edu/{msoe username}` is a good first choice). Then, you have to enter your Rosie password again.
 
 ## Tips & Tricks
 

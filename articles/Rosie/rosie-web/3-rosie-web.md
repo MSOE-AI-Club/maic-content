@@ -51,7 +51,7 @@ The simplest way to interact with Rosie (what you'll likely learn in classes) is
 If you are off campus (or at the ITC), make sure to VPN onto MSOE's network with Global Protect as described in the Global Protect article as described [here](/library?nav=Articles&article=global-protect).
 
 Once you are all set, you can open the Rosie web portal [here](https://dh-ood.hpc.msoe.edu/pun/sys/dashboard).
-NOTE: You may be prompted to enter your ROSIE credentials again. It is the same username and password you set up in the previous article.
+NOTE: You may be prompted to enter your ROSIE credentials again. This is the same password you entered previously. 
 
 
 You should see a page like this:
