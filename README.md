@@ -99,6 +99,14 @@ cd maic-content
 npm install
 ```
 
+### Local Development
+
+#### Starts the local content server/CDN
+
+```bash
+npm run dev 
+```
+
 ### Content Structure
 ```
 ├── articles/           # Educational articles and tutorials

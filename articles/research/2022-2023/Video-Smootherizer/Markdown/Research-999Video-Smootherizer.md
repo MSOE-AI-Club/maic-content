@@ -1,4 +1,4 @@
-# img: ./img/thumbnails/Transformer-Troubadours.png
+# img: /images/thumbnails/Transformer-Troubadours.png
 
 **Members:** Tillie Pasternak, Mitchell Johnstone, Autumn Beyer, Tyler Schreiber, Ryan Kruk<br/>
 **Year:** 2022-2023<br/>

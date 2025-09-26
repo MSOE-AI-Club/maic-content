@@ -51,25 +51,26 @@ The simplest way to interact with Rosie (what you'll likely learn in classes) is
 If you are off campus (or at the ITC), make sure to VPN onto MSOE's network with Global Protect as described in the Global Protect article as described [here](/library?nav=Articles&article=global-protect).
 
 Once you are all set, you can open the Rosie web portal [here](https://dh-ood.hpc.msoe.edu/pun/sys/dashboard).
-NOTE: You may be prompted to enter your ROSIE credentials again. It is the same username and password you set up in the previous article.
+NOTE: You may be prompted to enter your ROSIE credentials again. This is the same password you entered previously. 
 
 
 You should see a page like this:
-![alt text](./img/rosie_article_images/rosie_portal.png)
+![alt text](/images/article_content/rosie_portal.png)
 
 Tab Overview
 From here, you will interact with ROSIE using the five tabs at the top of the screen, here's a breakdown of each:
 
-Files: This is how you both access your own files (Home Directory) and public files (Shared Data) on ROSIE. Whenever you create a new Jupyter notebook, it will go to your Home Directory by default; however, you do have the option of sharing it publicly. Types of files that are shared publicly include AI-Club workshops, class projects, AI-Club research projects, and more.
+**Files**: This is how you both access your own files (Home Directory) and public files (Shared Data) on ROSIE. Whenever you create a new Jupyter notebook, it will go to your Home Directory by default; however, you do have the option of sharing it publicly. Types of files that are shared publicly include AI-Club workshops, class projects, AI-Club research projects, and more.
 
-Jobs: This tab isn't used often by students, but it's where you can see the status of your jobs. If you're running a job, you can see the status of it here. If you're not running a job, you'll see a blank screen unless you view the status of all jobs. The Job Composer is used even less frequently -- do not use this screen unless you know what you are doing. This screen is NOT how you start up your own ROSIE instance for a Jupyter Notebook.
+**Jobs**: This tab isn't used often by students, but it's where you can see the status of your jobs. If you're running a job, you can see the status of it here. If you're not running a job, you'll see a blank screen unless you view the status of all jobs. The Job Composer is used even less frequently -- do not use this screen unless you know what you are doing. This screen is NOT how you start up your own ROSIE instance for a Jupyter Notebook.
 
-Interactive Apps: Lists the different kinds of apps that you can start an interactive session with ROSIE with. We'll talk about these more once we discuss Jupyter Notebooks & My Interactive Sessions.
+**Interactive Apps**: Lists the different kinds of apps that you can start an interactive session with ROSIE with. We'll talk about these more once we discuss Jupyter Notebooks & My Interactive Sessions.
 
-Clusters: Rosie Shell Access is an incredibly powerful and helpful tool. This is the command terminal you can use to move throughout all of ROSIE. You can use this to create new files, move files, delete files, and more. This is also where you can start up a job you made (using Slurm) without having to keep your laptop running for the job to continue going.
+**Clusters**: Rosie Shell Access is an incredibly powerful and helpful tool. This is the command terminal you can use to move throughout all of ROSIE. You can use this to create new files, move files, delete files, and more. This is also where you can start up a job you made (using Slurm) without having to keep your laptop running for the job to continue going.
 
 My Interactive Sessions: This is where you can start up your own ROSIE instance for a Jupyter Notebook. This is the most common way to use ROSIE, and we'll talk about this more in the next section.
 
 ## What's Next?
-If you're wanting to understand how you can immediately start coding and getting your projects to run on ROSIE, move onto Part 4: Starting Your First ROSIE Job.
+If you're wanting to understand how you can immediately start coding and getting your projects to run on ROSIE, move onto Part 4: [Starting Your First ROSIE Job](https://msoe-maic.com/library/?nav=Articles&article=4-first-rosie-job).
 
+For additional technical details about ROSIE access, you can also reference the [official HPC documentation](https://docs.hpc.msoe.edu/#/access).

@@ -12,7 +12,7 @@ Once the notebook is open, write `print('hello')` in the first default cell and 
 
 If you run a newly opened notebook or press the upper-right "Select Kernel" button, you can select the Kernel that's used to execute the code in your notebook. The distinction between notebook and kernel is important in this case, because the notebook interface can be open on your local machine while the kernel can be running on a completely different computer - in this case that could be one of Rosie's teaching nodes. On top of that, this interaction is facilitated by a management node, because since VSCode can only establish SSH connections to management nodes. Below is a diagram of what this optimal setup would look like.
 
-![jupyter kernel on Rosie diagram](./img/article_content/jupyter-kernel.png)
+![jupyter kernel on Rosie diagram](/images/article_content/jupyter-kernel.png)
 
 However, if you click "Select Kernel" and then choose "Python Environments..." you will only be presented with kernels that would run on the management node you are SSH-ed into. This is not ideal; management nodes are not meant for general computation, and they don't even have GPUs!
 

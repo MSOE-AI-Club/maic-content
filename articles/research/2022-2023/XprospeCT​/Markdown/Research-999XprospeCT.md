@@ -1,4 +1,4 @@
-# img: ./img/thumbnails/Transformer-Troubadours.png
+# img: /images/thumbnails/Transformer-Troubadours.png
 
 **Members:** Ben Paulson, Sydney Balboni, John Cisler, Theodore Colwell, Natalia Bukowski, Joshua Goldshteyn, Julia Kalish, Andrew Crisler<br/>
 **Year:** 2022-2023<br/>

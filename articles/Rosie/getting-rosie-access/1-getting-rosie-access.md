@@ -61,30 +61,31 @@ Only those who have reason to use ROSIE can get access to its resources. As an M
 
 Towards the end of the form, there might be some questions that you might not know how to answer. Below are those questions and responses:
 
-Question 4: Please describe why you are requesting access to Rosie. In this description, please include why Rosie is needed beyond what your campus-issued laptop provides.
-Answer: AI-Club
+**Question 4:** `Please describe why you are requesting access to Rosie. In this description, please include why Rosie is needed beyond what your campus-issued laptop provides.`
+Answer: **AI-Club**
 
 
-Question 5: Please select all the tools you need to use for the request you are making.
-Answer: Select All Boxes (except for the last one)
+**Question 5:** `Please select all the tools you need to use for the request you are making.`
+Answer: **Select All Boxes (except for the last one)**
 
 
-Question 6: If you plan to use GPUs, please describe what acceleration libraries you need.
-Answer: tensorflow/keras
+**Question 6:** `If you plan to use GPUs, please describe what acceleration libraries you need.`
+Answer: **tensorflow/keras**
 
 
-Question 7: How much storage do you require (list MB, GB, TB)?
-Answer: 10GB
+**Question 7:** `How much storage do you require (list MB, GB, TB)?`
+Answer: **10GB**
 
 
-Question 8: Do you plan to use proprietary data with ROSIE?
-Answer: Leave blank (unless you have proprietary data)
+Question 8: `Do you plan to use proprietary data with ROSIE?`
+Answer: **Leave blank (unless you have proprietary data)**
 
 
 
-After requesting access you will likely get a response from Dr.Retert with instructions on logging in for the first time. If you are requesting access at the same time as many others, it might take a couple of days for a response. 
+After requesting access you will likely get a response from Dr. Retert with instructions on logging in for the first time. If you are requesting access at the same time as many others, it might take a couple of days for a response. 
 
 
 ## What's Next?
-Once you get his email, read the following article: First Log In
+Once you get his email, read the following article: [First Log In](https://msoe-maic.com/library/?nav=Articles&article=2-first-login)
 
+For additional technical details about ROSIE access, you can also reference the [official HPC documentation](https://docs.hpc.msoe.edu/#/access).

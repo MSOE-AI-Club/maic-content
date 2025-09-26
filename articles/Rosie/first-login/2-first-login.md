@@ -38,7 +38,7 @@
   </text>
 </svg>
 
-<p style='color: white; margin-top: 2px;'>By reading this article, you will be able to successfully log into ROSIE for the first time by reseting your password, allowing you to use ROSIE through the web portal.</p>
+<p style='color: white; margin-top: 2px;'>By reading this article, you will be able to successfully log into ROSIE for the first time and access the web portal interface.</p>
 
 </div>
 
@@ -48,73 +48,88 @@
 
 ## Logging In For the First Time
 
-Logging into ROSIE for the first time is a bit of a pain and requires a few steps. This guide will walk you through the process of logging in for the first time and resetting your password.
+This guide will walk you through the process of logging into ROSIE for the first time using SSH (Secure Shell). SSH provides secure remote access to the ROSIE computing cluster.
 
-ROSIE can only be accessed through MSOE's campus network. If you are anywhere else, including the ITC, you need to use Global Protect, MSOE's VPN. This should come with your MSOE issued laptop, however if you would rather use a personal machine, you can install Global Protect [here](https://vpn.msoe.edu/global-protect/getsoftwarepage.esp). 
+**Network Requirements:**
+ROSIE can only be accessed through MSOE's campus network. If you are connecting from off-campus (including the ITC) or using the "MSOE Guest" network, you must use Global Protect, MSOE's VPN. This should come with your MSOE-issued laptop. For personal machines, you can install Global Protect by reading [this](https://msoe-maic.com/library/?nav=Articles&article=global-protect) article.
 
+## Prerequisites: Installing an SSH Client
 
-In order to log in to Rosie for the first time and reset your password, you must do so via SSH (Secure Shell)
-SSH-ing to a computer cluster provides secure remote access, enabling efficient management, data analysis, and collaboration, crucial for scalable, high-performance computing and research in various fields.
+To connect to ROSIE via SSH, you'll need an SSH client. We recommend Git, which includes Git Bash and will be used in other coursework.
 
-However, in order to use SSH, you will need an SSH client. Our tool of choice (that you'll later learn to use in-class as well) is Git.
+Start by downloading and installing Git from [here](https://git-scm.com/downloads). Please download the corresponding version for your machine. If using an MSOE-provided laptop, use the 64-bit Git for Windows Setup under the Standalone Installer section.
 
-Start by downloading and installing Git from [here](https://git-scm.com/downloads). Please download the corresponding version for your machine. If using the MSOE provided laptop, use the 64-bit Git for Windows Setup under the section Standalone Installer. Below are instructions on what you should make sure to check off when installing git. 
-
-If on Mac, git might already by installed if you have xcode. If you are not sure, the easiest way to check is to open terminal and run the command "git --version". If it shows a version number, you are good to go, if not, it should prompt you to install git via Xcode Command Line Tools. 
+**For Mac users:** Git might already be installed if you have Xcode. To check, open Terminal and run `git --version`. If it shows a version number, you're ready to go. If not, it will prompt you to install Git via Xcode Command Line Tools. 
 
 
 ### Installing Git Bash Correctly 
-Open the download and accept all changes, you will then see the below screen...
+Open the download and accept all changes. You will see the following screen:
 
-![alt text](./img/rosie_article_images/git_bash_setup.png)
+![alt text](/images/article_content/git_bash_setup.png)
 
+In the following screens, accept all default selections.
 
-In the following screens, accept all default selections
+## Connecting to ROSIE
 
+Here's what we'll accomplish in this section:
 
-## Logging into ROSIE
+1. SSH into ROSIE using the command: `ssh "username@ad.msoe.edu"@dh-mgmt2.hpc.msoe.edu`
+2. Enter your MSOE password
+3. Verify successful connection
 
-Here's an overview of what we will be doing throughout the rest of the article:
-
-1. SSH into Rosie (ssh username@dh-mgmt2.hpc.msoe.edu)
-2. Enter the one time password that you recieved from Dr. Retert, then reenter this password
-3. Create a new password, then confirm this new password
-
-### 1. SSH Into ROSIE
-Once you have Git Bash open, type the following command, replacing username with your username (your email without the msoe.edu)
-Look at the console entries next to the red stars *
-
-#### Using Git Bash (if on Windows)
-Open up the new program by typing git in your search bar, and clicking git bash. Then enter the following command, replacing username with your username (your email without the msoe.edu)
-'ssh username@dh-mgmt2.hpc.msoe.edu'
-
-#### Using Terminal (if on mac)
-Open up terminal if not already open and then enter the following command, replacing username with your username (your email without the msoe.edu)
-'ssh username@dh-mgmt2.hpc.msoe.edu'
+### Step 1: SSH Into ROSIE
 
 
-Regardless of your machine's OS, you should be shown something like the following, where you are prompted for your password: 
 
-![alt text](./img/rosie_article_images/ssh_1.png)
-
-
-### 2. Enter the One Time Password
-You should have recieved an email from Dr. Retert, our ROSIE admin, containing your one time password. It might have a subject along the lines of "Rosie Access Request." Enter this password into your terminal/git bash. As you're entering your password you will not see you password appear. That's OK, the characters will not appear due to security reasons, so please keep entering your password and hit enter when you're done. You will then be prompted to reenter your password, do so and hit enter again.
-
-### 3. Create a New Password & Confirm
-Perform the same steps as above, writing your new password instead. Again, you will not see your password appear as you type it in due to the security features on ROSIE. 
-
-## You're In!
-You should see the following screen! You're in! You can now use ROSIE!
-
-![alt text](./img/rosie_article_images/rosie_success.png)
+#### Opening The Terminal Git Bash (Windows)
+- Windows: Open Git Bash by typing "git" in your search bar and clicking "Git Bash".
+- Mac: Open Terminal and enter the following command:
 
 
-Once you see the message that it's creating directory 'home/username' followed by the big ROSIE, you're all set!
+```bash
+ssh "username@ad.msoe.edu"@dh-mgmt2.hpc.msoe.edu
+```
+
+**Important Notes:**
+- The quotes around your username are required (not just placeholders)
+- Replace "username" with your MSOE username (your email without @msoe.edu)
+- Your first SSH login may be slower than usual due to authentication caching
+
+You should see a prompt similar to this: 
+
+![alt text](/images/article_content/ssh_1.png)
 
 
-## What To Do Moving Forward?
-Now, we aren't actually going to use this terminal interface to interact with ROSIE (that's gross 🤧); instead, we'll be using the online interface, using Jupyter Notebooks and starting up your own ROSIE instances. Find out more in the next article: Using The ROSIE Dev Page.
+### Step 2: Enter Your Password
+
+Enter your standard MSOE login password. **Important notes:**
+- Your password will not appear on screen as you type (this is normal for security)
+- If you make a mistake, press Delete/Backspace several times to clear the entry and try again
+- Press Enter when finished typing your password
+
+## You're Connected!
+You should see the following screen -- you can now use ROSIE!
+
+![alt text](/images/article_content/rosie_success.png)
+
+
+Once you see the ROSIE banner, you are successfully connected, and your personal directory has been created at `/home/ad.msoe.edu/{msoe username}`.
+
+### Test Your Connection
+
+Try running a simple command to verify everything is working:
+
+```bash
+ls
+```
+
+This will list the contents of your home directory on ROSIE.
+
+## What's Next?
+
+Now that you've successfully connected via SSH, you can move on to using ROSIE's web interface with Jupyter Notebooks for a more user-friendly experience. Learn more in the next article: [Using The ROSIE Web Interface](https://msoe-maic.com/library/?nav=Articles&article=3-rosie-web).
+
+For additional technical details about ROSIE access, you can also reference the [official HPC documentation](https://docs.hpc.msoe.edu/#/access).
 
 
 

@@ -2,7 +2,7 @@
 
 The simplest way to start up a jupyter notebook is to open up an anaconda session. You can get anaconda [here].(https://www.anaconda.com/download)
 Once downloaded, simply find the Jupyter notebook tab and click launch on the jupyter notebook card. You will be broyght to a similar looking screen like the one below.
-![Alt text](<../img/misc/Screenshot 2023-08-28 204717.png>)
+![Alt text](<./images/misc/Screenshot 2023-08-28 204717.png>)
 
 ## Making a Jupyter Directory and your first Notebook
 

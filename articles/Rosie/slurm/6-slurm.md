@@ -38,7 +38,8 @@
   </text>
 </svg>
 
-<p style='color: white; margin-top: 2px;'>[Slurm](https://slurm.schedmd.com/) is the job scheduling software that Rosie uses, so understanding how to use it is crucial to getting the most effective use out of Rosie. You may already know the basics - using the `squeue` command to see everyone's currently running jobs, using `srun` to start jobs - and even if you don't know the basics, you're already using Slurm under the hood of Jupyter notebooks running on the Rosie dashboard. That being said, knowing the more advanced aspects of Slurm can come in handy when you need more flexibility in how you run code. Furthermore, you *need* to manually run Slurm commands to use the better GPUs on Rosie!</p>
+<p style='color: white; margin-top: 2px;'> 
+<a href="https://slurm.schedmd.com" target="_blank">Slurm</a> is the job scheduling software that Rosie uses, so understanding how to use it is crucial to getting the most effective use out of Rosie. You may already know the basics - using the `squeue` command to see everyone's currently running jobs, using `srun` to start jobs - and even if you don't know the basics, you're already using Slurm under the hood of Jupyter notebooks running on the Rosie dashboard. That being said, knowing the more advanced aspects of Slurm can come in handy when you need more flexibility in how you run code. Furthermore, you *need* to manually run Slurm commands to use the better GPUs on Rosie!</p>
 
 </div>
 
@@ -51,11 +52,11 @@
 
 [msoe.dev](https://msoe.dev/#/about) supplies a diagram (also shown below) showing how the Rosie cluster is arranged. However, it might not be clear how the concept of a "Slurm job" plays into this structure.
 
-![diagram](./img/article_content/cluster_overview.png)
+![diagram](/images/article_content/cluster_overview.png)
 
 When you initially connect to Rosie (e.g., via SSH, or the web-based dashboard), you connect from the "Campus Network" cloud in the diagram to the "Login and management servers." Rosie is actually made up of multiple separate computers connected over a private network, and several of these computers are the management nodes. `dh-mgmt2` is an example of a specific management node.
 
-It's worth noting that all computers in the Rosie cluster share some storage via the node labeled "Cluster Storage" in the diagram. Specifically, the `/data` directory will be the same on all nodes, and your user data `/home/$USER/...` will be the same as well.
+It's worth noting that all computers in the Rosie cluster share some storage via the node labeled "Cluster Storage" in the diagram. Specifically, the `/data` directory will be the same on all nodes, and your user data `/home/ad.msoe.edu/$USER/...` will be the same as well.
 
 Management nodes do not have any GPUs, and they're not meant for general-purpose computation. Because of this, you need to use one of the specialized compute-specific types of nodes:
 - General-use, less powerful T4 nodes (labeled "Teaching/Research Partition" in the diagram)
@@ -139,27 +140,27 @@ Once you have a job ID, simply run `scancel <JOB ID>`. For instance, `scancel 12
 ## Using Singularity Containers
 
 If you start a containerized notebook on the Rosie dashboard, you are provided with the option to run your code in a certain environment:
-![Dashboard Environments](./img/article-content/dashboard-singularity-options.png)
+![Dashboard Environments](/images/article-content/dashboard-singularity-options.png)
 
 Each of these options correspond to a **singularity** container image. What is singularity? Singularity provides a way to run a fully self-contained environment with its own libraries/software that your code can use without depending on anything being globally-installed. You may be thinking this sounds familiar to Docker or virtual machines if you're familiar with those tools, and you would be correct to think so.
 
 [This article](/library?nav=Articles&article=Learning_Resources-SetupLocalSingularity) details how you can make your own singularity containers, but the focus for now will only be on using existing singularity images. 
 
-Existing container images are located at `/data/containers`, and the options include machine learning libraries such as Pytorch and Tensorflow, among other things. To use one of these containers and use its libraries, run this command: `singularity exec --nv -B /data,/home/$USER <CONTAINER> <COMMAND>` where `<COMMAND>` is the command you want to run in the container (e.g., `echo hello`), and `<CONTAINER>` is the path to the container you want to use in `/data/containers`. Here is a complete example:
+Existing container images are located at `/data/containers`, and the options include machine learning libraries such as Pytorch and Tensorflow, among other things. To use one of these containers and use its libraries, run this command: `singularity exec --nv -B /data,/home/ad.msoe.edu/$USER <CONTAINER> <COMMAND>` where `<COMMAND>` is the command you want to run in the container (e.g., `echo hello`), and `<CONTAINER>` is the path to the container you want to use in `/data/containers`. Here is a complete example:
 ```bash
-singularity exec --nv -B /data,/home/$USER /data/containers/msoe-tensorflow-24.05-tf2-py3.sif echo test
+singularity exec --nv -B /data,/home/ad.msoe.edu/$USER /data/containers/msoe-tensorflow-24.05-tf2-py3.sif echo test
 # should print "test" after some debug messages
 ```
 
 Using containers only provides libraries and tools, they cannot provide access to GPUs without the use of Slurm. To start a container in a Slurm job using a GPU, you could start an interactive job and then run your script with a singularity container:
 ```bash
 srun --pty bash
-singularity exec --nv -B /data,/home/$USER /data/containers/msoe-tensorflow-24.05-tf2-py3.sif python my-tensorflow-script.py
+singularity exec --nv -B /data,/home/ad.msoe.edu/$USER /data/containers/msoe-tensorflow-24.05-tf2-py3.sif python my-tensorflow-script.py
 ```
 
 Alternatively, you could do this all in one big command:
 ```bash
-srun --pty bash --login -c "singularity exec --nv -B /data,/home/$USER /data/containers/msoe-tensorflow-24.05-tf2-py3.sif python my-tensorflow-script.py"
+srun --pty bash --login -c "singularity exec --nv -B /data,/home/ad.msoe.edu/$USER /data/containers/msoe-tensorflow-24.05-tf2-py3.sif python my-tensorflow-script.py"
 ```
 
 ... but at that point you're better off setting up an `sbatch` script:
@@ -172,5 +173,5 @@ srun --pty bash --login -c "singularity exec --nv -B /data,/home/$USER /data/con
 #SBATCH --partition=teaching
 #SBATCH --gpus=1
 
-singularity exec --nv -B /data,/home/$USER /data/containers/msoe-tensorflow-24.05-tf2-py3.sif python my-tensorflow-script.py
+singularity exec --nv -B /data,/home/ad.msoe.edu/$USER /data/containers/msoe-tensorflow-24.05-tf2-py3.sif python my-tensorflow-script.py
 ```

@@ -2,7 +2,7 @@ summary: A recording of the livestream for the the Rosie Supercomputer Competiti
 type: video
 date: 4/20/2024
 title: Rosie Competition and Awards 2024
-image: ./img/thumbnails/mq3.webp
+image: /images/thumbnails/mq3.webp
 difficulty: easy
 authors: Adam Haile
 categories: Videos, Rosie

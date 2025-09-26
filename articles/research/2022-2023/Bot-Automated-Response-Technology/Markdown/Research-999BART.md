@@ -1,4 +1,4 @@
-# img: ./img/thumbnails/Transformer-Troubadours.png
+# img: /images/thumbnails/Transformer-Troubadours.png
 
 **Members:** Mazen Hamid, Nikhil Gajghate, Bart Gebka, Matej Koncos, Justin Benning<br/>
 **Year:** 2022-2023<br/>

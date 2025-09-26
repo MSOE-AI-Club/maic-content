@@ -65,7 +65,7 @@ pipenv run start
 ```
 
 Once you have run `pipenv run start`, the server will spin up and provide you with a URL you can use to access your API (default: http://localhost:8080). If everything is working correctly, you should see the following:
-![{"status": "OK}](./img/article_content/rosieapi_root.png)
+![{"status": "OK}](/images/article_content/rosieapi_root.png)
 
 You can then access the Docs page via http://localhost:8080/docs
 The docs page will have a health endpoint, and 4 example endpoints by default. These example endpoints are a set of basic CRUD endpoints, and can be found at [example.py](./src/routes/example.py).
@@ -175,7 +175,7 @@ sbatch run.sh -i your-docker-hub-username/rosie-application
 
 9. Open the `output` folder, and open the newly created file in there. *(It should be titled something like job_123456.out)*
 10. You should see an output something similar to this at the top.
-![Server output](./img/article_content/rosieapi_output.png)
+![Server output](/images/article_content/rosieapi_output.png)
     - Let's break down what this log says
         - **Everything before the line "Creating SIF file...**": This is singularity pulling down our docker image and unpacking it for use.
         - **Creating SIF file...**: This is building our singularity image. It is a containerized way to run our code in a stable and reproduceable way.
@@ -187,7 +187,7 @@ sbatch run.sh -i your-docker-hub-username/rosie-application
 
 12. Paste this URL into your web browser.
     - This should return a page that looks like this:
-    ![Login page](./img/article_content/rosieapi_password.png) 
+    ![Login page](/images/article_content/rosieapi_password.png) 
 
 13. In the password box, put in your password that was generated in password.txt.
 

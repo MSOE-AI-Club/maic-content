@@ -2,7 +2,7 @@ summary: Join Lucas Gral, Adam Haile, and Aiden Miller as they walk you through 
 type: video
 date: 4/20/2024
 title: Beginner to Advanced Web Scraping
-image: ./img/thumbnails/4HdcT3tSPR8-HD.jpg
+image: /images/thumbnails/4HdcT3tSPR8-HD.jpg
 difficulty: easy
 authors: Adam Haile
 categories: Videos, Rosie

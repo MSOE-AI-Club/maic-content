@@ -390,7 +390,7 @@
                     "description": "Learn the concepts of Vector Stores and Embeddings",
                     "category": "NLP",
                     "api_image_path": "images/tree-thumbnails/embeddings.png",
-                    "link": "/library?nav=Articles&article=004_npl-embeddings",
+                    "link": "/library?nav=Articles&article=004_nlp-embeddings",
                     "highlighted_path": "True",
                     "position": {
                         "x": -750,
@@ -522,9 +522,9 @@
                     "id": "65",
                     "filename": "rl-65-31",
                     "name": "Intro to Reinforcement Learning (RL)",
-                    "description": "COMING SOON",
+                    "description": "A broad overview of Reinforcement Learning. This is the parent page for all RL content.",
                     "category": "RL",
-                    "api_image_path": "images/tree-thumbnails/article-soon.png",
+                    "api_image_path": "images/tree-thumbnails/Reinforcement-Learning-Intro.png",
                     "link": "/library?nav=Articles&article=RL",
                     "highlighted_path": "True",
                     "position": {
@@ -1770,7 +1770,7 @@
                 "category": "NLP",
                 "category_color": "orange",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=004_npl-embeddings"
+                "link": "/library?nav=Articles&article=004_nlp-embeddings"
             },
             "children": [
                 "53",
@@ -1890,8 +1890,8 @@
             },
             "data": {
                 "name": "Intro to Reinforcement Learning (RL)",
-                "api_image_path": "images/tree-thumbnails/article-soon.png",
-                "description": "COMING SOON",
+                "api_image_path": "images/tree-thumbnails/Reinforcement-Learning-Intro.png",
+                "description": "A broad overview of Reinforcement Learning. This is the parent page for all RL content.",
                 "category": "RL",
                 "category_color": "yellow",
                 "highlighted_path": "True",

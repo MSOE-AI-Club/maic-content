@@ -1,4 +1,4 @@
-# img: ./img/thumbnails/Transformer-Troubadours.png
+# img: /images/thumbnails/Transformer-Troubadours.png
 
 **Members** Hugo Garrido-Lestache, Alexander Chapovalov, Samuel Abel, Alex Ruchti, Ryan Canalia<br/>
 **Year:** 2022-2023<br/>

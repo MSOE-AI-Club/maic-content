@@ -51,7 +51,7 @@
 
 Looking at the image below, you can see how AI, ML, and DL are related to each other, as well as the relative time period in which they were developed. AI is the oldest of the three, but also contains the other two as subset fields, with ML being developed in the 1980s (containing DL) and DL being developed in the 2010s.
 
-<img src = './img/article_content/ai_ml_dl.jpeg' height = 500px><br/><br/>
+<img src = '/images/article_content/ai_ml_dl.jpeg' height = 500px><br/><br/>
 
 <br/>
 
