@@ -2,7 +2,7 @@
 
 <div align="center">
   <!-- YouTube placeholder: replace VIDEO_ID when available -->
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/PjgfLP98X2c" title="Innovation Labs 2025-26 Kickoff" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/PjgfLP98X2c" title="Innovation Labs Fall 2025 Kickoff" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## What Are Innovation Labs? 🤔
