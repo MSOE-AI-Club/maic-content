@@ -65,6 +65,7 @@ We're excited to collaborate with **Xorbix** on challenges focused on **"AI Auto
 ### **Sign Up Now**
 - **MSOE Students**: [Sign Up Here](https://forms.office.com/r/dkuux7NDLh)
 - **Non-MSOE Students**: [Sign Up Here](https://forms.office.com/r/fErAA6wssa)
+  - If you are working in a team, please list the participants in your group. For context, MSOE groups range from half a dozen to a dozen students, with a maximum of 12.
 
 ### **Non-MSOE Success Stories** 🌟
 **UWM students** have been crushing it in Innovation Labs! They took **3rd place in Fall 2024** and were **finalists in Spring 2025**. Don't let them have all the fun - join the competition!
