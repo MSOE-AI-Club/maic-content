@@ -50,6 +50,7 @@ We're excited to collaborate with **Xorbix** on challenges focused on **"AI Auto
 ### **Timeline** (Fall 2025 - December 2025)
 - **September 25th - October 6th**: Sign-ups open
 - **October 9th**: **Required Xorbix Event** (virtual and in-person) - Xorbix showcases who they are, reveals **projects & rubric**, and explains collaboration process. *We highly recommend all participants attend, but if you cannot make it, the event will be livestreamed and recorded.*
+  - 6:30-7:30pm @ the Direct Supply ITC
 - **Early-October**: Team formation and project selection
 - **Mid-October to November**: Development with Xorbix mentor checkpoints
 - **December 6th**: Final presentations to Xorbix and MAIC community
