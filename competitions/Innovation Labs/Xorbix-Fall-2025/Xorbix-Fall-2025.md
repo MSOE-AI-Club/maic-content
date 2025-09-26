@@ -48,7 +48,7 @@ We're excited to collaborate with **Xorbix** on challenges focused on **"AI Auto
 - **Mentorship from Xorbix** where your team will be assigned a point of contact from Xorbix to support and answer any questions you have regarding the Innovation Lab!
 
 ### **Timeline** (Fall 2025 - December 2025)
-- **September 25th - October 6th**: Sign-ups close on October 6th. 
+- **September 25th - October 6th**: Group formation with peers & friends! Sign-ups close on October 6th. 
 - **October 9th**: **Required Xorbix Event** (virtual and in-person) - Xorbix showcases who they are, reveals **projects & rubric**, and explains collaboration process. *We highly recommend all participants attend, but if you cannot make it, the event will be livestreamed and recorded.*
   - 6:30-7:30pm CST @ the Direct Supply ITC
 - **Early-October**: Team formation and project selection
