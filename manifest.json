@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-26T19:55:09.995Z",
+  "generated_at": "2025-09-29T01:08:05.424Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -150,6 +150,8 @@
     "articles/Webscraping/002-structured-web/metadata.json",
     "articles/Webscraping/003-serp-web/003-serp-web.md",
     "articles/Webscraping/003-serp-web/metadata.json",
+    "articles/databricks/databricks-guide/databricks-guide.md",
+    "articles/databricks/databricks-guide/metadata.json",
     "articles/jupyter/how-to-use-jupyter-notebooks/Learning_Resources-how-to-use-jupyter-notebooks.md",
     "articles/jupyter/how-to-use-jupyter-notebooks/metadata.json",
     "articles/news/generative-ai-in-simulated-environments/Learning_Resources-Kai-Weekly1.md",
@@ -567,6 +569,7 @@
     "images/thumbnails/attention.jpg",
     "images/thumbnails/between_lungs_front.png",
     "images/thumbnails/chat_bot.jpg",
+    "images/thumbnails/databricks-logo.png",
     "images/thumbnails/discovery_world.png",
     "images/thumbnails/drone_front.png",
     "images/thumbnails/embeddings.png",
