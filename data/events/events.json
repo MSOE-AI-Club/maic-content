@@ -194,5 +194,12 @@
         "date": "2025-09-29",
         "image": "images/events/resume_blitz.png",
         "description": "Come learn from Real Engineers about how to write a resume that stands out! The event will be in DH 110 from 4:30-6:30pm!"
+    },
+    {
+        "title": "Hands On Projects Celebration",
+        "type": "competition",
+        "date": "2025-10-09",
+        "image": "images/events/xorbix.jpg",
+        "description": "This is the largest event of the year! Come meet your mentor and teammates for Research Groups and Innovation Labs. Also, hear from the Innovation Lab Sponsor, who is providing the $6,000 prize pool!"
     }
 ]

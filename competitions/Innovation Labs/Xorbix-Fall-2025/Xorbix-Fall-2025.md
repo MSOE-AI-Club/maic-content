@@ -67,8 +67,8 @@ We're excited to collaborate with **Xorbix** on challenges focused on **"AI Auto
 - **Non-MSOE Students**: [Sign Up Here](https://forms.office.com/r/fErAA6wssa)
   - If you are working in a team, please list the participants in your group. For context, MSOE groups range from half a dozen to a dozen students, with a maximum of 12.
 
-### **Non-MSOE Success Stories** 🌟
-**UWM students** have been crushing it in Innovation Labs! They took **3rd place in Fall 2024** and were **finalists in Spring 2025**. Don't let them have all the fun - join the competition!
+### **Non-MSOE Success Stories & Past Innovation Labs** 🌟
+**UWM students** have been crushing it in Innovation Labs! They took **3rd place in Fall 2024** and were **finalists in Spring 2025**. Don't let them have all the fun - join the competition! Check out our past Innovation Labs [Spring 2025](https://msoe-maic.com/library?nav=Competitions&article=Juno-Spring-2025) and [Fall 2024](https://msoe-maic.com/library?nav=Competitions&article=Brady-Fall-2024)
 
 ## Questions? 💬
 For updates about MAIC events and programs, visit our website or reach out to the current eBoard on our Contact page. Learn more from our [Innovation Labs Proposal](https://msoe365.sharepoint.com/:b:/r/sites/MSOEAI/Shared%20Documents/MAIC_Eboard/Event%20Documents/Innovation%20Labs/IL%20Fall%202025/Innovation%20Labs%20Proposal.pdf?csf=1&web=1&e=RhqfFf)
