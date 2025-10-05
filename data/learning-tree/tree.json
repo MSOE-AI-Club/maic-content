@@ -1446,7 +1446,7 @@
                     "link": "/library?nav=Articles&article=databricks-guide",
                     "highlighted_path": "True",
                     "position": {
-                        "x": 200,
+                        "x": 400,
                         "y": 0
                     },
                     "parents": [
@@ -2867,7 +2867,7 @@
             "id": "74",
             "type": "treeNode",
             "position": {
-                "x": 200,
+                "x": 400,
                 "y": 0
             },
             "data": {
