@@ -1,0 +1,14 @@
+{
+    "title": "A Beginner's Guide to MLflow in Databricks",
+    "date": "4/10/2025",
+    "authors": "Travis Jankowski",
+    "summary": "Learn how to use MLflow inside Databricks to track experiments, version models, and deploy production-grade endpoints with reproducibility and collaboration built-in.",
+    "image": "./images/thumbnails/mlflow.png",
+    "type": "md",
+    "difficulty": "easy",
+    "categories": [
+        "Databricks",
+        "MLOps",
+        "Experiment Tracking"
+    ]
+}
