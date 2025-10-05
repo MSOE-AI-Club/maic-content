@@ -65,17 +65,40 @@ MLflow is an open-source MLOps framework for managing the end-to-end ML lifecycl
 
 ---
 
-## Why Use MLflow (Especially in Databricks)?
+## Why Use MLflow in Databricks?
 
 Without tooling, ML work is fragile and hard to scale. MLflow gives you structure:
 
-| Challenge                   | How MLflow Helps                                         |
-| --------------------------- | -------------------------------------------------------- |
-| Losing track of experiments | Central UI with metrics, params, code version, artifacts |
-| Ambiguous model versions    | Model Registry with version numbers & stages             |
-| Hard to reproduce           | Logged environments + artifacts + code refs              |
-| Deployment friction         | One-click serving or simple API-based deployment         |
-| Team collaboration gaps     | Shared registry, tags, descriptions, access control      |
+<table style="width:100%; border-collapse: collapse;">
+  <thead>
+    <tr style="background-color: #222; color: gold;">
+      <th style="border: 1px solid #444; padding: 6px;">Challenge</th>
+      <th style="border: 1px solid #444; padding: 6px;">How MLflow Helps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #444; padding: 6px;">Losing track of experiments</td>
+      <td style="border: 1px solid #444; padding: 6px;">Central UI with metrics, params, code version, artifacts</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #444; padding: 6px;">Ambiguous model versions</td>
+      <td style="border: 1px solid #444; padding: 6px;">Model Registry with version numbers &amp; stages</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #444; padding: 6px;">Hard to reproduce</td>
+      <td style="border: 1px solid #444; padding: 6px;">Logged environments + artifacts + code refs</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #444; padding: 6px;">Deployment friction</td>
+      <td style="border: 1px solid #444; padding: 6px;">One-click serving or simple API-based deployment</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #444; padding: 6px;">Team collaboration gaps</td>
+      <td style="border: 1px solid #444; padding: 6px;">Shared registry, tags, descriptions, access control</td>
+    </tr>
+  </tbody>
+</table>
 
 **Tip:** Start logging from day one—even for “quick tests”. Habits formed early pay off massively later.
 
@@ -215,34 +238,6 @@ mlflow.log_text("pandas==2.2.0\nscikit-learn==1.4.0", "requirements.txt")
 ```python
 mlflow.sklearn.autolog()
 ```
-
----
-
-## Best Practices for Beginners
-
-| Practice                             | Why It Matters                                                |
-| ------------------------------------ | ------------------------------------------------------------- |
-| Log EVERYTHING                       | Missing metrics = lost insight; consistency builds discipline |
-| Use meaningful run names             | Makes filtering easier later (e.g., rf_depth5_lr0_01)         |
-| Record dataset version               | Use Delta Lake version or commit hash in a tag                |
-| Promote via stages                   | Ensures controlled rollout and rollback                       |
-| Add model descriptions               | Communicates intent & evaluation criteria                     |
-| Tag runs (e.g., experiment=baseline) | Enables grouped analysis                                      |
-| Store evaluation plots               | Visual diagnostics accelerate learning                        |
-
-**Tip:** Use `mlflow.set_experiment("<project-name>")` to organize work per project.
-
----
-
-## Troubleshooting Quick Wins
-
-| Issue                | Fix                                                         |
-| -------------------- | ----------------------------------------------------------- |
-| Run not visible      | Confirm correct experiment path / experiment name           |
-| Missing metrics      | Ensure `with mlflow.start_run():` wraps the logging code    |
-| Model fails to serve | Check that the run logged a supported model flavor          |
-| 401 calling endpoint | Token expired or missing Authorization header               |
-| Wrong model version  | Explicitly reference version or stage in deployment scripts |
 
 ---
 
