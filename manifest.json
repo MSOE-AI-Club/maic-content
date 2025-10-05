@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-04T01:12:44.356Z",
+  "generated_at": "2025-10-05T00:54:16.543Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -152,6 +152,10 @@
     "articles/Webscraping/003-serp-web/metadata.json",
     "articles/databricks/databricks-guide/databricks-guide.md",
     "articles/databricks/databricks-guide/metadata.json",
+    "articles/databricks/delta-lake/delta-lake.md",
+    "articles/databricks/delta-lake/metadata.json",
+    "articles/databricks/mlflow/metadata.json",
+    "articles/databricks/mlflow/mlflow.md",
     "articles/jupyter/how-to-use-jupyter-notebooks/Learning_Resources-how-to-use-jupyter-notebooks.md",
     "articles/jupyter/how-to-use-jupyter-notebooks/metadata.json",
     "articles/news/generative-ai-in-simulated-environments/Learning_Resources-Kai-Weekly1.md",
@@ -571,6 +575,7 @@
     "images/thumbnails/between_lungs_front.png",
     "images/thumbnails/chat_bot.jpg",
     "images/thumbnails/databricks-logo.png",
+    "images/thumbnails/delta-lake.png",
     "images/thumbnails/discovery_world.png",
     "images/thumbnails/drone_front.png",
     "images/thumbnails/embeddings.png",
@@ -584,6 +589,7 @@
     "images/thumbnails/learning-tree.png",
     "images/thumbnails/llm.jpg",
     "images/thumbnails/merch.png",
+    "images/thumbnails/mlflow.png",
     "images/thumbnails/mq2.webp",
     "images/thumbnails/mq3.webp",
     "images/thumbnails/placeholder.png",
