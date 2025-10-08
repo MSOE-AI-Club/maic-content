@@ -1,0 +1,10 @@
+{
+    "summary": "Learn the most used Git commands and how to use them.",
+    "type": "md",
+    "date": "7/10/25",
+    "title": "Git Commands",
+    "image": "./images/tree-thumbnails/Git-Logo.jpg",
+    "difficulty": "easy",
+    "authors": "Madison Engebose",
+    "categories": ["Git"]
+}

@@ -1,0 +1,10 @@
+{
+    "summary": "Learn how to create a branch and merge it into the main branch.",
+    "type": "md",
+    "date": "7/10/25",
+    "title": "GitHub Branching and Merging",
+    "image": "./images/tree-thumbnails/GitHub-Logo.png",
+    "difficulty": "easy",
+    "authors": "Madison Engebose",
+    "categories": ["Git"]
+}

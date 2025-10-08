@@ -1427,8 +1427,152 @@
                         "13"
                     ],
                     "children": [
-                        "19"
+                        "19",
+                        "74"
                     ]
+                }
+            ]
+        },
+        "Git": {
+            "category_color": "gray",
+            "nodes": [
+                {
+                    "id": "74",
+                    "filename": "git-74-14",
+                    "name": "What is Git and GitHub?",
+                    "description": "Learn the basics of Git and GitHub including what they are, how they work together, and why they are essential tools for managing and collaborating on code.",
+                    "category": "Git",
+                    "api_image_path": "images/tree-thumbnails/Git-Logo.jpg",
+                    "link": "/library?nav=Articles&article=GitHub",
+                    "highlighted_path": "True",
+                    "position": {
+                        "x": 400,
+                        "y": 0
+                    },
+                    "parents": [
+                        "14"
+                    ],
+                    "children": [
+                        "75"
+                    ]
+                },
+                {
+                    "id": "75",
+                    "filename": "git-75-74",
+                    "name": "Git Commands",
+                    "description": "Learn the most used Git commands and how to use them.",
+                    "category": "Git",
+                    "api_image_path": "images/tree-thumbnails/Git-Logo.jpg",
+                    "link": "/library?nav=Articles&article=Git-Commands",
+                    "highlighted_path": "True",
+                    "position": {
+                        "x": 600,
+                        "y": 0
+                    },
+                    "parents": [
+                        "74"
+                    ],
+                    "children": [
+                        "76"
+                    ]
+                },
+                {
+                    "id": "76",
+                    "filename": "git-76-75",
+                    "name": "GitHub Repositories",
+                    "description": "Learn how to create and manage repositories.",
+                    "category": "Git",
+                    "api_image_path": "images/tree-thumbnails/GitHub-Logo.png",
+                    "link": "/library?nav=Articles&article=GitHub-Repositories",
+                    "highlighted_path": "True",
+                    "position": {
+                        "x": 800,
+                        "y": 0
+                    },
+                    "parents": [
+                        "75"
+                    ],
+                    "children": [
+                        "77"
+                    ]
+                },
+                {
+                    "id": "77",
+                    "filename": "git-77-76",
+                    "name": "GitHub Commits",
+                    "description": "Learn how to commit changes to a repository.",
+                    "category": "Git",
+                    "api_image_path": "images/tree-thumbnails/GitHub-Logo.png",
+                    "link": "/library?nav=Articles&article=GitHub-Commits",
+                    "highlighted_path": "True",
+                    "position": {
+                        "x": 1000,
+                        "y": 0
+                    },
+                    "parents": [
+                        "76"
+                    ],
+                    "children": [
+                        "78"
+                    ]
+                },
+                {
+                    "id": "78",
+                    "filename": "git-78-77",
+                    "name": "GitHub Pushing and Pulling",
+                    "description": "Learn how to push and pull changes to a repository.",
+                    "category": "Git",
+                    "api_image_path": "images/tree-thumbnails/GitHub-Logo.png",
+                    "link": "/library?nav=Articles&article=GitHub-Pushing-and-Pulling",
+                    "highlighted_path": "True",
+                    "position": {
+                        "x": 1200,
+                        "y": 0
+                    },
+                    "parents": [
+                        "77"
+                    ],
+                    "children": [
+                        "79"
+                    ]
+                },
+                {
+                    "id": "79",
+                    "filename": "git-79-78",
+                    "name": "GitHub Branching and Merging",
+                    "description": "Learn how to create a branch and merge it into the main branch.",
+                    "category": "Git",
+                    "api_image_path": "images/tree-thumbnails/GitHub-Logo.png",
+                    "link": "/library?nav=Articles&article=GitHub-Branching-and-Merging",
+                    "highlighted_path": "True",
+                    "position": {
+                        "x": 1400,
+                        "y": 0
+                    },
+                    "parents": [
+                        "78"
+                    ],
+                    "children": [
+                        "80"
+                    ]
+                },
+                {
+                    "id": "80",
+                    "filename": "git-80-79",
+                    "name": "GitHub Best Practices",
+                    "description": "Learn the best practices for using Git and GitHub.",
+                    "category": "Git",
+                    "api_image_path": "images/tree-thumbnails/GitHub-Logo.png",
+                    "link": "/library?nav=Articles&article=GitHub-Best-Practices",
+                    "highlighted_path": "True",
+                    "position": {
+                        "x": 1600,
+                        "y": 0
+                    },
+                    "parents": [
+                        "79"
+                    ],
+                    "children": []
                 }
             ]
         }
@@ -2755,8 +2899,147 @@
                 "link": "/library?nav=Articles&article=5-vscode-version-control"
             },
             "children": [
-                "19"
+                "19",
+                "74"
             ]
+        },
+        {
+            "id": "74",
+            "type": "treeNode",
+            "position": {
+                "x": 400,
+                "y": 100
+            },
+            "data": {
+                "name": "What is Git and GitHub?",
+                "api_image_path": "images/tree-thumbnails/Git-Logo.jpg",
+                "description": "Learn the basics of Git and GitHub including what they are, how they work together, and why they are essential tools for managing and collaborating on code.",
+                "category": "Git",
+                "category_color": "gray",
+                "highlighted_path": "True",
+                "link": "/library?nav=Articles&article=GitHub"
+            },
+            "children": [
+                "75"
+            ]
+        },
+        {
+            "id": "75",
+            "type": "treeNode",
+            "position": {
+                "x": 600,
+                "y": 100
+            },
+            "data": {
+                "name": "Git Commands",
+                "api_image_path": "images/tree-thumbnails/Git-Logo.jpg",
+                "description": "Learn the most used Git commands and how to use them.",
+                "category": "Git",
+                "category_color": "gray",
+                "highlighted_path": "True",
+                "link": "/library?nav=Articles&article=Git-Commands"
+            },
+            "children": [
+                "76"
+            ]
+        },
+        {
+            "id": "76",
+            "type": "treeNode",
+            "position": {
+                "x": 800,
+                "y": 100
+            },
+            "data": {
+                "name": "GitHub Repositories",
+                "api_image_path": "images/tree-thumbnails/GitHub-Logo.png",
+                "description": "Learn how to create and manage repositories.",
+                "category": "Git",
+                "category_color": "gray",
+                "highlighted_path": "True",
+                "link": "/library?nav=Articles&article=GitHub-Repositories"
+            },
+            "children": [
+                "77"
+            ]
+        },
+        {
+            "id": "77",
+            "type": "treeNode",
+            "position": {
+                "x": 3000,
+                "y": 100
+            },
+            "data": {
+                "name": "GitHub Commits",
+                "api_image_path": "images/tree-thumbnails/GitHub-Logo.png",
+                "description": "Learn how to commit changes to a repository.",
+                "category": "Git",
+                "category_color": "gray",
+                "highlighted_path": "True",
+                "link": "/library?nav=Articles&article=GitHub-Commits"
+            },
+            "children": [
+                "78"
+            ]
+        },
+        {
+            "id": "78",
+            "type": "treeNode",
+            "position": {
+                "x": 1200,
+                "y": 100
+            },
+            "data": {
+                "name": "GitHub Pushing and Pulling",
+                "api_image_path": "images/tree-thumbnails/GitHub-Logo.png",
+                "description": "Learn how to push and pull changes to a repository.",
+                "category": "Git",
+                "category_color": "gray",
+                "highlighted_path": "True",
+                "link": "/library?nav=Articles&article=GitHub-Pushing-and-Pulling"
+            },
+            "children": [
+                "79"
+            ]
+        },
+        {
+            "id": "79",
+            "type": "treeNode",
+            "position": {
+                "x": 1400,
+                "y": 100
+            },
+            "data": {
+                "name": "GitHub Branching and Merging",
+                "api_image_path": "images/tree-thumbnails/GitHub-Logo.png",
+                "description": "Learn how to create a branch and merge it into the main branch.",
+                "category": "Git",
+                "category_color": "gray",
+                "highlighted_path": "True",
+                "link": "/library?nav=Articles&article=GitHub-Branching-and-Merging"
+            },
+            "children": [
+                "80"
+            ]
+        },
+        {
+            "id": "80",
+            "type": "treeNode",
+            "position": {
+                "x": 1600,
+                "y": 100
+            },
+            "data": {
+                "name": "GitHub Best Practices",
+                "api_image_path": "images/tree-thumbnails/GitHub-Logo.png",
+                "description": "Learn the best practices for using Git and GitHub.",
+                "category": "Git",
+                "category_color": "gray",
+                "highlighted_path": "True",
+                "link": "/library?nav=Articles&article=GitHub-Best-Practices"
+            },
+            "children": []
         },
         {
             "id": "3",

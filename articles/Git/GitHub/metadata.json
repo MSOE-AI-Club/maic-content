@@ -1,0 +1,10 @@
+{
+    "summary": "Learn how to create a repository and connect it to GitHub.",
+    "type": "md",
+    "date": "7/10/25",
+    "title": "GitHub Repositories",
+    "image": "./images/tree-thumbnails/Git-Logo.jpg",
+    "difficulty": "easy",
+    "authors": "Madison Engebose",
+    "categories": ["Git"]
+}
