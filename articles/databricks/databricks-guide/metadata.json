@@ -1,0 +1,12 @@
+{
+    "title": "Databricks Introduction",
+    "date": "28/9/2025",
+    "authors": "Travis Jankowski",
+    "summary": "Learn how to use Databricks as an all-in-one platform for AI and data science projects, from data ingestion to model deployment and dashboard creation.",
+    "image": "./images/thumbnails/databricks-logo.png",
+    "type": "md",
+    "difficulty": "easy",
+    "categories": [
+        "Databricks"
+    ]
+}

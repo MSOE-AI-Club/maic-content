@@ -54,11 +54,11 @@ To start a job, you should go to the My Interactive Sessions tab on the home-scr
 
 The section highlighted in blue is what we will be interacting with most of the time. The other sections are for more advanced users, and we will not be covering them in this article. However, here is a breakdown for the different types of Jupyter Notebooks:
 
-Jupyter Lab - Rosie: This will start a Jupyter LAB instance, not a Jupyter NOTEBOOK instance. Jupyter Lab is an integrated development environment (IDE) for interactive computing, offering a more versatile interface with tabs and extensions, while Jupyter Notebook provides a simpler, single-document interface for interactive code and data exploration. We use Jupyter Notebooks more frequently both in AI-Club and in industry, so we don't recommend this option.
+**Jupyter Lab - Rosie**: This will start a Jupyter LAB instance, not a Jupyter NOTEBOOK instance. Jupyter Lab is an integrated development environment (IDE) for interactive computing, offering a more versatile interface with tabs and extensions, while Jupyter Notebook provides a simpler, single-document interface for interactive code and data exploration. We use Jupyter Notebooks more frequently both in AI-Club and in industry, so we don't recommend this option.
 
-Jupyter Notebook - Containerized: This will start a Jupyter Notebook instance on one of the ROSIE teaching nodes. However, with this option, you have an additional dropdown for which container you would like to use with your ROSIE instance. A container is important because it comes with pre-installed packages that we will be commonly using throughout AI-Club. We recommend using this option.
+**Jupyter Notebook - Containerized**: This will start a Jupyter Notebook instance on one of the ROSIE teaching nodes. However, with this option, you have an additional dropdown for which container you would like to use with your ROSIE instance. A container is important because it comes with pre-installed packages that we will be commonly using throughout AI-Club. We recommend using this option.
 
-Jupyter Notebook - Rosie: Simply start up a Jupyter Notebook with your own packages on one of the ROSIE teaching nodes -- no container will be made and your Jupyter Notebook will be running directly on a ROSIE node. Use this option if you're having dependency issues.
+**Jupyter Notebook - Rosie**: Simply start up a Jupyter Notebook with your own packages on one of the ROSIE teaching nodes -- no container will be made and your Jupyter Notebook will be running directly on a ROSIE node. Use this option if you're having dependency issues.
 
 
 
@@ -124,8 +124,13 @@ However, we're talking about ROSIE Jupyter Notebooks, which have the exact-same 
 
 
 ## Running Command-Line Code in Jupyter Notebooks
-You can run command-line commands with ! before your code. For example, !ls will list all other files in the directory you put your Jupyter Notebook!
+You can run command-line commands with ! before your code. For example, `!ls` will list all other files in the directory you put your Jupyter Notebook!
 
 Another command is `!nvidia-smi`, which will list all the GPUs you currently have reserved for your current Jupyter Notebook. This is important because you can see if you have the correct number of GPUs reserved for your Jupyter Notebook. If you don't, you can go back to the ROSIE web portal and start a new Jupyter Notebook with the correct number of GPUs.
 
 Knowing all this, you are now ready to start making projects using ROSIE! Have fun! We hope to see you at future AI-Club events to learn even more about how ROSIE can accelerate your future AI projects!
+
+## What's Next?
+Now that you understand how to run a job, you can start using ROSIE to build your AI models. If you want to learn more about using ROSIE, read Part 5: [Using the Rosie Terminal](https://msoe-maic.com/library/?nav=Articles&article=5-rosie-terminal).
+
+For additional technical details about ROSIE access, you can also reference the [official HPC documentation](https://docs.hpc.msoe.edu/#/access).

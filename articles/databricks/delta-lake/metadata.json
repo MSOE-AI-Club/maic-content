@@ -1,0 +1,13 @@
+{
+    "title": "A Beginner's Guide to Delta Lake in Databricks",
+    "date": "4/10/2025",
+    "authors": "Travis Jankowski",
+    "summary": "Learn how Delta Lake brings reliability and performance to data pipelines with ACID transactions, time travel, and schema management—essential features for modern data science workflows.",
+    "image": "./images/thumbnails/delta-lake.png",
+    "type": "md",
+    "difficulty": "easy",
+    "categories": [
+        "Databricks",
+        "Data Engineering"
+    ]
+}

@@ -1433,6 +1433,69 @@
                 }
             ]
         },
+        "Databricks": {
+            "category_color": "red",
+            "nodes": [
+                {
+                    "id": "74",
+                    "filename": "databricks-74",
+                    "name": "Databricks Introduction",
+                    "description": "Learn how to use Databricks as an all-in-one platform for AI and data science projects, from data ingestion to model deployment and dashboard creation.",
+                    "category": "Databricks",
+                    "api_image_path": "images/thumbnails/databricks-logo.png",
+                    "link": "/library?nav=Articles&article=databricks-guide",
+                    "highlighted_path": "True",
+                    "position": {
+                        "x": 400,
+                        "y": 0
+                    },
+                    "parents": [
+                        "14"
+                    ],
+                    "children": [
+                        "75"
+                    ]
+                },
+                {
+                    "id": "75",
+                    "filename": "databricks-75-74",
+                    "name": "Delta Lake in Databricks",
+                    "description": "Learn how Delta Lake brings reliability and performance to data pipelines with ACID transactions, time travel, and schema management.",
+                    "category": "Databricks",
+                    "api_image_path": "images/thumbnails/delta-lake.png",
+                    "link": "/library?nav=Articles&article=delta-lake",
+                    "highlighted_path": "True",
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "parents": [
+                        "74"
+                    ],
+                    "children": [
+                        "76"
+                    ]
+                },
+                {
+                    "id": "76",
+                    "filename": "databricks-76-74",
+                    "name": "MLflow in Databricks",
+                    "description": "Learn how to use MLflow inside Databricks to track experiments, version models, and deploy production-grade endpoints with reproducibility built-in.",
+                    "category": "Databricks",
+                    "api_image_path": "images/thumbnails/mlflow.png",
+                    "link": "/library?nav=Articles&article=mlflow",
+                    "highlighted_path": "True",
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "parents": [
+                        "75"
+                    ],
+                    "children": []
+                }
+            ]
+        },
         "Git": {
             "category_color": "gray",
             "nodes": [
@@ -3080,11 +3143,69 @@
             "children": [
                 "3"
             ]
+        },
+        {
+            "id": "74",
+            "type": "treeNode",
+            "position": {
+                "x": 400,
+                "y": 0
+            },
+            "data": {
+                "name": "Databricks Introduction",
+                "api_image_path": "images/thumbnails/databricks-logo.png",
+                "description": "Learn how to use Databricks as an all-in-one platform for AI and data science projects, from data ingestion to model deployment and dashboard creation.",
+                "category": "Databricks",
+                "category_color": "red",
+                "highlighted_path": "True",
+                "link": "/library?nav=Articles&article=databricks-guide"
+            },
+            "children": [
+                "75"
+            ]
+        },
+        {
+            "id": "75",
+            "type": "treeNode",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "data": {
+                "name": "Delta Lake in Databricks",
+                "api_image_path": "images/thumbnails/delta-lake.png",
+                "description": "Learn how Delta Lake brings reliability and performance to data pipelines with ACID transactions, time travel, and schema management.",
+                "category": "Databricks",
+                "category_color": "red",
+                "highlighted_path": "True",
+                "link": "/library?nav=Articles&article=delta-lake"
+            },
+            "children": [
+                "76"
+            ]
+        },
+        {
+            "id": "76",
+            "type": "treeNode",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "data": {
+                "name": "MLflow in Databricks",
+                "api_image_path": "images/thumbnails/mlflow.png",
+                "description": "Learn how to use MLflow inside Databricks to track experiments, version models, and deploy production-grade endpoints with reproducibility built-in.",
+                "category": "Databricks",
+                "category_color": "red",
+                "highlighted_path": "True",
+                "link": "/library?nav=Articles&article=mlflow"
+            },
+            "children": []
         }
     ],
     "metadata": {
-        "total_nodes": 69,
-        "total_categories": 11,
-        "generated_at": "2025-07-08"
+        "total_nodes": 75,
+        "total_categories": 12,
+        "generated_at": "2025-10-04"
     }
 }
