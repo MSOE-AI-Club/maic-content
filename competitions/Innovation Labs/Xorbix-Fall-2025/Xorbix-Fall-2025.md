@@ -24,9 +24,9 @@ We're excited to collaborate with **Xorbix** on challenges focused on **"AI Auto
 
 ### 💰 **Compete for Prizes**
 - **$6,000 total prize pool** up for grabs!
-- **1st Place**: $3,000 + 5 AI Club Points 🥇
-- **2nd Place**: $2,000 + 4 AI Club Points 🥈
-- **3rd Place**: $1,000 + 3 AI Club Points 🥉
+- **1st Place**: $3,000 + 20 AI Club Points 🥇
+- **2nd Place**: $2,000 + 15 AI Club Points 🥈
+- **3rd Place**: $1,000 + 10 AI Club Points 🥉
 - Check out our [previous Innovation Lab results](link-to-previous-results) to see what teams have built!
 
 ### 🎯 **Hands-On Learning**
