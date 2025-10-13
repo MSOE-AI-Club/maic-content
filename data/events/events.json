@@ -201,5 +201,12 @@
         "date": "2025-10-09",
         "image": "images/events/xorbix.jpg",
         "description": "This is the largest event of the year! Come meet your mentor and teammates for Research Groups and Innovation Labs. Also, hear from the Innovation Lab Sponsor, who is providing the $6,000 prize pool!"
+    },
+    {
+        "title": "Wolfram Alpha: Modern AI Leadership",
+        "type": "speaker",
+        "date": "2025-10-16",
+        "image": "images/events/wolfram.png",
+        "description": "Come hear from the Modern AI Leaders at Wolfram Alpha about the future of AI and how it is changing the world!"
     }
 ]
