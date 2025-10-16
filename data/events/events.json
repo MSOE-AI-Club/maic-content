@@ -208,5 +208,12 @@
         "date": "2025-10-16",
         "image": "images/events/wolfram.png",
         "description": "Come hear from the Modern AI Leaders at Wolfram Alpha about the future of AI & Leadership! This is a great opportunity to connect with potential employers! "
+    },
+    {
+        "title": "Databricks: John Young, Managing Director",
+        "type": "speaker",
+        "date": "2025-10-30",
+        "image": "images/events/databricks.png",
+        "description": "Join us for a conversation with John Young from Databricks, an MSOE alumnus, on the latest wave of AI tooling and what it takes to build AI-native products at scale. John will share an inside look at life at a hyper-growth, AI-forward company; his path from MSOE to upper management at a ~$100B startup; how Databricks thinks about hiring; and practical ways for students to access large compute on the platform. Expect candid stories, career advice, and a peek at where enterprise AI is heading—bring your questions!"
     }
 ]
