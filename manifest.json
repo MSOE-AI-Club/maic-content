@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-13T22:26:41.604Z",
+  "generated_at": "2025-10-16T19:35:16.143Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -473,6 +473,7 @@
     "images/events/RGLogoNew.png",
     "images/events/Research.png",
     "images/events/curiousbean.jpg",
+    "images/events/databricks.png",
     "images/events/jacobfink.jpg",
     "images/events/mercurymarine.jpg",
     "images/events/paul.jpg",
