@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-03T22:50:29.771Z",
+  "generated_at": "2025-11-03T22:59:56.601Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -72,8 +72,8 @@
     "articles/Computer Vision/006-comp-vis/metadata.json",
     "articles/Computer Vision/007-comp-vis/007_comp-vis.md",
     "articles/Computer Vision/007-comp-vis/metadata.json",
+    "articles/Generative AI/intro-to-gen-ai/intro-to-gen-ai.md",
     "articles/Generative AI/intro-to-gen-ai/metadata.json",
-    "articles/Generative AI/intro-to-gen-ai/mlflow.md",
     "articles/Git/Git-Commands/Git-Commands.md",
     "articles/Git/Git-Commands/metadata.json",
     "articles/Git/GitHub/GitHub.md",
