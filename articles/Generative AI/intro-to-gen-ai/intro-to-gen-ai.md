@@ -106,7 +106,7 @@ Using an image generator feels almost like interacting with a creative collabora
 ## Generating Audio (Music and More)
 
 ![GenerativeAudioModel](<https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2023/06/20233301/Generative-audio-model-1.png>)
-*Source: RunwayML / Bloomberg*
+*Source: LeewayHertz*
 
 Generative AI isn’t limited to words and pictures – it can create audio as well. This includes music generation, where AI composes songs or instrumentals, and even generating human-like speech (text-to-speech) or sound effects. Audio is a complex type of data, because it unfolds over time and can have many layers (think of different instruments in a song). Yet, researchers have developed models that grasp the patterns of rhythm, melody, harmony, and timbre by learning from large collections of audio clips and music tracks.
 
@@ -123,6 +123,7 @@ To imagine how an AI writes music, think of how you might improvise on a piano: 
 The newest frontier for generative AI is video generation. Video combines many challenges – coherent images plus movement over time – so it’s arguably the hardest modality for AI to create. But progress is being made. Generative video models aim to produce short video clips based on prompts. For example, you might provide a text like “a cat chasing a laser pointer in a living room, cartoon style” and the AI will attempt to generate a few seconds of animation showing that scene. This is cutting-edge and still somewhat experimental, but early models are very promising [[RunwayML](https://runwayml.com/research/gen-2)].
 
 ![Runway AI Video](<https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iarBvP6zn6eU/v1/-999x-999.gif>)
+*Source: RunwayML / Bloomberg*
 
 One approach uses the image generation techniques we discussed and extends them frame-by-frame with temporal consistency. Essentially, the AI generates a sequence of images (frames) that hopefully remain consistent (the same cat, same background) and smooth when played as a video. There are also models that take a single starting image plus a prompt and animate it (imagine giving one picture of a landscape and asking the model to generate a camera pan or a day-to-night transition). RunwayML’s Gen-2 is a popular example of a text-to-video system available to the public. With Gen-2, you can type a description and get a brief video clip out. As the creators describe it, “It’s like filming something new, without filming anything at all”. That really captures the essence: you don’t need a camera or a crew, just an idea, and the AI tries to bring it to life on screen.
 
