@@ -1,0 +1,14 @@
+{
+    "title": "Intro to Generative AI",
+    "date": "3/11/2025",
+    "authors": "Adam Haile",
+    "summary": "By reading this article, you'll get a beginner-friendly introduction to **Generative AI** - AI that creates new content. You'll learn what generative AI is, why it matters for the future of computing, and how it differs from traditional programming. We'll explore four exciting areas of generative AI (text, images, audio, and video) with simple analogies instead of code. Along the way, you'll discover free online tools (like ChatGPT, Craiyon, MusicGen, and RunwayML) that you can try yourself, and understand how these systems learn from data.",
+    "image": "./images/thumbnails/intro-to-gen-ai.png",
+    "type": "md",
+    "difficulty": "easy",
+    "categories": [
+        "Generative AI",
+        "Beginner",
+        "Artificial Intelligence"
+    ]
+}
