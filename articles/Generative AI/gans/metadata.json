@@ -1,0 +1,14 @@
+{
+    "title": "GANs (Generative Adversarial Networks)",
+    "date": "3/11/2025",
+    "authors": "Adam Haile",
+    "summary": "By reading this article, you'll learn the basics of Generative Adversarial Networks (GANs) – including what they are, how they work, and some of their coolest applications. We'll avoid complex math or code, using simple analogies and real-world examples (like AI-created art and deepfake videos) to make these concepts easy to grasp. By the end, you'll also know where you can try out a GAN yourself through an interactive online demo.",
+    "image": "./images/thumbnails/intro-to-gen-ai.png",
+    "type": "md",
+    "difficulty": "easy",
+    "categories": [
+        "Generative AI",
+        "Beginner",
+        "Artificial Intelligence"
+    ]
+}
