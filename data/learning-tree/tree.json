@@ -159,10 +159,10 @@
                     "id": "36",
                     "filename": "gen-ai-36-31",
                     "name": "Intro to Generative AI",
-                    "description": "COMING SOON",
+                    "description": "By reading this article, you'll get a beginner-friendly introduction to **Generative AI** - AI that creates new content. You'll learn what generative AI is, why it matters for the future of computing, and how it differs from traditional programming. We'll explore four exciting areas of generative AI (text, images, audio, and video) with simple analogies instead of code. Along the way, you'll discover free online tools (like ChatGPT, Craiyon, MusicGen, and RunwayML) that you can try yourself, and understand how these systems learn from data.",
                     "category": "Generative AI",
-                    "api_image_path": "images/tree-thumbnails/article-soon.png",
-                    "link": "",
+                    "api_image_path": "images/thumbnails/intro-to-gen-ai.png",
+                    "link": "/library?nav=Articles&article=intro-to-gen-ai",
                     "highlighted_path": "True",
                     "position": {
                         "x": -2000,
@@ -1734,12 +1734,12 @@
             },
             "data": {
                 "name": "Intro to Generative AI",
-                "api_image_path": "images/tree-thumbnails/article-soon.png",
-                "description": "COMING SOON",
+                "api_image_path": "images/thumbnails/intro-to-gen-ai.png",
+                "description": "By reading this article, you'll get a beginner-friendly introduction to **Generative AI** - AI that creates new content. You'll learn what generative AI is, why it matters for the future of computing, and how it differs from traditional programming. We'll explore four exciting areas of generative AI (text, images, audio, and video) with simple analogies instead of code. Along the way, you'll discover free online tools (like ChatGPT, Craiyon, MusicGen, and RunwayML) that you can try yourself, and understand how these systems learn from data.",
                 "category": "Generative AI",
                 "category_color": "limegreen",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "/library?nav=Articles&article=intro-to-gen-ai"
             },
             "children": [
                 "37"
