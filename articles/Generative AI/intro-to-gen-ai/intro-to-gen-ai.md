@@ -47,6 +47,9 @@
 
 # What is Generative AI?
 
+![Overview of Generative AI](<./images/article_content/gen-ai.webp>)
+*Source: GeeksforGeeks*
+
 Generative AI refers to AI systems that can create new content (such as text, images, music, or video) by learning patterns from existing data. In other words, instead of just analyzing or categorizing data, generative models produce original data similar to what they were trained on. For example, a generative AI can write a paragraph that reads like a human wrote it, or draw a picture of an imaginary landscape based on a description. These models often rely on complex neural networks (especially types like Transformers or Generative Adversarial Networks) that have learned from huge amounts of examples [[PromptEngineering.org](https://promptengineering.org/the-evolution-of-ai-from-rule-based-systems-to-generative-models)].
 
 Generative AI has become a hot topic because it enables computers to exhibit creativity, composing music, designing art, or writing stories, tasks that were once thought uniquely human. Crucially, generative models don’t follow manually coded rules for producing output. Instead, they learn the rules from data. This means they can handle much more complexity and nuance than if a programmer tried to anticipate every possible scenario. Modern generative AIs are trained on vast datasets (text from the internet, millions of images, audio samples, etc.), allowing them to output impressively realistic and diverse creations.
@@ -59,6 +62,9 @@ Why does this matter? Generative AI is transforming the technology landscape. It
 
 It’s helpful to understand how generative AI learns differently from traditional programming or rule-based systems. In traditional programming (or rule-based AI), humans explicitly write the rules and logic. For instance, imagine writing a spam filter by hard-coding rules: “if an email contains the word ‘$$$’ or too many exclamation points, mark it as spam.” This rule-based approach can work for simple tasks, but it’s very rigid. The system only knows what we hard-code; it can’t handle anything unforeseen without a new rule. Rule-based AI operates on predetermined instructions and doesn’t improve by itself [[WeAreBrain](https://wearebrain.com/blog/rule-based-ai-vs-machine-learning-whats-the-difference/)].
 
+![Traditional vs Generative AI](<./images/article_content/traditional-vs-gen-ai.jpg>)
+*Source: Estuate*
+
 Generative AI, on the other hand, uses machine learning, which means it develops its own rules by finding patterns in data. We don’t tell a text generator the grammar of English or a painting AI how to draw a tree. Instead, we feed them huge datasets (like billions of words or thousands of landscapes), and they learn the underlying structures. It’s a bit like learning by example: the AI adjusts its internal parameters to get better at its task (say, predicting the next word in a sentence or the arrangement of pixels in an image) through lots of practice. Over time, it “figures out” the important patterns – without a programmer spelling them out.
 
 A helpful analogy is teaching by showing versus teaching by telling. Traditional programming is like telling a student to follow an exact recipe, step by step. Machine learning is like showing the student many example dishes and letting them experiment until they can cook something new that tastes good. The advantage of the generative approach is adaptability: given enough examples, a generative model can handle scenarios it’s never explicitly been taught, by generalizing from what it has seen. This is why generative AI can produce creative, unexpected results. However, it also means we as developers have less direct control over the exact output – we guide the model through data and training rather than line-by-line instructions.
@@ -69,6 +75,9 @@ A helpful analogy is teaching by showing versus teaching by telling. Traditional
 
 One of the most mature areas of generative AI is text generation. AI language models can produce human-like text for a given prompt. For example, you can ask a generative AI to write a short story about space travel or answer a question about history, and it will generate a coherent response. The technology behind this is usually a large language model, essentially a neural network trained on massive amounts of text (books, websites, articles, etc.) to predict the next word in a sequence. By repeatedly predicting word after word, the model can write whole sentences and paragraphs that make sense together [[CSET](https://cset.georgetown.edu/article/the-surprising-power-of-next-word-prediction-large-language-models-explained-part-1/)].
 
+![ChatGPT](<https://images.ctfassets.net/kftzwdyauwt9/6yuK9FKAvoVXNyrsdMoBHH/03ccaf7da203052ba7550965f0021bdf/chatgpt_diagram_dark.png?w=1080&q=80&fm=webp>)
+*Source: OpenAI*
+
 If you’ve used the autocomplete on your phone or seen predictive text, you’ve experienced a simple version of this idea. A large model takes it to another level: it has learned grammar, facts, and some reasoning simply from patterns in text data. ChatGPT is a famous example of such a model – it’s basically a very advanced text predictor that was optimized to hold a conversation. It was trained to generate coherent, human-like writing on any topic. You type a question or instruction, and it comes up with a detailed answer or essay for you. In essence, the model doesn’t truly “think” or understand like a human, but it has seen so much text that it can produce appropriate and often insightful responses by continuing the prompt you give it.
 
 These language models are incredibly useful. They can help you brainstorm ideas, explain complex concepts in simple terms, draft emails or reports, write code, and much more. However, it’s important to remember that they learn from data and don’t have a ground truth knowledge – which means they can sometimes output incorrect or nonsensical information, even if it sounds confident (an AI’s falsehoods are often called hallucinations in this context). For example, an AI might state a wrong historical date or make up a citation, because it’s just predicting likely words. So, while generative text AI is powerful, we have to use our own judgment to verify facts it provides.
@@ -78,6 +87,9 @@ These language models are incredibly useful. They can help you brainstorm ideas,
 ---
 
 ## Generating Images (AI Art)
+
+![GenAIArt](<https://blogs.nvidia.com/wp-content/uploads/2022/08/header-1.jpg>)
+*Source: NVIDIA*
 
 Another exciting domain of generative AI is image generation. These models can create original images based on a text description you provide – hence the term text-to-image generation. For instance, you could ask for “a castle on a floating island at sunset” and get a brand-new image visualizing that scene. Image generative models have learned from huge datasets of pictures and their descriptions, so they know how to associate words like “castle” or “sunset” with visual elements and styles. Popular systems in this space include DALL·E 2, Stable Diffusion, and Midjourney, among others. Even if you haven’t heard those names, you might have seen AI-generated art on social media (for example, the viral image of an astronaut riding a horse, or various fantasy art pieces created by AI).
 
@@ -93,6 +105,9 @@ Using an image generator feels almost like interacting with a creative collabora
 
 ## Generating Audio (Music and More)
 
+![GenerativeAudioModel](<https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2023/06/20233301/Generative-audio-model-1.png>)
+*Source: RunwayML / Bloomberg*
+
 Generative AI isn’t limited to words and pictures – it can create audio as well. This includes music generation, where AI composes songs or instrumentals, and even generating human-like speech (text-to-speech) or sound effects. Audio is a complex type of data, because it unfolds over time and can have many layers (think of different instruments in a song). Yet, researchers have developed models that grasp the patterns of rhythm, melody, harmony, and timbre by learning from large collections of audio clips and music tracks.
 
 One example is MusicGen, a generative model for creating music released by Meta (Facebook). What can MusicGen do? Given a text description of a song (“upbeat acoustic folk with guitar and flute melody”) it can produce a short audio clip that matches that description. It was trained on 20,000+ hours of music, so it has absorbed styles from classical to pop. In fact, MusicGen can even start with an existing melody: you hum a tune or give it a reference audio, and it continues or transforms it in the style you want. Essentially, models like this treat music generation a bit like language – but instead of words, they work with sequences of sound tokens. By predicting the next sounds, they compose music piece by piece. The results might be a bit generic at times, but they’re remarkably coherent (a generated piece has intro, chorus, etc., not just random notes) [[MusicGen](https://blog.paperspace.com/musicgen)].
@@ -106,6 +121,8 @@ To imagine how an AI writes music, think of how you might improvise on a piano: 
 ## Generating Video (Emerging Technology)
 
 The newest frontier for generative AI is video generation. Video combines many challenges – coherent images plus movement over time – so it’s arguably the hardest modality for AI to create. But progress is being made. Generative video models aim to produce short video clips based on prompts. For example, you might provide a text like “a cat chasing a laser pointer in a living room, cartoon style” and the AI will attempt to generate a few seconds of animation showing that scene. This is cutting-edge and still somewhat experimental, but early models are very promising [[RunwayML](https://runwayml.com/research/gen-2)].
+
+![Runway AI Video](<https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iarBvP6zn6eU/v1/-999x-999.gif>)
 
 One approach uses the image generation techniques we discussed and extends them frame-by-frame with temporal consistency. Essentially, the AI generates a sequence of images (frames) that hopefully remain consistent (the same cat, same background) and smooth when played as a video. There are also models that take a single starting image plus a prompt and animate it (imagine giving one picture of a landscape and asking the model to generate a camera pan or a day-to-night transition). RunwayML’s Gen-2 is a popular example of a text-to-video system available to the public. With Gen-2, you can type a description and get a brief video clip out. As the creators describe it, “It’s like filming something new, without filming anything at all”. That really captures the essence: you don’t need a camera or a crew, just an idea, and the AI tries to bring it to life on screen.
 
