@@ -60,6 +60,7 @@ Generative Adversarial Networks (GANs) are an exciting class of AI models that c
 ## How Do GANs Work?
 
 ![Overview of Generative AI](<https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2023/03/28045210/Generative-Adversarial-Networks-5.png>)
+
 *Source: LeewayHertz*
 
 During training, the generator starts by making something (say, an image) from random noise – at first, these outputs look obviously fake or nonsensical. The discriminator is shown both real examples from the dataset and the generator’s initial fake outputs, and it learns to classify the generator’s attempts as “fake” with high confidence. The clever part is that the generator then uses the discriminator’s feedback to improve: it tweaks its internal parameters to try and produce a more convincing image next time. This back-and-forth repeats many times. In each round, the generator gets a bit better at fooling the discriminator, while the discriminator gets a bit better at spotting fakes. Over many iterations, the generator’s creations become increasingly realistic, to the point that even the discriminator starts getting confused [[NVIDIA](https://blogs.nvidia.com/blog/gaugan-photorealistic-landscapes-nvidia-research/)]!
