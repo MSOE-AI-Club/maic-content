@@ -181,7 +181,7 @@
                     "name": "GANs",
                     "description": "By reading this article, you'll learn the basics of Generative Adversarial Networks (GANs) – including what they are, how they work, and some of their coolest applications. We'll avoid complex math or code, using simple analogies and real-world examples (like AI-created art and deepfake videos) to make these concepts easy to grasp. By the end, you'll also know where you can try out a GAN yourself through an interactive online demo.",
                     "category": "Generative AI",
-                    "api_image_path": "images/thumbnails/intro-to-gen-ai.png",
+                    "api_image_path": "images/thumbnails/gans.png",
                     "link": "/library?nav=Articles&article=gans",
                     "highlighted_path": "True",
                     "position": {
@@ -1755,7 +1755,7 @@
             "data": {
                 "name": "GANs",
                 "api_image_path": "images/thumbnails/gans.png",
-                "description": "By reading this article, you'll learn the basics of Generative Adversarial Networks (GANs) – including what they are, how they work, and some of their coolest applications. We'll avoid complex math or code, using simple analogies and real-world examples (like AI-created art and deepfake videos) to make these concepts easy to grasp. By the end, you'll also know where you can try out a GAN yourself through an interactive online demo.",
+                "description": "By reading this article, you'll learn the basics of Generative Adversarial Networks (GANs) - including what they are, how they work, and some of their coolest applications. We'll avoid complex math or code, using simple analogies and real-world examples (like AI-created art and deepfake videos) to make these concepts easy to grasp. By the end, you'll also know where you can try out a GAN yourself through an interactive online demo.",
                 "category": "Generative AI",
                 "category_color": "limegreen",
                 "highlighted_path": "True",
