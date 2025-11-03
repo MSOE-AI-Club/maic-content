@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-03T22:59:56.601Z",
+  "generated_at": "2025-11-03T23:12:03.302Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -403,6 +403,7 @@
     "images/article_content/embeddings.png",
     "images/article_content/empty_interactive_sessions.png",
     "images/article_content/extensions-view-icon.png",
+    "images/article_content/gen-ai.webp",
     "images/article_content/git_bash.png",
     "images/article_content/git_bash_setup.png",
     "images/article_content/global_protect.png",
@@ -427,6 +428,7 @@
     "images/article_content/ssh_1_old.png",
     "images/article_content/ssh_2.png",
     "images/article_content/taxjuno_logo.jpg",
+    "images/article_content/traditional-vs-gen-ai.jpg",
     "images/article_content/true_prep_logo.png",
     "images/article_content/webscraping.png",
     "images/article_content/webscraping_output.png",
