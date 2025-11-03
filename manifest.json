@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-03T23:25:50.837Z",
+  "generated_at": "2025-11-03T23:27:11.720Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -602,6 +602,7 @@
     "images/thumbnails/drone_front.png",
     "images/thumbnails/embeddings.png",
     "images/thumbnails/evolution.png",
+    "images/thumbnails/gans.png",
     "images/thumbnails/gray-matter-preso.png",
     "images/thumbnails/gray-matter.png",
     "images/thumbnails/hearts_ai_front.png",
