@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-04T00:48:04.285Z",
+  "generated_at": "2025-11-04T01:36:03.959Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -90,6 +90,8 @@
     "articles/Git/GitHub-Pushing-and-Pulling/metadata.json",
     "articles/Git/GitHub-Repositories/GitHub-Repositories.md",
     "articles/Git/GitHub-Repositories/metadata.json",
+    "articles/Git/GitHub-SSH-Keys/GitHub-SSH-Keys.md",
+    "articles/Git/GitHub-SSH-Keys/metadata.json",
     "articles/NLP/001-nlp-intro/001_nlp-intro.md",
     "articles/NLP/001-nlp-intro/metadata.json",
     "articles/NLP/002-nlp-text-preprocessing/002_nlp-text-preprocessing.md",
@@ -408,6 +410,7 @@
     "images/article_content/gen-ai.webp",
     "images/article_content/git_bash.png",
     "images/article_content/git_bash_setup.png",
+    "images/article_content/github_new_ssh_key.png",
     "images/article_content/global_protect.png",
     "images/article_content/grad_descent.gif",
     "images/article_content/jupyter-containerized.png",
