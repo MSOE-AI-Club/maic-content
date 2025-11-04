@@ -46,6 +46,25 @@
 
 <br/>
 
+## Setting up SSH Config for Easier Connections
+You can set up an SSH config file to make connecting to Rosie easier in the future. First, open (or create) the config file located at `~/.ssh/config` on your local machine. Then, add the following lines:
+
+```
+Host ROSIE
+    HostName dh-mgmt2.hpc.msoe.edu
+    User your_username@ad.msoe.edu
+
+# Use ProxyJump to connect to compute nodes through the login node
+Host dh-node*
+    HostName %h
+    User your_username@ad.msoe.edu
+    ProxyJump ROSIE
+```
+
+Replace `your_username` with your actual MSOE username. Now, you can connect to Rosie simply by using the command `ssh ROSIE` in your terminal or by selecting "ROSIE" from the Remote SSH extension in VSCode. If you have jobs started on ROSIE, this setup also allows you to connect directly to compute nodes (e.g., `dh-node1`, `dh-node2`, etc.) through Rosie using the same SSH config.
+
+If you have any other devices you need to connect through from SSH, you can add additional `Host` entries to this config file following the same format.
+
 ## Download the "SSH" Extension
 
 1. Open VSCode
@@ -60,13 +79,13 @@
 
 Once the extension is installed, click the blue icon on the bottom-left to open an SSH connection menu. Out of the presented options, you should choose "Connect to Host" or "Connect Current Window to Host". The former opens a new VSCode window while the ladder connects the current window.
 
-You may be prompted to choose a configuration file location at this point or in later steps. The default option is fine.
+You may be prompted to choose a configuration file location at this point or in later steps. Make sure to choose the location of your `~/.ssh/config` file if you created one in the previous section.
 
-Once you select a connection option click "+ Add New SSH Host..." then enter `"username@ad.msoe.edu"@dh-mgmt2.hpc.msoe.edu` where `username` is your regular MSOE username. Now whenever you try connecting to a host again, the host you just added (Rosie's management node dh-mgmt2) will be an option along side "+ Add New SSH Host...". Note: the quotes are required for the ssh connection. 
+If you set up the SSH config file as described earlier, you should see "ROSIE" as an option to connect to. Select that option to connect to Rosie.
 
-Next: Click the bottom-left SSH icon, connect to a host (possibly in the current window), and then select the host you just added. You need to be using global protect now if you're not on MSOE's campus network. If you're prompted to choose an OS, choose "Linux". Finally, enter your Rosie password when prompted, and then you will be connected to Rosie in VSCode once everything finishes loading!
+You need to be using global protect now if you're not on MSOE's campus network. If you're prompted to choose an OS, choose "Linux". Finally, enter your Rosie password if prompted, and then you will be connected to Rosie in VSCode once everything finishes loading!
 
-These same steps can be followed to connect in the future, minus the part where you add the host.
+You can can then follow the same steps to connect to any other devices you set up in your SSH config file.
 
 ## Using Terminals and the File Browser
 

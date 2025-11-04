@@ -1636,6 +1636,26 @@
                     "parents": [
                         "82"
                     ],
+                    "children": [
+                        "84"
+                    ]
+                },
+                {
+                    "id": "84",
+                    "filename": "git-84-83",
+                    "name": "GitHub SSH Keys",
+                    "description": "Learn how to set up and use SSH keys with GitHub.",
+                    "category": "Git",
+                    "api_image_path": "images/tree-thumbnails/GitHub-Logo.png",
+                    "link": "/library?nav=Articles&article=GitHub-SSH-Keys",
+                    "highlighted_path": "True",
+                    "position": {
+                        "x": 800,
+                        "y": 0
+                    },
+                    "parents": [
+                        "83"
+                    ],
                     "children": []
                 }
             ]
@@ -3103,6 +3123,26 @@
                 "highlighted_path": "True",
                 "link": "/library?nav=Articles&article=GitHub-Best-Practices"
             },
+            "children": [
+                "84"
+            ]
+        },
+        {
+            "id": "84",
+            "type": "treeNode",
+            "position": {
+                "x": 800,
+                "y": 100
+            },
+            "data": {
+                "name": "GitHub SSH Keys",
+                "api_image_path": "images/tree-thumbnails/GitHub-Logo.png",
+                "description": "Learn how to set up and use SSH keys with GitHub.",
+                "category": "Git",
+                "category_color": "gray",
+                "highlighted_path": "True",
+                "link": "/library?nav=Articles&article=GitHub-SSH-Keys"
+            },
             "children": []
         },
         {
@@ -3205,7 +3245,7 @@
         }
     ],
     "metadata": {
-        "total_nodes": 75,
+        "total_nodes": 76,
         "total_categories": 12,
         "generated_at": "2025-10-04"
     }

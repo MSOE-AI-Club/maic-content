@@ -1,0 +1,12 @@
+{
+    "summary": "Learn how to set up SSH keys for GitHub.",
+    "type": "md",
+    "date": "1/11/25",
+    "title": "GitHub SSH Key Setup",
+    "image": "./images/tree-thumbnails/GitHub-Logo.png",
+    "difficulty": "easy",
+    "authors": "Andrew Needham",
+    "categories": [
+        "Git"
+    ]
+}
