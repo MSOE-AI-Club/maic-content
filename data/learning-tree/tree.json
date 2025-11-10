@@ -263,10 +263,10 @@
                     "id": "54",
                     "filename": "gen-ai-54-39-38",
                     "name": "VAEs",
-                    "description": "COMING SOON",
+                    "description": "By reading this article, you'll learn what Variational Autoencoders (VAEs) are and how they work in a simple, beginner-friendly way. We'll break down their architecture with helpful visuals and analogies, and show how they're used in real-world applications like image generation, anomaly detection, and data restoration. Whether you're curious about how machines can invent new content or want to explore AI-powered creativity and diagnostics, this guide will give you a strong foundation. We'll also link you to hands-on demos so you can try out VAEs for yourself—even if you're just getting started in machine learning.",
                     "category": "Generative AI",
-                    "api_image_path": "images/tree-thumbnails/article-soon.png",
-                    "link": "",
+                    "api_image_path": "images/thumbnails/vaes.png",
+                    "link": "/library?nav=Articles&article=vaes",
                     "highlighted_path": "True",
                     "position": {
                         "x": -2900,
@@ -1856,12 +1856,12 @@
             },
             "data": {
                 "name": "VAEs",
-                "api_image_path": "images/tree-thumbnails/article-soon.png",
-                "description": "COMING SOON",
+                "api_image_path": "images/thumbnails/vaes.png",
+                "description": "By reading this article, you'll learn what Variational Autoencoders (VAEs) are and how they work in a simple, beginner-friendly way. We'll break down their architecture with helpful visuals and analogies, and show how they're used in real-world applications like image generation, anomaly detection, and data restoration. Whether you're curious about how machines can invent new content or want to explore AI-powered creativity and diagnostics, this guide will give you a strong foundation. We'll also link you to hands-on demos so you can try out VAEs for yourself—even if you're just getting started in machine learning.",
                 "category": "Generative AI",
                 "category_color": "limegreen",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "/library?nav=Articles&article=vaes"
             },
             "children": []
         },

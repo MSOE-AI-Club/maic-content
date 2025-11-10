@@ -1,0 +1,15 @@
+{
+    "title": "VAEs (Variational Autoencoders)",
+    "date": "10/11/2025",
+    "authors": "Adam Haile",
+    "summary": "By reading this article, you'll learn what Variational Autoencoders (VAEs) are and how they work in a simple, beginner-friendly way. We'll break down their architecture with helpful visuals and analogies, and show how they’re used in real-world applications like image generation, anomaly detection, and data restoration. Whether you're curious about how machines can invent new content or want to explore AI-powered creativity and diagnostics, this guide will give you a strong foundation. We'll also link you to hands-on demos so you can try out VAEs for yourself—even if you're just getting started in machine learning.",
+    "image": "./images/thumbnails/vaes.png",
+    "type": "md",
+    "difficulty": "intermediate",
+    "categories": [
+        "Generative AI",
+        "Intermediate",
+        "Artificial Intelligence",
+        "Variational Autoencoders"
+    ]
+}
