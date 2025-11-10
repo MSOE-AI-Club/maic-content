@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-10T21:00:48.823Z",
+  "generated_at": "2025-11-10T21:31:38.653Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -80,6 +80,8 @@
     "articles/Generative AI/gans/metadata.json",
     "articles/Generative AI/intro-to-gen-ai/intro-to-gen-ai.md",
     "articles/Generative AI/intro-to-gen-ai/metadata.json",
+    "articles/Generative AI/vaes/metadata.json",
+    "articles/Generative AI/vaes/vaes.md",
     "articles/Git/Git-Commands/Git-Commands.md",
     "articles/Git/Git-Commands/metadata.json",
     "articles/Git/GitHub/GitHub.md",
@@ -635,6 +637,7 @@
     "images/thumbnails/syn_front.png",
     "images/thumbnails/synergistic_sim.png",
     "images/thumbnails/v3_ROSIE_BP_Model.gif",
+    "images/thumbnails/vaes.png",
     "images/thumbnails/vscode-extension-icon.png",
     "images/thumbnails/web-scraping.png",
     "images/thumbnails/what_is_ai.png",
