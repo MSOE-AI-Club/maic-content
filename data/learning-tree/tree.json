@@ -523,10 +523,10 @@
                     "id": "65",
                     "filename": "rl-65-31",
                     "name": "Intro to Reinforcement Learning (RL)",
-                    "description": "A broad overview of Reinforcement Learning. This is the parent page for all RL content.",
+                "description": "A broad overview of Reinforcement Learning. Great for understanding the basic concepts and terminology used in RL.",
                     "category": "RL",
                     "api_image_path": "images/tree-thumbnails/Reinforcement-Learning-Intro.png",
-                    "link": "/library?nav=Articles&article=RL",
+                    "link": "/library?nav=Articles&article=001_rl-intro",
                     "highlighted_path": "True",
                     "position": {
                         "x": 3000,
@@ -542,11 +542,11 @@
                 {
                     "id": "66",
                     "filename": "rl-66-65",
-                    "name": "Markov Decision Making Process",
-                    "description": "COMING SOON",
+                    "name": "Markov Decision Process (MDP)",
+                    "description": "Covers a brief introduction to Markov Decision Process (MDP) and its components.",
                     "category": "RL",
-                    "api_image_path": "images/tree-thumbnails/article-soon.png",
-                    "link": "",
+                    "api_image_path": "images/tree-thumbnails/mdp.png",
+                    "link": "/library?nav=Articles&article=002_mdp",
                     "highlighted_path": "True",
                     "position": {
                         "x": 3000,
@@ -2120,7 +2120,7 @@
             "data": {
                 "name": "Intro to Reinforcement Learning (RL)",
                 "api_image_path": "images/tree-thumbnails/Reinforcement-Learning-Intro.png",
-                "description": "A broad overview of Reinforcement Learning. This is the parent page for all RL content.",
+                "description": "A broad overview of Reinforcement Learning. Great for understanding the basic concepts and terminology used in RL.",
                 "category": "RL",
                 "category_color": "yellow",
                 "highlighted_path": "True",
@@ -2138,13 +2138,13 @@
                 "y": 0
             },
             "data": {
-                "name": "Markov Decision Making Process",
-                "api_image_path": "images/tree-thumbnails/article-soon.png",
-                "description": "COMING SOON",
+                "name": "Markov Decision Process (MDP)",
+                "api_image_path": "images/tree-thumbnails/mdp.png",
+                "description": "Covers a brief introduction to Markov Decision Process (MDP) and its components.",
                 "category": "RL",
                 "category_color": "yellow",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "/library?nav=Articles&article=002_mdp"
             },
             "children": [
                 "68"
@@ -3247,6 +3247,6 @@
     "metadata": {
         "total_nodes": 76,
         "total_categories": 12,
-        "generated_at": "2025-10-04"
+        "generated_at": "2025-11-10"
     }
 }
