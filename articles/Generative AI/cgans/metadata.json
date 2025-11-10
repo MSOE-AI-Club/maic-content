@@ -1,0 +1,16 @@
+{
+    "title": "Conditional GANs (cGANs)",
+    "date": "10/11/2025",
+    "authors": "Adam Haile",
+    "summary": "By reading this article, you'll learn what Conditional GANs (cGANs) are and how they extend standard GANs by incorporating extra information to control their outputs. We’ll explain how cGANs work (in a friendly, intuitive way) and explore real-world applications like image-to-image translation, super-resolution, and text-to-image synthesis. Along the way, we’ll compare cGANs to regular GANs – discussing use cases, advantages, and disadvantages – so you understand when and why to use a conditional GAN. By the end, you’ll also know where you can try out a cGAN yourself through an online demo or open-source code.",
+    "image": "./images/thumbnails/cgans.png",
+    "type": "md",
+    "difficulty": "intermediate",
+    "categories": [
+        "Generative AI",
+        "Intermediate",
+        "Artificial Intelligence",
+        "Generative Adversarial Networks",
+        "Conditional Generative Adversarial Networks"
+    ]
+}
