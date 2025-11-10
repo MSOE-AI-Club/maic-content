@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-10T20:22:56.344Z",
+  "generated_at": "2025-11-10T21:00:48.823Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -72,6 +72,8 @@
     "articles/Computer Vision/006-comp-vis/metadata.json",
     "articles/Computer Vision/007-comp-vis/007_comp-vis.md",
     "articles/Computer Vision/007-comp-vis/metadata.json",
+    "articles/Generative AI/cgans/cgans.md",
+    "articles/Generative AI/cgans/metadata.json",
     "articles/Generative AI/dcgans/dcgans.md",
     "articles/Generative AI/dcgans/metadata.json",
     "articles/Generative AI/gans/gans.md",
@@ -603,6 +605,7 @@
     "images/thumbnails/aiIntro.png",
     "images/thumbnails/attention.jpg",
     "images/thumbnails/between_lungs_front.png",
+    "images/thumbnails/cgans.png",
     "images/thumbnails/chat_bot.jpg",
     "images/thumbnails/databricks-logo.png",
     "images/thumbnails/dcgans.png",
