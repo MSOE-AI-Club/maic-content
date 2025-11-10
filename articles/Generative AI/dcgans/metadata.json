@@ -1,0 +1,16 @@
+{
+    "title": "DCGANs (Deep Convolutional Generative Adversarial Networks)",
+    "date": "10/11/2025",
+    "authors": "Adam Haile",
+    "summary": "By reading this article, you'll learn what Deep Convolutional GANs (DCGANs) are and how they extend the basic GAN concept using convolutional neural networks. We’ll explain how DCGANs differ from vanilla GANs, explore real-world applications, and compare their advantages and limitations in practice. This will help you understand why DCGANs became a popular choice for image generation tasks in AI.",
+    "image": "./images/thumbnails/dcgans.png",
+    "type": "md",
+    "difficulty": "intermediate",
+    "categories": [
+        "Generative AI",
+        "Intermediate",
+        "Artificial Intelligence",
+        "Generative Adversarial Networks",
+        "Deep Convolutional Generative Adversarial Networks"
+    ]
+}
