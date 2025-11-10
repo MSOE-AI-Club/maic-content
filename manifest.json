@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-10T17:31:13.337Z",
+  "generated_at": "2025-11-10T20:20:35.592Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -72,6 +72,8 @@
     "articles/Computer Vision/006-comp-vis/metadata.json",
     "articles/Computer Vision/007-comp-vis/007_comp-vis.md",
     "articles/Computer Vision/007-comp-vis/metadata.json",
+    "articles/Generative AI/dcgans/dcgans.md",
+    "articles/Generative AI/dcgans/metadata.json",
     "articles/Generative AI/gans/gans.md",
     "articles/Generative AI/gans/metadata.json",
     "articles/Generative AI/intro-to-gen-ai/intro-to-gen-ai.md",
@@ -603,6 +605,7 @@
     "images/thumbnails/between_lungs_front.png",
     "images/thumbnails/chat_bot.jpg",
     "images/thumbnails/databricks-logo.png",
+    "images/thumbnails/dcgans.png",
     "images/thumbnails/delta-lake.png",
     "images/thumbnails/discovery_world.png",
     "images/thumbnails/drone_front.png",
