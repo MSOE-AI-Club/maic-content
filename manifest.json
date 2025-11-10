@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-10T17:21:59.390Z",
+  "generated_at": "2025-11-10T17:31:13.337Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -475,9 +475,11 @@
     "images/events/ITCChristmas.jpeg",
     "images/events/JunoLogo.jpg",
     "images/events/MAIC_10-24_Poster.png",
+    "images/events/MDA.jpg",
     "images/events/Michael-Best-logo.png",
     "images/events/MicsPracticePresentation.png",
     "images/events/Milwaukee-Tech-Hub.png",
+    "images/events/Milwaukee_Tool_Logo.jpg",
     "images/events/PalmTree.jpg",
     "images/events/RGLogoNew.png",
     "images/events/Research.png",
@@ -485,6 +487,7 @@
     "images/events/databricks.png",
     "images/events/jacobfink.jpg",
     "images/events/mercurymarine.jpg",
+    "images/events/netflix.jpg",
     "images/events/paul.jpg",
     "images/events/resume_blitz.png",
     "images/events/rubberduck.png",
