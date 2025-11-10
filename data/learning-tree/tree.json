@@ -201,10 +201,10 @@
                     "id": "38",
                     "filename": "gen-ai-38-37",
                     "name": "DCGANs",
-                    "description": "COMING SOON",
+                    "description": "By reading this article, you'll learn what Deep Convolutional GANs (DCGANs) are and how they extend the basic GAN concept using convolutional neural networks. We'll explain how DCGANs differ from vanilla GANs, explore real-world applications, and compare their advantages and limitations in practice. This will help you understand why DCGANs became a popular choice for image generation tasks in AI.",
                     "category": "Generative AI",
-                    "api_image_path": "images/tree-thumbnails/article-soon.png",
-                    "link": "",
+                    "api_image_path": "images/thumbnails/dcgans.png",
+                    "link": "/library?nav=Articles&article=dcgans",
                     "highlighted_path": "True",
                     "position": {
                         "x": -3200,
@@ -1796,12 +1796,12 @@
             },
             "data": {
                 "name": "DCGANs",
-                "api_image_path": "images/tree-thumbnails/article-soon.png",
-                "description": "COMING SOON",
+                "api_image_path": "images/thumbnails/dcgans.png",
+                "description": "By reading this article, you'll learn what Deep Convolutional GANs (DCGANs) are and how they extend the basic GAN concept using convolutional neural networks. We'll explain how DCGANs differ from vanilla GANs, explore real-world applications, and compare their advantages and limitations in practice. This will help you understand why DCGANs became a popular choice for image generation tasks in AI.",
                 "category": "Generative AI",
                 "category_color": "limegreen",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "/library?nav=Articles&article=dcgans"
             },
             "children": [
                 "54"
