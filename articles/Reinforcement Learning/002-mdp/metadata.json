@@ -1,0 +1,10 @@
+{
+    "summary": "Covers a brief introduction to Markov Decision Process (MDP) and its components.",
+    "type": "md",
+    "date": "01/09/2024",
+    "title": "Markov Decision Process (MDP)",
+    "image": "./images/tree-thumbnails/mdp.png",
+    "difficulty": "intermediate",
+    "authors": "Leigh Goetsch",
+    "categories": "Reinforcement Learning"
+}
