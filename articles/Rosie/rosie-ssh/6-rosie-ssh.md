@@ -65,6 +65,8 @@ Replace `your_username` with your actual MSOE username. Now, you can connect to 
 
 If you have any other devices you need to connect through from SSH, you can add additional `Host` entries to this config file following the same format.
 
+Common error: If your connection times out before it connects, press `Ctrl + ,` to open Settings, search for `Remote.SSH: Connect Timeout`, change the value from `30` to `120`, and try again.
+
 ## Download the "SSH" Extension
 
 1. Open VSCode
