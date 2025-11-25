@@ -47,27 +47,34 @@
 
 <br/>
 
-
 ## Explaination from the Source
+
 If you want an explaination by the people who made VSCode, use [this link](https://code.visualstudio.com/docs/python/environments).
 
 ## Installing Python
+
 Before we go any further, you will want to install Python for your machine:
 
 ## On Windows
-- Simply look up python in the microsoft store and download the latest version availible. In the future, know there might be libraries that aren't compatible with certain versions of Python. When you run into this situtation, install the version required for your use case. 
 
+- Simply look up python in the microsoft store and download the latest version availible. In the future, know there might be libraries that aren't compatible with certain versions of Python. When you run into this situtation, install the version required for your use case.
 
 ## On Mac
+
 - The process is a little more involved
 - Follow [this walkthough](https://docs.python-guide.org/starting/install3/osx/
 
-The first time you open a python file or jupyter notebook, you will be prompted to select an interpreter in the lower right, select Python. 
+The first time you open a python file or jupyter notebook, you will be prompted to select an interpreter in the lower right, select Python.
 
+## MATLAB users: Using MATLAB in VS Code
+
+If you primarily use MATLAB, you can still use VS Code with the official `MATLAB` extension from MathWorks for syntax highlighting and basic support. For interactive workflows use MATLAB Live Scripts (`.mlx`) or the MATLAB kernel in Jupyter. To install MATLAB Toolboxes and Add-Ons use MATLAB's Add-On Explorer or the `matlab.addons.install` command.
+
+Tip: If you need Python libraries like `numpy` or `pandas`, you can either call them from MATLAB using the `py.` bridge or run them inside a Python virtual environment and pass data between MATLAB and Python.
 
 ## Python Environments
-When working on Python projects, managing dependencies across different projects is crucial. Each project may require different versions of libraries, and using Python environments helps you isolate these dependencies. Visual Studio Code (VSCode) makes it easy to work with Python environments, whether they are virtual environments, Conda environments, or system-wide Python installations.
 
+When working on Python projects, managing dependencies across different projects is crucial. Each project may require different versions of libraries, and using Python environments helps you isolate these dependencies. Visual Studio Code (VSCode) makes it easy to work with Python environments, whether they are virtual environments, Conda environments, or system-wide Python installations.
 
 ## Creating and Using Python Virtual Environments
 
@@ -76,6 +83,7 @@ When working on Python projects, managing dependencies across different projects
 A virtual environment is a self-contained directory that contains a Python installation and project-specific libraries. Here’s how to create and use virtual environments in VSCode:
 
 #### Step 1: Creating a Virtual Environment
+
 Open the Terminal:
 Open VSCode’s integrated terminal using Ctrl+ (Cmd+on macOS) or go toView > Terminal`.
 
@@ -91,8 +99,8 @@ To create a virtual environment, run the following command:
 
 This command creates a virtual environment in a folder called venv. You can name the environment anything, but venv is a common convention.
 
-
 #### Step 2: Activating the Virtual Environment
+
 Before you can use the virtual environment, you need to activate it:
 
 On Windows:
@@ -101,8 +109,8 @@ On Windows:
 On Linux/macOS:
 `source venv/bin/activate`
 
-
 #### Step 3: Selecting Python Interpreter
+
 After activating the virtual environment, you need to tell VSCode to use the Python interpreter from that environment:
 
 1. Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P on macOS).
@@ -112,23 +120,27 @@ After activating the virtual environment, you need to tell VSCode to use the Pyt
 Now, VSCode will use the Python interpreter from the virtual environment for running scripts, linting, and other Python-related tasks.
 
 #### Step 4: Installing Packages
+
 With the virtual environment activated, you can now install packages specific to your project. Use the integrated terminal to install libraries like numpy, pandas, or scikit-learn:
 
 `pip install numpy pandas scikit-learn`
 
 These packages will be installed in your virtual environment and will not affect your global Python installation or other projects.
 
-
 ## Managing Multiple Python Environments in VSCode
+
 When working on multiple projects with different dependencies, you may need to switch between environments frequently. VSCode makes it easy to manage and switch between environments:
 
 ### Checking the Current Environment:
+
 The currently active Python environment is shown in the bottom-left corner of VSCode. Clicking on it will bring up the interpreter selection menu, where you can switch to another environment.
 
 ### Deactivating a Virtual Environment:
+
 To deactivate a virtual environment, simply type `deactivate` in the terminal.
 
 ### Listing Installed Packages:
+
 You can list all installed packages within an environment by running:
 
 `pip list`

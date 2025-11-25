@@ -46,6 +46,7 @@
 <br/>
 
 ## **GeeksforGeeks - Text Processing for NLP Tasks**
+
 If you’re just starting with Natural Language Processing (NLP), this article is a great first step in understanding how and why we clean text before using it in machine learning models. It explains key concepts like tokenization, stopword removal, stemming, and lemmatization in a simple, beginner-friendly way. If you want to learn the fundamentals of text preprocessing before writing code, this is a great resource!
 <br/>
 
@@ -67,6 +68,7 @@ If you’re just starting with Natural Language Processing (NLP), this article i
 </a>
 
 ## **Kaggle Notebook - Getting Started with Text Preprocessing**
+
 Once you understand the basics, this Kaggle notebook helps you apply them in real-world scenarios. It provides runnable Python code using popular NLP libraries like NLTK and SpaCy, so you can see how text preprocessing works step by step. If you prefer learning by doing, this notebook is an awesome way to experiment with text preprocessing techniques on actual data.
 <br/>
 
@@ -87,4 +89,34 @@ Once you understand the basics, this Kaggle notebook helps you apply them in rea
 <br>
 </a>
 
+## MATLAB alternative: Text preprocessing with Text Analytics Toolbox
 
+If you prefer MATLAB, the Text Analytics Toolbox offers most preprocessing tasks (tokenization, stopword removal, lemmatization, and more) using idiomatic MATLAB functions. Here's a quick example pipeline:
+
+```matlab
+% Sample text data
+textData = ["I love programming in MATLAB!", "This is a test sentence."];
+
+% Create tokenized documents
+documents = tokenizedDocument(textData);
+
+% Lowercase, remove punctuation, and remove stop words
+documents = lower(documents);
+documents = erasePunctuation(documents);
+documents = removeStopWords(documents);
+
+% Lemmatize (if you have the Lemmatizer or use pre-processing for stemming)
+if license('test','Text_Analytics_Toolbox')
+  documents = normalizeWords(documents,'Style','lemma');
+end
+
+% Create bag-of-words or term-document matrix
+bag = bagOfWords(documents);
+disp(topkwords(bag, 10));
+
+% Convert to a MATLAB table for modeling
+T = table(documents, 'VariableNames', {'TokenizedText'});
+disp(T);
+```
+
+This is a compact way to get similar preprocessing to Python's NLTK/SpaCy pipelines directly within MATLAB.

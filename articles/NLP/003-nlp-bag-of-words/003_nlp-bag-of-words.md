@@ -46,6 +46,7 @@
 <br/>
 
 ## **IBM - Bag of Words**
+
 If you're new to Natural Language Processing (NLP), this article provides a simple, high-level introduction to the Bag of Words (BoW) model. It explains what BoW is, why it's used, and how it helps machines understand text. This is a great starting point for anyone who wants a clear explanation before diving into implementation.
 <br/>
 
@@ -67,6 +68,7 @@ If you're new to Natural Language Processing (NLP), this article provides a simp
 </a>
 
 ## **DataCamp Bag of Words Tutorial**
+
 Once you understand the basics, this tutorial guides you through implementing Bag of Words (BoW) in Python. It explains step-by-step how to convert text into numerical features using BoW, with easy-to-follow code examples. If you want to see BoW in action and learn how it's applied in real-world Natural Language Processing (NLP) tasks like text classification, this is a great resource!
 <br/>
 
@@ -83,6 +85,29 @@ Once you understand the basics, this tutorial guides you through implementing Ba
     cursor: pointer;
     text-decoration: none;
     display: inline-block;'
-/> DataCamp Bag of Words Tutorial 
+/> DataCamp Bag of Words Tutorial
 <br>
 </a>
+
+## MATLAB alternative: Bag-of-words with MATLAB
+
+MATLAB's Text Analytics Toolbox provides convenient functions to create BOW representations and convert them into feature tables for modeling. Example:
+
+```matlab
+texts = ["I like this product"; "This product is terrible"]; % sample data
+docs = tokenizedDocument(texts);
+docs = erasePunctuation(lower(docs));
+docs = removeStopWords(docs);
+bag = bagOfWords(docs);
+
+% View the vocabulary and counts
+disp(bag.Counts);
+disp(bag.Vocabulary(1:min(20,end)));
+
+% Convert to MATLAB table (features -> rows)
+X = bag.Counts;
+tbl = array2table(X, 'VariableNames', bag.Vocabulary);
+disp(tbl);
+```
+
+This pipeline maps closely to the Python BoW tutorials, but with MATLAB-native functions that are often faster for matrix-like operations.
