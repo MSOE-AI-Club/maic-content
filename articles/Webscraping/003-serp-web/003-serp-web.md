@@ -57,6 +57,7 @@ To do this, we are going to use a process called SERP (Search Engine Results Pag
 ## Installing Necessary Packages + Setup
 
 For this example, we shouldn't need to install any extra python packages, we will be using purely built-in Python modules (however if you get an error saying that `requests` is not installed, run `pip install requests` in a terminal). We will however need to setup an account with a provider called [Serper.dev](https://serper.dev/). They will provide for us the searching API endpoints to do our Google search (for our example, you can just create a free account which will provide you with 2500 credits, or about 1250 Google searches).
+
 1. Go to [Serper.dev](https://serper.dev/)
 2. Press the Sign Up button in the top right
 3. Create an account
@@ -95,7 +96,7 @@ def serp_search(query):
     return response.json()
 ```
 
-Now we are defining our search function. We also can set our API Key here in place of <serper_api_key>. 
+Now we are defining our search function. We also can set our API Key here in place of <serper_api_key>.
 
 This function will make our request to the serper endpoint that supports search. For this example, we are doing a Google search, however Serper also supports searching Google Images, Videos, Places, and more.
 
@@ -128,3 +129,23 @@ Apple iPhone 14: Prices, 2 Colors, Sizes, Features & Specs - T-Mobile
 https://www.t-mobile.com/cell-phone/apple-iphone-14
 
 And now we are all set to start webcrawling! Try tying this function in with your web scraper (built in the last two articles) and start building your own datasets!
+
+---
+
+### MATLAB alternative: Calling Serper from MATLAB
+
+You can call JSON-based REST APIs such as Serper from MATLAB using `webwrite`/`webread` and then parse the response JSON into MATLAB structures. Example:
+
+```matlab
+apiKey = 'your-serper-api-key';
+url = 'https://google.serper.dev/search';
+payload = struct('q', 'iphone 14 pro');
+opts = weboptions('MediaType', 'application/json', 'HeaderFields', {'X-API-KEY', apiKey});
+resp = webwrite(url, payload, opts);
+% resp.organic will usually be an array of structs
+for i = 1:numel(resp.organic)
+  fprintf('%s\n%s\n\n', resp.organic(i).title, resp.organic(i).link);
+end
+```
+
+For dynamic or pagination-heavy crawling, you can call the REST API to retrieve search results and then feed the returned links into MATLAB's web-scraping pipeline (e.g., `webread` + `htmlTree`), or call Python code for advanced crawling and bring data back into MATLAB.

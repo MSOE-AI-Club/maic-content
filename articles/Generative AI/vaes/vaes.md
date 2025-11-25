@@ -49,9 +49,9 @@
 
 Variational Autoencoders (VAEs) are a class of generative models in machine learning, meaning they can create new data similar to what they were trained on. At first glance, a VAE looks like a regular autoencoder – it has an encoder network that compresses input data into a smaller representation (a latent code), and a decoder network that reconstructs the data from that code. The twist is that VAEs don’t just learn a single fixed code for each input; instead, they learn a distribution of possible codes. In simple terms, a VAE doesn’t output one exact recipe for recreating the input – it outputs a spread of recipes (with a mean and variation), and then picks one of those recipes at random to generate the output. This clever change allows VAEs to not only reconstruct inputs like traditional autoencoders, but also to generate new, unique outputs that still resemble the original data. [[GeeksforGeeks](https://www.geeksforgeeks.org/machine-learning/variational-autoencoders/)], [[Datacamp](https://www.datacamp.com/tutorial/variational-autoencoders)]
 
-![VAE Architecture](<https://lilianweng.github.io/posts/2018-08-12-vae/autoencoder-architecture.png>)
+![VAE Architecture](https://lilianweng.github.io/posts/2018-08-12-vae/autoencoder-architecture.png)
 
-*Source: Lilian Weng*
+_Source: Lilian Weng_
 
 ---
 
@@ -59,9 +59,9 @@ Variational Autoencoders (VAEs) are a class of generative models in machine lear
 
 Imagine you built a cool model spaceship out of LEGO blocks. Now you want to build a new spaceship that’s similar but not an exact copy. First, you take note of the important pieces and general design of your original ship – maybe the shape of the hull and the number of engines (this is like the encoder capturing the key features). But you don’t write down an exact one-to-one assembly plan; instead, you outline a range of possibilities (e.g. “use a long piece for the hull, possibly 6–8 studs long”). With this flexible plan in hand (the latent code distribution), you then gather LEGO pieces and build a new spaceship following the general plan. The result is a spaceship that looks similar to the original but has its own unique tweaks (this creation process is like the decoder generating a new output). Every time you follow the plan, you might allow slight variations – one build might have a slightly longer hull or an extra antenna – yet all builds look like they belong to the same family of spaceships. That’s essentially how a VAE works: the encoder summarizes the input into a compressed description with some allowed randomness, and the decoder uses that to produce an output that is recognizable but not an exact duplicate of the input.
 
-![VAE Example of Decoding](<https://exemplar-vae.github.io/augmentation.gif>)
+![VAE Example of Decoding](https://exemplar-vae.github.io/augmentation.gif)
 
-*Source: Exemplar-VAE*
+_Source: Exemplar-VAE_
 
 In a VAE’s architecture, the encoder actually outputs two sets of values for the latent description: one represents the “central” value of each latent feature (think of it as the average pattern), and the other represents the “spread” or uncertainty for those features. In practice, these are often the mean (μ) and standard deviation (σ) of a Gaussian distribution. Instead of encoding an input as a single point in latent space, the VAE treats the encoding as a little cloud of possible points defined by μ and σ. The model then samples a point from that cloud (this is where the randomness comes in). The decoder takes this sampled latent point and tries to reconstruct the data from it. Because we introduce a bit of randomness in the latent code, the same input can be decoded into slightly different outputs, and completely new random samples can produce brand-new plausible data. This approach forces the VAE to learn a smooth, continuous latent space where nearby points produce similar outputs. In other words, VAEs learn the underlying shape of the data distribution, so we can wander around in this latent space and generate meaningful results.
 
@@ -74,9 +74,9 @@ VAEs might sound abstract, but they have plenty of practical uses. Here are a fe
 - Creative Image Generation: VAEs can learn to generate new images that look like the ones in their training set, but aren’t direct copies. For example, a VAE trained on handwritten digits can invent entirely new digit images that resemble real handwriting. Similarly, VAEs have been used to produce things like realistic-looking human faces, artwork in a certain style, or new product designs – all by sampling the latent space to create novel yet believable examples.
 - Anomaly Detection: Because a VAE learns the pattern of normal data, it can help spot when something is off. When the VAE sees data that doesn’t fit the patterns it learned, it will reconstruct it poorly – tipping us off that the input is an outlier. This makes VAEs useful for tasks like fraud detection or catching manufacturing defects: if you train a VAE on normal examples of transactions or products, a weird case (fraudulent transaction or defective product) would look “wrong” to the VAE. In fields like network security or healthcare, VAEs can flag unusual events by essentially asking, “does this data look like my training data, or is it too different?”
 
-![Anomaly Detection](<https://towardsdatascience.com/wp-content/uploads/2021/06/1c2ECyMArKilDJ5N6dAnZbw.png>)
+![Anomaly Detection](https://towardsdatascience.com/wp-content/uploads/2021/06/1c2ECyMArKilDJ5N6dAnZbw.png)
 
-*Source: Medium*
+_Source: Medium_
 
 - Denoising and Data Restoration: VAEs are also great at cleaning or filling in data. Since the decoder tries to reconstruct the essence of the input, a VAE can be trained to remove noise or fill gaps. For instance, given partially corrupted images, a VAE can reconstruct a cleaner version by leveraging what it knows about how typical images look. This has applications in things like improving blurry pictures, restoring old photos, or imputing missing data (e.g. filling in missing sensor readings). In medical imaging, for example, a VAE might help enhance MRI scans by denoising or completing incomplete scans, making the results more reliable for doctors.
 
@@ -88,3 +88,11 @@ If you’re curious to see a VAE in action, there are accessible resources to ge
 datacamp.com
 
 Tensorflow's VAE Tutorial: [https://www.tensorflow.org/tutorials/generative/cvae](https://www.tensorflow.org/tutorials/generative/cvae)
+
+### MATLAB users
+
+MATLAB users can also experiment with VAEs using the Deep Learning Toolbox and custom `dlnetwork` training loops. MathWorks provides examples and documentation for building autoencoders and VAEs using MATLAB — either by training networks directly or by using `trainNetwork` where appropriate, then converting to `dlnetwork` for custom sampling or loss functions. For example: create encoder/decoder networks using `layerGraph`, combine with `dlnetwork`, and implement a VAE training loop to compute the reconstruction and KL divergence terms.
+
+See MathWorks documentation and examples for a hands-on starting point:
+
+- Variational Autoencoder example (search MathWorks examples for "variational autoencoder MATLAB").

@@ -23,6 +23,22 @@ You can find them by opening the extensions tab on the left sidebar and they sho
 <img src = '/images/article_content/Python Extension.png' height="5%">
 <img src = '/images/article_content/Jupyter Extension.png' height="5%">
 
+## MATLAB (Alternate) Setup
+
+If you're a MATLAB user (common among Mechanical Engineers), you can add a MATLAB-focused setup here so you don't have to switch contexts.
+
+1. Get MATLAB: download from MathWorks (check MSOE for academic licenses) or use MATLAB Online: https://matlab.mathworks.com/.
+2. Test MATLAB on the terminal (Linux):
+
+```bash
+matlab -nosplash -nodesktop -r "disp('MATLAB setup OK'); exit"
+```
+
+3. For VS Code, install the official 'MATLAB' extension by MathWorks for syntax highlighting and basic support; MATLAB Live Scripts (.mlx) are the MATLAB analogue to Jupyter Notebooks.
+4. Useful toolboxes for AI/engineering work include Deep Learning Toolbox, Statistics and Machine Learning Toolbox, and Signal Processing Toolbox.
+
+MATLAB is especially strong for matrix operations, built-in toolboxes, and engineering-focused data processing — a great fit for embedded systems, control, signal processing, and numerical simulation projects.
+
 ## Lets Learn Python!
 
 We'll be seeing python in two types of files, the first have the .py extension, and the second has the .ipynb extension.<br><br>

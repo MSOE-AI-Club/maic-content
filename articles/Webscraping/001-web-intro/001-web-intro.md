@@ -52,22 +52,27 @@ Web scraping is the technique of extracting data from websites automatically usi
 For more information how how webscrapers work, check out this article! [https://www.geeksforgeeks.org/what-is-web-scraping-and-how-to-use-it/](https://www.geeksforgeeks.org/what-is-web-scraping-and-how-to-use-it/)
 
 ## How do webscrape?
+
 Let's make our own webscraper using Python. For this, we'll start with making our webscraper in a new [Jupyter notebook](https://msoe-maic.com/library?nav=Articles&article=Learning_Resources-how-to-use-jupyter-notebooks) as it'll be the easiest to iterate and test our webscraper, but these same concepts can be used more autonomously in a Python file.
 
 First, let's install some packages.
 
 For this project, we are going to use:
+
 - [Requests](https://requests.readthedocs.io/en/latest/)
 - [Selenium](https://selenium-python.readthedocs.io/)
 - [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 To install these, let's run this in a cell of the notebook:
+
 ```python
 %pip install requests beautifulsoup4 selenium webdriver-manager
 ```
+
 > webdriver-manager is an additional package we will need for Selenium
 
 Now, let's import some of our packages
+
 ```
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -77,17 +82,40 @@ from bs4 import BeautifulSoup
 import time
 ```
 
-Using these, we can now define our website scraping function.
+### MATLAB alternative (static HTML / API requests)
+
+If you're more comfortable with MATLAB, you can perform many scraping tasks using built-in HTTP functions and the HTML parser:
+
+```matlab
+url = 'https://example.com';
+options = weboptions('UserAgent','Mozilla/5.0');
+html = webread(url, options);
+
+% Parse using htmlTree (R2020b+) and extract text
+tree = matlab.net.xml.htmlTree(html);
+text = extractHTMLText(tree);
+disp(text(1:200)); % show first 200 chars
 ```
+
+For dynamic pages that require JavaScript execution, MATLAB can either call out to Python's Selenium through the MATLAB-Python bridge, or you can use a headless browser CLI and read its output into MATLAB. For example, you can call Python's selenium directly if you have Python installed:
+
+```matlab
+py.importlib.import_module('selenium');
+% You can then call Python code to run selenium and fetch dynamic content, and bring that content back into MATLAB.
+```
+
+Using these, we can now define our website scraping function.
+
+````
 def get_page_content(url):
     """
     Opens a URL using Selenium and retrieves the page contents
-    
+
     Args:
         url (str): The URL to open
-        
+
     Returns:
-        tuple: (raw_html, parsed_text) where raw_html is the page source and 
+        tuple: (raw_html, parsed_text) where raw_html is the page source and
                parsed_text is the cleaned text content
     """
     # Set up Chrome options
@@ -96,30 +124,30 @@ def get_page_content(url):
     chrome_options.add_argument('--disable-gpu')
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-dev-shm-usage')
-    
+
     # Initialize the Chrome WebDriver
     driver = webdriver.Chrome(
         service=Service(ChromeDriverManager().install()),
         options=chrome_options
     )
-    
+
     try:
         # Open the URL
         driver.get(url)
-        
+
         # Wait for a short time to ensure the page loads
         time.sleep(2)
-        
+
         # Get the page source
         page_content = driver.page_source
-        
+
         # Parse with BeautifulSoup
         soup = BeautifulSoup(page_content, 'html.parser')
-        
+
         # Remove script and style elements
         for script in soup(["script", "style"]):
             script.decompose()
-        
+
         # Find all code blocks and wrap their text in backticks
         code_blocks = soup.find_all(['pre', 'code'])
         for block in code_blocks:
@@ -128,30 +156,30 @@ def get_page_content(url):
             else:
                 # Handle nested elements within code blocks
                 block.string = f'```{block.get_text()}```'
-                
+
         # Get text and clean it
         text = soup.get_text().replace("```Copy", "```")
-        
+
         # Clean up the text
         # Break into lines and remove leading/trailing space on each
         lines = (line.strip() for line in text.splitlines())
-        
+
         # Break multi-headlines into a line each
         chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
-        
+
         # Drop blank lines
         text = '\n'.join(chunk for chunk in chunks if chunk)
-        
+
         return page_content, text
-    
+
     except Exception as e:
         print(f"An error occurred: {str(e)}")
         return None, None
-    
+
     finally:
         # Always close the browser
         driver.quit()
-```
+````
 
 Let's look at this function piece-by-piece and understand what it does.
 First, we start up a Chrome webdriver. This will be the component we use to actually load a webpage live, which means any JavaScript on a website will execute so we get all the content expected.
@@ -166,6 +194,7 @@ For our formatting, we then rejoin the text together with newlines so it's easie
 Then we shutdown our driver so that we aren't losing resources that aren't being used.
 
 Let's now give it a try! We can run it with the following:
+
 ```
 print(get_page_content("https://msoe-maic.com/library?nav=Articles&article=001_What_is_the_Learning_Tree")[0])
 ```
@@ -176,6 +205,7 @@ We see that when we run this, with using the link given, we get something simila
 Great! We just scraped our first website! We can now use this same function to scrape more websites and get their content!
 
 ## Risks of webscraping
+
 Not all websites "permit" webscraping. Some websites don't really want their content extracted, and it is generally recommended that you abide by these rules.
 To find out if a website permits webscraping, you can read their robots.txt file. Most websites have one, and can be accessed by going to their root, and adding robots.txt to the end of the URL. (Ex: https://www.youtube.com/robots.txt). This type of contract is called a **gentleman's agreement**. This means it isn't a legally binding agreement, but relies on good faith of people who webscrape/webcrawl. We would highly encorage that if you are going to perform webscraping/crawling, that you abide by these agreements.
 

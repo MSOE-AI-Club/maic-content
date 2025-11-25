@@ -228,6 +228,32 @@ deltaTable.alias("target").merge(
  .execute()
 ```
 
+### MATLAB users
+
+If you primarily use MATLAB, you can still work with data from Delta Lake in a few practical ways:
+
+- Export Delta tables to Parquet or CSV in Databricks and read them directly in MATLAB using `parquetread`/`readtable`:
+
+```matlab
+T = readtable('path/to/students.csv');
+% Or with parquet:
+T = parquetread('path/to/delta-table.parquet');
+```
+
+- Use the Databricks JDBC/ODBC connection and MATLAB's Database Toolbox to query Delta tables directly from MATLAB (connect via JDBC driver and run SQL queries).
+
+- For more integrated pipelines, use MATLAB to call Python code (MATLAB has built-in Python interoperability) to run Spark jobs or use Databricks REST APIs to export artifacts programmatically.
+
+Example: Call a simple Databricks REST API to download data (pseudo-code):
+
+```matlab
+opts = weboptions('HeaderFields', {'Authorization', ['Bearer ' databricksToken]});
+resp = webread(apiUrl, opts);
+data = jsondecode(resp);
+```
+
+These approaches let MATLAB users participate in Databricks workflows without fully switching away from MATLAB tooling — export data, analyze and train models, then optionally export models back into a shareable format (ONNX, MAT) for production.
+
 ---
 
 ## Best Practices for Beginners

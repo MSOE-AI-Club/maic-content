@@ -147,3 +147,22 @@ As you learn Databricks, keep these principles in mind:
 ## Summary
 
 Databricks streamlines data science project workflows with collaborative tools, integrated ML lifecycle management, and robust data storage via Delta Lake. The platform eliminates the friction of managing separate tools for different stages of your project, letting you focus on solving problems and building models.
+
+### MATLAB users
+
+If you are a MATLAB-first user, you can still use Databricks as part of your workflow. Common strategies include:
+
+- Exporting Delta tables as Parquet/CSV and processing in MATLAB with `parquetread`/`readtable` or `datastore` for large datasets.
+- Training MATLAB models locally using MATLAB toolboxes (Deep Learning Toolbox, Statistics and Machine Learning Toolbox), then exporting models for use in Databricks flows (ONNX for neural networks, `.mat` files for custom deployments).
+- Calling Databricks REST APIs or using JDBC/ODBC from MATLAB to run SQL queries or extract dataset snapshots programmatically.
+- For experiment tracking, call MLflow's Python API via MATLAB's Python bridge (py.mlflow.\*) to log runs, metrics, and artifacts if needed.
+
+Example MATLAB snippet to fetch data from a Databricks-backed API and convert to a table:
+
+```matlab
+opts = weboptions('HeaderFields', {'Authorization', ['Bearer ' databricksToken]});
+resp = webread(apiUrl, opts);
+tbl = struct2table(resp.records);
+```
+
+These approaches help you combine MATLAB's engineering-focused strengths with Databricks' big-data and collaborative features.

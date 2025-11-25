@@ -8,6 +8,17 @@ Once downloaded, simply find the Jupyter notebook tab and click launch on the ju
 
 I recomend clicking "New" and then "Folder". Then renaming the untitled folder to Jupyter. Then enter the folder, and click new again, this time selecting "Python 3(ipykernel)". This will make you your first notebook!
 
+---
+
+## MATLAB users: Live Scripts and Running MATLAB in Jupyter
+
+If you primarily use MATLAB, two good options exist for interactive development:
+
+1. MATLAB Live Scripts (`.mlx`) — MATLAB's built-in interactive notebooks. They support mixing narrative text with code and are excellent for engineering workflows. Open `.mlx` files using MATLAB's Live Editor.
+2. Use the MATLAB Jupyter kernel — this lets you run MATLAB code inside Jupyter notebooks if you prefer a Jupyter-style interface.
+
+MATLAB Live Scripts are recommended for most MATLAB-first users — they are well-integrated with toolboxes like the Deep Learning Toolbox and are easiest to use for signal processing or control tasks.
+
 ## How are notebooks different than normal code?
 
 Each piece of code within each cell, will execute without executing any other code. This allows you to "mess around" and experiment with code that you know is flawed. Without jupyter notebooks, every time you fixed a small error anywhere in your code, we would have to re-run the whole entire file! When we are dealing with large data-sets, this could cost us hours!

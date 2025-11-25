@@ -51,8 +51,28 @@ This resource discusses different techniques on how input images are manipulated
 https://becominghuman.ai/image-data-pre-processing-for-neural-networks-498289068258
 </a>
 
-This resource provides an indepth code example for doing image preprocessing with the TensorFlow library.  It has a step by step guide to get you introduced to image preprocessing, and further explains what is happening through each block of code.
+This resource provides an indepth code example for doing image preprocessing with the TensorFlow library. It has a step by step guide to get you introduced to image preprocessing, and further explains what is happening through each block of code.
 <br/>
 <a href='https://www.kaggle.com/code/rimmelasghar/getting-started-with-image-preprocessing-in-python' style='color: white'>
 https://www.kaggle.com/code/rimmelasghar/getting-started-with-image-preprocessing-in-python
 </a>
+
+### MATLAB alternative
+
+MATLAB includes many of the same preprocessing tools in the Image Processing and Deep Learning Toolboxes. Examples:
+
+```matlab
+% Read and resize
+I = imread('image.jpg');
+I = imresize(I, [224 224]);
+I = im2double(I);
+
+% Convert to grayscale if needed
+Igray = rgb2gray(I);
+
+% Data augmentation
+augmenter = imageDataAugmenter('RandRotation', [-15 15], 'RandXReflection', true, 'RandYReflection', true);
+augimds = augmentedImageDatastore([224 224], imds, 'DataAugmentation', augmenter);
+```
+
+These tools let you achieve the same preprocessing goals as Python/TensorFlow while staying within MATLAB's workflow and toolboxes.

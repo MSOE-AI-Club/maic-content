@@ -56,13 +56,14 @@ First, we're going to need some new packages for this.
 You'll want to start with running `pip install pydantic pydantic-ai pandas`. You can learn more about Pydantic [here](https://docs.pydantic.dev/latest/), Pydantic AI [here](https://ai.pydantic.dev/) and Pandas [here](https://pandas.pydata.org/).
 
 Next, you'll want to create a Gemini free-tier API key. This will get you access to the Gemini Flash models for free (no card info needed), with a limit of about 30 requests a minute.
+
 1. Go to the [Gemini AI Studio](https://aistudio.google.com)
 2. Click "Sign in to Google AI Studio"
 3. Enter your Google account info (or create a Google account if you do not have one).
 4. Hit the "Get API Key" button
 5. Scroll down and press "Create API Key"
 
-It should return to you your API key! Make sure to store this somewhere (make a text file on your PC or something) for now as we will need to come back to it later. Once you close out of it on Gemini AI Studio, you can't copy that key again so make sure you have it copied somewhere for later. 
+It should return to you your API key! Make sure to store this somewhere (make a text file on your PC or something) for now as we will need to come back to it later. Once you close out of it on Gemini AI Studio, you can't copy that key again so make sure you have it copied somewhere for later.
 
 If you lose your key, you'll just have to create a new one.
 
@@ -74,7 +75,7 @@ Now we have an LLM we can use to structure our web results. Let's use it to stru
 from typing import List
 from pydantic import BaseModel, Field
 
-class ProductResult(BaseModel):  
+class ProductResult(BaseModel):
     model: str = Field(description='The model of the product')
     description: str = Field(description='The description of the product')
     cost: int = Field(description="The cost of the product")
@@ -94,18 +95,18 @@ from pydantic_ai import Agent
 
 os.environ["GEMINI_API_KEY"] = "<gemini_api_key>"
 
-agent = Agent(  
+agent = Agent(
     'google-gla:gemini-1.5-flash',
     result_type=RequestResults,
-    system_prompt='Be concise, reply with one sentence.',  
+    system_prompt='Be concise, reply with one sentence.',
 )
 
-@agent.system_prompt  
+@agent.system_prompt
 async def add_customer_name(ctx) -> str:
     return f"Your goal is to extract product information from web scraped pages and format it to a structured response."
 ```
 
-Now we are setting up our LLM Agent. This will be our way of interacting with the model. **At this point, you can put your Gemini API Key in place of the <gemini_api_key> text** 
+Now we are setting up our LLM Agent. This will be our way of interacting with the model. **At this point, you can put your Gemini API Key in place of the <gemini_api_key> text**
 
 We're also going to define a **system prompt**. This is a special prompt that tells the LLM who it is in the current context. You can also feel free to tune this later and see how the system prompt can impact outputs!
 
@@ -137,6 +138,7 @@ Now we're going to run our model! First thing we're going to do is get our websi
     .dataframe thead th {
         text-align: right;
     }
+
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -237,3 +239,34 @@ Now we're going to run our model! First thing we're going to do is get our websi
 </div>
 
 Congratulations! You have now structured web data from webscraping! Feel free to now try other websites, modifying the dataclass, and also changing the system prompt for different responses!
+
+---
+
+### MATLAB alternative for structured results
+
+If you prefer MATLAB, you can emulate a similar data structure using MATLAB structs and tables. Example workflow:
+
+```matlab
+% Example of a structured product list as struct array
+products(1).model = 'iPhone 13 Pro Max';
+products(1).description = 'Refurbished iPhone 13 Pro Max 512GB - Graphite';
+products(1).cost = 929;
+products(1).isp = 'Unlocked';
+products(1).color = 'Graphite';
+products(1).refurbished = true;
+
+% Convert to table for easier viewing
+T = struct2table(products);
+disp(T);
+```
+
+For calling an LLM or API to convert free-form text into structured results, MATLAB can use `webwrite`/`webread` with a REST API or call Python's pydantic-based code via the MATLAB-Python bridge. A simple `webwrite` example to post text and receive JSON:
+
+```matlab
+payload = struct('text', webContent);
+opts = weboptions('MediaType', 'application/json', 'HeaderFields', {'Authorization', ['Bearer ' apiKey]});
+resp = webwrite(apiUrl, payload, opts);
+data = jsondecode(resp);
+```
+
+This allows you to parse LLM outputs into MATLAB structs/tables and process them with MATLAB's analysis tools.
