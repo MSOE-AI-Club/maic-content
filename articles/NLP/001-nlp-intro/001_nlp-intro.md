@@ -105,6 +105,6 @@ If you are a MATLAB user or prefer MATLAB for your projects, MathWorks offers a 
     cursor: pointer;
     text-decoration: none;
     display: inline-block;'
-/> DeepLearning.AI Natural Language Processing Resources
+/> MathWorks Natural Language Processing Resources
 <br>
 </a>
