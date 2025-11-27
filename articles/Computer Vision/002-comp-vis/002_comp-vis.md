@@ -63,7 +63,7 @@ MATLAB includes many of the same preprocessing tools in the Image Processing and
 
 ```matlab
 % Read and resize
-I = imread('image.jpg');
+I = imread('images\about\maic_logo.png');
 I = imresize(I, [224 224]);
 I = im2double(I);
 

@@ -91,9 +91,8 @@ url = 'https://example.com';
 options = weboptions('UserAgent','Mozilla/5.0');
 html = webread(url, options);
 
-% Parse using htmlTree (R2020b+) and extract text
-tree = matlab.net.xml.htmlTree(html);
-text = extractHTMLText(tree);
+
+text = regexprep(html, '<[^>]*>', ''); % Remove HTML tags
 disp(text(1:200)); % show first 200 chars
 ```
 

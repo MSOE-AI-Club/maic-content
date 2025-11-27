@@ -51,32 +51,3 @@ This is great resource for demonstrating the image classification because it giv
 <a href='https://www.tensorflow.org/tutorials/images/classification' style='color: white'>
 https://www.tensorflow.org/tutorials/images/classification
 </a>
-
-### MATLAB alternative
-
-If you prefer MATLAB, you can use the Deep Learning Toolbox and Image Processing Toolbox to implement image classification with transfer learning. Basic workflow and built-in functions:
-
-```matlab
-% Build image datastore from subfolders named with labels
-imds = imageDatastore('path/to/images', 'IncludeSubfolders', true, 'LabelSource', 'foldernames');
-
-% Split data
-[imdsTrain, imdsTest] = splitEachLabel(imds, 0.8, 'randomize');
-
-% Resize and augment
-aug = imageDataAugmenter('RandRotation', [-10 10], 'RandXReflection', true);
-augimds = augmentedImageDatastore([224 224], imdsTrain, 'DataAugmentation', aug);
-
-% Load pre-trained network and modify for your number of classes
-net = resnet50();
-numClasses = numel(categories(imdsTrain.Labels));
-lgraph = layerGraph(net);
-% replace final layers (example - adjust layer names to match structure)
-newLayers = [fullyConnectedLayer(numClasses, 'Name', 'fc_custom'); softmaxLayer('Name','softmax'); classificationLayer('Name','classoutput')];
-lgraph = replaceLayer(lgraph, 'fc1000', newLayers(1));
-
-options = trainingOptions('sgdm', 'MiniBatchSize', 32, 'MaxEpochs', 5, 'Plots', 'training-progress');
-trainedNet = trainNetwork(augimds, lgraph, options);
-```
-
-Learn more from MathWorks examples for transfer learning with ResNet50 in the Deep Learning Toolbox documentation.

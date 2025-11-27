@@ -97,12 +97,13 @@ content = article.text
 % are helpful.
 
 % Get manifest
-manifestText = webread('https://msoe-ai-club.github.io/maic-content/manifest.json');
-manifest = jsondecode(manifestText);
+options = weboptions('ContentType', 'json'); % Ensure JSON is decoded to struct
+manifest = webread('https://msoe-ai-club.github.io/maic-content/manifest.json', options);
 
 % Download article text (Markdown)
-articleUrl = 'https://msoe-ai-club.github.io/maic-content/articles/Basic AI/003_What_is_AI.md';
+articleUrl = 'https://msoe-ai-club.github.io/maic-content/articles/Basic AI/003-what-is-ai/003_What_is_AI.md';
 mdText = webread(articleUrl);
+mdText = convertStringsToChars(mdText); % Ensure it's a char vector
 disp(mdText(1:300)); % show first 300 characters
 ```
 
