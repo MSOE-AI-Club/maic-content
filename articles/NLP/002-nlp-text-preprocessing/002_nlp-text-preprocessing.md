@@ -91,32 +91,21 @@ Once you understand the basics, this Kaggle notebook helps you apply them in rea
 
 ## MATLAB alternative: Text preprocessing with Text Analytics Toolbox
 
-If you prefer MATLAB, the Text Analytics Toolbox offers most preprocessing tasks (tokenization, stopword removal, lemmatization, and more) using idiomatic MATLAB functions. Here's a quick example pipeline:
+If you prefer MATLAB, the Text Analytics Toolbox offers most preprocessing tasks (tokenization, stopword removal, lemmatization, and more) using idiomatic MATLAB functions.
 
-```matlab
-% Sample text data
-textData = ["I love programming in MATLAB!", "This is a test sentence."];
-
-% Create tokenized documents
-documents = tokenizedDocument(textData);
-
-% Lowercase, remove punctuation, and remove stop words
-documents = lower(documents);
-documents = erasePunctuation(documents);
-documents = removeStopWords(documents);
-
-% Lemmatize (if you have the Lemmatizer or use pre-processing for stemming)
-if license('test','Text_Analytics_Toolbox')
-  documents = normalizeWords(documents,'Style','lemma');
-end
-
-% Create bag-of-words or term-document matrix
-bag = bagOfWords(documents);
-disp(topkwords(bag, 10));
-
-% Convert to a MATLAB table for modeling
-T = table(documents, 'VariableNames', {'TokenizedText'});
-disp(T);
-```
-
-This is a compact way to get similar preprocessing to Python's NLTK/SpaCy pipelines directly within MATLAB.
+<a href='https://www.mathworks.com/help/textanalytics/ug/preprocess-text-data-in-live-editor.html' style='
+    background-color: #31313a;
+    color: gainsboro;
+    padding: 6px 16px;
+    border: none
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;'
+/> Preprocess Text Data in Live Editor
+<br>
+</a>

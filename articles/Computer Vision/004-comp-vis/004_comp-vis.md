@@ -51,3 +51,9 @@ This is great resource for demonstrating the image classification because it giv
 <a href='https://www.tensorflow.org/tutorials/images/classification' style='color: white'>
 https://www.tensorflow.org/tutorials/images/classification
 </a>
+
+If you prefer MATLAB, image classification can also be done through MATLAB's Deep Learning Toolbox. This resource provides a step by step guide on how to utilize MATLAB to perform image classification.
+<br/>
+<a href='https://www.mathworks.com/help/deeplearning/gs/create-simple-image-classification-network-using-deep-network-designer.html' style='color: white'>
+https://www.mathworks.com/help/deeplearning/gs/create-simple-image-classification-network-using-deep-network-designer.html
+</a>

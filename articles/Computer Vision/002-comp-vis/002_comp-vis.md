@@ -57,22 +57,8 @@ This resource provides an indepth code example for doing image preprocessing wit
 https://www.kaggle.com/code/rimmelasghar/getting-started-with-image-preprocessing-in-python
 </a>
 
-### MATLAB alternative
-
-MATLAB includes many of the same preprocessing tools in the Image Processing and Deep Learning Toolboxes. Examples:
-
-```matlab
-% Read and resize
-I = imread('images\about\maic_logo.png');
-I = imresize(I, [224 224]);
-I = im2double(I);
-
-% Convert to grayscale if needed
-Igray = rgb2gray(I);
-
-% Data augmentation
-augmenter = imageDataAugmenter('RandRotation', [-15 15], 'RandXReflection', true, 'RandYReflection', true);
-augimds = augmentedImageDatastore([224 224], imds, 'DataAugmentation', augmenter);
-```
-
-These tools let you achieve the same preprocessing goals as Python/TensorFlow while staying within MATLAB's workflow and toolboxes.
+If you prefer MATLAB, MathWorks provides a course on image preprocessing.
+<br/>
+<a href='https://www.mathworks.com/help/images/preprocess-images-for-deep-learning.html' style='color: white'>
+https://www.mathworks.com/help/images/preprocess-images-for-deep-learning.html
+</a>

@@ -48,6 +48,8 @@ This article explains how to use `git push` and `git pull` to sync changes betwe
 
 <br/>
 
+Note for MATLAB users: you will probably want to follow [MathWorks's tutorial](https://www.mathworks.com/help/matlab/matlab_prog/push-local-changes-to-remote.html) for this instead.
+
 ## Pushing and Pulling Changes
 Once you've made commits in your local Git repository, you'll often want to share your work or get updates from others. That's where pushing and pulling comes in.
 

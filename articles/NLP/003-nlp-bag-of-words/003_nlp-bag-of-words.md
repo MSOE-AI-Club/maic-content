@@ -93,21 +93,19 @@ Once you understand the basics, this tutorial guides you through implementing Ba
 
 MATLAB's Text Analytics Toolbox provides convenient functions to create BOW representations and convert them into feature tables for modeling. Example:
 
-```matlab
-texts = ["I like this product"; "This product is terrible"]; % sample data
-docs = tokenizedDocument(texts);
-docs = erasePunctuation(lower(docs));
-docs = removeStopWords(docs);
-bag = bagOfWords(docs);
-
-% View the vocabulary and counts
-disp(bag.Counts);
-disp(bag.Vocabulary(1:min(20,end)));
-
-% Convert to MATLAB table (features -> rows)
-X = bag.Counts;
-tbl = array2table(X, 'VariableNames', bag.Vocabulary);
-disp(tbl);
-```
-
-This pipeline maps closely to the Python BoW tutorials, but with MATLAB-native functions that are often faster for matrix-like operations.
+<a href='https://www.mathworks.com/discovery/bag-of-words.html' style='
+    background-color: #31313a;
+    color: gainsboro;
+    padding: 6px 16px;
+    border: none
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;'
+/> MATLAB Bag-of-Words Documentation
+<br>
+</a>

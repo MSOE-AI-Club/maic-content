@@ -106,6 +106,25 @@ This video provides a high-level overview of reinforcement learning, including t
 <br>
 </a>
 
+## MATLAB Reinforcement Learning Onramp
+<!-- resource_url: https://matlabacademy.mathworks.com/details/reinforcement-learning-onramp/reinforcementlearning -->
+**Best for:** MATLAB users<br>
+This free interactive course from MathWorks teaches the fundamentals of reinforcement learning using MATLAB. It covers key concepts and provides hands-on exercises to build practical skills.
+<a href='https://matlabacademy.mathworks.com/details/reinforcement-learning-onramp/reinforcementlearning' style='
+    margin-top: 4px;
+    background-color: #31313a;
+    color: gainsboro;
+    padding: 6px 16px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;'
+/> MATLAB Reinforcement Learning Onramp
+<br>
+</a>
+
 <br/>
 
 # Intermediate and Deep Dive Resources

@@ -54,5 +54,9 @@ Pytorch is quickly becoming the industry favorite for deep learning and AI, and 
 [Pytorch overview](https://www.youtube.com/watch?v=ORMx45xqWkA)
 [Official Pytorch Video Tutorial](https://www.youtube.com/watch?v=IC0_FRiX-sw)
 [Official Pytorch Text Tutorial](https://pytorch.org/tutorials/beginner/basics/intro.html)
+
+
+MATLAB also has a deep learning toolbox that can be used to create neural networks.
+[MATLAB Deep Learning Toolbox](https://www.mathworks.com/help/deeplearning/index.html)
  
 From this point on, building your own neural nets is up to googling tutorials for your problem, or experimenting. Have fun!

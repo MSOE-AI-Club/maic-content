@@ -43,3 +43,8 @@ resource_url: https://github.com/google-deepmind/lab
 resource_summary: Project Malmo is an open-source platform for AI experimentation and research built on top of Minecraft.
 resource_type: Library
 resource_url: https://github.com/Microsoft/malmo
+
+### MATLAB Reinforcement Learning Toolbox
+resource_summary: The MATLAB Reinforcement Learning Toolbox provides functions and tools for designing, training, and simulating reinforcement learning agents. It supports various RL algorithms and integrates with Simulink for modeling complex systems.
+resource_type: Library
+resource_url: https://www.mathworks.com/help/reinforcement-learning/index.html

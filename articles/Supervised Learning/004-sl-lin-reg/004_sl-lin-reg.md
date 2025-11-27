@@ -46,4 +46,4 @@
  
 [The most basic supervised model](https://www.youtube.com/watch?v=b0L47BeklTE)
  
-Most "regression" models are implimented in sklearn, and can be quite helpful!
+Most "regression" models are implimented in sklearn, and can be quite helpful! They also can be implemented in MATLAB through its Statistics and Machine Learning Toolbox.

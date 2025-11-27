@@ -89,10 +89,4 @@ datacamp.com
 
 Tensorflow's VAE Tutorial: [https://www.tensorflow.org/tutorials/generative/cvae](https://www.tensorflow.org/tutorials/generative/cvae)
 
-### MATLAB users
-
-MATLAB users can also experiment with VAEs using the Deep Learning Toolbox and custom `dlnetwork` training loops. MathWorks provides examples and documentation for building autoencoders and VAEs using MATLAB — either by training networks directly or by using `trainNetwork` where appropriate, then converting to `dlnetwork` for custom sampling or loss functions. For example: create encoder/decoder networks using `layerGraph`, combine with `dlnetwork`, and implement a VAE training loop to compute the reconstruction and KL divergence terms.
-
-See MathWorks documentation and examples for a hands-on starting point:
-
-- Variational Autoencoder example (search MathWorks examples for "variational autoencoder MATLAB").
+[MATLAB can also train VAEs.](https://www.mathworks.com/help/deeplearning/ug/train-a-variational-autoencoder-vae-to-generate-images.html)

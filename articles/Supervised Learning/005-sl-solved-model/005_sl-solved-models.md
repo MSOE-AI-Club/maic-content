@@ -45,3 +45,10 @@
 <br/>
  
 [Scikit learn official code examples](https://scikit-learn.org/stable/auto_examples/index.html)
+</div>
+
+<br/>
+<p style='color: white; margin-top: 2px;'>MATLAB also offers prebuilt models through its Statistics and Machine Learning Toolbox, allowing you to leverage powerful tools without reinventing the wheel.</p>
+</div>
+[MATLAB official code examples](https://www.mathworks.com/help/stats/examples.html)
+<br/>

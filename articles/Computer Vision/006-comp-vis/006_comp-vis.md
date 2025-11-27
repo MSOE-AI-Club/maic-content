@@ -52,4 +52,8 @@ This resource for Object Detection from freeCodeCamp goes over what YOLOv8 (A ty
 https://www.freecodecamp.org/news/how-to-detect-objects-in-images-using-yolov8
 </a>
 
-
+An older version, YOLOv4, is available to use in MATLAB through the Deep Learning Toolbox. This resource goes over how to utilize it through MATLAB to perform object detection.
+<br/>
+<a href='https://www.mathworks.com/help/vision/ug/object-detection-using-yolov4-deep-learning.html' style='color: white'>
+https://www.mathworks.com/help/vision/ug/object-detection-using-yolov4-deep-learning.html
+</a>

@@ -88,3 +88,23 @@ The DeepLearning.AI Natural Language Processing (NLP) resource is ideal for thos
 </a>
 
 
+## **MathWorks Natural Language Processing Resources**
+If you are a MATLAB user or prefer MATLAB for your projects, MathWorks offers a variety of resources to help you get started with Natural Language Processing (NLP).
+<br/>
+
+<a href='https://www.mathworks.com/discovery/natural-language-processing.html' style='
+    background-color: #31313a;
+    color: gainsboro;
+    padding: 6px 16px;
+    border: none
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;'
+/> DeepLearning.AI Natural Language Processing Resources
+<br>
+</a>
