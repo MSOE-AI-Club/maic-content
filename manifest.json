@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-11T13:25:21.363Z",
+  "generated_at": "2025-12-08T22:05:58.763Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -80,6 +80,8 @@
     "articles/Generative AI/gans/metadata.json",
     "articles/Generative AI/intro-to-gen-ai/intro-to-gen-ai.md",
     "articles/Generative AI/intro-to-gen-ai/metadata.json",
+    "articles/Generative AI/making-your-own-chatgpt-pt1/making-your-own-chatgpt-pt1.md",
+    "articles/Generative AI/making-your-own-chatgpt-pt1/metadata.json",
     "articles/Generative AI/vaes/metadata.json",
     "articles/Generative AI/vaes/vaes.md",
     "articles/Git/Git-Commands/Git-Commands.md",
@@ -626,6 +628,7 @@
     "images/thumbnails/kAi-Aug24-2023.png",
     "images/thumbnails/learning-tree.png",
     "images/thumbnails/llm.jpg",
+    "images/thumbnails/making-your-own-chatgpt.png",
     "images/thumbnails/merch.png",
     "images/thumbnails/mlflow.png",
     "images/thumbnails/mq2.webp",
