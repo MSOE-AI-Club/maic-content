@@ -1,7 +1,7 @@
 {
     "title": "Making Your Own Chat-GPT (Pt1)",
     "date": "12/8/2024",
-    "authors": "MAIC",
+    "authors": "Adam Haile",
     "summary": "Learn how to access and use the Llama 3.2 90B Vision model running on MSOE's ROSIE supercomputer. This hands-on guide walks you through setting up a Jupyter notebook session on Open OnDemand and writing Python code to interact with a powerful large language model capable of understanding both text and images.",
     "image": "./images/thumbnails/making-your-own-chatgpt.png",
     "type": "md",
