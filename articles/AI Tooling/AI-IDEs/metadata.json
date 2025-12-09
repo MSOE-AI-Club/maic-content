@@ -1,0 +1,12 @@
+{
+    "title": "AI IDEs",
+    "date": "2/12/2025",
+    "authors": "Andrew Needham",
+    "summary": "This article explores AI-Native IDEs—next-generation code editors that proactively assist with coding tasks, automate repetitive work, and operate directly within your project files to accelerate development and learning.",
+    "image": "./images/thumbnails/ai_ides.png",
+    "type": "md",
+    "difficulty": "easy",
+    "categories": [
+        "AI Tooling"
+    ]
+}

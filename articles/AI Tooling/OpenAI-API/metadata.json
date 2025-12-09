@@ -1,0 +1,12 @@
+{
+    "title": "OpenAI API",
+    "date": "2/12/2025",
+    "authors": "Andrew Needham",
+    "summary": "This article introduces the OpenAI API, explaining how developers can programmatically integrate powerful language models like GPT into applications using Python, while emphasizing critical security practices for API key management.",
+    "image": "./images/thumbnails/openai_api.png",
+    "type": "md",
+    "difficulty": "easy",
+    "categories": [
+        "AI Tooling"
+    ]
+}

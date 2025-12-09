@@ -1,0 +1,12 @@
+{
+    "title": "n8n",
+    "date": "2/12/2025",
+    "authors": "Andrew Needham",
+    "summary": "This article presents n8n as a visual workflow automation platform that combines no-code ease with coding flexibility, enabling students to orchestrate complex integrations between APIs, databases, and AI services for capstone and senior design projects.",
+    "image": "./images/thumbnails/n8n.png",
+    "type": "md",
+    "difficulty": "easy",
+    "categories": [
+        "AI Tooling"
+    ]
+}
