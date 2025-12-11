@@ -3,3 +3,4 @@
 index.html
 _headers
 dist/**
+.notebooks
