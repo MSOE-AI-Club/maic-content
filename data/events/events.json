@@ -254,56 +254,56 @@
     {
         "title": "Hack4Health Hackathon",
         "type": "competition",
-        "date": "2025-01-22",
+        "date": "2026-01-22",
         "image": "images/events/mcwlogo.png",
         "description": "Come learn about the Hack4Health Hackathon and how you can get involved!"
     },
     {
         "title": "College to Corporate",
         "type": "speaker",
-        "date": "2025-02-05",
+        "date": "2026-02-05",
         "image": "images/events/CollegeToCorporate.png",
         "description": "Come listen to Kevin Ratay & Brian Balboni discuss their career paths from college to corporate!"
     },
     {
         "title": "Intro to Agentic AI Workshop",
         "type": "workshop",
-        "date": "2025-02-12",
+        "date": "2026-02-12",
         "image": "images/events/agenticai.png",
         "description": "Come learn about the latest trends in AI and how to get started with Agentic AI!"
     },
     {
         "title": "Innovation Lab Kick-Off: Persistent Systems",
         "type": "competition",
-        "date": "2025-02-19",
+        "date": "2026-02-19",
         "image": "images/events/persistent.jpeg",
         "description": "Come learn about the latest trends in AI and how to get started with Persistent Systems!"
     },
     {
         "title": "Steve Glynn: Chief Milwaukee Officer",
         "type": "speaker",
-        "date": "2025-02-26",
+        "date": "2026-02-26",
         "image": "images/events/steveglynn.png",
         "description": "Come hear from Steve Glynn, the Chief Milwaukee Officer, about the future of AI in Milwaukee!"
     },
     {
         "title": "Semester Celebration & Eboard Elections",
         "type": "speaker",
-        "date": "2025-03-13",
+        "date": "2026-03-13",
         "image": "images/events/PalmTree.jpg",
         "description": "Come celebrate all the hard work you did this semester! We will be electing the new AI Club eboard. Come vote, eat, play games, and win raffle prizes!"
     },
     {
         "title": "Quantum @ IBM: George Paulik",
         "type": "speaker",
-        "date": "2025-03-26",
+        "date": "2026-03-26",
         "image": "images/events/IBMLogo.png",
         "description": "Come hear from George Paulik, discussing the future of AI & Quantum Computing!"
     },
     {
         "title": "MSOE to NVIDIA",
         "type": "speaker",
-        "date": "2025-04-09",
+        "date": "2026-04-09",
         "image": "images/about/nvidia_Logo.jpg",
         "description": "Come hear about Nigel Nelson's experience from MSOE to leading incredible AI systems at NVIDIA!"
     }
