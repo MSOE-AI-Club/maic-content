@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-23T02:04:32.013Z",
+  "generated_at": "2026-02-23T02:22:19.489Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -508,6 +508,7 @@
     "images/events/mcwlogo.png",
     "images/events/mercurymarine.jpg",
     "images/events/netflix.jpg",
+    "images/events/nvidia_logo.png",
     "images/events/paul.jpg",
     "images/events/persistent.jpeg",
     "images/events/resume_blitz.png",
