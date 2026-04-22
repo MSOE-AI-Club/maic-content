@@ -8,28 +8,28 @@
         "email": "storoeb@msoe.edu"
     },
     {
-        "name": "Adam Haile",
+        "name": "Andrew Needham",
         "title": "Vice President",
-        "imageUrl": "images/contact/Adam Haile Portrait.png",
+        "imageUrl": "images/contact/Andrew Needham Portrait.jpg",
         "role": "Internal Organizational Maintenance & Lead Workshop Developer",
-        "bio": "Hello! I am Adam Haile, a current Computer Science Junior. I joined the AI club to gain insight into this rapidly evolving world and to meet new friends with similar interests. Outside of the club I am a Data Science Intern with Direct Supply. I also enjoy self learning embedded systems, web design, game development, 3d printing, and teaching others.",
-        "email": "hailea@msoe.edu"
+        "bio": "Hi! My name is Andrew Needham, and I am a Sophomore Computer Science student at MSOE. I joined AI club as a freshman to learn more about machine learning and other technology, and I have had lots of fun participating in all the different events. I'm also part of the Raider Robotics VEXU team, and I enjoy game development and downhill skiing.",
+        "email": "needhama@msoe.edu"
     },
     {
-        "name": "Tyge Plater",
+        "name": "Liam Salas",
         "title": "Head of Research",
-        "imageUrl": "images/contact/Tyge Plater Portrait.jpg",
+        "imageUrl": "images/contact/Liam Salas Portrait.jpg",
         "role": "Lead Researcher & Research Coordinator",
-        "bio": "Hi! My name is Tyge Plater, I am currently a Junior Software Engineering student here at MSOE. I first joined AI club because I wanted to learn about the concepts of AI, and how they can be applied, in combination with software engineering, to solve real world problems – which being on a research team has helped with. In my free time I like to snowboard, longboard, hangout with friends, and play video games.",
-        "email": "platert@msoe.edu"
+        "bio": "",
+        "email": "salasl@msoe.edu"
     },
     {
-        "name": "Mazen Hamid",
+        "name": "Ava Latoria",
         "title": "Treasurer",
-        "imageUrl": "images/contact/Mazen Hamid Portrait.jpg",
+        "imageUrl": "images/contact/Ava Latoria Portrait.jpg",
         "role": "Campus-Life Relations & Finances",
-        "bio": "Hellooo! I'm Mazen, and I'm a Computer Science Junior also pursuing a Math minor. I joined AI-Club a freshman and was immediately hooked on the topic of AI as well as its real world implications which as aided by my experience with a research group. Outside of school I like photography, listing to podcasts and reading news articles about various parts of the world.",
-        "email": "hamidm@msoe.edu"
+        "bio": "",
+        "email": "latoriaa@msoe.edu"
     },
     {
         "name": "Adam Swedlund",
@@ -40,44 +40,28 @@
         "email": "swedlunda@msoe.edu"
     },
     {
+        "name": "Owen Pacetti",
+        "title": "External Outreach",
+        "imageUrl": "images/contact/Owen Pacetti Portrait.jpg",
+        "role": "External Community Outreach",
+        "bio": "",
+        "email": "pacettio@msoe.edu"
+    },
+    {
+        "name": "Sydney Madden",
+        "title": "Web Master",
+        "imageUrl": "images/contact/Sydney Madden Portrait.jpg",
+        "role": "Lead Website Developer & Maintainer",
+        "bio": "",
+        "email": "maddens@msoe.edu"
+    },
+    {
         "name": "Madison Engebose",
-        "title": "K 12 Outreach",
+        "title": "Technical Strategist",
         "imageUrl": "images/contact/Madison Engebose Portrait.jpg",
-        "role": "Head of K-12 Communications",
+        "role": "Workshop Developer Strategist",
         "bio": "Hi! I'm Madison Engebose, and I'm currently a Sophomore Computer Science student at MSOE. I joined AI Club to explore different AI concepts and develop the skills to apply them in real-world scenarios. Outside of AI club, I'm a Software Engineer Intern for Direct Supply and a member of the MSOE Women's Golf team.",
         "email": "engebosem@msoe.edu"
-    },
-    {
-        "name": "Travis Jankowski",
-        "title": "Web Master",
-        "imageUrl": "images/contact/Travis Jankowski Portrait.png",
-        "role": "Lead Website Developer & Maintainer",
-        "bio": "Hi, my name is Travis and I am a junior studying computer science. My favorite parts of AI club are the opportunities to apply data science skills to real world problems through hands-on projects. I also serve as the president of Midnight Robotics and I have been a software engineering intern at Cognex for two years.",
-        "email": "jankowskit@msoe.edu"
-    },
-    {
-        "name": "Leigh Goetsch",
-        "title": "Technical Strategist",
-        "imageUrl": "images/contact/Leigh_Goetsch.jpg",
-        "role": "Workshop Developer Strategist",
-        "bio": "Hi! I am Leigh Goetsch, a Junior studying computer science with a minor in computer engineering. I decided to join the AI club to gain a broader understanding of AI concepts prior to encountering them in my academic coursework, as well as to explore applications of these technologies through our research groups. Outside of AI club, I am the co-controls lead for MSOE's VEXU robotics team, Raider Robotics.",
-        "email": "goetschm@msoe.edu"
-    },
-    {
-        "name": "Reagan Burkemper",
-        "title": "Technical Strategist",
-        "imageUrl": "images/contact/Reagan Burkemper Portrait.jpg",
-        "role": "Workshop Developer Strategist",
-        "bio": "Hi, I'm Reagan Burkemper, a sophomore majoring in Computer Engineering with minors in Data Science and Electrical Engineering. I joined the AI Club out of curiosity and a desire to gain more knowledge and hands-on experience. Outside of AI Club, I play on MSOE's Women's Soccer Team and am involved with the High-Powered Rocketry Club. I love being active and spending time outdoors with friends.",
-        "email": "burkemperr@msoe.edu"
-    },
-    {
-        "name": "Andrew Needham",
-        "title": "Technical Strategist",
-        "imageUrl": "images/contact/Andrew Needham Portrait.jpg",
-        "role": "Workshop Developer Strategist",
-        "bio": "Hi! My name is Andrew Needham, and I am a Sophomore Computer Science student at MSOE. I joined AI club as a freshman to learn more about machine learning and other technology, and I have had lots of fun participating in all the different events. I'm also part of the Raider Robotics VEXU team, and I enjoy game development and downhill skiing.",
-        "email": "needhama@msoe.edu"
     },
     {
         "name": "Dr. Riley",
@@ -87,4 +71,4 @@
         "bio": "Dr. Derek Riley joined the MSOE faculty in 2016 and is a professor in the Electrical Engineering and Computer Science Department. He is also program director of MSOE's Bachelor of Science in Computer Science program, which has a focus in artificial intelligence. In addition to teaching at MSOE, Riley provides consulting services and expert witness services related to machine learning, deep learning, facial recognition, computational modeling, high-performance computing, and other related fields. His areas of expertise include deep learning, machine learning, computer vision, algorithms, process modeling and simulation, Scrum, and mobile computing/programming. He is an NVIDIA DLI Certified Instructor.",
         "email": "riley@msoe.edu"
     }
-] 
+]
