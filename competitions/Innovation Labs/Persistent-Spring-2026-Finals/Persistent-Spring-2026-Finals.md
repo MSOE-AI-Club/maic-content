@@ -3,13 +3,12 @@
 **Innovation Labs Spring 2026**, hosted by the MSOE Artificial Intelligence Club (MAIC) in collaboration with Persistent Systems and Databricks, wrapped up an incredible 2-month program where students from Milwaukee School of Engineering and University of Wisconsin-Milwaukee built AI-powered solutions for real industry challenges.
 
 <img src = '/images/thumbnails/IL_MAIC_Logo_grad.png' height = 100px>
-<br/>
 
 ## What Students Built
 Teams tackled five domains across financial services and healthcare—crime risk intelligence, investment advisory, population health management, nonprofit compensation integrity, and clinical coding. Projects included cancer detection pipelines, clinical coding assistants, crime rate dashboards for insurers, and agentic investment advisors, all deployed on Databricks using Spark, Delta Lake, and MLflow.
 
 $10,000 in prizes, free food, and Databricks swag—backpacks, bottles, and bragging rights included.
-<br/><br/>
+<br/>
 
 ## Congratulations to the Finalists!
 
