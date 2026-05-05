@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T20:35:52.057Z",
+  "generated_at": "2026-05-05T21:49:29.443Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -366,6 +366,8 @@
     "competitions/Innovation Labs/Juno-Spring-2025/metadata.json",
     "competitions/Innovation Labs/Persistent-Spring-2026/Persistent-Spring-2026.md",
     "competitions/Innovation Labs/Persistent-Spring-2026/metadata.json",
+    "competitions/Innovation Labs/Persistent-Spring-2026-Finals/Persistent-Spring-2026-Finals.md",
+    "competitions/Innovation Labs/Persistent-Spring-2026-Finals/metadata.json",
     "competitions/Innovation Labs/Xorbix-Fall-2025/Xorbix-Fall-2025.md",
     "competitions/Innovation Labs/Xorbix-Fall-2025/metadata.json",
     "data/about/faq.md",
