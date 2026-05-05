@@ -15,7 +15,7 @@ Mitchell Johnstone,test description,Hacksgiving|ROSIE Presenter|2023 MICS Attend
 Autumn Beyer,test description,2022 Researcher|2022 MICS Attendee|Hacksgiving,42,5,Autumn,Beyer
 Joseph Barganz,test description,NVIDIA DLI|2025 MICS Attendee,4,4,Joseph,Barganz
 Tyler Schreiber,test description,Hacksgiving|2024 Researcher|2024 MICS Attendee|ROSIE Presenter,12,0,Tyler,Schreiber
-Adam Haile,test description,2023 MICS Attendee|2023 Researcher|NVIDIA DLI|2024 MICS Attendee|2024 Researcher|eboard2025|eboard2024|2025 MICS Attendee,27,25,Adam,Haile
+Adam Haile,test description,2023 MICS Attendee|2023 Researcher|NVIDIA DLI|2024 MICS Attendee|2024 Researcher|eboard2025|eboard2024|2025 MICS Attendee,27,52,Adam,Haile
 Micah Pollnow,test description,,2,2,Micah,Pollnow
 Collin Schmocker,test description,,24,13,Collin,Schmocker
 Eric Van Zant,test description,NVIDIA DLI|Research 2023|2023 MICS Attendee,45,1,Eric,Van
@@ -123,7 +123,7 @@ Braydon Hanson,test description,,5,5,Braydon,Hanson
 Jarek Konicek,test description,Hacksgiving,3,3,Jarek,Konicek
 Sonia Grade,test description,2024 Researcher|2024 MICS Attendee|ROSIE Competition Finalist 2024,23,23,Sonia,Grade
 Virginia Conaty,test description,NVIDIA DLI,4,4,Virginia,Conaty
-Oliver Grudzinski,test description,Hacksgiving|NVIDIA DLI,36,36,Oliver,Grudzinski
+Oliver Grudzinski,test description,Hacksgiving|NVIDIA DLI,36,35,Oliver,Grudzinski
 Evan Nowlin,test description,NVIDIA DLI,5,5,Evan,Nowlin
 Jacob Merget,test description,NVIDIA DLI,4,4,Jacob,Merget
 Joel Roberts,test description,,1,1,joel,roberts
@@ -154,7 +154,7 @@ Dylan Norquist,test description,2024 Researcher|2025 MICS Attendee|Hacksgiving,1
 Alex Ausan,test description,NVIDIA DLI,4,4,Alex,Ausan
 Levi Wolfgramm,test description,NVIDIA DLI|2025 Researcher,14,14,Levi,Wolfgramm
 Keagan Weinstock,test description,Hacksgiving|NVIDIA DLI|2024 Researcher|2024 MICS Attendee|ROSIE Presenter,13,13,Keagan,Weinstock
-Mikhail Filippov,test description,NVIDIA DLI|2024 Researcher|2024 MICS Attendee|ROSIE Presenter|2025 MICS Attendee|2025 Researcher,32,14,Mikhail,Filippov
+Mikhail Filippov,test description,NVIDIA DLI|2024 Researcher|2024 MICS Attendee|ROSIE Presenter|2025 MICS Attendee|2025 Researcher,32,12,Mikhail,Filippov
 Gavin Childress,test description,Hacksgiving|NVIDIA DLI|2024 Researcher|2024 MICS Attendee|2025 Researcher,13,13,Gavin,Childress
 Paul Eickhoff,test description,Hacksgiving,2,2,Paul,Eickhoff
 Alex Wunderlin,test description,NVIDIA DLI,4,4,Alex,Wunderlin
@@ -201,7 +201,7 @@ Eric Mahn,test description,,3,3,Eric,Mahn
 Jason Martinez,test description,NVIDIA DLI,1,1,Jason,Martinez
 Michael Romanek,test description,NVIDIA DLI,3,3,Michael,Romanek
 Hussain Mehdi,test description,NVIDIA DLI,6,6,Hussain,Mehdi
-Adrian Manchado,test description,Hacksgiving|2025 MICS Attendee|Rosie Competition Finalist 2025|ROSIE Presenter|ROSIE Presenter|Hacksgiving,34,31,Adrian,Manchado
+Adrian Manchado,test description,Hacksgiving|2025 MICS Attendee|Rosie Competition Finalist 2025|ROSIE Presenter|ROSIE Presenter|Hacksgiving,34,-4,Adrian,Manchado
 Abigail Draper,test description,2024 Researcher|2024 MICS Attendee|ROSIE Competition Finalist 2024,1,1,Abigail,Draper
 Michaela Haensgen,test description,,1,1,Michaela,Haensgen
 Brandon Istad,test description,,2,2,Brandon,Istad
@@ -224,7 +224,7 @@ Dimas Monte,test description,NVIDIA DLI|Hacksgiving,21,13,Dimas,Monte
 Nastasja Radulovic,test description,NVIDIA DLI,2,2,Nastasja,Radulovic
 Vit Kalianko,test description,NVIDIA DLI,2,2,Vit,Kalianko
 Logan Feggeatad,test description,NVIDIA DLI,2,2,Logan,Feggeatad
-Yuktha Tata Koganti,test description,NVIDIA DLI,4,4,Yuktha,Koganti
+Yuktha Tata Koganti,test description,NVIDIA DLI,4,3,Yuktha,Koganti
 Ranveer Ghuman,test description,NVIDIA DLI,1,1,Ranveer,Ghuman
 Robert Geboy,test description,NVIDIA DLI,2,2,Robert,Geboy
 Mia Hochstetler,test description,,5,0,Mia,Hochstetler
@@ -246,7 +246,7 @@ Ella Bruce,test description,Hacksgiving|eboard2023|eboard2024|2024 Researcher|20
 Sam Sterritt,test description,,1,1,,
 Evan Roegner,test description,Hacksgiving|2025 MICS Attendee|Rosie Competition Finalist 2025|ROSIE Presenter|ROSIE Presenter,9,9,,
 Graham Gilsdorf,test description,,1,1,,
-Josiah Mathews,test description,,17,16,,
+Josiah Mathews,test description,,17,15,,
 Garrett Voight,test description,,2,2,,
 Josh Myers,test description,2025 Researcher,4,4,,
 Ashton Thao,test description,,2,2,,
@@ -257,7 +257,7 @@ Jasdeep Singh,test description,NVIDIA DLI|NVIDIA DLI,16,14,,
 Xander Ede,test description,2025 MICS Attendee|NVIDIA DLI|2025 Researcher|Hacksgiving,36,36,,
 Zak Goetter,test description,,28,22,,
 Mj Ramos,test description,,1,1,,
-Vlad Wilson,test description,Hacksgiving,70,30,,
+Vlad Wilson,test description,Hacksgiving,70,29,,
 Kathlyn Leaños,test description,,16,1,,
 Ben Grill,test description,,4,4,,
 Peli Orugbani,test description,NVIDIA DLI,27,27,,
@@ -271,8 +271,8 @@ German Garrido-Lestache Belinchon,test description,NVIDIA DLI,21,21,,
 Kelsey Collins,test description,NVIDIA DLI,5,0,,
 Rishikesh Katta,test description,NVIDIA DLI,2,2,,
 Benjamin Leshin,test description,NVIDIA DLI,30,14,,
-Alexander Kruschka,test description,NVIDIA DLI,45,37,,
-Austin Koske,test description,Hacksgiving,76,16,,
+Alexander Kruschka,test description,NVIDIA DLI,45,35,,
+Austin Koske,test description,Hacksgiving,76,10,,
 Andrew Needham,test description,eboard2025|2025 MICS Attendee|Rosie Competition Finalist 2025|ROSIE Presenter|ROSIE Presenter|NVIDIA DLI|2025 Researcher,34,22,,
 Venkata Reddy Karri,test description,Hacksgiving|NVIDIA DLI,5,5,,
 Vyshnav Naidu Vikkurthi,test description,,1,1,,
@@ -288,7 +288,7 @@ Tyler Moake,test description,,1,1,,
 Joseph Beattie,test description,2025 MICS Attendee|ROSIE Competition Finalist 2025|ROSIE Presenter|2025 Researcher,19,0,,
 Preston Bohnsack,test description,,2,2,,
 Joshua Schelonka,test description,,22,22,,
-Alec Weinbender,test description,NVIDIA DLI|Hacksgiving|NVIDIA DLI,50,10,,
+Alec Weinbender,test description,NVIDIA DLI|Hacksgiving|NVIDIA DLI,50,5,,
 Srijan Kumar,test description,,1,1,,
 Zain Ul Aayaan Moosa Mohammed,test description,,4,4,,
 Elton Emini,test description,NVIDIA DLI,7,7,,
@@ -349,7 +349,7 @@ Julian,test description,Hacksgiving,1,1,,
 Felix Kimeu,test description,,1,1,,
 Vincent Martin,test description,NVIDIA DLI,2,2,,
 Shritej Gunda,test description,,1,0,,
-Brian Schroedl,test description,2025 MICS Attendee|NVIDIA DLI,5,5,,
+Brian Schroedl,test description,2025 MICS Attendee|NVIDIA DLI,5,0,,
 Asritha Deep Mungara,test description,,2,2,,
 John Balasbas,test description,NVIDIA DLI,30,29,,
 Adrianne Schellinger,test description,,3,3,,
@@ -373,16 +373,16 @@ Sofia DeFriese,test description,NVIDIA DLI,5,5,,
 Rossi Doyle,test description,Hacksgiving,22,-34,,
 Zac Millmann,test description,Hacksgiving|NVIDIA DLI|NVIDIA DLI,7,7,,
 Alaina Sbonik,test description,,1,1,,
-Julian Abelarde,test description,NVIDIA DLI,28,2,,
+Julian Abelarde,test description,NVIDIA DLI,28,0,,
 Kevin Gray,test description,Hacksgiving,2,2,,
 Koushik Cherukuri,test description,Hacksgiving|NVIDIA DLI|NVIDIA DLI,10,0,,
 Lukasz Falaszewski,test description,NVIDIA DLI,13,13,,
-Mark Mangaran,test description,NVIDIA DLI,29,2,,
+Mark Mangaran,test description,NVIDIA DLI,29,0,,
 Shaira Stoner,test description,,3,3,,
 Griffin Powell,test description,NVIDIA DLI|NVIDIA DLI,3,3,,
 Rylan Otter,test description,NVIDIA DLI,13,13,,
 Ava Latoria,test description,NVIDIA DLI|NVIDIA DLI,38,38,,
-Anthony Carrera,test description,NVIDIA DLI,20,2,,
+Anthony Carrera,test description,NVIDIA DLI,20,0,,
 Mahendra Kumar Gonela,test description,NVIDIA DLI,2,0,,
 Thanvi Gorrepati,test description,NVIDIA DLI,2,1,,
 Nicholas Erdmann,test description,,11,11,,
@@ -396,22 +396,22 @@ Blake Ackland,test description,NVIDIA DLI,6,6,,
 Noah Riedl,test description,NVIDIA DLI,2,2,,
 Jordan Monroe,test description,,1,1,,
 Brayden Van Heirseele,test description,,1,1,,
-Paxson Gottschalk,test description,Hacksgiving,4,4,,
+Paxson Gottschalk,test description,Hacksgiving,4,0,,
 Hunter Vassar,test description,NVIDIA DLI|NVIDIA DLI,13,13,,
 Joshua Simon,test description,NVIDIA DLI|NVIDIA DLI,3,3,,
 Cody Propst,test description,NVIDIA DLI,1,1,,
 Turk Morehouse,test description,NVIDIA DLI,2,2,,
 Andrew Kielas,test description,,16,16,,
 Aidan Blackmon,test description,,1,1,,
-Audrey Chapman,test description,Hacksgiving|NVIDIA DLI,52,42,,
+Audrey Chapman,test description,Hacksgiving|NVIDIA DLI,52,37,,
 Max Barty,test description,NVIDIA DLI|NVIDIA DLI,3,3,,
-Gabriel Ovalle,test description,,13,9,,
+Gabriel Ovalle,test description,,13,8,,
 Devyn Hernandez,test description,NVIDIA DLI,3,3,,
-John Gillen,test description,NVIDIA DLI,28,23,,
+John Gillen,test description,NVIDIA DLI,28,21,,
 Sahejpreet Kaur,test description,NVIDIA DLI,24,19,,
 Siena Carli,test description,,12,12,,
 Kushal Majjiga,test description,,14,14,,
-Kassidy Fonk,test description,,15,2,,
+Kassidy Fonk,test description,,15,0,,
 Chris Hansen,test description,,13,13,,
 Mark Harbar,test description,NVIDIA DLI,17,17,,
 Colten Reissmann,test description,,2,0,,
@@ -427,7 +427,7 @@ Nathaniel Asiedu,test description,,3,3,,
 Visalakshi Putchakayala,test description,NVIDIA DLI|NVIDIA DLI,2,2,,
 Jude Gill,test description,NVIDIA DLI|NVIDIA DLI|NVIDIA DLI|NVIDIA DLI,2,2,,
 Jacqueline Navarro,test description,,1,1,,
-Patrick Samundsen,test description,,3,1,,
+Patrick Samundsen,test description,,3,0,,
 Dhruv Patel,test description,NVIDIA DLI|NVIDIA DLI,4,4,,
 Jim Luzano-Belfield,test description,NVIDIA DLI,2,2,,
 Charlie Danielson,test description,NVIDIA DLI,4,4,,
@@ -446,7 +446,7 @@ Sahitya Venigalla,test description,NVIDIA DLI,1,1,,
 Logan Balensiefen,test description,,2,2,,
 Tyler Vangompel,test description,NVIDIA DLI,1,1,,
 Lexi Young,test description,,1,1,,
-Charlie Malohn,test description,,16,14,,
+Charlie Malohn,test description,,16,8,,
 Will Dalebroux,test description,NVIDIA DLI,17,7,,
 Maxim Voitov,test description,,12,12,,
 Corbin Schaffer,test description,NVIDIA DLI,3,3,,
@@ -468,7 +468,7 @@ Srinivas Hari,test description,,1,1,,
 Charlie Biolo Thompson,test description,,2,0,,
 Luis Aranda-Hernandez,test description,,1,1,,
 Liam Conrad,test description,NVIDIA DLI,11,10,,
-Jacob Newberry,test description,NVIDIA DLI,22,22,,
+Jacob Newberry,test description,NVIDIA DLI,22,21,,
 Landon Van Mersbergen,test description,,1,1,,
 Reed Hefley,test description,,1,1,,
 Logan Smouter,test description,,1,1,,
