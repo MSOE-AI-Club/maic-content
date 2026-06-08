@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T23:04:41.324Z",
+  "generated_at": "2026-06-08T23:04:46.752Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -725,7 +725,6 @@
     "projects/needham_2026/applications-of-communication-in-multi-agent-reinforcement-learning-for-competitive-robotics.json",
     "projects/needham_2026/images/image1.png",
     "projects/needham_2026/images/image2.png",
-    "README.md",
     "scripts/generate-manifest.js",
     "scripts/validate-content.js",
     "videos/Rosie Competition/Video-NVIDIA_QA_Panel/metadata.json",
