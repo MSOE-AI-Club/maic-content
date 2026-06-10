@@ -1,0 +1,37 @@
+{
+  "title": "Demo: Meeting Summarizer",
+  "members": "Demo NLP Team",
+  "description": "A placeholder project entry for an assistant that turns club meeting notes into searchable summaries and action items.",
+  "date": "2026-02-18",
+  "tags": [
+    "Demo",
+    "NLP",
+    "Summarization",
+    "Productivity"
+  ],
+  "projectTerm": "Year Long",
+  "projectYear": "25-26",
+  "projectCategory": "Hackathon",
+  "sponsor": "Demo Sponsor",
+  "aiCategory": [
+    "NLP",
+    "Summarization"
+  ],
+  "type": "Project",
+  "thumbnail": {
+    "filename": "thumbnail.svg",
+    "mimeType": "image/svg+xml",
+    "path": "images/thumbnail.svg"
+  },
+  "content": "## Demo Content\n\nThis is placeholder content for testing the Projects page layout. It is not a real student submission.\n\nMeeting Summarizer imagines a tool that converts meeting transcripts into short recaps, identifies follow-up tasks, and makes past discussions easier to search.\n\n![Summary timeline](images/summary-timeline.svg)\n\n## What This Demonstrates\n\n- Text-heavy project content inside the same metadata format\n- A long description that exercises the wide card truncation behavior\n- Multiple SVG assets referenced through the Projects CDN path\n",
+  "images": [
+    {
+      "filename": "thumbnail.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "filename": "summary-timeline.svg",
+      "mimeType": "image/svg+xml"
+    }
+  ]
+}

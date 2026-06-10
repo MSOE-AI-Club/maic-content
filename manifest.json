@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T23:43:37.091Z",
+  "generated_at": "2026-06-10T04:41:34.529Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -723,6 +723,15 @@
     "manifest.json",
     "package-lock.json",
     "package.json",
+    "projects/demo_campus_pathfinder_2026/images/route-dashboard.svg",
+    "projects/demo_campus_pathfinder_2026/images/thumbnail.svg",
+    "projects/demo_campus_pathfinder_2026/metadata.json",
+    "projects/demo_meeting_summarizer_2026/images/summary-timeline.svg",
+    "projects/demo_meeting_summarizer_2026/images/thumbnail.svg",
+    "projects/demo_meeting_summarizer_2026/metadata.json",
+    "projects/demo_vision_lab_assistant_2026/images/image-review-board.svg",
+    "projects/demo_vision_lab_assistant_2026/images/thumbnail.svg",
+    "projects/demo_vision_lab_assistant_2026/metadata.json",
     "projects/needham_2026/images/image1.png",
     "projects/needham_2026/images/image2.png",
     "projects/needham_2026/images/thumbnail.png",
@@ -776,5 +785,13 @@
     "workshops/UNets/metadata.json",
     "workshops/Webscraping/Webscraping.md",
     "workshops/Webscraping/metadata.json"
-  ]
+  ],
+  "cdn_base_url": "https://msoe-ai-club.github.io/maic-content/",
+  "version": "1.0.0",
+  "total_files": 784,
+  "categories": {
+    "articles": 314,
+    "images": 338,
+    "data": 10
+  }
 }

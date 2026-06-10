@@ -4,7 +4,7 @@
   "description": "MAIC Content CDN - Educational AI/ML content delivery network",
   "main": "index.html",
   "scripts": {
-    "dev": "npx http-server . -p 8000 --cors",
+    "dev": "npx http-server . -p 8000 --cors -c-1",
     "build": "node scripts/generate-manifest.js",
     "serve": "npm run build && npm run dev",
     "validate": "node scripts/validate-content.js"
@@ -29,6 +29,7 @@
     "articles/**/*",
     "data/**/*", 
     "images/**/*",
+    "projects/**/*",
     "manifest.json",
     "index.html"
   ]

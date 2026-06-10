@@ -1,5 +1,8 @@
 {
     "projects": [
-        "needham_2026"
+        "needham_2026",
+        "demo_campus_pathfinder_2026",
+        "demo_vision_lab_assistant_2026",
+        "demo_meeting_summarizer_2026"
     ]
 }

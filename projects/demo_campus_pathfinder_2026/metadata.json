@@ -1,0 +1,37 @@
+{
+  "title": "Demo: Campus Pathfinder",
+  "members": "Demo Student Team",
+  "description": "A placeholder project card showing how an accessibility-aware route planner could be presented in the Projects gallery.",
+  "date": "2026-04-12",
+  "tags": [
+    "Demo",
+    "Pathfinding",
+    "Accessibility",
+    "Campus Tools"
+  ],
+  "projectTerm": "Fall",
+  "projectYear": "2025",
+  "projectCategory": "Innovation Lab",
+  "sponsor": "Demo Sponsor",
+  "aiCategory": [
+    "Planning",
+    "Optimization"
+  ],
+  "type": "Project",
+  "thumbnail": {
+    "filename": "thumbnail.svg",
+    "mimeType": "image/svg+xml",
+    "path": "images/thumbnail.svg"
+  },
+  "content": "## Demo Content\n\nThis is placeholder content for testing the Projects page layout. It is not a real student submission.\n\nCampus Pathfinder imagines a tool that recommends routes between campus buildings while accounting for elevator access, weather exposure, and estimated walking time.\n\n![Route planning dashboard](images/route-dashboard.svg)\n\n## What This Demonstrates\n\n- A long project title and summary inside the wide card layout\n- A thumbnail and embedded write-up image loaded from the content CDN\n- Markdown body content rendered through the existing project preview flow\n",
+  "images": [
+    {
+      "filename": "thumbnail.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "filename": "route-dashboard.svg",
+      "mimeType": "image/svg+xml"
+    }
+  ]
+}

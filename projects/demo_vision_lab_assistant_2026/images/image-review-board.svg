@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Image review board mockup</title>
+  <desc id="desc">A mock interface showing detected image regions and review states.</desc>
+  <rect width="1200" height="720" fill="#101827"/>
+  <rect x="80" y="72" width="1040" height="576" rx="34" fill="#172033"/>
+  <rect x="130" y="130" width="260" height="450" rx="24" fill="#0f1726"/>
+  <rect x="430" y="130" width="640" height="450" rx="24" fill="#111b2c"/>
+  <rect x="475" y="175" width="250" height="160" rx="20" fill="#223456"/>
+  <rect x="775" y="175" width="250" height="160" rx="20" fill="#29314d"/>
+  <rect x="475" y="380" width="250" height="150" rx="20" fill="#2b3942"/>
+  <rect x="775" y="380" width="250" height="150" rx="20" fill="#362d4e"/>
+  <rect x="525" y="215" width="110" height="70" rx="10" fill="none" stroke="#8de0fe" stroke-width="6"/>
+  <rect x="830" y="420" width="120" height="76" rx="10" fill="none" stroke="#f8d347" stroke-width="6"/>
+  <text x="160" y="190" fill="#ffffff" font-family="Arial, sans-serif" font-size="30" font-weight="700">Review Queue</text>
+  <rect x="160" y="240" width="185" height="18" rx="9" fill="#8de0fe"/>
+  <rect x="160" y="282" width="145" height="18" rx="9" fill="#53627c"/>
+  <rect x="160" y="324" width="205" height="18" rx="9" fill="#53627c"/>
+</svg>

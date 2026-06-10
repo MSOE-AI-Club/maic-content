@@ -41,6 +41,14 @@ GET /data/{category}/{filename}.json
 ```
 Structured data including configurations, achievements, contact info, and datasets.
 
+### Projects
+```
+GET /projects/projects.json
+GET /projects/{project-id}/metadata.json
+GET /projects/{project-id}/images/{filename}.{ext}
+```
+Student project write-ups for the website Projects page. The index file lists project folder IDs, and each project folder contains a `metadata.json` document plus any referenced images.
+
 ## 🚀 Usage Examples
 
 ### JavaScript/TypeScript
@@ -112,6 +120,7 @@ npm run dev
 ├── articles/           # Educational articles and tutorials
 ├── data/              # JSON data files and configurations  
 ├── images/            # Visual assets and thumbnails
+├── projects/          # Student project metadata and assets
 ├── manifest.json      # Auto-generated file index
 └── index.html         # CDN documentation page
 ```
@@ -123,6 +132,65 @@ npm run dev
    - Generate updated manifest.json
    - Deploy to GitHub Pages CDN
    - Make content available globally
+
+### Adding Projects
+Projects use the same CDN file-serving pattern as articles, data, and images, but the website loads them through an explicit index:
+
+```
+projects/
+├── projects.json
+└── {project-id}/
+    ├── metadata.json
+    └── images/
+        └── thumbnail.png
+```
+
+`projects/projects.json` lists project IDs:
+
+```json
+{
+  "projects": ["needham_2026"]
+}
+```
+
+Each `metadata.json` follows the website `ProjectDocument` contract:
+
+```json
+{
+  "title": "Project title",
+  "members": "Member One, Member Two",
+  "description": "Short gallery summary.",
+  "date": "2026-03-27",
+  "tags": ["AI", "Robotics"],
+  "projectTerm": "Spring",
+  "projectYear": "2026",
+  "projectCategory": "Innovation Lab",
+  "sponsor": "Sponsor name",
+  "aiCategory": ["Vision", "NLP"],
+  "type": "Project",
+  "thumbnail": {
+    "filename": "thumbnail.png",
+    "mimeType": "image/png",
+    "path": "images/thumbnail.png"
+  },
+  "content": "## Overview\n\nMarkdown body with ![images](images/example.png).",
+  "images": [
+    {
+      "filename": "thumbnail.png",
+      "mimeType": "image/png"
+    }
+  ]
+}
+```
+
+To publish a project exported from the website Project Editor:
+
+1. Unzip the exported package.
+2. Create `projects/{project-id}/`.
+3. Move `metadata.json` and `images/` into that folder.
+4. Append `{project-id}` to `projects/projects.json`.
+5. Run `npm run build` to regenerate `manifest.json`.
+6. Run `npm run validate` to confirm metadata and image references.
 
 ## 🤖 Automation
 

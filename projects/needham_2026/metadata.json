@@ -9,6 +9,14 @@
     "Robotics VEX",
     "RL"
   ],
+  "projectTerm": "Spring",
+  "projectYear": "2026",
+  "projectCategory": "Research Group",
+  "aiCategory": [
+    "RL",
+    "Robotics",
+    "Multi-Agent Systems"
+  ],
   "type": "Project",
   "content": "## Abstract\n\nReinforcement learning (RL) offers a robust framework for complex robotic behaviors,\nyet communication constraints like bandwidth limitations and latency remain a challenge\nin dynamic environments. This paper presents a multi-agent RL environment designed\nfor the VEX Artificial Intelligence Robotics Competition (VAIRC). We trained agents\nusing Proximal Policy Optimization (PPO) with a multi-headed architecture including a\nprimary action head and an attention-based communication head for latent messaging. The\nsystem integrates real-time object detection and nonlinear trajectory optimization to bridge\nthe gap between simulation and physical deployment. Results indicate that RL-driven\napproaches generate effective strategies for the VAIRC environment. Crucially, our findings\ndemonstrate that communication between agents improves scoring efficiency compared to\nindependent agent models, and that attention-based communication remains resilient to loss\nof information, proving the viability of coordinated RL in high-stakes robotics.\n\n## Images\n\nThis is a screenshot of a render of our simulated environment.\n![Simulated environment](images/image1.png)\n\nThis is a screenshot of the VEX AI dashboard showing the locations of the blocks on the field from the camera.\n![VEX AI Dashoard](images/image2.png)\n\n\n## Research Paper\n\nView our research paper here: <https://drive.google.com/file/d/1P3T8CZ0Lj2YUHMfbegBVoP8NJ50WcsBH/view?usp=drive_link>\n\n## ROISE Challange\n\nWatch our ROSIE submission video here: <https://youtu.be/jRN-RuYgu38?si=Q9bgu-Zir9oce7K9>\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/jRN-RuYgu38?si=9jGXZptooIyZqqns\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
   "thumbnail": {

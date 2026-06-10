@@ -89,6 +89,7 @@ jobs:
           cp -r articles dist/ 2>/dev/null || true
           cp -r data dist/ 2>/dev/null || true
           cp -r images dist/ 2>/dev/null || true
+          cp -r projects dist/ 2>/dev/null || true
           cp manifest.json dist/
           
           # Copy index.html for GitHub Pages

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Vision Lab Assistant demo thumbnail</title>
+  <desc id="desc">Stylized computer vision detection boxes over image tiles.</desc>
+  <rect width="1200" height="720" fill="#100f1f"/>
+  <rect x="90" y="120" width="1020" height="500" rx="36" fill="#17162c" stroke="#38365f" stroke-width="4"/>
+  <rect x="150" y="190" width="270" height="170" rx="24" fill="#253052"/>
+  <rect x="465" y="190" width="270" height="170" rx="24" fill="#243d46"/>
+  <rect x="780" y="190" width="270" height="170" rx="24" fill="#3a2846"/>
+  <rect x="150" y="405" width="270" height="150" rx="24" fill="#322a4d"/>
+  <rect x="465" y="405" width="270" height="150" rx="24" fill="#1d3b52"/>
+  <rect x="780" y="405" width="270" height="150" rx="24" fill="#273b35"/>
+  <rect x="205" y="225" width="115" height="80" rx="12" fill="none" stroke="#8de0fe" stroke-width="7"/>
+  <rect x="545" y="430" width="130" height="90" rx="12" fill="none" stroke="#f8d347" stroke-width="7"/>
+  <rect x="835" y="228" width="155" height="92" rx="12" fill="none" stroke="#f5a6ff" stroke-width="7"/>
+  <text x="92" y="82" fill="#ffffff" font-family="Arial, sans-serif" font-size="58" font-weight="700">Vision Lab Assistant</text>
+  <text x="96" y="672" fill="#bfc3df" font-family="Arial, sans-serif" font-size="28">Demo project card</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Route planning dashboard mockup</title>
+  <desc id="desc">Dashboard panels and a highlighted route line.</desc>
+  <rect width="1200" height="720" fill="#0b1220"/>
+  <rect x="80" y="80" width="1040" height="560" rx="34" fill="#111c30" stroke="#2a4163" stroke-width="4"/>
+  <rect x="120" y="130" width="300" height="460" rx="24" fill="#17243a"/>
+  <rect x="460" y="130" width="620" height="460" rx="24" fill="#0f1929"/>
+  <path d="M545 500 C640 390 690 440 760 310 S900 230 1015 190" fill="none" stroke="#8de0fe" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="545" cy="500" r="28" fill="#f8d347"/>
+  <circle cx="1015" cy="190" r="28" fill="#f8d347"/>
+  <text x="150" y="190" fill="#ffffff" font-family="Arial, sans-serif" font-size="34" font-weight="700">Route Options</text>
+  <rect x="150" y="235" width="220" height="22" rx="11" fill="#8de0fe"/>
+  <rect x="150" y="285" width="170" height="22" rx="11" fill="#385273"/>
+  <rect x="150" y="335" width="240" height="22" rx="11" fill="#385273"/>
+  <rect x="150" y="430" width="200" height="70" rx="18" fill="#243654"/>
+</svg>

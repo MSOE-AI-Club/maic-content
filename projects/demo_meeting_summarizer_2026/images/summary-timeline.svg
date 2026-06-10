@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Summary timeline mockup</title>
+  <desc id="desc">Timeline of meeting summary cards and action items.</desc>
+  <rect width="1200" height="720" fill="#0d141c"/>
+  <line x1="220" y1="145" x2="220" y2="590" stroke="#45617d" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="220" cy="190" r="24" fill="#8de0fe"/>
+  <circle cx="220" cy="350" r="24" fill="#f8d347"/>
+  <circle cx="220" cy="510" r="24" fill="#78f0b3"/>
+  <rect x="290" y="120" width="720" height="130" rx="28" fill="#162436"/>
+  <rect x="290" y="285" width="720" height="130" rx="28" fill="#1f2540"/>
+  <rect x="290" y="450" width="720" height="130" rx="28" fill="#173229"/>
+  <text x="330" y="180" fill="#ffffff" font-family="Arial, sans-serif" font-size="32" font-weight="700">Opening recap</text>
+  <text x="330" y="345" fill="#ffffff" font-family="Arial, sans-serif" font-size="32" font-weight="700">Action items</text>
+  <text x="330" y="510" fill="#ffffff" font-family="Arial, sans-serif" font-size="32" font-weight="700">Searchable archive</text>
+  <rect x="330" y="205" width="520" height="18" rx="9" fill="#53657a"/>
+  <rect x="330" y="370" width="430" height="18" rx="9" fill="#5c5278"/>
+  <rect x="330" y="535" width="480" height="18" rx="9" fill="#496e61"/>
+</svg>

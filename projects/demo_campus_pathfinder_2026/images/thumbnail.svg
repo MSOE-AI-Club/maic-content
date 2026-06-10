@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Campus Pathfinder demo thumbnail</title>
+  <desc id="desc">Stylized campus map route on a dark blue background.</desc>
+  <rect width="1200" height="720" fill="#09111f"/>
+  <circle cx="180" cy="160" r="120" fill="#0f2a4d"/>
+  <circle cx="1020" cy="560" r="180" fill="#143d5f"/>
+  <path d="M150 560 C310 420 380 470 510 330 S780 210 1020 170" fill="none" stroke="#8de0fe" stroke-width="28" stroke-linecap="round"/>
+  <path d="M150 560 C310 420 380 470 510 330 S780 210 1020 170" fill="none" stroke="#f8d347" stroke-width="8" stroke-linecap="round" stroke-dasharray="22 28"/>
+  <rect x="130" y="470" width="170" height="120" rx="20" fill="#17243a" stroke="#8de0fe" stroke-width="4"/>
+  <rect x="470" y="255" width="190" height="130" rx="24" fill="#17243a" stroke="#f8d347" stroke-width="4"/>
+  <rect x="910" y="105" width="180" height="130" rx="24" fill="#17243a" stroke="#8de0fe" stroke-width="4"/>
+  <text x="90" y="94" fill="#ffffff" font-family="Arial, sans-serif" font-size="58" font-weight="700">Campus Pathfinder</text>
+  <text x="94" y="150" fill="#b7c8dc" font-family="Arial, sans-serif" font-size="28">Demo project card</text>
+</svg>

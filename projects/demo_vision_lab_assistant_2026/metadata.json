@@ -1,0 +1,37 @@
+{
+  "title": "Demo: Vision Lab Assistant",
+  "members": "Demo Computer Vision Group",
+  "description": "A placeholder showcase entry for an image-labeling assistant that helps students organize lab experiment photos.",
+  "date": "2026-03-30",
+  "tags": [
+    "Demo",
+    "Computer Vision",
+    "Image Labeling",
+    "Research Tools"
+  ],
+  "projectTerm": "Spring",
+  "projectYear": "2026",
+  "projectCategory": "Research Group",
+  "sponsor": "Demo Sponsor",
+  "aiCategory": [
+    "Vision",
+    "Image Labeling"
+  ],
+  "type": "Project",
+  "thumbnail": {
+    "filename": "thumbnail.svg",
+    "mimeType": "image/svg+xml",
+    "path": "images/thumbnail.svg"
+  },
+  "content": "## Demo Content\n\nThis is placeholder content for testing the Projects page layout. It is not a real student submission.\n\nVision Lab Assistant imagines a lightweight interface for sorting experiment photos, highlighting detected objects, and preparing labeled image sets for class projects.\n\n![Image review board](images/image-review-board.svg)\n\n## What This Demonstrates\n\n- Project cards with a visual-heavy thumbnail\n- Tags and metadata compatible with the existing project editor export format\n- A write-up that includes a second embedded CDN image\n",
+  "images": [
+    {
+      "filename": "thumbnail.svg",
+      "mimeType": "image/svg+xml"
+    },
+    {
+      "filename": "image-review-board.svg",
+      "mimeType": "image/svg+xml"
+    }
+  ]
+}
