@@ -23,6 +23,9 @@
                         "5",
                         "10",
                         "77"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -41,6 +44,9 @@
                     "parents": [],
                     "children": [
                         "2"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -61,6 +67,9 @@
                     ],
                     "children": [
                         "4"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -81,6 +90,9 @@
                     ],
                     "children": [
                         "3"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 }
             ]
@@ -107,6 +119,9 @@
                     ],
                     "children": [
                         "20"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -127,6 +142,9 @@
                     ],
                     "children": [
                         "21"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -148,6 +166,9 @@
                     "children": [
                         "22",
                         "29"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 }
             ]
@@ -173,6 +194,9 @@
                     ],
                     "children": [
                         "37"
+                    ],
+                    "disciplines": [
+                        "Generative AI"
                     ]
                 },
                 {
@@ -195,6 +219,10 @@
                         "38",
                         "39",
                         "53"
+                    ],
+                    "disciplines": [
+                        "Generative AI",
+                        "Computer Vision"
                     ]
                 },
                 {
@@ -215,6 +243,10 @@
                     ],
                     "children": [
                         "54"
+                    ],
+                    "disciplines": [
+                        "Generative AI",
+                        "Computer Vision"
                     ]
                 },
                 {
@@ -235,6 +267,10 @@
                     ],
                     "children": [
                         "54"
+                    ],
+                    "disciplines": [
+                        "Generative AI",
+                        "Computer Vision"
                     ]
                 },
                 {
@@ -257,6 +293,10 @@
                     ],
                     "children": [
                         "55"
+                    ],
+                    "disciplines": [
+                        "Generative AI",
+                        "NLP"
                     ]
                 },
                 {
@@ -276,7 +316,11 @@
                         "39",
                         "38"
                     ],
-                    "children": []
+                    "children": [],
+                    "disciplines": [
+                        "Generative AI",
+                        "Computer Vision"
+                    ]
                 },
                 {
                     "id": "55",
@@ -296,6 +340,10 @@
                     ],
                     "children": [
                         "56"
+                    ],
+                    "disciplines": [
+                        "Generative AI",
+                        "NLP"
                     ]
                 },
                 {
@@ -317,6 +365,10 @@
                     ],
                     "children": [
                         "72"
+                    ],
+                    "disciplines": [
+                        "Generative AI",
+                        "NLP"
                     ]
                 }
             ]
@@ -342,6 +394,9 @@
                     ],
                     "children": [
                         "33"
+                    ],
+                    "disciplines": [
+                        "NLP"
                     ]
                 },
                 {
@@ -362,6 +417,9 @@
                     ],
                     "children": [
                         "34"
+                    ],
+                    "disciplines": [
+                        "NLP"
                     ]
                 },
                 {
@@ -382,6 +440,9 @@
                     ],
                     "children": [
                         "35"
+                    ],
+                    "disciplines": [
+                        "NLP"
                     ]
                 },
                 {
@@ -404,6 +465,10 @@
                         "53",
                         "47",
                         "48"
+                    ],
+                    "disciplines": [
+                        "NLP",
+                        "Generative AI"
                     ]
                 },
                 {
@@ -424,6 +489,9 @@
                     ],
                     "children": [
                         "51"
+                    ],
+                    "disciplines": [
+                        "NLP"
                     ]
                 },
                 {
@@ -447,6 +515,9 @@
                         "51",
                         "49",
                         "50"
+                    ],
+                    "disciplines": [
+                        "NLP"
                     ]
                 },
                 {
@@ -469,6 +540,10 @@
                     ],
                     "children": [
                         "52"
+                    ],
+                    "disciplines": [
+                        "NLP",
+                        "Generative AI"
                     ]
                 },
                 {
@@ -492,6 +567,11 @@
                         "56",
                         "72",
                         "64"
+                    ],
+                    "disciplines": [
+                        "NLP",
+                        "Generative AI",
+                        "Computer Vision"
                     ]
                 },
                 {
@@ -512,7 +592,11 @@
                         "52",
                         "56"
                     ],
-                    "children": []
+                    "children": [],
+                    "disciplines": [
+                        "NLP",
+                        "Generative AI"
+                    ]
                 }
             ]
         },
@@ -523,7 +607,7 @@
                     "id": "65",
                     "filename": "rl-65-31",
                     "name": "Intro to Reinforcement Learning (RL)",
-                "description": "A broad overview of Reinforcement Learning. Great for understanding the basic concepts and terminology used in RL.",
+                    "description": "A broad overview of Reinforcement Learning. Great for understanding the basic concepts and terminology used in RL.",
                     "category": "RL",
                     "api_image_path": "images/tree-thumbnails/Reinforcement-Learning-Intro.png",
                     "link": "/library?nav=Articles&article=001_rl-intro",
@@ -537,6 +621,10 @@
                     ],
                     "children": [
                         "66"
+                    ],
+                    "disciplines": [
+                        "Games",
+                        "Core CS"
                     ]
                 },
                 {
@@ -557,6 +645,10 @@
                     ],
                     "children": [
                         "68"
+                    ],
+                    "disciplines": [
+                        "Games",
+                        "Core CS"
                     ]
                 },
                 {
@@ -578,6 +670,9 @@
                     "children": [
                         "69",
                         "70"
+                    ],
+                    "disciplines": [
+                        "Games"
                     ]
                 },
                 {
@@ -598,6 +693,9 @@
                     ],
                     "children": [
                         "71"
+                    ],
+                    "disciplines": [
+                        "Games"
                     ]
                 },
                 {
@@ -618,6 +716,9 @@
                     ],
                     "children": [
                         "71"
+                    ],
+                    "disciplines": [
+                        "Games"
                     ]
                 },
                 {
@@ -639,6 +740,9 @@
                     ],
                     "children": [
                         "72"
+                    ],
+                    "disciplines": [
+                        "Games"
                     ]
                 }
             ]
@@ -662,7 +766,10 @@
                     "parents": [
                         "7"
                     ],
-                    "children": []
+                    "children": [],
+                    "disciplines": [
+                        "Core CS"
+                    ]
                 },
                 {
                     "id": "16",
@@ -680,7 +787,10 @@
                     "parents": [
                         "9"
                     ],
-                    "children": []
+                    "children": [],
+                    "disciplines": [
+                        "Core CS"
+                    ]
                 },
                 {
                     "id": "17",
@@ -698,7 +808,10 @@
                     "parents": [
                         "9"
                     ],
-                    "children": []
+                    "children": [],
+                    "disciplines": [
+                        "Core CS"
+                    ]
                 },
                 {
                     "id": "18",
@@ -716,7 +829,10 @@
                     "parents": [
                         "9"
                     ],
-                    "children": []
+                    "children": [],
+                    "disciplines": [
+                        "Core CS"
+                    ]
                 },
                 {
                     "id": "5",
@@ -736,6 +852,9 @@
                     ],
                     "children": [
                         "6"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -756,6 +875,9 @@
                     ],
                     "children": [
                         "7"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -777,6 +899,9 @@
                     "children": [
                         "15",
                         "8"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -795,7 +920,10 @@
                     "parents": [
                         "9"
                     ],
-                    "children": []
+                    "children": [],
+                    "disciplines": [
+                        "Core CS"
+                    ]
                 },
                 {
                     "id": "8",
@@ -815,6 +943,9 @@
                     ],
                     "children": [
                         "9"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -839,6 +970,9 @@
                         "17",
                         "18",
                         "73"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 }
             ]
@@ -865,6 +999,9 @@
                     "children": [
                         "23",
                         "24"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -885,6 +1022,9 @@
                     ],
                     "children": [
                         "28"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -905,6 +1045,9 @@
                     ],
                     "children": [
                         "25"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -925,6 +1068,9 @@
                     ],
                     "children": [
                         "26"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -945,6 +1091,9 @@
                     ],
                     "children": [
                         "27"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -965,6 +1114,9 @@
                     ],
                     "children": [
                         "28"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -986,6 +1138,9 @@
                     ],
                     "children": [
                         "31"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -1010,6 +1165,9 @@
                         "65",
                         "44",
                         "58"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -1030,6 +1188,9 @@
                     ],
                     "children": [
                         "30"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 }
             ]
@@ -1055,6 +1216,9 @@
                     ],
                     "children": [
                         "45"
+                    ],
+                    "disciplines": [
+                        "Finance"
                     ]
                 },
                 {
@@ -1075,6 +1239,9 @@
                     ],
                     "children": [
                         "46"
+                    ],
+                    "disciplines": [
+                        "Finance"
                     ]
                 },
                 {
@@ -1096,6 +1263,9 @@
                     "children": [
                         "48",
                         "49"
+                    ],
+                    "disciplines": [
+                        "Finance"
                     ]
                 },
                 {
@@ -1118,6 +1288,10 @@
                     "children": [
                         "51",
                         "50"
+                    ],
+                    "disciplines": [
+                        "Finance",
+                        "NLP"
                     ]
                 },
                 {
@@ -1139,6 +1313,9 @@
                     ],
                     "children": [
                         "57"
+                    ],
+                    "disciplines": [
+                        "Finance"
                     ]
                 },
                 {
@@ -1157,7 +1334,11 @@
                     "parents": [
                         "50"
                     ],
-                    "children": []
+                    "children": [],
+                    "disciplines": [
+                        "Finance",
+                        "Medical"
+                    ]
                 }
             ]
         },
@@ -1180,7 +1361,10 @@
                     "parents": [
                         "29"
                     ],
-                    "children": []
+                    "children": [],
+                    "disciplines": [
+                        "Core CS"
+                    ]
                 }
             ]
         },
@@ -1205,6 +1389,9 @@
                     ],
                     "children": [
                         "59"
+                    ],
+                    "disciplines": [
+                        "Computer Vision"
                     ]
                 },
                 {
@@ -1225,6 +1412,9 @@
                     ],
                     "children": [
                         "60"
+                    ],
+                    "disciplines": [
+                        "Computer Vision"
                     ]
                 },
                 {
@@ -1245,6 +1435,9 @@
                     ],
                     "children": [
                         "61"
+                    ],
+                    "disciplines": [
+                        "Computer Vision"
                     ]
                 },
                 {
@@ -1265,6 +1458,9 @@
                     ],
                     "children": [
                         "62"
+                    ],
+                    "disciplines": [
+                        "Computer Vision"
                     ]
                 },
                 {
@@ -1285,6 +1481,10 @@
                     ],
                     "children": [
                         "63"
+                    ],
+                    "disciplines": [
+                        "Computer Vision",
+                        "Medical"
                     ]
                 },
                 {
@@ -1305,6 +1505,10 @@
                     ],
                     "children": [
                         "64"
+                    ],
+                    "disciplines": [
+                        "Computer Vision",
+                        "Sports"
                     ]
                 },
                 {
@@ -1324,7 +1528,10 @@
                         "63",
                         "52"
                     ],
-                    "children": []
+                    "children": [],
+                    "disciplines": [
+                        "Computer Vision"
+                    ]
                 }
             ]
         },
@@ -1349,6 +1556,9 @@
                     ],
                     "children": [
                         "11"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -1369,6 +1579,9 @@
                     ],
                     "children": [
                         "12"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -1389,6 +1602,9 @@
                     ],
                     "children": [
                         "13"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -1409,6 +1625,9 @@
                     ],
                     "children": [
                         "14"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -1430,6 +1649,9 @@
                     "children": [
                         "19",
                         "74"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 }
             ]
@@ -1455,6 +1677,9 @@
                     ],
                     "children": [
                         "75"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -1475,6 +1700,9 @@
                     ],
                     "children": [
                         "76"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -1493,7 +1721,10 @@
                     "parents": [
                         "75"
                     ],
-                    "children": []
+                    "children": [],
+                    "disciplines": [
+                        "Core CS"
+                    ]
                 }
             ]
         },
@@ -1518,6 +1749,9 @@
                     ],
                     "children": [
                         "78"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -1538,6 +1772,9 @@
                     ],
                     "children": [
                         "79"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -1558,6 +1795,9 @@
                     ],
                     "children": [
                         "80"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -1578,6 +1818,9 @@
                     ],
                     "children": [
                         "81"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -1598,6 +1841,9 @@
                     ],
                     "children": [
                         "82"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -1618,6 +1864,9 @@
                     ],
                     "children": [
                         "83"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -1638,6 +1887,9 @@
                     ],
                     "children": [
                         "84"
+                    ],
+                    "disciplines": [
+                        "Core CS"
                     ]
                 },
                 {
@@ -1656,7 +1908,10 @@
                     "parents": [
                         "83"
                     ],
-                    "children": []
+                    "children": [],
+                    "disciplines": [
+                        "Core CS"
+                    ]
                 }
             ]
         }
@@ -1676,7 +1931,10 @@
                 "category": "Introduction",
                 "category_color": "gray",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=004_Learning_AI_at_School"
+                "link": "/library?nav=Articles&article=004_Learning_AI_at_School",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "5",
@@ -1698,7 +1956,10 @@
                 "category": "AI Basics",
                 "category_color": "violet",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=010_What_is_a_NN"
+                "link": "/library?nav=Articles&article=010_What_is_a_NN",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "20"
@@ -1718,7 +1979,10 @@
                 "category": "AI Basics",
                 "category_color": "violet",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=011_How_NN_Learn"
+                "link": "/library?nav=Articles&article=011_How_NN_Learn",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "21"
@@ -1738,7 +2002,10 @@
                 "category": "AI Basics",
                 "category_color": "violet",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=012_Fully_Understanding_Training"
+                "link": "/library?nav=Articles&article=012_Fully_Understanding_Training",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "22",
@@ -1759,7 +2026,10 @@
                 "category": "Generative AI",
                 "category_color": "limegreen",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=intro-to-gen-ai"
+                "link": "/library?nav=Articles&article=intro-to-gen-ai",
+                "disciplines": [
+                    "Generative AI"
+                ]
             },
             "children": [
                 "37"
@@ -1779,7 +2049,11 @@
                 "category": "Generative AI",
                 "category_color": "limegreen",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=gans"
+                "link": "/library?nav=Articles&article=gans",
+                "disciplines": [
+                    "Generative AI",
+                    "Computer Vision"
+                ]
             },
             "children": [
                 "38",
@@ -1801,7 +2075,11 @@
                 "category": "Generative AI",
                 "category_color": "limegreen",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=dcgans"
+                "link": "/library?nav=Articles&article=dcgans",
+                "disciplines": [
+                    "Generative AI",
+                    "Computer Vision"
+                ]
             },
             "children": [
                 "54"
@@ -1821,7 +2099,11 @@
                 "category": "Generative AI",
                 "category_color": "limegreen",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=cgans"
+                "link": "/library?nav=Articles&article=cgans",
+                "disciplines": [
+                    "Generative AI",
+                    "Computer Vision"
+                ]
             },
             "children": [
                 "54"
@@ -1841,7 +2123,11 @@
                 "category": "Generative AI",
                 "category_color": "limegreen",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=making-your-own-chatgpt-pt1"
+                "link": "/library?nav=Articles&article=making-your-own-chatgpt-pt1",
+                "disciplines": [
+                    "Generative AI",
+                    "NLP"
+                ]
             },
             "children": [
                 "55"
@@ -1861,7 +2147,11 @@
                 "category": "Generative AI",
                 "category_color": "limegreen",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=vaes"
+                "link": "/library?nav=Articles&article=vaes",
+                "disciplines": [
+                    "Generative AI",
+                    "Computer Vision"
+                ]
             },
             "children": []
         },
@@ -1879,7 +2169,11 @@
                 "category": "Generative AI",
                 "category_color": "limegreen",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "",
+                "disciplines": [
+                    "Generative AI",
+                    "NLP"
+                ]
             },
             "children": [
                 "56"
@@ -1899,7 +2193,11 @@
                 "category": "Generative AI",
                 "category_color": "limegreen",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "",
+                "disciplines": [
+                    "Generative AI",
+                    "NLP"
+                ]
             },
             "children": [
                 "72"
@@ -1919,7 +2217,10 @@
                 "category": "Introduction",
                 "category_color": "gray",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=001_What_is_the_Learning_Tree"
+                "link": "/library?nav=Articles&article=001_What_is_the_Learning_Tree",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "2"
@@ -1939,7 +2240,10 @@
                 "category": "NLP",
                 "category_color": "orange",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=001_nlp-intro"
+                "link": "/library?nav=Articles&article=001_nlp-intro",
+                "disciplines": [
+                    "NLP"
+                ]
             },
             "children": [
                 "33"
@@ -1959,7 +2263,10 @@
                 "category": "NLP",
                 "category_color": "orange",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=002_nlp-text-preprocessing"
+                "link": "/library?nav=Articles&article=002_nlp-text-preprocessing",
+                "disciplines": [
+                    "NLP"
+                ]
             },
             "children": [
                 "34"
@@ -1979,7 +2286,10 @@
                 "category": "NLP",
                 "category_color": "orange",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=003_nlp-bag-of-words"
+                "link": "/library?nav=Articles&article=003_nlp-bag-of-words",
+                "disciplines": [
+                    "NLP"
+                ]
             },
             "children": [
                 "35"
@@ -1999,7 +2309,11 @@
                 "category": "NLP",
                 "category_color": "orange",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=004_nlp-embeddings"
+                "link": "/library?nav=Articles&article=004_nlp-embeddings",
+                "disciplines": [
+                    "NLP",
+                    "Generative AI"
+                ]
             },
             "children": [
                 "53",
@@ -2021,7 +2335,10 @@
                 "category": "NLP",
                 "category_color": "orange",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "",
+                "disciplines": [
+                    "NLP"
+                ]
             },
             "children": [
                 "51"
@@ -2041,7 +2358,10 @@
                 "category": "NLP",
                 "category_color": "orange",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "",
+                "disciplines": [
+                    "NLP"
+                ]
             },
             "children": [
                 "51",
@@ -2063,7 +2383,11 @@
                 "category": "NLP",
                 "category_color": "orange",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "",
+                "disciplines": [
+                    "NLP",
+                    "Generative AI"
+                ]
             },
             "children": [
                 "52"
@@ -2083,7 +2407,12 @@
                 "category": "NLP",
                 "category_color": "orange",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "",
+                "disciplines": [
+                    "NLP",
+                    "Generative AI",
+                    "Computer Vision"
+                ]
             },
             "children": [
                 "53",
@@ -2106,7 +2435,11 @@
                 "category": "NLP",
                 "category_color": "orange",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "",
+                "disciplines": [
+                    "NLP",
+                    "Generative AI"
+                ]
             },
             "children": []
         },
@@ -2124,7 +2457,11 @@
                 "category": "RL",
                 "category_color": "yellow",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=RL"
+                "link": "/library?nav=Articles&article=RL",
+                "disciplines": [
+                    "Games",
+                    "Core CS"
+                ]
             },
             "children": [
                 "66"
@@ -2144,7 +2481,11 @@
                 "category": "RL",
                 "category_color": "yellow",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=002_mdp"
+                "link": "/library?nav=Articles&article=002_mdp",
+                "disciplines": [
+                    "Games",
+                    "Core CS"
+                ]
             },
             "children": [
                 "68"
@@ -2164,7 +2505,10 @@
                 "category": "RL",
                 "category_color": "yellow",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "",
+                "disciplines": [
+                    "Games"
+                ]
             },
             "children": [
                 "69",
@@ -2185,7 +2529,10 @@
                 "category": "RL",
                 "category_color": "yellow",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "",
+                "disciplines": [
+                    "Games"
+                ]
             },
             "children": [
                 "71"
@@ -2205,7 +2552,10 @@
                 "category": "RL",
                 "category_color": "yellow",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "",
+                "disciplines": [
+                    "Games"
+                ]
             },
             "children": [
                 "71"
@@ -2225,7 +2575,10 @@
                 "category": "RL",
                 "category_color": "yellow",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "",
+                "disciplines": [
+                    "Games"
+                ]
             },
             "children": [
                 "72"
@@ -2245,7 +2598,10 @@
                 "category": "ROSIE",
                 "category_color": "red",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=global-protect"
+                "link": "/library?nav=Articles&article=global-protect",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": []
         },
@@ -2263,7 +2619,10 @@
                 "category": "ROSIE",
                 "category_color": "red",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=6-slurm"
+                "link": "/library?nav=Articles&article=6-slurm",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": []
         },
@@ -2281,7 +2640,10 @@
                 "category": "ROSIE",
                 "category_color": "red",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=6-jernel"
+                "link": "/library?nav=Articles&article=6-jernel",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": []
         },
@@ -2299,7 +2661,10 @@
                 "category": "ROSIE",
                 "category_color": "red",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=6-rosie-ssh"
+                "link": "/library?nav=Articles&article=6-rosie-ssh",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": []
         },
@@ -2317,7 +2682,10 @@
                 "category": "ROSIE",
                 "category_color": "red",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=1-getting-rosie-access"
+                "link": "/library?nav=Articles&article=1-getting-rosie-access",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "6"
@@ -2337,7 +2705,10 @@
                 "category": "ROSIE",
                 "category_color": "red",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=2-first-login"
+                "link": "/library?nav=Articles&article=2-first-login",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "7"
@@ -2357,7 +2728,10 @@
                 "category": "ROSIE",
                 "category_color": "red",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=3-rosie-web"
+                "link": "/library?nav=Articles&article=3-rosie-web",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "15",
@@ -2378,7 +2752,10 @@
                 "category": "ROSIE",
                 "category_color": "red",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=using-fastapi-template"
+                "link": "/library?nav=Articles&article=using-fastapi-template",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": []
         },
@@ -2396,7 +2773,10 @@
                 "category": "ROSIE",
                 "category_color": "red",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=4-first-rosie-job"
+                "link": "/library?nav=Articles&article=4-first-rosie-job",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "9"
@@ -2416,7 +2796,10 @@
                 "category": "ROSIE",
                 "category_color": "red",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=5-rosie-terminal"
+                "link": "/library?nav=Articles&article=5-rosie-terminal",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "19",
@@ -2440,7 +2823,10 @@
                 "category": "Supervised Learning",
                 "category_color": "teal",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=001_sl-intro"
+                "link": "/library?nav=Articles&article=001_sl-intro",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "23",
@@ -2461,7 +2847,10 @@
                 "category": "Supervised Learning",
                 "category_color": "teal",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=002_sl-learning"
+                "link": "/library?nav=Articles&article=002_sl-learning",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "28"
@@ -2481,7 +2870,10 @@
                 "category": "Supervised Learning",
                 "category_color": "teal",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=003_sl-which-model"
+                "link": "/library?nav=Articles&article=003_sl-which-model",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "25"
@@ -2501,7 +2893,10 @@
                 "category": "Supervised Learning",
                 "category_color": "teal",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=004_sl-lin-reg"
+                "link": "/library?nav=Articles&article=004_sl-lin-reg",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "26"
@@ -2521,7 +2916,10 @@
                 "category": "Supervised Learning",
                 "category_color": "teal",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=005_sl-solved-models"
+                "link": "/library?nav=Articles&article=005_sl-solved-models",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "27"
@@ -2541,7 +2939,10 @@
                 "category": "Supervised Learning",
                 "category_color": "teal",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=006_sl-intro-nn"
+                "link": "/library?nav=Articles&article=006_sl-intro-nn",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "28"
@@ -2561,7 +2962,10 @@
                 "category": "Supervised Learning",
                 "category_color": "teal",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=007_sl-own-NN"
+                "link": "/library?nav=Articles&article=007_sl-own-NN",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "31"
@@ -2581,7 +2985,10 @@
                 "category": "Supervised Learning",
                 "category_color": "teal",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=008_sl-series-data"
+                "link": "/library?nav=Articles&article=008_sl-series-data",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "36",
@@ -2605,7 +3012,10 @@
                 "category": "Time Series",
                 "category_color": "beige",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "",
+                "disciplines": [
+                    "Finance"
+                ]
             },
             "children": [
                 "45"
@@ -2625,7 +3035,10 @@
                 "category": "Time Series",
                 "category_color": "beige",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "",
+                "disciplines": [
+                    "Finance"
+                ]
             },
             "children": [
                 "46"
@@ -2645,7 +3058,10 @@
                 "category": "Time Series",
                 "category_color": "beige",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "",
+                "disciplines": [
+                    "Finance"
+                ]
             },
             "children": [
                 "48",
@@ -2666,7 +3082,11 @@
                 "category": "Time Series",
                 "category_color": "beige",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "",
+                "disciplines": [
+                    "Finance",
+                    "NLP"
+                ]
             },
             "children": [
                 "51",
@@ -2687,7 +3107,10 @@
                 "category": "Time Series",
                 "category_color": "beige",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "",
+                "disciplines": [
+                    "Finance"
+                ]
             },
             "children": [
                 "57"
@@ -2707,7 +3130,11 @@
                 "category": "Time Series",
                 "category_color": "beige",
                 "highlighted_path": "True",
-                "link": ""
+                "link": "",
+                "disciplines": [
+                    "Finance",
+                    "Medical"
+                ]
             },
             "children": []
         },
@@ -2725,7 +3152,10 @@
                 "category": "Supervised Learning",
                 "category_color": "brown",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=001_ul-intro"
+                "link": "/library?nav=Articles&article=001_ul-intro",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "30"
@@ -2745,7 +3175,10 @@
                 "category": "Unsupervised Learning",
                 "category_color": "brown",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=002_ul-clustering"
+                "link": "/library?nav=Articles&article=002_ul-clustering",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": []
         },
@@ -2763,7 +3196,10 @@
                 "category": "Computer Vision",
                 "category_color": "cyan",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=001_comp-vis"
+                "link": "/library?nav=Articles&article=001_comp-vis",
+                "disciplines": [
+                    "Computer Vision"
+                ]
             },
             "children": [
                 "59"
@@ -2783,7 +3219,10 @@
                 "category": "Computer Vision",
                 "category_color": "cyan",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=002_comp-vis"
+                "link": "/library?nav=Articles&article=002_comp-vis",
+                "disciplines": [
+                    "Computer Vision"
+                ]
             },
             "children": [
                 "60"
@@ -2803,7 +3242,10 @@
                 "category": "Computer Vision",
                 "category_color": "cyan",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=003_comp-vis"
+                "link": "/library?nav=Articles&article=003_comp-vis",
+                "disciplines": [
+                    "Computer Vision"
+                ]
             },
             "children": [
                 "61"
@@ -2823,7 +3265,10 @@
                 "category": "Computer Vision",
                 "category_color": "cyan",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=004_comp-vis"
+                "link": "/library?nav=Articles&article=004_comp-vis",
+                "disciplines": [
+                    "Computer Vision"
+                ]
             },
             "children": [
                 "62"
@@ -2843,7 +3288,11 @@
                 "category": "Computer Vision",
                 "category_color": "cyan",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=005_comp-vis"
+                "link": "/library?nav=Articles&article=005_comp-vis",
+                "disciplines": [
+                    "Computer Vision",
+                    "Medical"
+                ]
             },
             "children": [
                 "63"
@@ -2863,7 +3312,11 @@
                 "category": "Computer Vision",
                 "category_color": "cyan",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=006_comp-vis"
+                "link": "/library?nav=Articles&article=006_comp-vis",
+                "disciplines": [
+                    "Computer Vision",
+                    "Sports"
+                ]
             },
             "children": [
                 "64"
@@ -2883,7 +3336,10 @@
                 "category": "Computer Vision",
                 "category_color": "cyan",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=007_comp-vis"
+                "link": "/library?nav=Articles&article=007_comp-vis",
+                "disciplines": [
+                    "Computer Vision"
+                ]
             },
             "children": []
         },
@@ -2901,7 +3357,10 @@
                 "category": "VS-Code (VSC)",
                 "category_color": "blue",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=1-how-use-vscode"
+                "link": "/library?nav=Articles&article=1-how-use-vscode",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "11"
@@ -2921,7 +3380,10 @@
                 "category": "VS-Code (VSC)",
                 "category_color": "blue",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=2-vscode-extensions"
+                "link": "/library?nav=Articles&article=2-vscode-extensions",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "12"
@@ -2941,7 +3403,10 @@
                 "category": "VS-Code (VSC)",
                 "category_color": "blue",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=3-vscode-terminal"
+                "link": "/library?nav=Articles&article=3-vscode-terminal",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "13"
@@ -2961,7 +3426,10 @@
                 "category": "VS-Code (VSC)",
                 "category_color": "blue",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=4-vscode-environments"
+                "link": "/library?nav=Articles&article=4-vscode-environments",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "14"
@@ -2981,7 +3449,10 @@
                 "category": "VS-Code (VSC)",
                 "category_color": "blue",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=5-vscode-version-control"
+                "link": "/library?nav=Articles&article=5-vscode-version-control",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "19"
@@ -3001,7 +3472,10 @@
                 "category": "Git",
                 "category_color": "gray",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=GitHub"
+                "link": "/library?nav=Articles&article=GitHub",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "78"
@@ -3021,7 +3495,10 @@
                 "category": "Git",
                 "category_color": "gray",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=Git-Commands"
+                "link": "/library?nav=Articles&article=Git-Commands",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "79"
@@ -3041,7 +3518,10 @@
                 "category": "Git",
                 "category_color": "gray",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=GitHub-Repositories"
+                "link": "/library?nav=Articles&article=GitHub-Repositories",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "80"
@@ -3061,7 +3541,10 @@
                 "category": "Git",
                 "category_color": "gray",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=GitHub-Commits"
+                "link": "/library?nav=Articles&article=GitHub-Commits",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "81"
@@ -3081,7 +3564,10 @@
                 "category": "Git",
                 "category_color": "gray",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=GitHub-Pushing-and-Pulling"
+                "link": "/library?nav=Articles&article=GitHub-Pushing-and-Pulling",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "82"
@@ -3101,7 +3587,10 @@
                 "category": "Git",
                 "category_color": "gray",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=GitHub-Branching-and-Merging"
+                "link": "/library?nav=Articles&article=GitHub-Branching-and-Merging",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "83"
@@ -3121,7 +3610,10 @@
                 "category": "Git",
                 "category_color": "gray",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=GitHub-Best-Practices"
+                "link": "/library?nav=Articles&article=GitHub-Best-Practices",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "84"
@@ -3141,7 +3633,10 @@
                 "category": "Git",
                 "category_color": "gray",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=GitHub-SSH-Keys"
+                "link": "/library?nav=Articles&article=GitHub-SSH-Keys",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": []
         },
@@ -3159,7 +3654,10 @@
                 "category": "Introduction",
                 "category_color": "gray",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=003_What_is_AI"
+                "link": "/library?nav=Articles&article=003_What_is_AI",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "4"
@@ -3179,7 +3677,10 @@
                 "category": "Introduction",
                 "category_color": "gray",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=002_What_is_Programming"
+                "link": "/library?nav=Articles&article=002_What_is_Programming",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "3"
@@ -3199,7 +3700,10 @@
                 "category": "Databricks",
                 "category_color": "red",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=databricks-guide"
+                "link": "/library?nav=Articles&article=databricks-guide",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "75"
@@ -3219,7 +3723,10 @@
                 "category": "Databricks",
                 "category_color": "red",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=delta-lake"
+                "link": "/library?nav=Articles&article=delta-lake",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": [
                 "76"
@@ -3239,7 +3746,10 @@
                 "category": "Databricks",
                 "category_color": "red",
                 "highlighted_path": "True",
-                "link": "/library?nav=Articles&article=mlflow"
+                "link": "/library?nav=Articles&article=mlflow",
+                "disciplines": [
+                    "Core CS"
+                ]
             },
             "children": []
         }
@@ -3247,6 +3757,16 @@
     "metadata": {
         "total_nodes": 76,
         "total_categories": 12,
-        "generated_at": "2025-11-10"
+        "generated_at": "2025-11-10",
+        "disciplines": {
+            "Computer Vision": "#3b82f6",
+            "NLP": "#f97316",
+            "Generative AI": "#22c55e",
+            "Medical": "#ef4444",
+            "Finance": "#eab308",
+            "Sports": "#a855f7",
+            "Games": "#ec4899",
+            "Core CS": "#6b7280"
+        }
     }
 }
