@@ -9,15 +9,7 @@
     "Accessibility",
     "Campus Tools"
   ],
-  "projectTerm": "Fall",
-  "projectYear": "2025",
-  "projectCategory": "Innovation Lab",
-  "sponsor": "Demo Sponsor",
-  "aiCategory": [
-    "Planning",
-    "Optimization"
-  ],
-  "type": "Project",
+  "type": "Innovation Lab",
   "thumbnail": {
     "filename": "thumbnail.svg",
     "mimeType": "image/svg+xml",

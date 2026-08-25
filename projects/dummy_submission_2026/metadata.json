@@ -1,0 +1,20 @@
+{
+  "title": "Demo: New Project Submission",
+  "members": ["Demo Member"],
+  "description": "A minimal fixture for testing the project submission and gallery workflow.",
+  "date": "2026-08-24",
+  "tags": ["Demo", "Testing"],
+  "type": "Innovation Lab",
+  "thumbnail": {
+    "filename": "thumbnail.svg",
+    "mimeType": "image/svg+xml",
+    "path": "images/thumbnail.svg"
+  },
+  "content": "## Overview\n\nThis fixture verifies that a new project can include structured members and tags, a thumbnail, and Markdown content.\n\n![Fixture thumbnail](images/thumbnail.svg)",
+  "images": [
+    {
+      "filename": "thumbnail.svg",
+      "mimeType": "image/svg+xml"
+    }
+  ]
+}

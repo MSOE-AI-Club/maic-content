@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">New project submission fixture</title>
+  <desc id="desc">A simple blue and yellow geometric project thumbnail.</desc>
+  <rect width="1200" height="600" fill="#102a43"/>
+  <circle cx="920" cy="120" r="210" fill="#f6c344"/>
+  <path d="M0 480 360 190l270 210 180-130 390 330H0Z" fill="#2f80ed"/>
+  <text x="72" y="116" fill="#fff" font-family="sans-serif" font-size="48" font-weight="700">PROJECT FIXTURE</text>
+</svg>

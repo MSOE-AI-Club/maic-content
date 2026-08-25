@@ -9,15 +9,7 @@
     "Summarization",
     "Productivity"
   ],
-  "projectTerm": "Year Long",
-  "projectYear": "25-26",
-  "projectCategory": "Hackathon",
-  "sponsor": "Demo Sponsor",
-  "aiCategory": [
-    "NLP",
-    "Summarization"
-  ],
-  "type": "Project",
+  "type": "Hackathon",
   "thumbnail": {
     "filename": "thumbnail.svg",
     "mimeType": "image/svg+xml",

@@ -9,15 +9,7 @@
     "Image Labeling",
     "Research Tools"
   ],
-  "projectTerm": "Spring",
-  "projectYear": "2026",
-  "projectCategory": "Research Group",
-  "sponsor": "Demo Sponsor",
-  "aiCategory": [
-    "Vision",
-    "Image Labeling"
-  ],
-  "type": "Project",
+  "type": "Research Group",
   "thumbnail": {
     "filename": "thumbnail.svg",
     "mimeType": "image/svg+xml",

@@ -60,11 +60,23 @@ function validateProjectMetadata(projectId) {
   const metadata = readJson(metadataPath, `Project "${projectId}" metadata.json`);
   if (!metadata) return;
 
-  ['title', 'members', 'description', 'date', 'type', 'content'].forEach(field => {
+  ['title', 'description', 'date', 'type', 'content'].forEach(field => {
     if (!isNonEmptyString(metadata[field])) {
       errors.push(`Project "${projectId}" metadata.${field} must be a non-empty string`);
     }
   });
+
+  if (!Array.isArray(metadata.members) && !isNonEmptyString(metadata.members)) {
+    errors.push(`Project "${projectId}" metadata.members must be an array or non-empty string`);
+  }
+
+  if (Array.isArray(metadata.members)) {
+    metadata.members.forEach((member, index) => {
+      if (!isNonEmptyString(member)) {
+        errors.push(`Project "${projectId}" metadata.members[${index}] must be a non-empty string`);
+      }
+    });
+  }
 
   if (!Array.isArray(metadata.tags) && !isNonEmptyString(metadata.tags)) {
     errors.push(`Project "${projectId}" metadata.tags must be an array or non-empty string`);
@@ -179,6 +191,24 @@ function validateProjects() {
     seenProjectIds.add(projectId);
     validateProjectMetadata(projectId);
   });
+
+  if (projectsIndex.featured !== undefined) {
+    if (!Array.isArray(projectsIndex.featured)) {
+      errors.push('projects/projects.json featured must be an array when present');
+    } else {
+      const seenFeaturedIds = new Set();
+      projectsIndex.featured.forEach((projectId, index) => {
+        if (!isNonEmptyString(projectId)) {
+          errors.push(`projects/projects.json featured[${index}] must be a non-empty string`);
+        } else if (seenFeaturedIds.has(projectId)) {
+          errors.push(`Duplicate featured project id in projects/projects.json: ${projectId}`);
+        } else if (!seenProjectIds.has(projectId)) {
+          errors.push(`Featured project is not listed in projects/projects.json projects: ${projectId}`);
+        }
+        seenFeaturedIds.add(projectId);
+      });
+    }
+  }
 
   console.log(`✅ projects/projects.json references ${projectsIndex.projects.length} project(s)`);
 }
