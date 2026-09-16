@@ -2,6 +2,7 @@
     "categories": {
         "Introduction": {
             "category_color": "gray",
+            "category_image": "images/tree-thumbnails/introduction-heading.png",
             "nodes": [
                 {
                     "id": "4",
@@ -87,6 +88,7 @@
         },
         "AI Basics": {
             "category_color": "violet",
+            "category_image": "images/tree-thumbnails/what_is_a_nn.png",
             "nodes": [
                 {
                     "id": "19",
@@ -154,6 +156,7 @@
         },
         "Generative AI": {
             "category_color": "limegreen",
+            "category_image": "images/tree-thumbnails/gen-ai-brain.png",
             "nodes": [
                 {
                     "id": "36",
@@ -323,6 +326,7 @@
         },
         "NLP": {
             "category_color": "orange",
+            "category_image": "images/tree-thumbnails/IntroNLP.png",
             "nodes": [
                 {
                     "id": "32",
@@ -514,16 +518,18 @@
                     ],
                     "children": []
                 }
-            ]
+            ],
+            "category_level": 4
         },
         "RL": {
             "category_color": "yellow",
+            "category_image": "images/tree-thumbnails/rl-network.png",
             "nodes": [
                 {
                     "id": "65",
                     "filename": "rl-65-31",
                     "name": "Intro to Reinforcement Learning (RL)",
-                "description": "A broad overview of Reinforcement Learning. Great for understanding the basic concepts and terminology used in RL.",
+                    "description": "A broad overview of Reinforcement Learning. Great for understanding the basic concepts and terminology used in RL.",
                     "category": "RL",
                     "api_image_path": "images/tree-thumbnails/Reinforcement-Learning-Intro.png",
                     "link": "/library?nav=Articles&article=001_rl-intro",
@@ -645,6 +651,7 @@
         },
         "ROSIE": {
             "category_color": "red",
+            "category_image": "images/tree-thumbnails/ROSIE Supercomputer.jpg",
             "nodes": [
                 {
                     "id": "15",
@@ -845,6 +852,7 @@
         },
         "Supervised Learning": {
             "category_color": "teal",
+            "category_image": "images/tree-thumbnails/supervised-learning-heading-v2.png",
             "nodes": [
                 {
                     "id": "22",
@@ -1036,6 +1044,7 @@
         },
         "Time Series": {
             "category_color": "beige",
+            "category_image": "images/tree-thumbnails/series-data.png",
             "nodes": [
                 {
                     "id": "44",
@@ -1163,6 +1172,7 @@
         },
         "Unsupervised Learning": {
             "category_color": "brown",
+            "category_image": "images/tree-thumbnails/unsupervised-learning-heading-v3.png",
             "nodes": [
                 {
                     "id": "30",
@@ -1182,10 +1192,12 @@
                     ],
                     "children": []
                 }
-            ]
+            ],
+            "category_level": 3
         },
         "Computer Vision": {
             "category_color": "cyan",
+            "category_image": "images/tree-thumbnails/intro-comp-vis.png",
             "nodes": [
                 {
                     "id": "58",
@@ -1330,6 +1342,7 @@
         },
         "VS-Code (VSC)": {
             "category_color": "blue",
+            "category_image": "images/tree-thumbnails/vsc-clean.png",
             "nodes": [
                 {
                     "id": "10",
@@ -1436,6 +1449,7 @@
         },
         "Databricks": {
             "category_color": "red",
+            "category_image": "images/thumbnails/databricks-logo.png",
             "nodes": [
                 {
                     "id": "74",
@@ -1499,6 +1513,7 @@
         },
         "Git": {
             "category_color": "gray",
+            "category_image": "images/tree-thumbnails/Git-Logo.jpg",
             "nodes": [
                 {
                     "id": "77",
