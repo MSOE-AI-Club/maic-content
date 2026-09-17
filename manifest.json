@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T18:34:47.074Z",
+  "generated_at": "2026-09-17T19:03:44.608Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -141,6 +141,8 @@
     "articles/Rosie/rosie-ssh/6-rosie-ssh.md",
     "articles/Rosie/rosie-ssh/metadata.json",
     "articles/Rosie/rosie-terminal/5-rosie-terminal.md",
+    "articles/Rosie/rosie-terminal/downloads/Verbose_Selu_Batchable_Reconstruction_Model.py",
+    "articles/Rosie/rosie-terminal/downloads/batch.sh",
     "articles/Rosie/rosie-terminal/metadata.json",
     "articles/Rosie/rosie-web/3-rosie-web.md",
     "articles/Rosie/rosie-web/metadata.json",
