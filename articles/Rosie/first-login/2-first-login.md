@@ -53,21 +53,21 @@ This guide will walk you through the process of logging into ROSIE for the first
 **Network Requirements:**
 ROSIE can only be accessed through MSOE's campus network. If you are connecting from off-campus (including the ITC) or using the "MSOE Guest" network, you must use Global Protect, MSOE's VPN. This should come with your MSOE-issued laptop. For personal machines, you can install Global Protect by reading [this](https://msoe-maic.com/library/?nav=Articles&article=global-protect) article.
 
-## Prerequisites: Installing an SSH Client
+## Prerequisites: Check Your SSH Client
 
-To connect to ROSIE via SSH, you'll need an SSH client. We recommend Git, which includes Git Bash and will be used in other coursework.
+Modern versions of Windows, macOS, and Linux include an SSH client, so you do not need to install additional software to connect to ROSIE.
 
-Start by downloading and installing Git from [here](https://git-scm.com/downloads). Please download the corresponding version for your machine. If using an MSOE-provided laptop, use the 64-bit Git for Windows Setup under the Standalone Installer section.
+- **Windows:** Open Command Prompt, PowerShell, or Windows Terminal.
+- **macOS:** Open Terminal.
+- **Linux:** Open your preferred terminal.
 
-**For Mac users:** Git might already be installed if you have Xcode. To check, open Terminal and run `git --version`. If it shows a version number, you're ready to go. If not, it will prompt you to install Git via Xcode Command Line Tools. 
+To verify that SSH is available, run:
 
+```bash
+ssh -V
+```
 
-### Installing Git Bash Correctly 
-Open the download and accept all changes. You will see the following screen:
-
-![alt text](/images/article_content/git_bash_setup.png)
-
-In the following screens, accept all default selections.
+If Windows reports that `ssh` is not recognized, search for **Optional features** in Windows Settings and install **OpenSSH Client**. Then reopen your terminal and run `ssh -V` again.
 
 ## Connecting to ROSIE
 
@@ -81,9 +81,9 @@ Here's what we'll accomplish in this section:
 
 
 
-#### Opening The Terminal Git Bash (Windows)
-- Windows: Open Git Bash by typing "git" in your search bar and clicking "Git Bash".
-- Mac: Open Terminal and enter the following command:
+#### Open a Terminal
+
+Open Command Prompt, PowerShell, or Windows Terminal on Windows. On macOS or Linux, open Terminal. Then enter:
 
 
 ```bash
