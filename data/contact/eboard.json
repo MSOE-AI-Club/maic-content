@@ -56,12 +56,20 @@
         "email": "maddens@msoe.edu"
     },
     {
-        "name": "Madison Engebose",
+        "name": "Austin Koske",
         "title": "Technical Strategist",
-        "imageUrl": "images/contact/Madison Engebose Portrait.jpg",
+        "imageUrl": "images/contact/Austin Koske Portrait.jpg",
         "role": "Workshop Developer Strategist",
-        "bio": "Hi! I'm Madison Engebose, and I'm currently a Sophomore Computer Science student at MSOE. I joined AI Club to explore different AI concepts and develop the skills to apply them in real-world scenarios. Outside of AI club, I'm a Software Engineer Intern for Direct Supply and a member of the MSOE Women's Golf team.",
-        "email": "engebosem@msoe.edu"
+        "bio": "",
+        "email": "koskea@msoe.edu"
+    },
+    {
+        "name": "Miles Trompeter",
+        "title": "Technical Strategist",
+        "imageUrl": "images/contact/Miles Trompeter Portrait.jpg",
+        "role": "Workshop Developer Strategist",
+        "bio": "",
+        "email": "trompeterm@msoe.edu"
     },
     {
         "name": "Dr. Riley",
