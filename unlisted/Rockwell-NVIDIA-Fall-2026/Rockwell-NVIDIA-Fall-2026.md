@@ -9,8 +9,9 @@
 <div style="border: 2px dashed #a855f7; border-radius: 10px; padding: 16px 20px; margin: 20px 0;">
   <h3 style="margin-top: 0;">📝 Team Sign-Up</h3>
   <p style="margin: 4px 0 12px;">One person per team signs up the whole team. Solo entries are welcome, and AI-Club can place you on a team.</p>
-  <p style="margin: 4px 0;"><strong>Team sign-up form:</strong> <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ sign-up link to add ]</span></p>
-  <p style="margin: 4px 0;"><strong>Team plan submission (due end of day Wed, Oct 14):</strong> <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ submission link to add ]</span></p>
+  <p style="margin: 4px 0;"><strong>Team sign-up:</strong> <a href="https://dashboard.all-ai-network.org/j/L36HEH">Sign up your team</a></p>
+  <p style="margin: 4px 0;"><strong>Submission form (team plan due end of day Wed, Oct 14):</strong> <a href="https://dashboard.all-ai-network.org/s/V28NHK">Submit here</a> <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ confirm team plans go through this form ]</span></p>
+  <p style="margin: 4px 0;"><strong>Event page:</strong> <a href="https://dashboard.all-ai-network.org/e/innovation-lab-fall-2026-059658">View on the ALL Applied AI Network dashboard</a></p>
   <p style="margin: 4px 0;"><strong>Slack workspace:</strong> <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Slack invite link to add ]</span></p>
 </div>
 
@@ -162,7 +163,7 @@ Your plan should cover:
 
 **Format:** 1–2 pages. Short and clear beats long.
 **Due:** end of day Wednesday, October 14.
-**Submit:** <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ submission link to add ]</span>. Your plan is private to your team and the organizers. Organizers will review every plan and follow up with your team.
+**Submit:** [submission form](https://dashboard.all-ai-network.org/s/V28NHK). Your plan is private to your team and the organizers. Organizers will review every plan and follow up with your team.
 
 ## Your Team
 
