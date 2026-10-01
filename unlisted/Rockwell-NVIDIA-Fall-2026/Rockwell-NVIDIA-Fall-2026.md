@@ -1,6 +1,6 @@
 # 🏭 Rockwell Automation + NVIDIA Innovation Lab: Physical AI for the Factory Floor
 
-**In collaboration with the [MSOE AI-Club](https://msoe-maic.com), [UWM's Connected Systems Institute (CSI)](https://uwm.edu/csi/), [Rockwell Automation](https://www.rockwellautomation.com/en-us.html), and [NVIDIA](https://www.nvidia.com/en-us/)**
+**In collaboration with [Rockwell Automation](https://www.rockwellautomation.com/en-us.html), [NVIDIA](https://www.nvidia.com/en-us/), the [MSOE AI-Club](https://msoe-maic.com), and [UWM's Connected Systems Institute (CSI)](https://uwm.edu/csi/)**
 
 <div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
   <strong style="color: #f59e0b;">Working draft.</strong> Items in <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[amber brackets]</span> are placeholders to be completed before this goes to students.
@@ -9,9 +9,9 @@
 <div style="border: 2px dashed #a855f7; border-radius: 10px; padding: 16px 20px; margin: 20px 0;">
   <h3 style="margin-top: 0;">📝 Team Sign-Up</h3>
   <p style="margin: 4px 0 12px;">One person per team signs up the whole team. Solo entries are welcome, and AI-Club can place you on a team.</p>
-  <p style="margin: 4px 0;"><strong>Team sign-up:</strong> <a href="https://dashboard.all-ai-network.org/j/L36HEH">Sign up your team</a></p>
-  <p style="margin: 4px 0;"><strong>Submission form (team plan due end of day Wed, Oct 14):</strong> <a href="https://dashboard.all-ai-network.org/s/V28NHK">Submit here</a> <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ confirm team plans go through this form ]</span></p>
-  <p style="margin: 4px 0;"><strong>Event page:</strong> <a href="https://dashboard.all-ai-network.org/e/innovation-lab-fall-2026-059658">View on the ALL Applied AI Network dashboard</a></p>
+  <p style="margin: 4px 0;"><strong>Team sign-up:</strong> <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ TODO: sign-up link ]</span></p>
+  <p style="margin: 4px 0;"><strong>Submission form (team plan due end of day Wed, Oct 14):</strong> <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ TODO: submission link ]</span></p>
+  <p style="margin: 4px 0;"><strong>Event page:</strong> <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ TODO: event page link ]</span></p>
   <p style="margin: 4px 0;"><strong>Slack workspace:</strong> <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Slack invite link to add ]</span></p>
 </div>
 
@@ -29,14 +29,9 @@ Start with **the challenges**, then work through the **first-week checklist**.
 
 | Date | Milestone | Where / Notes |
 | --- | --- | --- |
-| **Thursday, October 8** | 🎉 **Kickoff** | Rockwell Automation HQ (1201 S 2nd St, Milwaukee, WI 53204), 4:00–6:00 PM. Transportation provided from each campus. <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ confirm time: dashboard lists 6:30–7:30 PM ]</span> |
+| **Thursday, October 8** | 🎉 **Kickoff** | Rockwell Automation HQ (1201 S 2nd St, Milwaukee, WI 53204), 4:00–6:00 PM. Transportation provided from each campus. |
 | **Wednesday, October 14** | 📄 **Team plan due** (end of day) | Submit on the MSOE site (see **Team Sign-Up**). |
-| Week of October 20 | <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ add milestones ]</span> | e.g., office hours, a mid-point check-in |
-| Week of October 27 | <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ add milestones ]</span> | e.g., office hours, a progress checkpoint |
-| Week of November 3 | <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ add milestones ]</span> | e.g., a pre-final submission before finals |
-| **Thursday, November 5** | 🏆 **Finals** | UWM, in a building next to CSI. <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ building, time, and presentation length to add ]</span> |
-
-**Recurring:** mentor check-ins and office hours <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ cadence and location to be set by the planning team ]</span>
+| **Thursday, November 5** | 🏆 **Finals** | UWM <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ TODO: specific building and time ]</span> |
 
 ## The Challenges and Your Data
 
@@ -163,7 +158,7 @@ Your plan should cover:
 
 **Format:** 1–2 pages. Short and clear beats long.
 **Due:** end of day Wednesday, October 14.
-**Submit:** [submission form](https://dashboard.all-ai-network.org/s/V28NHK). Your plan is private to your team and the organizers. Organizers will review every plan and follow up with your team.
+**Submit:** <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ TODO: submission link ]</span>. Your plan is private to your team and the organizers. Organizers will review every plan and follow up with your team.
 
 ## Your Team
 
