@@ -8,7 +8,7 @@ Industrial robot arms are often programmed for fixed motions without vision. Tha
 
 Use multiple camera views and a digital twin to make a FANUC arm grasp and sort objects reliably. Once a basic pick-and-place works, teams can add harder objects, smarter sorting rules, or fingers designed for a particular object.
 
-<img src="/images/article_content/rockwell-nvidia-fall-2026/fanuc-cell.webp" alt="FANUC robot cell at the CSI testbed" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
+<img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/fanuc-cell.webp" alt="FANUC robot cell at the CSI testbed" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
 
 ## What is provided
 
@@ -19,7 +19,7 @@ Use multiple camera views and a digital twin to make a FANUC arm grasp and sort 
 - a CAD model of the current fingers;
 - access to design and print replacement fingers.
 
-<img src="/images/article_content/rockwell-nvidia-fall-2026/fanuc-gripper.webp" alt="Pneumatic two-finger gripper attached to the FANUC arm" style="width: 100%; max-width: 640px; border-radius: 10px; margin: 14px auto; display: block;" />
+<img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/fanuc-gripper.webp" alt="Pneumatic two-finger gripper attached to the FANUC arm" style="width: 100%; max-width: 640px; border-radius: 10px; margin: 14px auto; display: block;" />
 
 The first target is a repeatable grasp and sort. Define how success will be measured before increasing difficulty: successful picks per attempt, placement accuracy, cycle time, recovery after a failed grasp, or performance on objects not used during development.
 

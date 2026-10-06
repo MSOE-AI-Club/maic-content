@@ -8,7 +8,7 @@ The production line already inspects each vial from the side. It sends vials tha
 
 This dataset comes from an overhead camera at the final station. Build a system that checks visible vial defects and fixture occupancy after each placement. The priority is to stop defects from getting through. In judging, a missed defect matters more than a false alarm.
 
-<img src="/images/article_content/rockwell-nvidia-fall-2026/vial-overview.webp" alt="Overview of the final vial inspection station and fixtures" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
+<img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/vial-overview.webp" alt="Overview of the final vial inspection station and fixtures" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
 
 ## How the fixtures fill
 
@@ -33,9 +33,9 @@ The class label describes one target position, not the whole camera image. Crops
 | `damaged_vial` | The target vial body is visibly damaged. Overlapping transparent bodies may require the full scene for context. |
 | `no_vial` | The target aperture is empty. Whether that is an error depends on fill progress. |
 
-<img src="/images/article_content/rockwell-nvidia-fall-2026/vial-crops-in-context.webp" alt="Labeled vial crops shown in the context of the full camera image" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
+<img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/vial-crops-in-context.webp" alt="Labeled vial crops shown in the context of the full camera image" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
 
-<img src="/images/article_content/rockwell-nvidia-fall-2026/vial-class-examples.webp" alt="Examples of the five vial inspection labels" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
+<img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/vial-class-examples.webp" alt="Examples of the five vial inspection labels" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
 
 ## What is provided
 
@@ -47,7 +47,7 @@ The class label describes one target position, not the whole camera image. Crops
 
 The labeling tool lets you select an image and fixture, click a numbered position, inspect its crop in scene context, edit the class, add an observation, and mark it reviewed. Use Previous and Next to move through positions. Export the review JSON when the pass is complete.
 
-<img src="/images/article_content/rockwell-nvidia-fall-2026/vial-labeling-tool.webp" alt="Browser labeling tool with the full scene and selected vial crop" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
+<img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/vial-labeling-tool.webp" alt="Browser labeling tool with the full scene and selected vial crop" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
 
 ## Get the data
 

@@ -8,7 +8,7 @@ Four tanks of colored water feed the vial filling stations. A recipe tells the s
 
 Build a system that detects color or fill problems and, when possible, helps an operator understand the likely cause. The useful result is not just "different." It should connect what the cameras saw to the recipe order, tank state, or color carryover that may have produced the difference.
 
-<img src="/images/article_content/rockwell-nvidia-fall-2026/fluid-tanks.webp" alt="Four colored-fluid tanks at the CSI testbed" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
+<img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/fluid-tanks.webp" alt="Four colored-fluid tanks at the CSI testbed" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
 
 ## Equipment and recipes
 
@@ -30,8 +30,8 @@ Important operating constraints:
 - Do not change recipes without the plant manager's guidance.
 
 <div style="display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin: 16px 0;">
-  <img src="/images/article_content/rockwell-nvidia-fall-2026/fluid-batch-scheduler.webp" alt="Batch Scheduler interface used to queue fluid recipes" style="width: 100%; border-radius: 8px;" />
-  <img src="/images/article_content/rockwell-nvidia-fall-2026/fluid-recipe-screen.webp" alt="Recipe setup interface for the fluid station" style="width: 100%; border-radius: 8px;" />
+  <img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/fluid-batch-scheduler.webp" alt="Batch Scheduler interface used to queue fluid recipes" style="width: 100%; border-radius: 8px;" />
+  <img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/fluid-recipe-screen.webp" alt="Recipe setup interface for the fluid station" style="width: 100%; border-radius: 8px;" />
 </div>
 
 ## Why the current inspection is not enough
@@ -50,8 +50,8 @@ That check does not reliably answer whether the vial matches the intended recipe
 The camera timestamps let you line up tank state, the fill operation, and the finished vial. Barcodes and labels may or may not be present, and their orientation is inconsistent. The production system does not currently rely on those barcodes.
 
 <div style="display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin: 16px 0;">
-  <img src="/images/article_content/rockwell-nvidia-fall-2026/fluid-fill-orange.webp" alt="Station 3 filling an orange vial" style="width: 100%; border-radius: 8px;" />
-  <img src="/images/article_content/rockwell-nvidia-fall-2026/fluid-fill-blue.webp" alt="Station 3 filling a blue vial" style="width: 100%; border-radius: 8px;" />
+  <img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/fluid-fill-orange.webp" alt="Station 3 filling an orange vial" style="width: 100%; border-radius: 8px;" />
+  <img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/fluid-fill-blue.webp" alt="Station 3 filling a blue vial" style="width: 100%; border-radius: 8px;" />
 </div>
 
 ## Get the data
