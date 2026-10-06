@@ -1,0 +1,8 @@
+{
+  "summary": "Inspect final vial fixtures for missing or crooked caps, damaged vials, and unexpected empty positions using real and synthetic factory images.",
+  "type": "md",
+  "date": "October 2026",
+  "title": "Dataset 1: Final Vial Inspection",
+  "image": "./images/thumbnails/IL_MAIC_Logo_grad.png",
+  "authors": "MSOE AI Club"
+}
