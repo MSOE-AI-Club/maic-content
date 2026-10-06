@@ -4,3 +4,7 @@ index.html
 _headers
 dist/**
 .notebooks
+*.docx
+*.pptx
+*.pdf
+timelapse_session_*.gif

@@ -1,210 +1,133 @@
-# 🏭 Rockwell Automation + NVIDIA Innovation Lab: Physical AI for the Factory Floor
+# Rockwell Automation + NVIDIA Innovation Lab
 
-**In collaboration with [Rockwell Automation](https://www.rockwellautomation.com/en-us.html), [NVIDIA](https://www.nvidia.com/en-us/), the [MSOE AI-Club](https://msoe-maic.com), and [UWM's Connected Systems Institute (CSI)](https://uwm.edu/csi/)**
+## Physical AI for the Factory Floor
+
+Rockwell Automation, NVIDIA, the MSOE AI Club, and UWM's [Connected Systems Institute (CSI)](https://uwm.edu/csi/) are running a four-week physical AI hackathon. Teams will work with data and equipment from CSI's manufacturing testbed, then show a working solution at the finals.
+
+You do not need prior manufacturing or AI experience. You do need a team that is willing to test ideas, measure results, and explain what it learned.
 
 <div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <strong style="color: #f59e0b;">Working draft.</strong> Items in <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[amber brackets]</span> are placeholders to be completed before this goes to students.
+  <strong>Working page.</strong> Amber notes mark details that organizers still need to supply.
 </div>
 
-<div style="border: 2px dashed #a855f7; border-radius: 10px; padding: 16px 20px; margin: 20px 0;">
-  <h3 style="margin-top: 0;">📝 Team Sign-Up</h3>
-  <p style="margin: 4px 0 12px;">One person per team signs up the whole team. Solo entries are welcome, and AI-Club can place you on a team.</p>
-  <p style="margin: 4px 0;"><strong>Team sign-up:</strong> <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ TODO: sign-up link ]</span></p>
-  <p style="margin: 4px 0;"><strong>Submission form (team plan due end of day Wed, Oct 14):</strong> <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ TODO: submission link ]</span></p>
-  <p style="margin: 4px 0;"><strong>Event page:</strong> <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ TODO: event page link ]</span></p>
-  <p style="margin: 4px 0;"><strong>Slack workspace:</strong> <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Slack invite link to add ]</span></p>
+<div style="border: 2px solid #7c3aed; border-radius: 10px; padding: 18px 20px; margin: 22px 0;">
+  <h3 style="margin-top: 0;">Join the Innovation Lab</h3>
+  <p>Each student creates an account and joins or creates a team. Teams may have 1–12 members.</p>
+  <p><a href="https://dashboard.all-ai-network.org/j/L36HEH" target="_blank" rel="noopener noreferrer"><strong>Sign up and manage your team</strong></a></p>
+  <p><a href="https://dashboard.all-ai-network.org/s/V28NHK" target="_blank" rel="noopener noreferrer"><strong>Submit your team plan</strong></a> by 11:59 PM CT on Wednesday, October 14.</p>
+  <p><a href="https://dashboard.all-ai-network.org/e/innovation-lab-fall-2026-059658" target="_blank" rel="noopener noreferrer">Open the event workspace</a></p>
+  <p><strong>Use the same email address associated with your AI Club points.</strong> After you join a team, connect GitHub from your profile so the dashboard can send your team repository invitation.</p>
 </div>
 
-## Welcome
+## What is the factory testbed?
 
-We're glad you're here. For the next four weeks, your team will work on real problems from a test factory production line, using the same AI tools companies use today.
+CSI operates a high-mix, low-volume demonstration plant built with Rockwell Automation hardware. The line produces colored stacked cubes and vials filled with mixed-color fluid. Four FANUC robots move products through the process.
 
-The hackathon is run by four partners: **NVIDIA, Rockwell Automation, MSOE, and UWM's Connected Systems Institute**. The challenges aren't made up for a class. They come from an actual production line in CSI's factory testbed, and engineers from Rockwell and NVIDIA will guide your team and see what you build.
+Rockwell builds industrial automation and control systems used by manufacturers. Its FactoryTalk software connects production information and workflows, while Emulate3D creates digital models of manufacturing systems. NVIDIA provides the accelerated computing and physical AI tools teams will use for vision, simulation, synthetic data, and robotics.
 
-This hackathon is about solving problems. That matters more than your major or how much you already know. **You don't need to be an expert in AI, engineering, or computer science to do well.** The tools handle much of the technical work, and your mentors are there when you get stuck. The best teams keep working a problem until they solve it.
+Only about 3% of manufacturers used AI for automated inspection in the 2020 Annual Business Survey. A NIST survey estimated that defective products cost US discrete manufacturers $32–58 billion each year. This lab asks teams to show where physical AI can make one real process better.
 
-Start with **the challenges**, then work through the **first-week checklist**.
+<img src="/images/article_content/rockwell-nvidia-fall-2026/csi-testbed-timelapse.gif" alt="Time-lapse overview of the CSI manufacturing testbed" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
 
-## Schedule and Key Dates
+## The three datasets
 
-| Date | Milestone | Where / Notes |
+Choose one dataset to start. A strong, tested solution on one dataset is better than three unfinished ideas.
+
+<div style="display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin: 18px 0;">
+  <div style="border: 1px solid #64748b; border-radius: 10px; padding: 16px;">
+    <h3 style="margin-top: 0;">Dataset 1: Final Vial Inspection</h3>
+    <p>Find missing caps, crooked caps, damaged vials, and unexpected empty positions after the robot fills a fixture.</p>
+    <a href="https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Vial-Inspection">Open dataset 1</a>
+  </div>
+  <div style="border: 1px solid #64748b; border-radius: 10px; padding: 16px;">
+    <h3 style="margin-top: 0;">Dataset 2: Fluid Mixing Station 3</h3>
+    <p>Use synchronized camera views to detect fill and color problems caused by recipes and fluid carryover.</p>
+    <a href="https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Fluid-Mixing">Open dataset 2</a>
+  </div>
+  <div style="border: 1px solid #64748b; border-radius: 10px; padding: 16px;">
+    <h3 style="margin-top: 0;">Dataset 3: Grasping and Sorting</h3>
+    <p>Use a digital twin and multiple cameras to make a FANUC arm grasp and sort objects more reliably.</p>
+    <a href="https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Grasping-Sorting">Open dataset 3</a>
+  </div>
+</div>
+
+Related guides:
+
+- [Compute: Brev, DGX Spark, and build.nvidia.com](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute)
+- [Collect and test your own data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection)
+- [Tools and resources](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Resources)
+
+## Schedule
+
+| Date | Milestone | Details |
 | --- | --- | --- |
-| **Thursday, October 8** | 🎉 **Kickoff** | Rockwell Automation HQ (1201 S 2nd St, Milwaukee, WI 53204), 4:00–6:00 PM. Transportation provided from each campus. |
-| **Wednesday, October 14** | 📄 **Team plan due** (end of day) | Submit on the MSOE site (see **Team Sign-Up**). |
-| **Thursday, November 5** | 🏆 **Finals** | UWM <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ TODO: specific building and time ]</span> |
+| Thursday, October 8 | Kickoff | Rockwell Automation HQ, 1201 S 2nd St, Milwaukee, 4:00–6:00 PM. Transportation is provided from both campuses. |
+| Wednesday, October 14 | Team plan due | Submit by 11:59 PM CT through the team submission form. |
+| Sunday, November 1 | Final submission due | About a five-minute video, a one-page summary, your repository, and references. |
+| Thursday, November 5 | Finals | UWM. <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Brett: add the building and time. ]</span> |
 
-## The Challenges and Your Data
+## First-week checklist
 
-You'll work on problems from an actual factory line. Pick **one of three challenges** built around the vial production process and robots in CSI's factory testbed. The goal in every challenge is the same: **make a process measurably better, then show it working in real life.**
+- [ ] Create an All AI Network account with the email address associated with your AI Club points.
+- [ ] Create or join a team and settle on a team name.
+- [ ] Connect your GitHub account and accept the team repository invitation.
+- [ ] Choose one dataset.
+- [ ] Download the data and confirm that everyone who needs it can open it.
+- [ ] Review the [compute guide](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute) and request what your team expects to use.
+- [ ] Join Slack and find your mentors. <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Brett: add the Slack invite and channel names. ]</span>
+- [ ] Submit the team plan by Wednesday, October 14.
 
-> **This is real factory data.** You get images and camera feeds from the factory line, plus the tools and digital twins to build with.
+## Team plan
 
-### Challenge 1: Final Vial Inspection 🔍
+The plan is a short resource request, not a contract or graded paper. Anyone on the team can submit it, and any teammate can update the same team submission before the deadline. Organizers and sponsor mentors will use it to line up compute, data, and technical support.
 
-A robot sorts finished vials into a good tray and a scrap tray, but some defective ones slip into the good tray: missing or crooked caps, bent tubes, or missing tubes. An overhead camera watches the good tray.
+The form asks for:
 
-- **Your goal:** catch the defective vials before they leave the good tray, and flag what needs rework or scrapping.
-- **Good fit if you like:** working with images and spotting defects.
-- **What you get:** sample images of good and defective vials, labeled and unlabeled; a labeling tool to build your own training set; and a digital twin you can use to generate more training images.
+- your team name and members;
+- the dataset or combination of datasets you plan to use;
+- a short description of the problem you plan to solve;
+- data you need beyond what is already provided, and why;
+- the compute you expect to use: Brev, an MSOE or UWM DGX Spark, the CSI workstation, or build.nvidia.com;
+- AI-agent credits or tools you need;
+- the type of mentor support you want;
+- questions for the organizers.
 
-### Challenge 2: Fluid Mixing 🧪
+Plans may change once teams examine the data. Keep the first submission short and specific enough for sponsors to understand what help would be useful.
 
-A single nozzle fills vials with colored fluid by recipe. Because one nozzle handles every color, leftover fluid from the last fill can affect the next one, and fill amounts can come out wrong.
+## Final submission
 
-- **Your goal:** detect color and fill problems, and point to the likely cause where you can.
-- **Good fit if you like:** comparing camera views to figure out what caused a problem.
-- **What you get:** camera views of the vials being filled and of the color tanks, with matched timestamps so you can line up what happened where. No equipment data needed.
+By Sunday, November 1, each team submits:
 
-### Challenge 3: Grasping and Sorting 🦾
+- a video of about five minutes;
+- a one-page project summary;
+- a link to the team repository;
+- references and credits for data, models, code, and tools.
 
-A FANUC robot arm picks up and sorts objects on a table.
+The Nov. 5 finals include live presentations and prizes.
 
-- **Your goal:** train the arm to grasp and sort reliably, then push it as far as you can with harder objects, smarter sorting, or better grips.
-- **Good fit if you like:** hands-on work with robots and simulation, including parts you design and 3D-print.
-- **What you get:** a digital twin of the setup to train and test in, two overhead cameras and a wrist camera, and grippers you can customize with fingers you design and print.
+## Prizes and judging
 
-### Choosing Your Challenge
+Prizes include cash, RTX 5080 and RTX 5070 GPUs, and sponsor swag. Planned award categories include:
 
-If you're not sure which to pick, choose the one that's most interesting to your team. None of them require experience you don't already have, and your mentors can help you shape your approach.
+- most impactful;
+- most innovative;
+- best use of in-context learning;
+- best presentation;
+- most scalable.
 
-**Start with one challenge and solve it well.** You're welcome to take on another after that, but a strong solution to one beats a partial attempt at several.
+<span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Joe: confirm prize amounts and the final award categories with Rockwell and NVIDIA. ]</span>
 
-### Getting More Data
+Judges will look for a solution that addresses the actual process, works on real or realistic data, reports meaningful measurements, and is understandable to an operator. They will also consider the quality of the team's technical choices, testing, collaboration, and explanation of failed attempts.
 
-The data you're given is enough to build a solution. If you want more:
+A smaller system that works reliably is more useful than an ambitious demo that cannot run.
 
-| ✅ You can | ❌ You can't |
-| --- | --- |
-| Visit the CSI testbed to see the factory line and robots running (schedule ahead) | Move or re-aim the cameras |
-| Collect your own data with a setup that doesn't interfere with the line (schedule ahead) | Change anything on the PLCs or safety systems |
-| Ask CSI to collect specific data for you (not guaranteed, so ask early and be specific) | Add anything physical that could interfere with or damage the line |
+## Contacts
 
-**In short: look, don't touch.** To schedule a visit or a data request, contact **Shamar Webster** at CSI ([webste63@uwm.edu](mailto:webste63@uwm.edu)).
+- Testbed visits and data requests: Shamar Webster, UWM-CSI, [webste63@uwm.edu](mailto:webste63@uwm.edu)
+- UWM-CSI: Joe Hammond, [jahamann@uwm.edu](mailto:jahamann@uwm.edu)
+- NVIDIA and team-plan questions: Derek Riley, [driley@nvidia.com](mailto:driley@nvidia.com)
+- Website or Slack access: Brett Storoe, [storoeb@msoe.edu](mailto:storoeb@msoe.edu)
+- Rockwell Automation: <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Joe: add the Rockwell contacts. ]</span>
+- Additional NVIDIA contacts: <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Brett: add the confirmed NVIDIA mentors. ]</span>
 
-### Where to Find Your Data and Tools
-
-Each challenge's starter data and tools are posted at <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ location and link to add ]</span>, with instructions for downloading and using them.
-
-## Your First Week
-
-Your first week is for getting set up and planning. It ends with your **team plan, due end of day Wednesday, October 14**. Work through this list with your team in the first few days:
-
-- [ ] **Confirm your team.** Make sure everyone knows who's on it and how you'll reach each other.
-- [ ] **Finalize your team name.** You'll use it on Slack, your plan, and at finals.
-- [ ] **Pick the challenge you'll start with.** See **The Challenges and Your Data**.
-- [ ] **Get set up.** Accounts, your team's Brev account, your challenge data, and Slack. See **Getting Set Up**.
-- [ ] **Find your mentors in Slack.** Know who to ask for what before you hit your first problem.
-- [ ] **Write and submit your team plan.** 1–2 pages, due end of day Wednesday, October 14. See **Your Team Plan**.
-
-Once your plan is in, start building.
-
-## Getting Set Up
-
-Work through this in order. Setup takes most teams an hour or two, so **do it together early in week one**, not the night before anything is due. If you get stuck, ask in Slack.
-
-### 1. Your Accounts
-
-You sign in with your university email. Most tools use your UWM or MSOE account, so you shouldn't need separate logins.
-
-<span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Derek and Dan: list which tools use university sign-in and any that need a separate account, with steps. Note anything to set up before kickoff, such as an NVIDIA developer account. ]</span>
-
-### 2. Computing Power ⚡
-
-These projects need GPU power to train and test your models. You have two options:
-
-- **Brev (cloud GPUs), one account per team.** Brev is NVIDIA's service for renting GPU machines over the internet, so you can work from an ordinary laptop. Your team gets one Brev account with a set amount of credits for the four weeks. **The meter runs whenever a machine is on, so shut it down when you're done for the day.**
-  - <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Dan: step-by-step for logging into Brev and reaching team credits; screenshots help ]</span>
-- **On-site machines at CSI and MSOE (DGX Sparks and a GB10).** For work that needs more than the cloud provides. They're limited and shared, so arrange time with CSI and MSOE rather than showing up.
-  - <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Dan, Derek, Brett, Shamar: which work belongs on-site vs. cloud, how many machines, how to request time, and who to contact ]</span>
-
-### 3. Your Challenge Data and Tools
-
-Download your challenge's data, confirm you can open it, and try the tools before you start building. If anything doesn't work, raise it in Slack early.
-
-<span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Derek: per challenge, where each item lives and how to access it ]</span>
-
-- **Vial inspection:** labeled and unlabeled images, the labeling tool, and how to launch the digital twin.
-- **Fluid mixing:** the vial and tank camera feeds, and how the matched timestamps are provided.
-- **Grasping and sorting:** the digital twin and the camera views.
-- **Isaac Sim:** Launchable link and a one-line quickstart, if teams will use it.
-
-### 4. AI Coding Tools 🤖
-
-We're working to give teams access to AI coding assistants to help you build faster.
-
-<span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Joe: confirm sponsor funding. Derek: how students get access. If not confirmed in time, list free tools instead. ]</span>
-
-### 5. Getting Help 💬
-
-Slack is where you ask questions and reach mentors throughout the hackathon. It's your first stop when you're stuck.
-
-<span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Brett: how to join the Slack channel, plus "who to ping for what" (compute/Brev, challenge data/tools, testbed/data requests) ]</span>
-
-> ✅ **You're set up when** your team has its accounts, your Brev account works, you've downloaded and opened your challenge data, and you've joined Slack.
-
-## Your Team Plan
-
-Your first week ends with a short team plan. **This is a tool for your team, not a graded assignment.** Writing it forces the useful conversations early, and it lets us line up the compute, data, and mentor support you'll need before you get stuck.
-
-Your plan should cover:
-
-- **Team and roles:** who's on the team and who's leading what. Assign work based on strengths, not by splitting it evenly.
-- **Your challenge:** which one you're starting with, and a sentence on why it fits your team.
-- **Your approach:** a short paragraph on how you'll tackle it. It's expected to change as you learn.
-- **Data and tools:** what you'll use from what's provided, and anything extra you expect to need (like a testbed visit or specific data).
-- **What you need from us:** compute, mentor help, or access, and when.
-- **Milestones:** a rough week-by-week plan, including what "done" looks like for your first challenge.
-- **Risks or unknowns:** what you're unsure or worried about. Naming these early tells your mentors where to help.
-
-**Format:** 1–2 pages. Short and clear beats long.
-**Due:** end of day Wednesday, October 14.
-**Submit:** <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ TODO: submission link ]</span>. Your plan is private to your team and the organizers. Organizers will review every plan and follow up with your team.
-
-## Your Team
-
-Each team has a mentor and **1–12 members** (12 is the maximum; solo teams are allowed). AI-Club uses these guidelines when helping form teams:
-
-- **Team composition:** a balance of beginners and advanced members.
-- **Team synergy:** teams formed around shared interests, so members can inspire and support each other.
-- **Mentor guidelines:** mentors set up regular meetings with an agenda to keep project direction consistent, and share resources from our [Learning Tree](https://msoe-maic.com/learning-tree).
-- [Advice from previous mentors](https://docs.google.com/document/d/1W9UHUgx3ffMUuentD1hKcLEQg_RXqYVfBQJYC9-aFfE/edit?tab=t.0)
-
-## Event Prizes 🏆
-
-<span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Prize amounts and categories to confirm with Rockwell & NVIDIA ]</span>
-
-- **1st Place:** <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ $ ]</span> + 15 AI Club Points 🥇
-- **2nd Place:** <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ $ ]</span> + 10 AI Club Points 🥈
-- **3rd Place:** <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ $ ]</span> + 5 AI Club Points 🥉
-- **All participants:** +10 AI Club Points & LinkedIn Certificate
-
-## What the Judges Are Looking For
-
-Use this to understand what judges value so you know what to aim for as you build. **It's directional, not a scorecard.** The judging panel will confirm specific criteria closer to finals. <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ weighting, if any, to confirm with judges ]</span>
-
-- **Does it solve the real problem?** Catch the defective vials, spot the color or fill errors, or complete the grasp and sort. Judges want to see it working, not just a description.
-- **Does it hold up in real conditions?** This is physical AI, so what matters is whether it works in real life, not just in a clean test. Run it on real or realistic data and on the actual equipment when you can. Be honest about where it struggles.
-- **Is your approach sound?** A sensible method, good use of the data and tools provided, and clear reasons for your choices.
-- **Is the result clear?** A factory operator or a judge should understand what your solution does and what it found, quickly.
-- **How well did your team work?** Real progress over four weeks: what you tried, what you learned when something didn't work, and how you shared the effort.
-- **Creativity and ambition.** Credit for teams that try something harder or more original, even if it isn't perfect.
-
-> 💡 **A finished, working solution beats an ambitious one that doesn't run.** If you have to choose in your last week, make what you have work reliably before you add anything more.
-
-At Rockwell & NVIDIA, we don't believe any discovery is a failure, even if that discovery is that a problem is unsolvable. Significant effort and learning are valued.
-
-## Key Contacts
-
-For most questions, **start in Slack**. Use this list when you need a specific person:
-
-- **Testbed visits and data requests:** Shamar Webster (UWM-CSI), [webste63@uwm.edu](mailto:webste63@uwm.edu)
-- **Compute and Brev:** post in <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ #compute-requests — channel name to confirm ]</span> on Slack
-- **Challenge and technical questions:** post in Slack, where Rockwell and NVIDIA mentors answer
-- **Website or Slack access problems:** Brett Storoe (AI Club President), [storoeb@msoe.edu](mailto:storoeb@msoe.edu). 
-- **UWM-CSI:** Joe Hammond, [jahamann@uwm.edu](mailto:jahamann@uwm.edu)
-- **Rockwell Automation:** <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ contacts to add ]</span>
-- **NVIDIA:** <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ contacts to add ]</span>
-
----
-
-*This Innovation Lab is made possible through our partnership with **Rockwell Automation**, **NVIDIA**, and **UWM's Connected Systems Institute**.*
+For technical questions during the event, start in Slack so the answer is visible to other teams.
