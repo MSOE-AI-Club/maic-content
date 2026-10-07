@@ -10,21 +10,22 @@ You do not need prior manufacturing or AI experience. You do need a team that is
   <strong>Working page.</strong> Amber notes mark details that organizers still need to supply.
 </div>
 
-<div style="border: 2px solid #7c3aed; border-radius: 10px; padding: 18px 20px; margin: 22px 0;">
-  <h3 style="margin-top: 0;">Join the Innovation Lab</h3>
-  <p>Each student creates an account and joins or creates a team.</p>
-  <p><a href="https://dashboard.all-ai-network.org/j/L36HEH" target="_blank" rel="noopener noreferrer"><strong>Sign up and manage your team</strong></a></p>
-  <p><a href="https://dashboard.all-ai-network.org/s/V28NHK" target="_blank" rel="noopener noreferrer"><strong>Submit your team plan</strong></a> by 11:59 PM CT on Wednesday, October 14.</p>
-  <p><a href="https://dashboard.all-ai-network.org/e/innovation-lab-fall-2026-059658" target="_blank" rel="noopener noreferrer">Open the event workspace</a></p>
-  <p><strong>Use the same email address associated with your university if possible.</strong> After you join a team, connect GitHub from your profile so the dashboard can send your team repository invitation.</p>
-</div>
+<details open style="border: 2px solid #7c3aed; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
+  <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">Join the Innovation Lab</summary>
+  <div style="margin-top: 14px;">
+    <p>Each student creates an account and joins or creates a team.</p>
+    <p><a href="https://dashboard.all-ai-network.org/j/L36HEH" target="_blank" rel="noopener noreferrer"><strong>Sign up and manage your team</strong></a></p>
+    <p><a href="https://dashboard.all-ai-network.org/s/V28NHK" target="_blank" rel="noopener noreferrer"><strong>Submit your team plan</strong></a> by 11:59 PM CT on Wednesday, October 14.</p>
+    <p><a href="https://dashboard.all-ai-network.org/e/innovation-lab-fall-2026-059658" target="_blank" rel="noopener noreferrer">Open the event workspace</a></p>
+    <p><strong>Use the same email address associated with your university if possible.</strong> After you join a team, connect GitHub from your profile so the dashboard can send your team repository invitation.</p>
+  </div>
+</details>
 
 <details open style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
   <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">What is the factory testbed?</summary>
   <div style="margin-top: 14px;">
     <p>CSI operates a high-mix, low-volume demonstration plant built with Rockwell Automation hardware. The production line creates vials filled with mixed-color fluid from custom recipes. Several robots move the vials through filling, inspection, and final placement.</p>
-    <p>CSI also has a separate FANUC robot setup that moves and sorts blocks and other objects. That robot is <strong>not connected to the vial production line</strong>. It is the physical system and digital-twin setup used for <a href="https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Grasping-Sorting">Dataset 3: Grasping and Sorting</a>.</p>
-    <p>Only about 3% of manufacturers used AI for automated inspection in the 2020 Annual Business Survey. A NIST survey estimated that defective products cost US discrete manufacturers $32–58 billion each year. This lab asks teams to show where physical AI can make one real process better.</p>
+    <p>CSI also has a separate FANUC robot setup that moves and sorts blocks and other objects. That robot is <strong>not connected to the vial production line</strong>. It is the physical system and digital-twin setup used for Dataset 3 discussed below</a>.</p>
     <img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/csi-testbed-timelapse.gif" alt="Time-lapse overview of the CSI manufacturing testbed" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
   </div>
 </details>
@@ -34,9 +35,17 @@ You do not need prior manufacturing or AI experience. You do need a team that is
 <details style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
   <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">About our sponsors</summary>
   <div style="margin-top: 14px;">
-    <p><a href="https://www.rockwellautomation.com/en-us.html"><strong>Rockwell Automation</strong></a> builds industrial automation and control systems used across manufacturing. Its FactoryTalk software connects production information and workflows, while Emulate3D helps teams model and test manufacturing systems before changing physical equipment.</p>
-    <p><a href="https://www.nvidia.com/en-us/"><strong>NVIDIA</strong></a> provides the accelerated computing and physical AI tools used for computer vision, simulation, synthetic data, robotics, and AI agents.</p>
-    <p>Together, Rockwell Automation and NVIDIA are working to bring practical AI into more of manufacturing—from inspection and process understanding to simulation and adaptive robotics. The <a href="https://msoe-maic.com/"><strong>MSOE AI Club</strong></a> and UWM-CSI are bringing those tools to student teams through this Innovation Lab.</p>
+    <h3>Rockwell Automation</h3>
+    <p><a href="https://www.rockwellautomation.com/en-us.html"><strong>Rockwell Automation</strong></a> builds the industrial automation and control systems that run production lines across manufacturing, from the controllers on the plant floor to the FactoryTalk software that connects production data and workflows. Its Emulate3D tools let engineers model and test a manufacturing system as a digital twin before they change physical equipment.</p>
+    <p>Rockwell's customers are under pressure to produce more product variants, in smaller batches, with fewer experienced people on the floor. A line that changes recipes or products often cannot wait weeks for a new inspection program or robot routine. For Rockwell, AI is valuable when it makes those changeovers faster and more reliable, and when operators can understand and trust what it is doing. Results that hold up on real equipment, with clear limits, matter more than results that only work in a clean demo.</p>
+    <h3>NVIDIA</h3>
+    <p><a href="https://www.nvidia.com/en-us/"><strong>NVIDIA</strong></a> provides the accelerated computing and physical AI platforms used to train, simulate, and run AI in the real world: computer vision, Isaac Sim and Omniverse for simulation and synthetic data, robotics, and AI agents.</p>
+    <p>NVIDIA sees physical AI, meaning AI that perceives, reasons about, and acts on the physical world, as the next major wave of computing. Factories are where that shift becomes concrete. Teams can train a model, test it on a simulated version of the line, and then run it on the real cell. Manufacturing is also where the open questions are hardest: limited labeled data, constant product changes, and the need for systems that work safely beside people and machines.</p>
+    <h3>Why they are working together</h3>
+    <p>Rockwell brings deep knowledge of industrial operations and the systems manufacturers already run. NVIDIA brings the compute and simulation tools to move AI from experimentation into production. Together, they are bringing NVIDIA's simulation and AI technology into Rockwell's digital twin and design tools, so manufacturers can design, test, and improve automated systems before touching the physical line.</p>
+    <h3>Why this matters</h3>
+    <p>Most manufacturers have not yet adopted AI on the factory floor. Only about 3% of manufacturers used AI for automated inspection in the 2020 Annual Business Survey. A NIST survey estimated that defective products cost US discrete manufacturers $32–58 billion each year. The gap between what AI can do and what is actually running in plants is large, and much of it comes down to reliability, setup time, and trust.</p>
+    <p>This lab asks teams to close a small piece of that gap: pick one real process on CSI's testbed, make it measurably better, and show the result working. The <a href="https://msoe-maic.com/"><strong>MSOE AI Club</strong></a> and UWM-CSI are bringing these tools and this testbed to student teams through this Innovation Lab.</p>
   </div>
 </details>
 
@@ -118,7 +127,7 @@ By Sunday, November 1, each team submits:
 
 The Nov. 5 finals include live presentations and prizes.
 
-## Prizes and judging
+## Prizes
 
 Prizes include **$5,000 in cash**, RTX 5080 and RTX 5070 GPUs, and sponsor swag. Planned award categories include:
 
@@ -128,9 +137,39 @@ Prizes include **$5,000 in cash**, RTX 5080 and RTX 5070 GPUs, and sponsor swag.
 - best presentation;
 - most scalable.
 
-Judges will look for a solution that addresses the actual process, works on real or realistic data, reports meaningful measurements, and is understandable to an operator. They will also consider the quality of the team's technical choices, testing, collaboration, and explanation of failed attempts.
+## Judging rubric
 
-A smaller system that works reliably is more useful than an ambitious demo that cannot run.
+Your solution will be judged on how effectively it addresses a real process on the testbed, the evidence that it works, and how well it fits the way a high-mix, low-volume line actually runs. Technical execution matters, but judges will weigh current effectiveness and how quickly the solution adapts to new products more heavily than sheer complexity.
+
+### 1. Problem Understanding & Approach (30%)
+
+- Does the team clearly define the process problem it is solving, and why it matters on the line?
+- Is the solution directly relevant to that problem?
+- Does the approach show innovative thinking?
+
+### 2. Effectiveness & Accuracy (20%)
+
+- How well does the solution perform on real or realistic data from the testbed?
+- Is there evidence to support its reliability, such as test results, trial logs, benchmarks, or a live demo?
+- Does the team report where the solution fails and how it behaves in those cases?
+
+### 3. Industry Fit & Practicality (40%)
+
+- Is this something Rockwell Automation, NVIDIA, and their manufacturing customers could realistically use?
+- Does it fit how a plant already operates, and could an operator understand and act on what it reports?
+- **Novel vs. known approaches:** Both have advantages and drawbacks. Teams should show why their chosen approach is effective compared with the alternative.
+
+### 4. Adaptability & Configuration Speed (10%)
+
+- On a high-mix, low-volume line, products and recipes change often. How quickly can the solution be configured for a new product, recipe, defect type, or object?
+- Can it adapt from a handful of examples, for instance through **in-context learning** with a vision-language model or few-shot prompting, instead of a full retraining cycle?
+- How much engineering effort would a changeover take, and could plant staff do it without the original team?
+
+Adaptability is only 10% of the score. A solution that is fast to reconfigure but does not work well will not score highly.
+
+**Total possible score: 100%**
+
+<span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Joe/Derek: confirm the category weights with Rockwell and NVIDIA judges. ]</span>
 
 ## Getting help
 
