@@ -152,23 +152,19 @@ The Nov. 5 finals include live presentations and prizes.
   <div style="border-radius: 12px; padding: 24px 20px; background: #0d0d10; text-align: center;">
     <div style="font-size: 0.95rem; letter-spacing: 0.15em; text-transform: uppercase; color: #a3a3a3;">Total prize pool</div>
     <div style="font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin: 6px 0; background: linear-gradient(90deg, #76b900, #a855f7); -webkit-background-clip: text; background-clip: text; color: transparent;">$5,000 in cash</div>
-    <div style="font-size: 1.15rem; color: #e5e5e5;">plus NVIDIA GeForce RTX GPUs and sponsor swag</div>
   </div>
 </div>
 
 <div style="display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin: 18px 0;">
   <div style="border: 1px solid #76b900; border-radius: 12px; padding: 20px; text-align: center; background: rgba(118, 185, 0, 0.08);">
-    <div style="font-size: 2.2rem;">🖥️</div>
     <div style="font-size: 1.6rem; font-weight: 800; color: #76b900;">RTX 5080</div>
     <div style="color: #d4d4d4;">NVIDIA GeForce graphics card</div>
   </div>
   <div style="border: 1px solid #76b900; border-radius: 12px; padding: 20px; text-align: center; background: rgba(118, 185, 0, 0.08);">
-    <div style="font-size: 2.2rem;">🖥️</div>
     <div style="font-size: 1.6rem; font-weight: 800; color: #76b900;">RTX 5070</div>
     <div style="color: #d4d4d4;">NVIDIA GeForce graphics card</div>
   </div>
   <div style="border: 1px solid #a855f7; border-radius: 12px; padding: 20px; text-align: center; background: rgba(168, 85, 247, 0.08);">
-    <div style="font-size: 2.2rem;">🎁</div>
     <div style="font-size: 1.6rem; font-weight: 800; color: #c084fc;">Sponsor swag</div>
     <div style="color: #d4d4d4;">from Rockwell Automation and NVIDIA</div>
   </div>
