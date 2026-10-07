@@ -6,10 +6,6 @@
 
 You do not need prior manufacturing or AI experience. You do need a team that is willing to test ideas, measure results, and explain what it learned.
 
-<div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <strong>Working page.</strong> Amber notes mark details that organizers still need to supply.
-</div>
-
 <details open style="border: 2px solid #7c3aed; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
   <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">Join the Innovation Lab</summary>
   <div style="margin-top: 14px;">
@@ -18,6 +14,14 @@ You do not need prior manufacturing or AI experience. You do need a team that is
     <p><a href="https://dashboard.all-ai-network.org/s/V28NHK" target="_blank" rel="noopener noreferrer"><strong>Submit your team plan</strong></a> by 11:59 PM CT on Wednesday, October 14.</p>
     <p><a href="https://dashboard.all-ai-network.org/e/innovation-lab-fall-2026-059658" target="_blank" rel="noopener noreferrer">Open the event workspace</a></p>
     <p><strong>Use the same email address associated with your university if possible.</strong> After you join a team, connect GitHub from your profile so the dashboard can send your team repository invitation.</p>
+    <h3>How teams work on the ALL AI Network</h3>
+    <p>Teams, repositories, and submissions for this lab are managed through the <a href="https://dashboard.all-ai-network.org/e/innovation-lab-fall-2026-059658" target="_blank" rel="noopener noreferrer">ALL AI Network</a> event workspace.</p>
+    <ul>
+      <li><strong>MSOE students:</strong> your teams have already been created. Create an account and join your team from the sign-up link above.</li>
+      <li><strong>UWM students:</strong> create an account, then create your team in the workspace and invite your teammates.</li>
+      <li><strong>Connect GitHub:</strong> once you connect GitHub from your profile, you are automatically invited to your team's repository. No one has to add you by hand.</li>
+      <li><strong>One place for every project:</strong> all team repositories live in one place, so Rockwell Automation and NVIDIA can view your work as it progresses, and your final submission links straight to it.</li>
+    </ul>
   </div>
 </details>
 
@@ -50,7 +54,7 @@ You do not need prior manufacturing or AI experience. You do need a team that is
 <details open style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
   <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">The three datasets</summary>
 
-Choose one dataset to start. A strong, tested solution on one dataset is better than three unfinished ideas.
+We recommend that teams focus on building one strong solution around a single idea or dataset rather than spreading effort across several half-finished ideas. This is a recommendation, not a requirement, but it is the approach that has worked best for teams in past Innovation Labs.
 
 <div style="display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin: 18px 0;">
   <div style="border: 1px solid #64748b; border-radius: 10px; padding: 16px;">
@@ -70,11 +74,13 @@ Choose one dataset to start. A strong, tested solution on one dataset is better 
   </div>
 </div>
 
-Related guides:
+### Related guides
 
-- [Compute: Brev, DGX Spark, and build.nvidia.com](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute)
-- [Collect and test your own data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection)
-- [Tools and resources](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Resources)
+These three guides cover what every team needs beyond the datasets. Read them before you submit your team plan.
+
+- **[Compute: Brev, DGX Spark, and build.nvidia.com](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute):** how to get GPU power for your project. It covers Brev cloud GPUs and ready-made launchables (including Isaac Sim), the DGX Spark systems at MSOE and UWM, free model APIs on build.nvidia.com, and the workstation at CSI. Brev credits are spent whenever an instance is running, so read this before you start one.
+- **[Collect and test your own data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection):** what you can and cannot do at the CSI testbed. It explains how to request a visit or extra data, how to collect your own data safely, how to use digital twins for synthetic data, and how to schedule a supervised test of your finished system on the real equipment.
+- **[Tools and resources](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Resources):** a reference list of AI coding tools, in-context learning with vision-language models, NVIDIA Cosmos, and other tools worth knowing. Start with a simple baseline, then use this page when you hit a specific question.
 
 </details>
 
@@ -84,28 +90,29 @@ Related guides:
 | Date | Milestone | Details |
 | --- | --- | --- |
 | Thursday, October 8 | Kickoff | Rockwell Automation HQ, 1201 S 2nd St, Milwaukee, 4:00–6:00 PM. Transportation is provided from both campuses. |
-| Wednesday, October 14 | Team plan due | Submit by 11:59 PM CT through the team submission form. |
+| Wednesday, October 14 | Team plan due | Submit by 11:59 PM CT through the [team plan submission form](https://dashboard.all-ai-network.org/s/V28NHK). |
 | Sunday, November 1 | Final submission due | About a five-minute video, a one-page summary, your repository, and references. |
 | Thursday, November 5 | Finals | MSOE Diercks Hall, 5:00–8:00 PM. More details to come. |
 
 </details>
 
 <details style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
-  <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">First-week checklist</summary>
+  <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">First week and team plan</summary>
+
+### First-week checklist
 
 - [ ] Create an All AI Network account with the email address associated with your AI Club points.
 - [ ] Create or join a team and settle on a team name.
 - [ ] Connect your GitHub account and accept the team repository invitation.
-- [ ] Choose one dataset.
+- [ ] Choose dataset(s).
 - [ ] Download the data and confirm that everyone who needs it can open it.
 - [ ] Review the [compute guide](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute) and request what your team expects to use.
 - [ ] Join Slack, open `#innovation-lab-announcements`, and find the channel for your dataset.
-- [ ] Submit the team plan by Wednesday, October 14.
+- [ ] Submit the [team plan](https://dashboard.all-ai-network.org/s/V28NHK) by Wednesday, October 14.
 
-</details>
+### Team plan
 
-<details style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
-  <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">Team plan</summary>
+**[Submit your team plan here](https://dashboard.all-ai-network.org/s/V28NHK)** by 11:59 PM CT on Wednesday, October 14.
 
 The plan is a short resource request, not a contract or graded paper. Anyone on the team can submit it, and any teammate can update the same team submission before the deadline. Organizers and sponsor mentors will use it to line up compute, data, and technical support.
 
@@ -141,13 +148,33 @@ The Nov. 5 finals include live presentations and prizes.
 <details style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
   <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">Prizes</summary>
 
-Prizes include **$5,000 in cash**, RTX 5080 and RTX 5070 GPUs, and sponsor swag. Planned award categories include:
+<div style="border-radius: 14px; padding: 2px; margin: 18px 0; background: linear-gradient(135deg, #76b900, #7c3aed, #cd163f);">
+  <div style="border-radius: 12px; padding: 24px 20px; background: #0d0d10; text-align: center;">
+    <div style="font-size: 0.95rem; letter-spacing: 0.15em; text-transform: uppercase; color: #a3a3a3;">Total prize pool</div>
+    <div style="font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin: 6px 0; background: linear-gradient(90deg, #76b900, #a855f7); -webkit-background-clip: text; background-clip: text; color: transparent;">$5,000 in cash</div>
+    <div style="font-size: 1.15rem; color: #e5e5e5;">plus NVIDIA GeForce RTX GPUs and sponsor swag</div>
+  </div>
+</div>
 
-- most impactful;
-- most innovative;
-- best use of in-context learning;
-- best presentation;
-- most scalable.
+<div style="display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin: 18px 0;">
+  <div style="border: 1px solid #76b900; border-radius: 12px; padding: 20px; text-align: center; background: rgba(118, 185, 0, 0.08);">
+    <div style="font-size: 2.2rem;">🖥️</div>
+    <div style="font-size: 1.6rem; font-weight: 800; color: #76b900;">RTX 5080</div>
+    <div style="color: #d4d4d4;">NVIDIA GeForce graphics card</div>
+  </div>
+  <div style="border: 1px solid #76b900; border-radius: 12px; padding: 20px; text-align: center; background: rgba(118, 185, 0, 0.08);">
+    <div style="font-size: 2.2rem;">🖥️</div>
+    <div style="font-size: 1.6rem; font-weight: 800; color: #76b900;">RTX 5070</div>
+    <div style="color: #d4d4d4;">NVIDIA GeForce graphics card</div>
+  </div>
+  <div style="border: 1px solid #a855f7; border-radius: 12px; padding: 20px; text-align: center; background: rgba(168, 85, 247, 0.08);">
+    <div style="font-size: 2.2rem;">🎁</div>
+    <div style="font-size: 1.6rem; font-weight: 800; color: #c084fc;">Sponsor swag</div>
+    <div style="color: #d4d4d4;">from Rockwell Automation and NVIDIA</div>
+  </div>
+</div>
+
+**Details to come** on how the cash is split between first, second, and third place, and on the additional award categories and prizes.
 
 </details>
 
@@ -208,7 +235,7 @@ This year, teams will not be assigned one exact mentor or given a long directory
 ### Who to ping
 
 - **More data, CSI visits, or physical testing:** Ping **Shamar Webster** in `#data-and-testbed-requests`. This includes requesting more production-line data, visiting CSI to collect your own data, and arranging a supervised test of your tool. Email fallback: [webste63@uwm.edu](mailto:webste63@uwm.edu).
-- **Questions about the line or datasets:** Ping **Brett Storoe, Dr. Derek Riley, or Tanner Selio** in the relevant dataset channel. These are the first contacts for non-critical questions about the equipment, dataset context, or problem your team is trying to understand. Email fallbacks: [storoeb@msoe.edu](mailto:storoeb@msoe.edu) and [driley@nvidia.com](mailto:driley@nvidia.com).
+- **Questions about the line or datasets:** Ping **Brett Storoe, Dr. Derek Riley, or Tanner Cellio** in the relevant dataset channel. These are the first contacts for non-critical questions about the equipment, dataset context, or problem your team is trying to understand. Email fallbacks: [storoeb@msoe.edu](mailto:storoeb@msoe.edu) and [driley@nvidia.com](mailto:driley@nvidia.com).
 - **Brev or compute:** Ping **Dan** in `#compute-brev-spark`. <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Brett: add Dan's full name and email. ]</span>
 - **Website, signup, team, or Slack access:** Ping **Brett Storoe** in `#innovation-lab-general`, or email [storoeb@msoe.edu](mailto:storoeb@msoe.edu).
 
