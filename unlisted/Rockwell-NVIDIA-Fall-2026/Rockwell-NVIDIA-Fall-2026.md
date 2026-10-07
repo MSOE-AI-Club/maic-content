@@ -107,7 +107,7 @@ These three guides cover what every team needs beyond the datasets. Read them be
 - [ ] Choose dataset(s).
 - [ ] Download the data and confirm that everyone who needs it can open it.
 - [ ] Review the [compute guide](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute) and request what your team expects to use.
-- [ ] Join Slack, open `#innovation-lab-announcements`, and find the channel for your dataset.
+- [ ] [Join the hackathon Slack workspace](https://join.slack.com/t/rockwellnvidi-wq82211/shared_invite/zt-4bp05nsn9-UW3afFtM9wjzWtZiQoJBHg), open `#hackathon-announcements`, and find the channel for your dataset.
 - [ ] Submit the [team plan](https://dashboard.all-ai-network.org/s/V28NHK) by Wednesday, October 14.
 
 ### Team plan
@@ -207,33 +207,29 @@ Adaptability is only 10% of the score. A solution that is fast to reconfigure bu
 
 **Total possible score: 100%**
 
-<span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Joe/Derek: confirm the category weights with Rockwell and NVIDIA judges. ]</span>
-
 </details>
 
 <details style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
   <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">Getting help</summary>
 
-This year, teams will not be assigned one exact mentor or given a long directory of sponsor contacts. Start in Slack and ping the people below in the channel that matches the question. This keeps answers visible to other teams. Email is available if you do not get a response in Slack or would rather follow up directly.
+This year, teams will not be assigned one exact mentor or given a long directory of sponsor contacts. [Join the hackathon Slack workspace](https://join.slack.com/t/rockwellnvidi-wq82211/shared_invite/zt-4bp05nsn9-UW3afFtM9wjzWtZiQoJBHg), then ping the people below in the channel that matches the question. This keeps answers visible to other teams. Email is available if you do not get a response in Slack or would rather follow up directly.
 
 ### Recommended Slack channels to create
 
-- `#innovation-lab-announcements` — organizer updates, deadlines, and schedule changes.
-- `#innovation-lab-general` — general event questions and help finding the right channel.
+- `#hackathon-announcements` — organizer updates, deadlines, and schedule changes.
+- `#hackathon-general` — general event questions and help finding the right channel.
 - `#dataset-1-vial-inspection` — questions and findings about final vial inspection.
 - `#dataset-2-fluid-mixing` — questions and findings about Station 3 and fluid recipes.
 - `#dataset-3-grasping-sorting` — questions about the standalone FANUC robot and digital twin.
 - `#data-and-testbed-requests` — additional data, CSI visits, on-site collection, and live testing.
-- `#compute-brev-spark` — Brev credits, instances, DGX Spark access, and compute troubleshooting.
-
-<span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Brett: create these channels, add the Slack invite link, and replace the plain channel names with links. ]</span>
+- `#compute-questions` — Brev credits, instances, DGX Spark access, and compute troubleshooting.
 
 ### Who to ping
 
 - **More data, CSI visits, or physical testing:** Ping **Shamar Webster** in `#data-and-testbed-requests`. This includes requesting more production-line data, visiting CSI to collect your own data, and arranging a supervised test of your tool. Email fallback: [webste63@uwm.edu](mailto:webste63@uwm.edu).
 - **Questions about the line or datasets:** Ping **Brett Storoe, Dr. Derek Riley, or Tanner Cellio** in the relevant dataset channel. These are the first contacts for non-critical questions about the equipment, dataset context, or problem your team is trying to understand. Email fallbacks: [storoeb@msoe.edu](mailto:storoeb@msoe.edu) and [driley@nvidia.com](mailto:driley@nvidia.com).
-- **Brev or compute:** Ping **Dan** in `#compute-brev-spark`. <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Brett: add Dan's full name and email. ]</span>
-- **Website, signup, team, or Slack access:** Ping **Brett Storoe** in `#innovation-lab-general`, or email [storoeb@msoe.edu](mailto:storoeb@msoe.edu).
+- **Brev or compute:** Ping **Dan Schneider** in `#compute-questions`, or email [danschneider@nvidia.com](mailto:danschneider@nvidia.com).
+- **Website, signup, team, or Slack access:** Ping **Brett Storoe** in `#hackathon-general`, or email [storoeb@msoe.edu](mailto:storoeb@msoe.edu).
 
 For a critical-path issue that is blocking the team, say that clearly in the first line of the Slack message and include what you tried, the error, and when you need the issue resolved.
 
