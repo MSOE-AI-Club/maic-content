@@ -25,12 +25,10 @@ You do not need prior manufacturing or AI experience. You do need a team that is
   <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">What is the factory testbed?</summary>
   <div style="margin-top: 14px;">
     <p>CSI operates a high-mix, low-volume demonstration plant built with Rockwell Automation hardware. The production line creates vials filled with mixed-color fluid from custom recipes. Several robots move the vials through filling, inspection, and final placement.</p>
-    <p>CSI also has a separate FANUC robot setup that moves and sorts blocks and other objects. That robot is <strong>not connected to the vial production line</strong>. It is the physical system and digital-twin setup used for Dataset 3 discussed below</a>.</p>
+    <p>CSI also has a separate FANUC robot setup that moves and sorts blocks and other objects. That robot is <strong>not connected to the vial production line</strong>. It is the physical system and digital-twin setup used for Dataset 3 discussed below.</p>
     <img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/csi-testbed-timelapse.gif" alt="Time-lapse overview of the CSI manufacturing testbed" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
   </div>
 </details>
-
----
 
 <details style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
   <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">About our sponsors</summary>
@@ -49,9 +47,8 @@ You do not need prior manufacturing or AI experience. You do need a team that is
   </div>
 </details>
 
----
-
-## The three datasets
+<details open style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
+  <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">The three datasets</summary>
 
 Choose one dataset to start. A strong, tested solution on one dataset is better than three unfinished ideas.
 
@@ -79,7 +76,10 @@ Related guides:
 - [Collect and test your own data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection)
 - [Tools and resources](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Resources)
 
-## Schedule
+</details>
+
+<details open style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
+  <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">Schedule</summary>
 
 | Date | Milestone | Details |
 | --- | --- | --- |
@@ -88,7 +88,10 @@ Related guides:
 | Sunday, November 1 | Final submission due | About a five-minute video, a one-page summary, your repository, and references. |
 | Thursday, November 5 | Finals | MSOE Diercks Hall, 5:00–8:00 PM. More details to come. |
 
-## First-week checklist
+</details>
+
+<details style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
+  <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">First-week checklist</summary>
 
 - [ ] Create an All AI Network account with the email address associated with your AI Club points.
 - [ ] Create or join a team and settle on a team name.
@@ -99,7 +102,10 @@ Related guides:
 - [ ] Join Slack, open `#innovation-lab-announcements`, and find the channel for your dataset.
 - [ ] Submit the team plan by Wednesday, October 14.
 
-## Team plan
+</details>
+
+<details style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
+  <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">Team plan</summary>
 
 The plan is a short resource request, not a contract or graded paper. Anyone on the team can submit it, and any teammate can update the same team submission before the deadline. Organizers and sponsor mentors will use it to line up compute, data, and technical support.
 
@@ -116,7 +122,10 @@ The form asks for:
 
 Plans may change once teams examine the data. Keep the first submission short and specific enough for sponsors to understand what help would be useful.
 
-## Final submission
+</details>
+
+<details style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
+  <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">Final submission</summary>
 
 By Sunday, November 1, each team submits:
 
@@ -127,7 +136,10 @@ By Sunday, November 1, each team submits:
 
 The Nov. 5 finals include live presentations and prizes.
 
-## Prizes
+</details>
+
+<details style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
+  <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">Prizes</summary>
 
 Prizes include **$5,000 in cash**, RTX 5080 and RTX 5070 GPUs, and sponsor swag. Planned award categories include:
 
@@ -137,7 +149,10 @@ Prizes include **$5,000 in cash**, RTX 5080 and RTX 5070 GPUs, and sponsor swag.
 - best presentation;
 - most scalable.
 
-## Judging rubric
+</details>
+
+<details style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
+  <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">Judging rubric</summary>
 
 Your solution will be judged on how effectively it addresses a real process on the testbed, the evidence that it works, and how well it fits the way a high-mix, low-volume line actually runs. Technical execution matters, but judges will weigh current effectiveness and how quickly the solution adapts to new products more heavily than sheer complexity.
 
@@ -171,7 +186,10 @@ Adaptability is only 10% of the score. A solution that is fast to reconfigure bu
 
 <span style="background: #f59e0b; color: #000; padding: 0 4px; border-radius: 3px;">[ Joe/Derek: confirm the category weights with Rockwell and NVIDIA judges. ]</span>
 
-## Getting help
+</details>
+
+<details style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
+  <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">Getting help</summary>
 
 This year, teams will not be assigned one exact mentor or given a long directory of sponsor contacts. Start in Slack and ping the people below in the channel that matches the question. This keeps answers visible to other teams. Email is available if you do not get a response in Slack or would rather follow up directly.
 
@@ -195,3 +213,5 @@ This year, teams will not be assigned one exact mentor or given a long directory
 - **Website, signup, team, or Slack access:** Ping **Brett Storoe** in `#innovation-lab-general`, or email [storoeb@msoe.edu](mailto:storoeb@msoe.edu).
 
 For a critical-path issue that is blocking the team, say that clearly in the first line of the Slack message and include what you tried, the error, and when you need the issue resolved.
+
+</details>
