@@ -25,7 +25,7 @@ The practical rule is: observe first, and only touch equipment when the plant ma
 
 ## Schedule a visit or request data
 
-Contact Shamar Webster at [webste63@uwm.edu](mailto:webste63@uwm.edu). Ask early. Additional collection is not guaranteed.
+Post in `#data-and-testbed-requests` and tag Shamar Webster. Ask early. Additional collection is not guaranteed. If you do not get a response in Slack or prefer email, contact [webste63@uwm.edu](mailto:webste63@uwm.edu).
 
 Include:
 
@@ -44,9 +44,7 @@ Avoid requests such as "more defect images." A useful request is closer to:
 
 > Record 20 completed good fixtures and 10 fixtures containing one intentionally crooked cap. Keep the overhead camera fixed, include the completion signal or placement count, and identify the target position in a CSV.
 
-<div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <strong>[ Shamar: add a request form or scheduling link if teams should use one instead of email. ]</strong>
-</div>
+Slack is the request and scheduling process. Keep the request in `#data-and-testbed-requests` so organizers and other teams can see its status.
 
 ## Plan your own collection
 
@@ -77,9 +75,7 @@ Before asking for physical testing:
 
 During the test, keep a trial log. Record every attempt, not only successful demos. Note the software version, model, input condition, prediction, expected result, latency, and any operator intervention.
 
-<div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <strong>[ Shamar: add the approval and scheduling process for live-line tests, plus the required on-site supervisor. ]</strong>
-</div>
+Request live-line testing in `#data-and-testbed-requests` and tag Shamar. Include the test plan above, the time needed, and the people attending. Testing only happens after CSI confirms the time and assigns an on-site supervisor.
 
 ## Synthetic data
 
