@@ -134,7 +134,9 @@ Plans may change once teams examine the data. Keep the first submission short an
 <details style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
   <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">Final submission</summary>
 
-By Sunday, November 1, each team submits:
+**[Submit your final project here](https://dashboard.all-ai-network.org/s/V28NHK)** by 11:59 PM CT on Sunday, November 1.
+
+Each team submits:
 
 - a video of about five minutes;
 - a one-page project summary;
