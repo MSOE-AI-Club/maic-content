@@ -52,9 +52,9 @@ The labeling tool lets you select an image and fixture, click a numbered positio
 ## Get the data
 
 <div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <p><strong>Dataset download:</strong> [ Derek: add the shared download link and list the folders included. ]</p>
-  <p><strong>For MSOE students on Rosie:</strong> [ Brett: add the absolute Rosie path and any group-permission instructions. ]</p>
-  <p><strong>Digital twin:</strong> [ Derek: add the download and launch instructions. ]</p>
+  <p><strong>Dataset download:</strong> [ TODO: add the shared download link and list the folders included. ]</p>
+  <p><strong>For MSOE students on Rosie:</strong> [ TODO: add the absolute Rosie path and any group-permission instructions. ]</p>
+  <p><strong>Digital twin:</strong> [ TODO: add the download and launch instructions. ]</p>
 </div>
 
 After downloading, open several full images and their corresponding crops. Confirm that the filenames or metadata let you map every crop back to its source image, fixture, and numbered position.
@@ -72,7 +72,7 @@ See [Compute](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Co
 ## Starter approaches
 
 <div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <strong>[ Brett: add the recommended starter approaches after reviewing them with the technical mentors. ]</strong>
+  <strong>[ TODO: add the recommended starter approaches after reviewing them with the technical mentors. ]</strong>
 </div>
 
 Useful questions for a first baseline:

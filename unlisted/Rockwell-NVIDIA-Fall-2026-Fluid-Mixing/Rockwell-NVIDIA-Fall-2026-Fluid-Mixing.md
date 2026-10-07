@@ -57,9 +57,9 @@ The camera timestamps let you line up tank state, the fill operation, and the fi
 ## Get the data
 
 <div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <p><strong>Dataset download:</strong> [ Derek: add the shared download link, file layout, and timestamp format. ]</p>
-  <p><strong>For MSOE students on Rosie:</strong> [ Brett: add the absolute Rosie path and any group-permission instructions. ]</p>
-  <p><strong>Digital twin:</strong> [ Derek: confirm whether a usable Station 3 digital twin will be provided. ]</p>
+  <p><strong>Dataset download:</strong> [ TODO: add the shared download link, file layout, and timestamp format. ]</p>
+  <p><strong>For MSOE students on Rosie:</strong> [ TODO: add the absolute Rosie path and any group-permission instructions. ]</p>
+  <p><strong>Digital twin:</strong> [ TODO: confirm whether a usable Station 3 digital twin will be provided. ]</p>
 </div>
 
 Start by checking that you can match a fill-station frame to the closest tank and final-inspection frames. Record any missing frames, clock offsets, or timestamp drift before building a model.
@@ -67,7 +67,7 @@ Start by checking that you can match a fill-station frame to the closest tank an
 ## Starter approaches
 
 <div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <strong>[ Brett: add the recommended starter approaches after reviewing them with the technical mentors. ]</strong>
+  <strong>[ TODO: add the recommended starter approaches after reviewing them with the technical mentors. ]</strong>
 </div>
 
 Questions that may help narrow the first experiment:

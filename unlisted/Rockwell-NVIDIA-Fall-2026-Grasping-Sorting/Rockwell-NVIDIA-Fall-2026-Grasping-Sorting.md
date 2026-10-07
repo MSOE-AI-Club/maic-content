@@ -26,10 +26,10 @@ The first target is a repeatable grasp and sort. Define how success will be meas
 ## Get the data and digital twin
 
 <div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <p><strong>Dataset and camera samples:</strong> [ Derek: add the shared download link and describe the camera calibration files. ]</p>
-  <p><strong>For MSOE students on Rosie:</strong> [ Brett: add the absolute Rosie path and any group-permission instructions. ]</p>
-  <p><strong>Digital twin:</strong> [ Derek: add the download link for <code>fanuc_er4ia_sim.zip</code> and its version. ]</p>
-  <p><strong>Finger CAD:</strong> [ Derek: add the CAD file link, supported format, and printing process. ]</p>
+  <p><strong>Dataset and camera samples:</strong> [ TODO: add the shared download link and describe the camera calibration files. ]</p>
+  <p><strong>For MSOE students on Rosie:</strong> [ TODO: add the absolute Rosie path and any group-permission instructions. ]</p>
+  <p><strong>Digital twin:</strong> [ TODO: add the download link for <code>fanuc_er4ia_sim.zip</code> and its version. ]</p>
+  <p><strong>Finger CAD:</strong> [ TODO: add the CAD file link, supported format, and printing process. ]</p>
 </div>
 
 ## Run the twin on Brev
@@ -72,7 +72,7 @@ The full account, cost, stop, and delete instructions are on the [Compute page](
 ## Starter approaches
 
 <div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <strong>[ Brett: add the recommended starter approaches after reviewing them with the robotics mentors. ]</strong>
+  <strong>[ TODO: add the recommended starter approaches after reviewing them with the robotics mentors. ]</strong>
 </div>
 
 A useful sequence for scoping the work:
