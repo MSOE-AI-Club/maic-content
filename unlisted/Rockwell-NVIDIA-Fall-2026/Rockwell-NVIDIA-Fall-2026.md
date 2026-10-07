@@ -177,37 +177,11 @@ The Nov. 5 finals include live presentations and prizes.
 </details>
 
 <details style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
-  <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">Judging rubric</summary>
+  <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">Judging</summary>
 
-Your solution will be judged on how effectively it addresses a real process on the testbed, the evidence that it works, and how well it fits the way a high-mix, low-volume line actually runs. Technical execution matters, but judges will weigh current effectiveness and how quickly the solution adapts to new products more heavily than sheer complexity.
+Projects will be reviewed by judges representing **Rockwell Automation, NVIDIA, MSOE, and UWM**.
 
-### 1. Problem Understanding & Approach (30%)
-
-- Does the team clearly define the process problem it is solving, and why it matters on the line?
-- Is the solution directly relevant to that problem?
-- Does the approach show innovative thinking?
-
-### 2. Effectiveness & Accuracy (20%)
-
-- How well does the solution perform on real or realistic data from the testbed?
-- Is there evidence to support its reliability, such as test results, trial logs, benchmarks, or a live demo?
-- Does the team report where the solution fails and how it behaves in those cases?
-
-### 3. Industry Fit & Practicality (40%)
-
-- Is this something Rockwell Automation, NVIDIA, and their manufacturing customers could realistically use?
-- Does it fit how a plant already operates, and could an operator understand and act on what it reports?
-- **Novel vs. known approaches:** Both have advantages and drawbacks. Teams should show why their chosen approach is effective compared with the alternative.
-
-### 4. Adaptability & Configuration Speed (10%)
-
-- On a high-mix, low-volume line, products and recipes change often. How quickly can the solution be configured for a new product, recipe, defect type, or object?
-- Can it adapt from a handful of examples, for instance through **in-context learning** with a vision-language model or few-shot prompting, instead of a full retraining cycle?
-- How much engineering effort would a changeover take, and could plant staff do it without the original team?
-
-Adaptability is only 10% of the score. A solution that is fast to reconfigure but does not work well will not score highly.
-
-**Total possible score: 100%**
+The detailed judging criteria, category weights, and award categories are still being finalized. More information will be shared when it is available.
 
 </details>
 
