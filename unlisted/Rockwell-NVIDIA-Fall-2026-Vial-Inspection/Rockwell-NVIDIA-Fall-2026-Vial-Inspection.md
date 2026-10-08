@@ -4,13 +4,15 @@
 
 ## The problem
 
+Vials leave the production line in two fixtures at the final station, one for good vials and one for scrap. Build a system that uses an overhead camera at that station to check visible vial defects and fixture occupancy after each placement. The priority is to stop defects from getting through. In judging, a missed defect matters more than a false alarm.
+
+<img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/vial-overview.webp" alt="Overview of the final vial inspection station and fixtures" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
+
+## Why the current inspection is not enough
+
 The production line already inspects each vial from the side. It sends vials that pass to a good fixture and detected defects to a scrap fixture. That inspection does not see every cap defect. A cap can also move after inspection, and the robot can miss a pick, damage a vial, or place it incorrectly without noticing.
 
 <img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/fanuc-cell.webp" alt="Final vial inspection station at the CSI testbed" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
-
-Build a system that uses an overhead camera at the final station to check visible vial defects and fixture occupancy after each placement. The priority is to stop defects from getting through. In judging, a missed defect matters more than a false alarm.
-
-<img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/vial-overview.webp" alt="Overview of the final vial inspection station and fixtures" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
 
 ## How the fixtures fill
 
@@ -41,9 +43,12 @@ The class label describes one target position, not the whole camera image. Crops
 
 ## What is provided
 
-- a digital twin of the final inspection station for generating training images and labels;
-- sample data from the real line: full overhead camera images, labeled and unlabeled position crops, and fixture coordinates and position identifiers;
-- a browser-based labeling tool.
+- Sample data from the real line, from the overhead camera at the final station:
+  - full camera images of both fixtures;
+  - labeled and unlabeled crops of each numbered position, using the five labels above;
+  - fixture coordinates and position identifiers, so every crop maps back to its source image, fixture, and position.
+- A browser-based labeling tool for reviewing and labeling positions.
+- A digital twin for generating training images and labels.
 
 The labeling tool lets you select an image and fixture, click a numbered position, inspect its crop in scene context, edit the class, add an observation, and mark it reviewed. Use Previous and Next to move through positions. Export the review JSON when the pass is complete.
 
@@ -68,19 +73,19 @@ Need more real data? See [Collect and Test Your Own Data](https://msoe-maic.com/
 
 The [Isaac Sim on Brev tutorial](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Resources) shows how to run a digital twin headless and copy rendered images back to your computer.
 
-## Tools that fit
+## Starter approaches
 
-- [TAO Toolkit](https://docs.nvidia.com/tao/tao-toolkit/7.0.1/text/getting_started.html) for training and adapting vision models.
-- [Visual ChangeNet](https://docs.nvidia.com/tao/tao-toolkit/latest/text/cv_finetuning/pytorch/visual_changenet/index.html) for lightweight image classification.
-- [DEFT AOI workflow](https://github.com/NVIDIA/skills/blob/main/skills/tao-run-deft-aoi/SKILL.md) for an evaluate, diagnose, augment, retrain, and gate loop.
-- Cosmos Reason for in-context inspection using example images without first training a small dedicated model.
-- Isaac Sim and Replicator for synthetic images and labels from the digital twin.
+These are ideas to get you started, not a required plan. Combine them, change them, or take a different direction.
 
-See [Compute](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute) before launching training or simulation.
+- **Generate synthetic data with the digital twin.** Render good vials and each defect class, matching the real station's overhead camera pose, crop, and lighting. The twin can cover defects that are rare in the real data, and its images come with labels.
+- **Train a lightweight inspection model.** Visual ChangeNet in the TAO Toolkit compares each position with a known-good reference and outputs `PASS` or `NO_PASS`. The example below walks through it.
+- **Reason with Cosmos Reason.** A vision-language model can inspect a crop from example images in its prompt, without first training a small dedicated model.
+- **Use the fill pattern.** The robot fills positions in a fixed order, so an empty position inside the pattern can mean a missed placement, while empty positions at the end may just be waiting for later vials. Use the placement count or an order-complete signal when one is available.
+- **Iterate on the cases it gets wrong.** The [DEFT AOI workflow](https://github.com/NVIDIA/skills/blob/main/skills/tao-run-deft-aoi/SKILL.md) is an evaluate, diagnose, augment, retrain, and gate loop.
 
-## Starter approach: TAO Toolkit with Visual ChangeNet
+### Example: TAO Toolkit with Visual ChangeNet
 
-A good first baseline is a small [Visual ChangeNet](https://docs.nvidia.com/tao/tao-toolkit/latest/text/cv_finetuning/pytorch/visual_changenet/visual_changenet_classify.html) classification model trained on images you generate with the digital twin. Visual ChangeNet compares each inspection image with a **golden image**, a known-good reference of what the vial should look like, and outputs `PASS` or `NO_PASS`.
+One strong baseline is a small [Visual ChangeNet](https://docs.nvidia.com/tao/tao-toolkit/latest/text/cv_finetuning/pytorch/visual_changenet/visual_changenet_classify.html) classification model trained on images you generate with the digital twin. Visual ChangeNet compares each inspection image with a **golden image**, a known-good reference of what the vial should look like, and outputs `PASS` or `NO_PASS`.
 
 The general approach:
 
@@ -98,7 +103,7 @@ When you read the results:
 - Open several correct and incorrect image pairs to check whether the model reacts to the defect or to pose, glare, and lighting.
 - Change one thing at a time and keep the test set fixed.
 
-Useful questions for a first baseline:
+Questions that may help narrow the first experiment:
 
 - Is it easier to classify a fixed crop for each position, or detect all visible vials in the full image?
 - How will the system separate `no_vial` from a transparent uncapped vial?
@@ -106,8 +111,12 @@ Useful questions for a first baseline:
 - How will you avoid reporting trailing empty positions as defects before the order is complete?
 - Which defects are underrepresented, and can the digital twin create useful examples?
 
+Relevant tools include the [TAO Toolkit](https://docs.nvidia.com/tao/tao-toolkit/7.0.1/text/getting_started.html), [Visual ChangeNet](https://docs.nvidia.com/tao/tao-toolkit/latest/text/cv_finetuning/pytorch/visual_changenet/index.html), the DEFT AOI workflow, Cosmos Reason for in-context inspection, and Isaac Sim with Replicator for synthetic images and labels from the digital twin. See [Tools and Resources](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Resources), and see [Compute](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute) before launching training or simulation.
+
 ## Testing
 
-Keep a test set that is not used for prompt examples, augmentation decisions, or training. Report results per class, not only overall accuracy. Show false negatives for the defect classes and test at least a few complete fixture scenes.
+Keep a test set that is not used for prompt examples, augmentation decisions, or training. Report results per class, not only overall accuracy.
 
-For testing against the physical line, follow [Collect and Test Your Own Data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection).
+Report false alarms and missed defects separately, and show the false negatives for each defect class. Test at least a few complete fixture scenes, not only individual crops.
+
+For additional collection or live-line testing, follow [Collect and Test Your Own Data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection).
