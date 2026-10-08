@@ -1,8 +1,8 @@
 {
-  "summary": "Use synchronized views of tanks, Station 3, and finished vials to detect color and fill problems caused by recipes and fluid carryover.",
+  "summary": "Use synchronized views of tanks, the station, and finished vials to detect color and fill problems caused by recipes and fluid carryover.",
   "type": "md",
   "date": "October 2026",
-  "title": "Dataset 2: Fluid Mixing Station 3",
+  "title": "Dataset 2: Fluid Mixing Station",
   "image": "./images/thumbnails/IL_MAIC_Logo_grad.png",
   "authors": "MSOE AI Club"
 }

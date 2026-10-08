@@ -1,14 +1,26 @@
-# Dataset 2: Fluid Mixing Station 3
+# Dataset 2: Fluid Mixing Station
 
 [Back to the Innovation Lab overview](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026)
 
 ## The problem
 
-Four tanks of colored water feed the vial filling stations. A recipe tells the system how many milliliters to draw from each tank, but it does not store the actual color in a tank. Station 3 mixes the fluids upstream of a single nozzle. Fluid left from the previous fill can carry into the next recipe, especially when the color changes.
+Four tanks feed the vial filling station, but T-300, the third tank from the left, was out of service during data collection. The other three were in use: two held colored water and one held clear diluent. A recipe tells the system how many milliliters to draw from each tank, but it does not store the actual color in a tank. The station mixes the fluids upstream of a single nozzle. Fluid left from the previous fill can carry into the next recipe, especially when the color changes.
 
-Build a system that detects color or fill problems and, when possible, helps an operator understand the likely cause. The useful result is not just "different." It should connect what the cameras saw to the recipe order, tank state, or color carryover that may have produced the difference.
+Build a system that detects color or fill problems and, when possible, helps an operator understand the likely cause. Flagging that a vial looks different from what was expected is not enough. The system should connect what the cameras saw to the recipe order, tank state, or color carryover that may have produced the difference.
 
-<img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/fluid-tanks.webp" alt="Four colored-fluid tanks at the CSI testbed" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
+<img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/tank_level_20260922_170514_563729.jpg" alt="Timestamped camera view of the four fluid tanks at the CSI testbed" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
+
+## Carryover when the recipe changes
+
+When the station switches recipes, residual liquid from the previous recipe's mixture in the shared mixing path carries over into the first vial of the new batch. That vial comes out discolored and does not match its labeled recipe.
+
+The second and third vials of each batch come out clean as the old residue flushes through. The last vial of each recipe is therefore a reliable example of that recipe's true color.
+
+<img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/triplet_03_vials_07-09_recipe_07.jpg" alt="Three side-by-side station camera frames of vials 7, 8, and 9, all from Recipe 7 (20 mL clear from T-100 and 50 mL blue from T-400). Vial 7 is green; vials 8 and 9 are blue." style="width: 100%; border-radius: 10px; margin: 14px 0;" />
+
+In this example, all three vials come from Recipe 7, which doses 20 mL from T-100 (clear) and 50 mL from T-400 (blue). Vial 7, the first of the batch, comes out green. Vials 8 and 9 come out blue.
+
+The recipe that ran just before it, Recipe 6, was orange: 30 mL clear from T-100 and 10 mL orange from T-200. Blue fluid mixing with leftover orange fluid in the shared mixing path likely explains the green tint. Once that residue flushes out, the blue comes through as intended. This is the kind of link the system should make: the odd vial traces back to the recipe that ran before it.
 
 ## Equipment and recipes
 
@@ -19,12 +31,16 @@ The tanks are identified by position:
 - T-300 is next.
 - T-400 is the rightmost tank.
 
-Tank colors can change, so the recipe system identifies tanks by number rather than by color. Up to three recipes can be stored and queued in the Batch Scheduler.
+Tank colors can change, so the recipe system identifies tanks by number rather than by color. In this dataset, the labels identify T-100 as clear, T-200 as orange, and T-400 as blue.
+
+Up to three recipes can be stored and queued in the Batch Scheduler. The labeled fills cover 10 recipes in total because recipes were swapped in and out of the queue during collection.
+
+Each fill dispenses in a fixed order: T-200 first, then T-400, then T-100, skipping any tank the recipe does not use. For example, Recipe 7 dispenses blue from T-400 and then clear from T-100. The order determines which fluid passes through the shared mixing path last, so it is useful context when you explain carryover.
 
 Important operating constraints:
 
 - A vial should contain no more than 80 mL to avoid spilling.
-- A component may be set from 0 to 80 mL, but Station 3 should not use less than 10 mL of a selected component in practice.
+- A component may be set from 0 to 80 mL, but the station should not use less than 10 mL of a selected component in practice.
 - Do not put more than 50 mL from T-200 in a recipe. It can fault the system and require a plant-manager reset.
 - Do not use T-300 in a recipe. It has a configuration issue that can also require a reset.
 - Do not change recipes without the plant manager's guidance.
@@ -42,33 +58,51 @@ That check does not reliably answer whether the vial matches the intended recipe
 
 ## What is provided
 
-- timestamped images and video from the Station 3 filling camera;
-- timestamped views of the four tanks;
-- timestamped views from final inspection;
-- recipe and queue context where available.
+- Timestamped images and video from three fixed cameras (640×480, video at 30 fps, stills about every 2 s):
+  - `vial_fill`: the station's vial-fill camera;
+  - `tank_level`: the reagent-tank camera, showing tanks T-100, T-200, T-300, and T-400;
+  - `cap_seal`: the cap/seal station camera.
+- Five synchronized videos (IDs 1–5). The three cameras were recorded together, so you can cross-reference frames by timestamp.
+- Limited labeled data for 30 vials across 10 recipes (3 vials per recipe) on the `vial_fill` camera. Each vial has:
+  - its recipe ID;
+  - per-tank volumes (T-100 clear, T-200 orange, T-400 blue), total volume, and dispense order;
+  - fill start and end times;
+  - per-frame labels marking whether a vial is being filled.
+- T-300 was out of service and is not used in any recipe.
+- All other data, including the `tank_level` and `cap_seal` views, is unlabeled.
+- A digital twin of the fill and cap/seal stations (USD, for Isaac Sim), with cameras matched to `vial_fill` and `cap_seal` and a script to render images from them. The tanks are not modeled, and the liquid color is an approximation.
 
-The camera timestamps let you line up tank state, the fill operation, and the finished vial. Barcodes and labels may or may not be present, and their orientation is inconsistent. The production system does not currently rely on those barcodes.
+The camera timestamps let you line up tank state (`tank_level`), the fill operation (`vial_fill`), and the cap/seal station (`cap_seal`). Barcodes and labels may or may not be present, and their orientation is inconsistent. The production system does not currently rely on those barcodes.
 
 <div style="display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin: 16px 0;">
-  <img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/fluid-fill-orange.webp" alt="Station 3 filling an orange vial" style="width: 100%; border-radius: 8px;" />
-  <img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/fluid-fill-blue.webp" alt="Station 3 filling a blue vial" style="width: 100%; border-radius: 8px;" />
+  <img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/vial_fill_20260922_170450_450763.jpg" alt="Timestamped station camera frame of a vial being filled with blue fluid" style="width: 100%; border-radius: 8px;" />
+  <img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/vial_fill_20260923_201320_475658.jpg" alt="Timestamped station camera frame of a vial filled with orange fluid" style="width: 100%; border-radius: 8px;" />
 </div>
+
+The clip below shows the real `vial_fill` camera (left) next to the digital twin (right) during a fill.
+
+<img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/fluid-real-vs-digital-twin.gif" alt="Side-by-side clip of the real vial_fill camera (left) and the digital twin (right) as a vial fills with blue fluid" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
 
 ## Get the data
 
 <div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <p><strong>Dataset download:</strong> <a href="TODO-DOWNLOAD-LINK" target="_blank" rel="noopener noreferrer">Download the Fluid Mixing Station 3 dataset</a> [ TODO: describe the file layout and timestamp format. ]</p>
+  <p><strong>Dataset download:</strong> <a href="TODO-DOWNLOAD-LINK" target="_blank" rel="noopener noreferrer">Download the Fluid Mixing Station dataset</a> [ TODO: describe the file layout and timestamp format. ]</p>
   <p><strong>For MSOE students on Rosie:</strong> the dataset is already downloaded at <code>TODO/ROSIE/PATH</code> [ TODO: add any group-permission instructions. ]</p>
-  <p><strong>Digital twin:</strong> [ TODO: confirm whether a usable Station 3 digital twin will be provided. ]</p>
+  <p><strong>Digital twin:</strong> [ TODO: confirm whether a usable station digital twin will be provided. ]</p>
 </div>
 
-Start by checking that you can match a fill-station frame to the closest tank and final-inspection frames. Record any missing frames, clock offsets, or timestamp drift before building a model.
+Start by checking that you can match a fill-station frame to the closest tank and cap/seal frames. Record any missing frames, clock offsets, or timestamp drift before building a model.
 
 ## Starter approaches
 
-<div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <strong>[ TODO: add the recommended starter approaches after reviewing them with the technical mentors. ]</strong>
-</div>
+These are ideas to get you started, not a required plan. Combine them, change them, or take a different direction.
+
+- **Start simple.** See how far basic color and fill-level measurements of the finished vial can go before reaching for a larger model.
+- **Link the cameras.** The three cameras are synchronized, so one moment can be followed across stations: what was loaded in the tanks, how the vial filled, and how it looked at cap/seal. Linking these views lets a system reason about the cause of a problem, not just detect it.
+- **Use the recipe sequence.** Each vial comes from a known recipe, and the recipe that ran before it can matter. Think about how the order of recipes and fluids might explain what the camera sees.
+- **Reason with Cosmos Reason.** A vision-language model can look at images or video alongside the recipe and context, and explain whether a vial matches what was intended and why it might not. Examples of good and bad fills can guide it.
+- **Generate synthetic data with the digital twin.** The twin's cameras match the real `vial_fill` and `cap_seal` views, so you can render new scenes with different fills, colors and lighting to add to the limited labeled data. Synthetic training data can cover recipes, defects and conditions that are rare or missing in the real data, and it comes with labels at no extra cost.
+- **Grow the labeled data.** Videos 1–4 and the `tank_level` and `cap_seal` views have no labels, but they hold many more fills and recipe changes that you can label. You can also collect and label your own data on the line (see [Collect and Test Your Own Data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection)).
 
 Questions that may help narrow the first experiment:
 
@@ -78,10 +112,14 @@ Questions that may help narrow the first experiment:
 - Can the system flag risky recipe transitions before the vial is filled?
 - How will lighting changes and transparent vial material affect color measurements?
 
-Relevant tools include Cosmos Reason for multi-image or video context, in-context learning with example fills, and a time-series model if recipe or sensor data becomes available. See [Tools and Resources](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Resources).
+Relevant tools include Cosmos Reason for multi-image or video context, in-context learning with example fills, and a time-series model if sensor data becomes available. See [Tools and Resources](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Resources).
 
 ## Testing
 
-Split tests by production run or time window so nearly identical neighboring frames do not appear in both training and test sets. Report false alarms and missed defects separately. If the solution claims a likely cause, evaluate that explanation separately from defect detection.
+Split tests by production run or time window so nearly identical neighboring frames do not appear in both training and test sets.
+
+Because the labeled data is limited to 30 vials across 10 recipes, we suggest leave-one-recipe-out evaluation: hold out all the vials of one recipe, use the other recipes for training or examples, and repeat for each recipe. This keeps near-identical vials of the same recipe out of both sets and tests whether your approach works on a recipe it has not seen.
+
+Report false alarms and missed defects separately. If the solution claims a likely cause, evaluate that explanation separately from defect detection.
 
 For additional collection or live-line testing, follow [Collect and Test Your Own Data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection).
