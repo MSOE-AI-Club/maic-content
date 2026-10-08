@@ -95,7 +95,7 @@ Each school has 10 systems. They are shared systems for local training, inferenc
 - **MSOE:** 10 Dell GB10 systems (Dell's equivalent of the DGX Spark), accessed through Rosie.
 
 <div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <strong>[ Dan, Derek, Brett, and Shamar: add UWM connection steps, Rosie GB10 access steps, scheduling rules, and the request contact after the systems are ready. This information may be released after kickoff. ]</strong>
+  <strong>Connection, scheduling, and request instructions will be shared after the systems are ready.</strong>
 </div>
 
 Spark resources:
@@ -108,7 +108,7 @@ Spark resources:
 CSI has a Windows 11 workstation with an RTX PRO 5000 Blackwell GPU, Omniverse, Emulate3D, and a Nucleus server. It supports the Rockwell digital twin, synthetic-data generation, and NuRec work. This workstation is available only in person at CSI.
 
 <div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <strong>[ Shamar: add the workstation reservation process and identify which datasets are loaded on it. ]</strong>
+  <strong>The workstation reservation process and list of preloaded project files will be shared when available.</strong>
 </div>
 
 ## What to request in the team plan

@@ -89,7 +89,7 @@ The clip below shows the real `vial_fill` camera (left) next to the digital twin
   <p><strong>Digital twin (datasets 1 and 2):</strong> <a href="https://drive.google.com/file/d/1nXRN_VZ_DKGS33jtELwn6z8WR8dbQfKe/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download the digital twin</a></p>
   <p><strong>Sample data from the line:</strong> <a href="https://drive.google.com/drive/folders/1qwV2BEz3ODX17kwNCr9M15DfkY8U_blQ?usp=sharing" target="_blank" rel="noopener noreferrer">Open the Fluid Mixing Station dataset</a></p>
   <p><strong>Everything in one place:</strong> <a href="https://drive.google.com/drive/folders/1GWuHV2WUNLztq_Fga6xBH7qFzhxDaac8?usp=sharing" target="_blank" rel="noopener noreferrer">Innovation Lab data folder</a></p>
-  <p><strong>For MSOE students on Rosie:</strong> the digital twin is already downloaded at <code>TODO/ROSIE/PATH</code></p>
+  <p><strong>For MSOE students on Rosie:</strong> use the download link above until an on-Rosie path is published.</p>
 </div>
 
 ### Look at the real data, but train on the digital twin

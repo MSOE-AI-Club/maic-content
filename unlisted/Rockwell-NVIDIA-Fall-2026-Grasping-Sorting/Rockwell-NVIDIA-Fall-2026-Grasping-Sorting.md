@@ -23,10 +23,9 @@ The first target is a repeatable grasp and sort. Define how success will be meas
 ## Get the data and digital twin
 
 <div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <p><strong>Dataset and camera samples:</strong> <a href="TODO-DOWNLOAD-LINK" target="_blank" rel="noopener noreferrer">Download the Grasping and Sorting dataset</a> [ TODO: describe the camera calibration files. ]</p>
-  <p><strong>For MSOE students on Rosie:</strong> the dataset is already downloaded at <code>TODO/ROSIE/PATH</code> [ TODO: add any group-permission instructions. ]</p>
-  <p><strong>Digital twin:</strong> [ TODO: add the download link for <code>fanuc_er4ia_sim.zip</code> and its version. ]</p>
-  <p><strong>Finger CAD:</strong> [ TODO: add the CAD file link, supported format, and printing process. ]</p>
+  <p><strong>Robotic digital twin:</strong> the download will be released within the next 24 hours.</p>
+  <p><strong>Dataset, camera samples, calibration files, and finger CAD:</strong> access details will be posted here as they are finalized.</p>
+  <p><strong>For MSOE students on Rosie:</strong> the Rosie location and access instructions will be posted with the project files.</p>
 </div>
 
 ## Run the twin on Brev
@@ -67,10 +66,6 @@ The full account, cost, stop, and delete instructions are on the [Compute page](
 - [FANUC Tech Transfer video library](https://techtransfer.fanucamerica.com/)
 
 ## Starter approaches
-
-<div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <strong>[ TODO: add the recommended starter approaches after reviewing them with the robotics mentors. ]</strong>
-</div>
 
 A useful sequence for scoping the work:
 
