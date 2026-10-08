@@ -106,7 +106,7 @@ These three guides cover what every team needs beyond the datasets. Read them be
 - [ ] Connect your GitHub account and accept the team repository invitation.
 - [ ] Choose dataset(s).
 - [ ] Download the data and confirm that everyone who needs it can open it.
-- [ ] Review the [compute guide](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute) and request what your team expects to use.
+- [ ] Review the [compute guide](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute) and request what your team expects to use inside the [team plan](https://dashboard.all-ai-network.org/s/V28NHK).
 - [ ] [Join the hackathon Slack workspace](https://join.slack.com/t/rockwellnvidi-wq82211/shared_invite/zt-4bp05nsn9-UW3afFtM9wjzWtZiQoJBHg), open `#hackathon-announcements`, and find the channel for your dataset.
 - [ ] Submit the [team plan](https://dashboard.all-ai-network.org/s/V28NHK) by Wednesday, October 14.
 
