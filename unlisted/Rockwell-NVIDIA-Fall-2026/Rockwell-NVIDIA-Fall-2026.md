@@ -56,6 +56,8 @@ You do not need prior manufacturing or AI experience. You do need a team that is
 
 We recommend that teams focus on building one strong solution around a single idea or dataset rather than spreading effort across several half-finished ideas. This is a recommendation, not a requirement, but it is the approach that has worked best for teams in past Innovation Labs.
 
+All of the data and digital twins are in the [Innovation Lab data folder](https://drive.google.com/drive/folders/1GWuHV2WUNLztq_Fga6xBH7qFzhxDaac8?usp=sharing). The real data from the line is there to look at, not to train on: teams generate their training data with the digital twins, as a high-mix, low-volume line would have to. Each dataset page explains why.
+
 <div style="display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin: 18px 0;">
   <div style="border: 1px solid #64748b; border-radius: 10px; padding: 16px;">
     <h3 style="margin-top: 0;">Dataset 1: Final Vial Inspection</h3>

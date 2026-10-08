@@ -41,22 +41,30 @@ The class label describes one target position, not the whole camera image. Crops
 
 ## What is provided
 
-No dataset from the production line is provided. Teams generate their own training images with the digital twin, then train on that data. You can also collect real images at CSI or schedule a test on the line through [Collect and Test Your Own Data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection).
-
-- a digital twin of the final inspection station for generating images and labels;
-- the fixture layout, numbered positions, and label definitions on this page;
+- a digital twin of the final inspection station for generating training images and labels;
+- sample data from the real line: full overhead camera images, labeled and unlabeled position crops, and fixture coordinates and position identifiers;
 - a browser-based labeling tool.
 
-The labeling tool lets you review images you generate or collect: select an image and fixture, click a numbered position, inspect its crop in scene context, edit the class, add an observation, and mark it reviewed. Use Previous and Next to move through positions. Export the review JSON when the pass is complete.
+The labeling tool lets you select an image and fixture, click a numbered position, inspect its crop in scene context, edit the class, add an observation, and mark it reviewed. Use Previous and Next to move through positions. Export the review JSON when the pass is complete.
 
 <img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/vial-labeling-tool.webp" alt="Browser labeling tool with the full scene and selected vial crop" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
 
-## Get the digital twin
+## Get the data and digital twin
 
-<div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <p><strong>Digital twin download:</strong> <a href="TODO-DOWNLOAD-LINK" target="_blank" rel="noopener noreferrer">Download the final vial inspection digital twin</a></p>
+<div style="border: 1px solid #64748b; border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
+  <p><strong>Digital twin (datasets 1 and 2):</strong> <a href="https://drive.google.com/drive/folders/1x6ixBGGyv6HG51TQdHvgzj7lqmsN7gKD?usp=sharing" target="_blank" rel="noopener noreferrer">Open the digital twin folder</a></p>
+  <p><strong>Sample data from the line:</strong> <a href="https://drive.google.com/drive/folders/1Vl5qMLvUZDeWYNaFvnN8JbIqesjOKkWN?usp=sharing" target="_blank" rel="noopener noreferrer">Open the Final Vial Inspection dataset</a></p>
+  <p><strong>Everything in one place:</strong> <a href="https://drive.google.com/drive/folders/1GWuHV2WUNLztq_Fga6xBH7qFzhxDaac8?usp=sharing" target="_blank" rel="noopener noreferrer">Innovation Lab data folder</a></p>
   <p><strong>For MSOE students on Rosie:</strong> the digital twin is already downloaded at <code>TODO/ROSIE/PATH</code></p>
 </div>
+
+### Look at the real data, but train on the digital twin
+
+The sample images come from the real line. Look through them to understand the station, the defects, and what your generated images need to match, but **avoid training your models on them**. The goal of this lab is to generate your training data with the digital twin.
+
+That is how this problem has to be solved on a high-mix, low-volume (HMLV) line like CSI's, which makes many product variants in small batches and changes over often. A new product or recipe has no real images until the line has been commissioned and is running it. Collecting and labeling real examples afterwards is costly: it takes line time and operators, defects have to be produced on purpose, and the work repeats at every changeover. A digital twin can produce labeled images of a product, including rare defects, before it ever runs on the line.
+
+Need more real data? See [Collect and Test Your Own Data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection). We may also release a held-out set of real images for testing if there is interest.
 
 The [Isaac Sim on Brev tutorial](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Resources) shows how to run a digital twin headless and copy rendered images back to your computer.
 

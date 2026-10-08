@@ -83,13 +83,22 @@ The clip below shows the real `vial_fill` camera (left) next to the digital twin
 
 <img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/fluid-real-vs-digital-twin.gif" alt="Side-by-side clip of the real vial_fill camera (left) and the digital twin (right) as a vial fills with blue fluid" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
 
-## Get the data
+## Get the data and digital twin
 
-<div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <p><strong>Dataset download:</strong> <a href="TODO-DOWNLOAD-LINK" target="_blank" rel="noopener noreferrer">Download the Fluid Mixing Station dataset</a> [ TODO: describe the file layout and timestamp format. ]</p>
-  <p><strong>For MSOE students on Rosie:</strong> the dataset is already downloaded at <code>TODO/ROSIE/PATH</code> [ TODO: add any group-permission instructions. ]</p>
-  <p><strong>Digital twin:</strong> [ TODO: confirm whether a usable station digital twin will be provided. ]</p>
+<div style="border: 1px solid #64748b; border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
+  <p><strong>Digital twin (datasets 1 and 2):</strong> <a href="https://drive.google.com/drive/folders/1x6ixBGGyv6HG51TQdHvgzj7lqmsN7gKD?usp=sharing" target="_blank" rel="noopener noreferrer">Open the digital twin folder</a></p>
+  <p><strong>Sample data from the line:</strong> <a href="https://drive.google.com/drive/folders/1qwV2BEz3ODX17kwNCr9M15DfkY8U_blQ?usp=sharing" target="_blank" rel="noopener noreferrer">Open the Fluid Mixing Station dataset</a></p>
+  <p><strong>Everything in one place:</strong> <a href="https://drive.google.com/drive/folders/1GWuHV2WUNLztq_Fga6xBH7qFzhxDaac8?usp=sharing" target="_blank" rel="noopener noreferrer">Innovation Lab data folder</a></p>
+  <p><strong>For MSOE students on Rosie:</strong> the digital twin is already downloaded at <code>TODO/ROSIE/PATH</code></p>
 </div>
+
+### Look at the real data, but train on the digital twin
+
+The real images, video, and labels come from the line. Look through them to understand the station, the recipes, and what your generated data needs to match, but **avoid training your models on them**. The goal of this lab is to generate your training data with the digital twin.
+
+That is how this problem has to be solved on a high-mix, low-volume (HMLV) line like CSI's, which makes many product variants in small batches and changes over often. A new product or recipe has no real images until the line has been commissioned and is running it. Collecting and labeling real examples afterwards is costly: it takes line time and operators, faults have to be produced on purpose, and the work repeats at every changeover. A digital twin can produce labeled examples of a recipe, including rare problems, before it ever runs on the line.
+
+Need more real data? See [Collect and Test Your Own Data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection). We may also release a held-out set of real data for testing if there is interest.
 
 Start by checking that you can match a fill-station frame to the closest tank and cap/seal frames. Record any missing frames, clock offsets, or timestamp drift before building a model.
 
@@ -101,8 +110,8 @@ These are ideas to get you started, not a required plan. Combine them, change th
 - **Link the cameras.** The three cameras are synchronized, so one moment can be followed across stations: what was loaded in the tanks, how the vial filled, and how it looked at cap/seal. Linking these views lets a system reason about the cause of a problem, not just detect it.
 - **Use the recipe sequence.** Each vial comes from a known recipe, and the recipe that ran before it can matter. Think about how the order of recipes and fluids might explain what the camera sees.
 - **Reason with Cosmos Reason.** A vision-language model can look at images or video alongside the recipe and context, and explain whether a vial matches what was intended and why it might not. Examples of good and bad fills can guide it.
-- **Generate synthetic data with the digital twin.** The twin's cameras match the real `vial_fill` and `cap_seal` views, so you can render new scenes with different fills, colors and lighting to add to the limited labeled data. Synthetic training data can cover recipes, defects and conditions that are rare or missing in the real data, and it comes with labels at no extra cost.
-- **Grow the labeled data.** Videos 1–4 and the `tank_level` and `cap_seal` views have no labels, but they hold many more fills and recipe changes that you can label. You can also collect and label your own data on the line (see [Collect and Test Your Own Data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection)).
+- **Generate synthetic data with the digital twin.** The twin's cameras match the real `vial_fill` and `cap_seal` views, so you can render new scenes with different fills, colors and lighting as your training data. Synthetic training data can cover recipes, defects and conditions that are rare or missing in the real data, and it comes with labels at no extra cost.
+- **Grow the labeled test data.** Videos 1–4 and the `tank_level` and `cap_seal` views have no labels, but they hold many more fills and recipe changes that you can label to check your model against. You can also collect and label your own data on the line (see [Collect and Test Your Own Data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection)).
 
 Questions that may help narrow the first experiment:
 
@@ -118,7 +127,7 @@ Relevant tools include Cosmos Reason for multi-image or video context, in-contex
 
 Split tests by production run or time window so nearly identical neighboring frames do not appear in both training and test sets.
 
-Because the labeled data is limited to 30 vials across 10 recipes, we suggest leave-one-recipe-out evaluation: hold out all the vials of one recipe, use the other recipes for training or examples, and repeat for each recipe. This keeps near-identical vials of the same recipe out of both sets and tests whether your approach works on a recipe it has not seen.
+Because the labeled data is limited to 30 vials across 10 recipes, we suggest leave-one-recipe-out evaluation: hold out all the vials of one recipe, use the other recipes as reference examples, and repeat for each recipe. This keeps near-identical vials of the same recipe out of both sets and tests whether your approach works on a recipe it has not seen.
 
 Report false alarms and missed defects separately. If the solution claims a likely cause, evaluate that explanation separately from defect detection.
 
