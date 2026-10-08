@@ -17,8 +17,8 @@ You do not need prior manufacturing or AI experience. You do need a team that is
     <h3>How teams work on the ALL AI Network</h3>
     <p>Teams, repositories, and submissions for this lab are managed through the <a href="https://dashboard.all-ai-network.org/e/innovation-lab-fall-2026-059658" target="_blank" rel="noopener noreferrer">ALL AI Network</a> event workspace.</p>
     <ul>
-      <li><strong>MSOE students:</strong> your teams have already been created. Create an account and join your team from the sign-up link above.</li>
-      <li><strong>UWM students:</strong> create an account, then create your team in the workspace and invite your teammates.</li>
+      <li><strong>MSOE and UWM students:</strong> your teams have already been created. Create an account with your university email from the sign-up link above, and you will be placed on your team automatically.</li>
+      <li><strong>Not on a team yet?</strong> Create a team in the workspace and invite your teammates, or join an open team.</li>
       <li><strong>Connect GitHub:</strong> once you connect GitHub from your profile, you are automatically invited to your team's repository. No one has to add you by hand.</li>
       <li><strong>One place for every project:</strong> all team repositories live in one place, so Rockwell Automation and NVIDIA can view your work as it progresses, and your final submission links straight to it.</li>
     </ul>
