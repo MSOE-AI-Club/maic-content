@@ -88,6 +88,8 @@ This tutorial covers Isaac Sim on Brev without Cosmos 3. The launchable runs hea
 
 Agents can help inspect data, write a baseline, run experiments, and document a result. Review generated code, keep credentials outside the repository, and save enough information for another teammate to reproduce the run.
 
+See the **[Coding agents guide](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Coding-Agents)** to start free with Gemini in the Antigravity CLI, set up student access, and request Claude or Codex plans in your team plan.
+
 ## In-context learning
 
 In-context learning gives a general vision-language model examples and instructions in the prompt instead of first training a dedicated model. For automated optical inspection, the context often contains examples of acceptable and defective parts.

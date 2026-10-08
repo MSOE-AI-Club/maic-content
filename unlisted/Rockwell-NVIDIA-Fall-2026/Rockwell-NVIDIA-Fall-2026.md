@@ -78,10 +78,11 @@ All of the data and digital twins are in the [Innovation Lab data folder](https:
 
 ### Related guides
 
-These three guides cover what every team needs beyond the datasets. Read them before you submit your team plan.
+These four guides cover what every team needs beyond the datasets. Read them before you submit your team plan.
 
 - **[Compute: Brev, DGX Spark, and build.nvidia.com](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute):** how to get GPU power for your project. It covers Brev cloud GPUs and ready-made launchables (including Isaac Sim), the DGX Spark systems at UWM and Dell GB10 systems at MSOE, free model APIs on build.nvidia.com, and the workstation at CSI. Brev credits are spent whenever an instance is running, so read this before you start one.
 - **[Collect and test your own data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection):** what you can and cannot do at the CSI testbed. It explains how to request a visit or extra data, how to collect your own data safely, how to use digital twins for synthetic data, and how to schedule a supervised test of your finished system on the real equipment.
+- **[Coding agents](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Coding-Agents):** start free with Gemini in the Antigravity CLI, learn how to get more student usage, and request Claude or Codex plans in your team plan.
 - **[Tools and resources](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Resources):** a table matching each physical AI task to its tools and hardware, a step-by-step tutorial for synthetic data generation with Isaac Sim on Brev, AI coding tools, in-context learning with vision-language models, NVIDIA Cosmos, and other tools worth knowing. Start with a simple baseline, then use this page when you hit a specific question.
 
 </details>
@@ -125,7 +126,7 @@ The form asks for:
 - a short description of the problem you plan to solve;
 - data you need beyond what is already provided, and why;
 - the compute you expect to use: Brev (including how many credits your team is requesting), a UWM DGX Spark, an MSOE Dell GB10 on Rosie, the CSI workstation, or build.nvidia.com;
-- AI-agent credits or tools you need;
+- [AI-agent credits or tools](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Coding-Agents) you need;
 - the type of mentor support you want;
 - questions for the organizers.
 
