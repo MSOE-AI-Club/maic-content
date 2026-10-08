@@ -60,17 +60,17 @@ We recommend that teams focus on building one strong solution around a single id
   <div style="border: 1px solid #64748b; border-radius: 10px; padding: 16px;">
     <h3 style="margin-top: 0;">Dataset 1: Final Vial Inspection</h3>
     <p>Find missing caps, crooked caps, damaged vials, and unexpected empty positions after the robot fills a fixture.</p>
-    <a href="https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Vial-Inspection">Open dataset 1</a>
+    <a href="https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Vial-Inspection">See more details</a>
   </div>
   <div style="border: 1px solid #64748b; border-radius: 10px; padding: 16px;">
     <h3 style="margin-top: 0;">Dataset 2: Fluid Mixing Station 3</h3>
     <p>Use synchronized camera views to detect fill and color problems caused by recipes and fluid carryover.</p>
-    <a href="https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Fluid-Mixing">Open dataset 2</a>
+    <a href="https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Fluid-Mixing">See more details</a>
   </div>
   <div style="border: 1px solid #64748b; border-radius: 10px; padding: 16px;">
     <h3 style="margin-top: 0;">Dataset 3: Grasping and Sorting</h3>
     <p>Use a digital twin and multiple cameras to make a standalone FANUC arm grasp and sort objects more reliably. This robot is separate from the vial production line.</p>
-    <a href="https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Grasping-Sorting">Open dataset 3</a>
+    <a href="https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Grasping-Sorting">See more details</a>
   </div>
 </div>
 
@@ -80,7 +80,7 @@ These three guides cover what every team needs beyond the datasets. Read them be
 
 - **[Compute: Brev, DGX Spark, and build.nvidia.com](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute):** how to get GPU power for your project. It covers Brev cloud GPUs and ready-made launchables (including Isaac Sim), the DGX Spark systems at UWM and Dell GB10 systems at MSOE, free model APIs on build.nvidia.com, and the workstation at CSI. Brev credits are spent whenever an instance is running, so read this before you start one.
 - **[Collect and test your own data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection):** what you can and cannot do at the CSI testbed. It explains how to request a visit or extra data, how to collect your own data safely, how to use digital twins for synthetic data, and how to schedule a supervised test of your finished system on the real equipment.
-- **[Tools and resources](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Resources):** a reference list of AI coding tools, in-context learning with vision-language models, NVIDIA Cosmos, and other tools worth knowing. Start with a simple baseline, then use this page when you hit a specific question.
+- **[Tools and resources](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Resources):** a table matching each physical AI task to its tools and hardware, a step-by-step tutorial for synthetic data generation with Isaac Sim on Brev, AI coding tools, in-context learning with vision-language models, NVIDIA Cosmos, and other tools worth knowing. Start with a simple baseline, then use this page when you hit a specific question.
 
 </details>
 
@@ -143,6 +143,15 @@ Each team submits:
 - a link to the team repository;
 - references and credits for data, models, code, and tools.
 
+### What judges expect
+
+Your video, summary, and finals presentation should:
+
+- **Demonstrate the solution operating on real hardware**, either the UWM CSI production line or the FANUC robotic arm. See the [data collection guide](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection) to schedule a supervised test.
+- **Identify the specific problem being solved**, such as a defect type, a failure mode, or a slow manual step, and why it matters on this line.
+- **Explain how the solution would impact other manufacturers.** Think about the business case: what the problem costs today (scrap, rework, downtime, or labor), what your solution would save or improve, and what it would take for a plant to adopt it (hardware, setup time, changeovers, and operator trust).
+- **Show measured results** against a baseline, and be clear about where the solution still fails.
+
 The Nov. 5 finals include live presentations and prizes.
 
 </details>
@@ -180,6 +189,8 @@ The Nov. 5 finals include live presentations and prizes.
   <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">Judging</summary>
 
 Projects will be reviewed by judges representing **Rockwell Automation, NVIDIA, MSOE, and UWM**.
+
+Judges will look for the expectations listed under **Final submission**: a solution operating on the CSI line or robotic arm, a specific problem, a clear business case for other manufacturers, and measured results.
 
 The detailed judging criteria, category weights, and award categories are still being finalized. More information will be shared when it is available.
 

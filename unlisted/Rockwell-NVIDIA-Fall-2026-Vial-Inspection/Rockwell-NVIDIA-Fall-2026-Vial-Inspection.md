@@ -6,6 +6,8 @@
 
 The production line already inspects each vial from the side. It sends vials that pass to a good fixture and detected defects to a scrap fixture. That inspection does not see every cap defect. A cap can also move after inspection, and the robot can miss a pick, damage a vial, or place it incorrectly without noticing.
 
+<img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/fanuc-cell.webp" alt="Final vial inspection station at the CSI testbed" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
+
 This dataset comes from an overhead camera at the final station. Build a system that checks visible vial defects and fixture occupancy after each placement. The priority is to stop defects from getting through. In judging, a missed defect matters more than a false alarm.
 
 <img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/vial-overview.webp" alt="Overview of the final vial inspection station and fixtures" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
@@ -52,8 +54,8 @@ The labeling tool lets you select an image and fixture, click a numbered positio
 ## Get the data
 
 <div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <p><strong>Dataset download:</strong> [ TODO: add the shared download link and list the folders included. ]</p>
-  <p><strong>For MSOE students on Rosie:</strong> [ TODO: add the absolute Rosie path and any group-permission instructions. ]</p>
+  <p><strong>Dataset download:</strong> <a href="TODO-DOWNLOAD-LINK" target="_blank" rel="noopener noreferrer">Download the Final Vial Inspection dataset</a> [ TODO: list the folders included. ]</p>
+  <p><strong>For MSOE students on Rosie:</strong> the dataset is already downloaded at <code>TODO/ROSIE/PATH</code> [ TODO: add any group-permission instructions. ]</p>
   <p><strong>Digital twin:</strong> [ TODO: add the download and launch instructions. ]</p>
 </div>
 

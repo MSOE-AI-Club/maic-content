@@ -4,14 +4,87 @@
 
 This is a reference list, not a required reading list. Begin with the dataset page, build a simple baseline, and open the resource that answers the next concrete question.
 
+## Physical AI tasks and tools
+
+Use this table to match the task your team is working on to the tools and hardware that fit it. Costs are approximate Brev rates; check the rate shown in the Brev console before starting. "DGX Spark / GB10" means a UWM DGX Spark or an MSOE Dell GB10 on Rosie (see the [Compute guide](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute)).
+
+| Task | Inputs and outputs | Tools | Hardware |
+| --- | --- | --- | --- |
+| Agent orchestration harness | | [NemoClaw](https://www.nvidia.com/en-us/ai/nemoclaw/) | [Brev launchable](https://brev.nvidia.com/launchable/deploy/now?launchableID=env-3Azt0aYgVNFEuz7opyx3gscmowS) (free)<br>[DGX Spark / GB10](https://build.nvidia.com/spark/nemoclaw) |
+| In-context learning | Outputs: reasoning answers (AOI, defect, root-cause analysis, etc.) | Cosmos Reason 3 Edge (single image), Nano (multiple images) | [build.nvidia.com Reasoner](https://build.nvidia.com/nvidia/cosmos3-nano-reasoner), free ([API keys](https://build.nvidia.com/settings/api-keys))<br>DGX Spark / GB10<br>Brev (Edge on T4, about \$0.50/hr; Nano on L40S, about \$2/hr) |
+| Automated inspection models (image-based) | | TAO, DEFT AOI, VisualChangeNet, Cosmos 3 | Training: Brev (L40S, about \$2/hr; not yet tested), DGX Spark / GB10<br>Inference: DGX Spark / GB10 |
+| Synthetic data generation from a digital twin with Emulate3D | Outputs: images, videos, actions, labels, etc. | Isaac Sim / Omniverse / Emulate3D Connector | GPU workstation at CSI |
+| Synthetic data generation from a digital twin | Outputs: images, videos, actions, labels, etc. | Isaac Sim / Omniverse | [Brev launchable](https://brev.nvidia.com/launchable/deploy/now?launchableID=env-35JP2ywERLgqtD0b0MIeK1HnF46) (L40S, about \$3/hr; see the tutorial below)<br>DGX Spark / GB10 |
+| Synthetic data generation: GenAI image-to-image (I2I) inference | Inputs: images<br>Outputs: images | ChatGPT, Gemini, etc. | Cloud subscription for frontier models<br>DGX Spark / GB10 with [FLUX.2](https://www.canirun.ai/model/flux2-dev) |
+| Synthetic data generation: GenAI T2I, I2V, T2V, I2T (not I2I) inference | Inputs: text, images<br>Outputs: videos, actions, labels, etc. | Cosmos Reason 3 Edge (single image), Nano (multiple images). Cosmos 3 does not do I2I. | DGX Spark / GB10<br>[build.nvidia.com Generator](https://build.nvidia.com/nvidia/cosmos3-nano), free ([API keys](https://build.nvidia.com/settings/api-keys))<br>[build.nvidia.com Reasoner](https://build.nvidia.com/nvidia/cosmos3-nano-reasoner), free ([API keys](https://build.nvidia.com/settings/api-keys)) |
+| Synthetic data generation: GenAI T2I, I2V, T2V, I2T (not I2I) fine-tuning | Inputs: text, images<br>Outputs: videos, actions, labels, etc. | Cosmos Reason 3 Edge (single image), Nano (multiple images) | Training: DGX Spark / GB10 (Edge: SFT; Nano: LoRA only)<br>Brev (Edge on 1× H100, about \$5/hr; Nano on 4× A100 80 GB, about \$8/hr) |
+| Synthetic data generation: GenAI V2I, V2V, V2T, V2A | Outputs: images, videos, actions, labels, etc. | Cosmos Reason 3 Edge (480p, 150 frames max), Nano (720p, 400 frames max) | Inference: DGX Spark / GB10; [build.nvidia.com Generator](https://build.nvidia.com/nvidia/cosmos3-nano), free ([API keys](https://build.nvidia.com/settings/api-keys)); [build.nvidia.com Reasoner](https://build.nvidia.com/nvidia/cosmos3-nano-reasoner), free ([API keys](https://build.nvidia.com/settings/api-keys)); [Brev launchable](https://brev.nvidia.com/launchable/deploy/now?launchableID=env-3DH5QPdLRWBABdW9Lxn4vQBK5mW) (C2.5T, about \$17/hr)<br>Training: DGX Spark / GB10 (Edge: SFT; Nano: LoRA only); Brev (Edge on 1× H100, about \$5/hr; Nano on 4× A100 80 GB, about \$8/hr) |
+| Robot policy training | | Isaac Sim, Isaac Lab | [Brev launchable](https://brev.nvidia.com/launchable/deploy/now?launchableID=env-35JP2ywERLgqtD0b0MIeK1HnF46) (L40S, about \$3/hr; see the tutorial below)<br>[DGX Spark / GB10](https://build.nvidia.com/spark/isaac) |
+| Reconstruct 3D scenes from images and lidar | | NuRec, Omniverse | Brev (L40S, about \$2/hr) |
+| Time-series forecasting | | NVIDIA [Kumo-TS](https://github.com/NVIDIA/Kumo-TS) | Brev<br>DGX Spark / GB10 |
+
+Abbreviations: T2I is text-to-image, I2V image-to-video, T2V text-to-video, I2T image-to-text, V2I video-to-image, V2V video-to-video, V2T video-to-text, V2A video-to-action, SFT supervised fine-tuning, and LoRA low-rank adaptation.
+
+## Tutorial: synthetic data generation with Isaac Sim on Brev
+
+This tutorial covers Isaac Sim on Brev without Cosmos 3. The launchable runs headless, which means there is no GUI. You interact with Isaac Sim from the command line, and any visual output is saved as images or videos that you copy to your computer to view. Coding agents work well in this environment, so plan to use one on the instance.
+
+1. Start the [Isaac Sim launchable](https://brev.nvidia.com/launchable/deploy/now?launchableID=env-35JP2ywERLgqtD0b0MIeK1HnF46).
+   - This may take up to 10 minutes.
+   - The launch screen may not update, so click **Compute** to check whether it is running.
+2. Under **Compute**, you should see your running environment.
+
+   <img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/brev-compute-running.webp" alt="Brev Compute page showing a running Isaac Sim launchable on an L40S" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
+
+3. Click the environment box to open more information on how to copy files and access the instance.
+   - CLI access to the instance is recommended.
+   - Log in, then open a local terminal or a code editor.
+   - Copy files from a separate terminal; that is usually easiest.
+4. Install your preferred coding agent from the command line. For example, Claude Code:
+
+   ```bash
+   curl -fsSL https://claude.ai/install.sh | bash
+   echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+   source ~/.bashrc
+   ```
+
+5. Do the work you planned.
+6. To share the instance, follow the instructions under **Secure Links**.
+7. **Stop your instance when you are done so you do not use credits unnecessarily.**
+   - Select **Stop**. Stopping takes a few minutes.
+   - Stopping freezes the instance and should keep your data, but save everything important elsewhere to avoid accidental loss.
+   - Stopping does not stop storage costs. Storage is usually cheap (cents per hour), but delete any instance you are completely done with.
+   - Deleting an instance removes all of its data, so only delete it when you are sure you do not need the data.
+   - To resume a stopped instance, select **Start**. It should be ready within a few minutes, from the point where you stopped it.
+
+   <img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/brev-instance-stopped.webp" alt="A stopped Brev instance with Start and Delete buttons" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
+
+### Extra: robot arm digital twin
+
+1. Copy the FANUC digital twin zip to the Isaac Sim instance. Use your own file path and the instance name shown in Brev:
+
+   ```bash
+   brev copy /path/to/fanuc_er4ia_sim.zip <instance-name>:/home/ubuntu
+   ```
+
+2. Unzip the file on the instance:
+
+   ```bash
+   unzip fanuc_er4ia_sim.zip
+   ```
+
+3. Ask the agent to build the digital twin and render a video of it picking up screws. For example:
+
+   > Set up the digital twin in Isaac Sim that is located in fanuc_er4ia_sim and generate a video of it picking up the screws from the table. Tell me where the video is located.
+
+   This took Claude about five minutes to set up the twin and render the video.
+4. Copy the video to your computer, watch it, and prompt the agent to update the twin:
+
+   ```bash
+   brev copy <instance-name>:/home/ubuntu/fanuc_er4ia_sim/demo.mp4 /path/to/Downloads
+   ```
+
 ## AI coding tools
-
-Student access to $100 in ChatGPT credits is planned. Other sponsor-funded agent access is still being confirmed.
-
-<div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <p><strong>ChatGPT credits:</strong> [ Joe: confirm eligibility and add the claim instructions. ]</p>
-  <p><strong>Other coding agents:</strong> [ Joe: confirm Codex or other sponsor credits. Derek: list the account setup students should complete. ]</p>
-</div>
 
 Agents can help inspect data, write a baseline, run experiments, and document a result. Review generated code, keep credentials outside the repository, and save enough information for another teammate to reproduce the run.
 
@@ -47,7 +120,7 @@ The DEFT AOI workflow is a useful structure even when a team uses different tool
 - [Three workflows for improving vision AI with synthetic data](https://blogs.nvidia.com/blog/vision-ai-agent-skills-omniverse-metropolis/)
 - [Physical AI Data Factory augmentation pipeline](https://github.com/NVIDIA/paidf-augmentation)
 
-Use the [Compute guide](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute) for the Isaac Sim Brev launchable.
+See the Isaac Sim on Brev tutorial above, and the [Compute guide](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute) for Brev accounts and costs.
 
 ## Video and standard operating procedures
 

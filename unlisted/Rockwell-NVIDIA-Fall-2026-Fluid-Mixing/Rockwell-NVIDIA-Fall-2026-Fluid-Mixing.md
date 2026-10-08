@@ -57,8 +57,8 @@ The camera timestamps let you line up tank state, the fill operation, and the fi
 ## Get the data
 
 <div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <p><strong>Dataset download:</strong> [ TODO: add the shared download link, file layout, and timestamp format. ]</p>
-  <p><strong>For MSOE students on Rosie:</strong> [ TODO: add the absolute Rosie path and any group-permission instructions. ]</p>
+  <p><strong>Dataset download:</strong> <a href="TODO-DOWNLOAD-LINK" target="_blank" rel="noopener noreferrer">Download the Fluid Mixing Station 3 dataset</a> [ TODO: describe the file layout and timestamp format. ]</p>
+  <p><strong>For MSOE students on Rosie:</strong> the dataset is already downloaded at <code>TODO/ROSIE/PATH</code> [ TODO: add any group-permission instructions. ]</p>
   <p><strong>Digital twin:</strong> [ TODO: confirm whether a usable Station 3 digital twin will be provided. ]</p>
 </div>
 

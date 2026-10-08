@@ -7,9 +7,6 @@
 Industrial robot arms are often programmed for fixed motions without vision. That works when every object arrives in the same position, but it leaves the robot unable to adjust to clutter, changing objects, or an imperfect grasp.
 
 Use multiple camera views and a digital twin to make a FANUC arm grasp and sort objects reliably. Once a basic pick-and-place works, teams can add harder objects, smarter sorting rules, or fingers designed for a particular object.
-
-<img src="https://msoe-ai-club.github.io/maic-content/images/article_content/rockwell-nvidia-fall-2026/fanuc-cell.webp" alt="FANUC robot cell at the CSI testbed" style="width: 100%; border-radius: 10px; margin: 14px 0;" />
-
 ## What is provided
 
 - a FANUC ER-4iA industrial robot arm;
@@ -26,8 +23,8 @@ The first target is a repeatable grasp and sort. Define how success will be meas
 ## Get the data and digital twin
 
 <div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <p><strong>Dataset and camera samples:</strong> [ TODO: add the shared download link and describe the camera calibration files. ]</p>
-  <p><strong>For MSOE students on Rosie:</strong> [ TODO: add the absolute Rosie path and any group-permission instructions. ]</p>
+  <p><strong>Dataset and camera samples:</strong> <a href="TODO-DOWNLOAD-LINK" target="_blank" rel="noopener noreferrer">Download the Grasping and Sorting dataset</a> [ TODO: describe the camera calibration files. ]</p>
+  <p><strong>For MSOE students on Rosie:</strong> the dataset is already downloaded at <code>TODO/ROSIE/PATH</code> [ TODO: add any group-permission instructions. ]</p>
   <p><strong>Digital twin:</strong> [ TODO: add the download link for <code>fanuc_er4ia_sim.zip</code> and its version. ]</p>
   <p><strong>Finger CAD:</strong> [ TODO: add the CAD file link, supported format, and printing process. ]</p>
 </div>
