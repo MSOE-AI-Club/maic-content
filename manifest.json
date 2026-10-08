@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T19:30:26.148Z",
+  "generated_at": "2026-10-08T19:36:02.242Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -751,6 +751,8 @@
     "scripts/validate-content.js",
     "unlisted/Rockwell-NVIDIA-Fall-2026/Rockwell-NVIDIA-Fall-2026.md",
     "unlisted/Rockwell-NVIDIA-Fall-2026/metadata.json",
+    "unlisted/Rockwell-NVIDIA-Fall-2026-Coding-Agents/Rockwell-NVIDIA-Fall-2026-Coding-Agents.md",
+    "unlisted/Rockwell-NVIDIA-Fall-2026-Coding-Agents/metadata.json",
     "unlisted/Rockwell-NVIDIA-Fall-2026-Compute/Rockwell-NVIDIA-Fall-2026-Compute.md",
     "unlisted/Rockwell-NVIDIA-Fall-2026-Compute/metadata.json",
     "unlisted/Rockwell-NVIDIA-Fall-2026-Data-Collection/Rockwell-NVIDIA-Fall-2026-Data-Collection.md",
