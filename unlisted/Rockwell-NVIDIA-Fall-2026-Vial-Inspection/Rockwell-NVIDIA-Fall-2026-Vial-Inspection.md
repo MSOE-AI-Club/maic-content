@@ -57,7 +57,7 @@ The labeling tool lets you select an image and fixture, click a numbered positio
 ## Get the data and digital twin
 
 <div style="border: 1px solid #64748b; border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <p><strong>Digital twin (datasets 1 and 2):</strong> <a href="https://drive.google.com/drive/folders/1x6ixBGGyv6HG51TQdHvgzj7lqmsN7gKD?usp=sharing" target="_blank" rel="noopener noreferrer">Open the digital twin folder</a></p>
+  <p><strong>Digital twin (datasets 1 and 2):</strong> <a href="https://drive.google.com/file/d/1nXRN_VZ_DKGS33jtELwn6z8WR8dbQfKe/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download the digital twin</a></p>
   <p><strong>Sample data from the line:</strong> <a href="https://drive.google.com/drive/folders/1Vl5qMLvUZDeWYNaFvnN8JbIqesjOKkWN?usp=sharing" target="_blank" rel="noopener noreferrer">Open the Final Vial Inspection dataset</a></p>
   <p><strong>Everything in one place:</strong> <a href="https://drive.google.com/drive/folders/1GWuHV2WUNLztq_Fga6xBH7qFzhxDaac8?usp=sharing" target="_blank" rel="noopener noreferrer">Innovation Lab data folder</a></p>
   <p><strong>For MSOE students on Rosie:</strong> the digital twin is already downloaded at <code>TODO/ROSIE/PATH</code></p>
