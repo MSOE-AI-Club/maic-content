@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T15:50:58.554Z",
+  "generated_at": "2026-10-08T17:26:56.090Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -443,6 +443,8 @@
     "images/article_content/language_efficiency.png",
     "images/article_content/python test.png",
     "images/article_content/remote-ssh.png",
+    "images/article_content/rockwell-nvidia-fall-2026/brev-compute-running.webp",
+    "images/article_content/rockwell-nvidia-fall-2026/brev-instance-stopped.webp",
     "images/article_content/rockwell-nvidia-fall-2026/csi-testbed-timelapse.gif",
     "images/article_content/rockwell-nvidia-fall-2026/csi-testbed.webp",
     "images/article_content/rockwell-nvidia-fall-2026/fanuc-cell.webp",
