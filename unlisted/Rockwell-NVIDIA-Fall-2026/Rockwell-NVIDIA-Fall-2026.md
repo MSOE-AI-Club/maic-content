@@ -11,7 +11,7 @@ You do not need prior manufacturing or AI experience. You do need a team that is
   <div style="margin-top: 14px;">
     <p>Each student creates an account and joins or creates a team.</p>
     <p><a href="https://dashboard.all-ai-network.org/j/L36HEH" target="_blank" rel="noopener noreferrer"><strong>Sign up and manage your team</strong></a></p>
-    <p><a href="https://dashboard.all-ai-network.org/s/V28NHK" target="_blank" rel="noopener noreferrer"><strong>Submit your team plan</strong></a> by 11:59 PM CT on Wednesday, October 14.</p>
+    <p><a href="https://dashboard.all-ai-network.org/s/V28NHK?d=1ff0683a-39d7-4302-a363-0835ca390c98" target="_blank" rel="noopener noreferrer"><strong>Submit your team plan</strong></a> by 11:59 PM CT on Wednesday, October 14.</p>
     <p><a href="https://dashboard.all-ai-network.org/e/innovation-lab-fall-2026-059658" target="_blank" rel="noopener noreferrer">Open the event workspace</a></p>
     <p><strong>Use the same email address associated with your university if possible.</strong> After you join a team, connect GitHub from your profile so the dashboard can send your team repository invitation.</p>
     <h3>How teams work on the ALL AI Network</h3>
@@ -90,7 +90,7 @@ These three guides cover what every team needs beyond the datasets. Read them be
 | Date | Milestone | Details |
 | --- | --- | --- |
 | Thursday, October 8 | Kickoff | Rockwell Automation HQ, 1201 S 2nd St, Milwaukee, 4:00–6:00 PM. Transportation is provided from both campuses. |
-| Wednesday, October 14 | Team plan due | Submit by 11:59 PM CT through the [team plan submission form](https://dashboard.all-ai-network.org/s/V28NHK). |
+| Wednesday, October 14 | Team plan due | Submit by 11:59 PM CT through the [team plan submission form](https://dashboard.all-ai-network.org/s/V28NHK?d=1ff0683a-39d7-4302-a363-0835ca390c98). |
 | Sunday, November 1 | Final submission due | About a five-minute video, a one-page summary, your repository, and references. |
 | Thursday, November 5 | Finals | MSOE Diercks Hall, 5:00–8:00 PM. More details to come. |
 
@@ -106,13 +106,13 @@ These three guides cover what every team needs beyond the datasets. Read them be
 - [ ] Connect your GitHub account and accept the team repository invitation.
 - [ ] Choose dataset(s).
 - [ ] Download the data and confirm that everyone who needs it can open it.
-- [ ] Review the [compute guide](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute) and request what your team expects to use inside the [team plan](https://dashboard.all-ai-network.org/s/V28NHK).
+- [ ] Review the [compute guide](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute) and request what your team expects to use inside the [team plan](https://dashboard.all-ai-network.org/s/V28NHK?d=1ff0683a-39d7-4302-a363-0835ca390c98).
 - [ ] [Join the hackathon Slack workspace](https://join.slack.com/t/rockwellnvidi-wq82211/shared_invite/zt-4bp05nsn9-UW3afFtM9wjzWtZiQoJBHg), open `#hackathon-announcements`, and find the channel for your dataset.
-- [ ] Submit the [team plan](https://dashboard.all-ai-network.org/s/V28NHK) by Wednesday, October 14.
+- [ ] Submit the [team plan](https://dashboard.all-ai-network.org/s/V28NHK?d=1ff0683a-39d7-4302-a363-0835ca390c98) by Wednesday, October 14.
 
 ### Team plan
 
-**[Submit your team plan here](https://dashboard.all-ai-network.org/s/V28NHK)** by 11:59 PM CT on Wednesday, October 14.
+**[Submit your team plan here](https://dashboard.all-ai-network.org/s/V28NHK?d=1ff0683a-39d7-4302-a363-0835ca390c98)** by 11:59 PM CT on Wednesday, October 14.
 
 The plan is a short resource request, not a contract or graded paper. Anyone on the team can submit it, and any teammate can update the same team submission before the deadline. Organizers and sponsor mentors will use it to line up compute, data, and technical support.
 

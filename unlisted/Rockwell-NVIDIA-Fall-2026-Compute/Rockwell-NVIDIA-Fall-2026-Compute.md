@@ -10,7 +10,7 @@ Teams can use Brev cloud GPUs, DGX Spark systems at UWM, Dell GB10 systems at MS
 
 <div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
   <p><strong>Team access:</strong> Each team will be its own Brev organization. The team captain will receive a sign-up link for that organization and can share it with the rest of the team.</p>
-  <p><strong>Credit allocation:</strong> The initial credit amount per team has not been set yet; it depends on how many teams register. Request the number of Brev credits your team expects to need in your <a href="https://dashboard.all-ai-network.org/s/V28NHK">team plan</a>, using the cost table below to estimate.</p>
+  <p><strong>Credit allocation:</strong> The initial credit amount per team has not been set yet; it depends on how many teams register. Request the number of Brev credits your team expects to need in your <a href="https://dashboard.all-ai-network.org/s/V28NHK?d=1ff0683a-39d7-4302-a363-0835ca390c98">team plan</a>, using the cost table below to estimate.</p>
 </div>
 
 ### Start a launchable
