@@ -41,8 +41,8 @@ You do not need prior manufacturing or AI experience. You do need a team that is
     <p><a href="https://www.rockwellautomation.com/en-us.html"><strong>Rockwell Automation</strong></a> builds the industrial automation and control systems that run production lines across manufacturing, from the controllers on the plant floor to the FactoryTalk software that connects production data and workflows. Its Emulate3D tools let engineers model and test a manufacturing system as a digital twin before they change physical equipment.</p>
     <p>Rockwell's customers are under pressure to produce more product variants, in smaller batches, with fewer experienced people on the floor. A line that changes recipes or products often cannot wait weeks for a new inspection program or robot routine. For Rockwell, AI is valuable when it makes those changeovers faster and more reliable, and when operators can understand and trust what it is doing. Results that hold up on real equipment, with clear limits, matter more than results that only work in a clean demo.</p>
     <h3>NVIDIA</h3>
-    <p><a href="https://www.nvidia.com/en-us/"><strong>NVIDIA</strong></a> provides the accelerated computing and physical AI platforms used to train, simulate, and run AI in the real world: computer vision, Isaac Sim and Omniverse for simulation and synthetic data, robotics, and AI agents.</p>
-    <p>NVIDIA sees physical AI, meaning AI that perceives, reasons about, and acts on the physical world, as the next major wave of computing. Factories are where that shift becomes concrete. Teams can train a model, test it on a simulated version of the line, and then run it on the real cell. Manufacturing is also where the open questions are hardest: limited labeled data, constant product changes, and the need for systems that work safely beside people and machines.</p>
+    <p><a href="https://www.nvidia.com/en-us/"><strong>NVIDIA</strong></a> provides the accelerated computing, AI models, simulation frameworks, and edge platforms used to build Physical AI systems—systems that can perceive, reason, plan, and act in the physical world. Across computer vision, robotics, and industrial automation, teams can train models, simulate and validate their behavior with NVIDIA Omniverse and Isaac Sim, generate synthetic data where real-world data is limited, and deploy them for real-time inference and control.</p>
+    <p>NVIDIA sees Physical AI as the next major wave of computing. In manufacturing, that shift becomes tangible: teams can develop and train models, test them against a physically based digital twin of a production line, and then deploy validated systems into the physical production environment. This approach helps address some of manufacturing’s hardest challenges, including limited labeled data, frequent product and process changes, and the need for systems that operate safely and reliably alongside people and machines.</p>
     <h3>Why they are working together</h3>
     <p>Rockwell brings deep knowledge of industrial operations and the systems manufacturers already run. NVIDIA brings the compute and simulation tools to move AI from experimentation into production. Together, they are bringing NVIDIA's simulation and AI technology into Rockwell's digital twin and design tools, so manufacturers can design, test, and improve automated systems before touching the physical line.</p>
     <h3>Why this matters</h3>
@@ -78,7 +78,7 @@ We recommend that teams focus on building one strong solution around a single id
 
 These three guides cover what every team needs beyond the datasets. Read them before you submit your team plan.
 
-- **[Compute: Brev, DGX Spark, and build.nvidia.com](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute):** how to get GPU power for your project. It covers Brev cloud GPUs and ready-made launchables (including Isaac Sim), the DGX Spark systems at MSOE and UWM, free model APIs on build.nvidia.com, and the workstation at CSI. Brev credits are spent whenever an instance is running, so read this before you start one.
+- **[Compute: Brev, DGX Spark, and build.nvidia.com](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute):** how to get GPU power for your project. It covers Brev cloud GPUs and ready-made launchables (including Isaac Sim), the DGX Spark systems at UWM and Dell GB10 systems at MSOE, free model APIs on build.nvidia.com, and the workstation at CSI. Brev credits are spent whenever an instance is running, so read this before you start one.
 - **[Collect and test your own data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection):** what you can and cannot do at the CSI testbed. It explains how to request a visit or extra data, how to collect your own data safely, how to use digital twins for synthetic data, and how to schedule a supervised test of your finished system on the real equipment.
 - **[Tools and resources](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Resources):** a reference list of AI coding tools, in-context learning with vision-language models, NVIDIA Cosmos, and other tools worth knowing. Start with a simple baseline, then use this page when you hit a specific question.
 
@@ -122,7 +122,7 @@ The form asks for:
 - the dataset or combination of datasets you plan to use;
 - a short description of the problem you plan to solve;
 - data you need beyond what is already provided, and why;
-- the compute you expect to use: Brev, an MSOE or UWM DGX Spark, the CSI workstation, or build.nvidia.com;
+- the compute you expect to use: Brev (including how many credits your team is requesting), a UWM DGX Spark, an MSOE Dell GB10 on Rosie, the CSI workstation, or build.nvidia.com;
 - AI-agent credits or tools you need;
 - the type of mentor support you want;
 - questions for the organizers.
@@ -198,7 +198,7 @@ This year, teams will not be assigned one exact mentor or given a long directory
 - `#dataset-2-fluid-mixing` — questions and findings about Station 3 and fluid recipes.
 - `#dataset-3-grasping-sorting` — questions about the standalone FANUC robot and digital twin.
 - `#data-and-testbed-requests` — additional data, CSI visits, on-site collection, and live testing.
-- `#compute-questions` — Brev credits, instances, DGX Spark access, and compute troubleshooting.
+- `#compute-questions` — Brev credits, instances, DGX Spark and GB10 access, and compute troubleshooting.
 
 ### Who to ping
 
