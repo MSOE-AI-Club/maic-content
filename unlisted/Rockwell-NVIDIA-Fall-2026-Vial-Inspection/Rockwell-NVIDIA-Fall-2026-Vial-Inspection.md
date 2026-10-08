@@ -71,11 +71,101 @@ After downloading, open several full images and their corresponding crops. Confi
 
 See [Compute](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute) before launching training or simulation.
 
-## Starter approaches
+## Starter approach: TAO Toolkit with Visual ChangeNet
+
+This path trains a small [Visual ChangeNet](https://docs.nvidia.com/tao/tao-toolkit/latest/text/cv_finetuning/pytorch/visual_changenet/visual_changenet_classify.html) classification model with a coding agent and the [NVIDIA TAO Skill Bank](https://github.com/NVIDIA-TAO/tao-skill-bank). You do not need to memorize TAO commands: the Skill Bank gives your agent model-specific instructions, data checks, and container launch steps. Your job is to describe the experiment clearly, inspect the results, and decide what to try next.
+
+Visual ChangeNet compares an inspection image with a **golden image**, a known-good reference of what the vial should look like, and outputs `PASS` or `NO_PASS`. The TAO workflow expects you to already have image pairs. You will not have enough real images at the start, so generate them with the digital twin first (step 4).
+
+### 1. Start a GPU instance
+
+If you are using Brev, start with an **L40S** and select **AWS** as the cloud environment. Pick an option that offers Start/Stop so you keep your storage between sessions. See the [Compute guide](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute) for credits and costs.
+
+Once connected, confirm the GPU is visible. If this fails, stop and ask in `#compute-questions`.
+
+```bash
+nvidia-smi
+```
+
+### 2. Download the data
+
+Download the dataset from the **Get the data** section above, or use the Rosie path if you are working on Rosie.
+
+### 3. Clone the TAO Skill Bank
+
+```bash
+cd ~
+git clone https://github.com/NVIDIA-TAO/tao-skill-bank.git
+cd ~/tao-skill-bank
+```
 
 <div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <strong>[ TODO: add the recommended starter approaches after reviewing them with the technical mentors. ]</strong>
+  <p><strong>Pinned release:</strong> [ TODO: add the tested release tag to clone with <code>--branch &lt;tag&gt;</code>. ]</p>
+  <p><strong>Container and backbone access:</strong> [ TODO: confirm how teams get the TAO container and the C-RADIOv2-B backbone, for example their own NGC and Hugging Face accounts or a preloaded Brev image. ]</p>
 </div>
+
+Follow the installation section of the [Skill Bank README](https://github.com/NVIDIA-TAO/tao-skill-bank) for your coding agent (Claude Code, Codex, or Gemini CLI). The skill you need is:
+
+```text
+skills/models/tao-train-visual-changenet/
+```
+
+Start with standalone Visual ChangeNet. Add the [DEFT AOI workflow](https://docs.nvidia.com/tao/tao-toolkit/latest/text/reference_workflows/deft/aoi.html) only after your baseline is working and reproducible.
+
+### 4. Generate training images with the digital twin
+
+Use the vial station digital twin to render images before you train. Aim for:
+
+- good vials and each defect class (`missing_cap`, `crooked_cap`, `damaged_vial`, `no_vial`);
+- the same overhead camera pose, crop, and lighting as the real station;
+- crops for each numbered fixture position, with a label for each crop.
+
+<div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
+  <strong>[ TODO: add the vial station digital twin instructions: where to get it, how to launch it, and how to render labeled crops. ]</strong>
+</div>
+
+The [Isaac Sim on Brev tutorial](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Resources) shows how to run a digital twin headless and copy rendered output back to your computer. Visual ChangeNet needs pair-wise CSV files (inspection image, golden image, label); ask your agent to build them in the [TAO annotation format](https://docs.nvidia.com/tao/tao-toolkit/latest/text/data_annotation_format.html).
+
+### 5. Choose a golden image
+
+Point your agent to one specific, confirmed-good vial crop to use as the golden image. A good golden matches the inspection images' position, camera pose, crop, scale, and lighting. If it does not, the model may learn to flag the imaging difference instead of the defect.
+
+<div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
+  <strong>[ TODO: add the path to the recommended starter golden image. ]</strong>
+</div>
+
+One golden image is enough to get the pipeline running. Position-specific or multiple golden images are a good idea to explore later.
+
+### 6. Train with your agent
+
+Start your agent from the Skill Bank checkout or your data folder, replace the two placeholders, and give it this prompt:
+
+```text
+Use the installed NVIDIA TAO Skill Bank and the tao-train-visual-changenet
+skill to train a Visual ChangeNet classification model on <WORKSPACE>.
+Use <GOLDEN_IMAGE_PATH> as the golden image for every pair.
+
+Use local Docker on this GPU. Do not run DEFT, AnomalyGen, export, or
+deployment yet.
+
+Before training, validate the training, validation, and test CSV files against
+the images, and prove there is no overlap between training and validation.
+Show me a short preflight summary before starting any long-running action.
+
+Then train, pick a checkpoint, run inference on the test set, and report each
+sample's ground truth, score, and predicted label; the decision threshold; the
+confusion matrix; defect recall and false alarm rate, including the false alarm
+rate at 100% defect recall; and the paths to logs, inference output, and
+checkpoints.
+```
+
+### 7. Read the results
+
+- **Positive means a defect was detected.** A false negative is an escaped defect, and a false positive is a good vial rejected. Missed defects matter more in judging.
+- The score is a distance from the golden image, not a probability. Higher scores mean more different and lean toward `NO_PASS`.
+- Report the false alarm rate at the threshold that catches every known defect, not only overall accuracy.
+- Open several correct and incorrect image pairs. Check whether the model reacts to the defect or to pose, glare, and lighting.
+- Change one thing at a time, such as the golden image, crop, threshold, or added synthetic examples, and keep the test set fixed.
 
 Useful questions for a first baseline:
 
