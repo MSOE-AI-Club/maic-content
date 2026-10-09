@@ -17,7 +17,7 @@ Teams can use Brev cloud GPUs, DGX Spark systems at UWM, Dell GB10 systems at MS
 
 1. Sign in to Brev with the account tied to your team credits.
 2. Open the launchable that matches the task:
-   - [Isaac Sim and Isaac Lab on an L40S](https://brev.nvidia.com/launchable/deploy/now?launchableID=env-35JP2ywERLgqtD0b0MIeK1HnF46)
+   - [Isaac Sim and Isaac Lab](https://brev.nvidia.com/launchable/deploy/now?launchableID=env-35JP2ywERLgqtD0b0MIeK1HnF46) (select an RTX PRO 6000 when available)
    - [NeMoClaw agent orchestration](https://brev.nvidia.com/launchable/deploy/now?launchableID=env-3Azt0aYgVNFEuz7opyx3gscmowS)
    - [Cosmos video generation on C2.5T](https://brev.nvidia.com/launchable/deploy/now?launchableID=env-3DH5QPdLRWBABdW9Lxn4vQBK5mW)
 3. Choose the GPU and cloud environment (see below).
@@ -27,7 +27,9 @@ Teams can use Brev cloud GPUs, DGX Spark systems at UWM, Dell GB10 systems at MS
 
 ### Choose a GPU and cloud environment
 
-- **GPU:** The L40S is fully capable and is the recommended starting point. You can switch a launchable to a newer GPU such as the RTX PRO 4500 or RTX PRO 6000. These may cost more per hour, but jobs can finish faster, so they can be worth it for heavier workloads.
+- **Prefer an RTX PRO 6000 when one is available.** It costs roughly twice as much per hour as an L40S, but training jobs may finish substantially faster. Compare total job cost, not only the hourly rate.
+- **Use the RTX PRO 6000 for Isaac Sim as well when available.** Simulation may not gain as much speed as model training, but these runs will help the organizers compare real performance and cost across GPUs. Record the GPU, runtime, and approximate credits used.
+- **The L40S remains a capable lower-cost fallback.** An RTX PRO 4500 is also a reasonable newer option when a 6000 is unavailable.
 - **Use AWS environments when possible**, especially for L40S instances. Their CUDA versions are much more recent than some other providers.
 - **Only use environments that offer Start/Stop.** Brev lists many cloud environments, and some cannot be stopped, only deleted. Start/Stop lets your team pause an instance and keep its storage instead of moving everything off each time.
 
@@ -69,8 +71,8 @@ These figures come from the planning documents and may change in the Brev consol
 | Workload | Suggested hardware | Planning rate |
 | --- | --- | --- |
 | Cosmos Reason Edge inference | T4 | about $0.50/hour |
-| AOI model training, Cosmos Reason Nano inference, or NuRec | L40S | about $2/hour |
-| Isaac Sim synthetic data or Isaac Lab policy work | L40S | about $3/hour |
+| AOI model training, Cosmos Reason Nano inference, or NuRec | RTX PRO 6000 preferred; L40S fallback | RTX PRO 6000 is roughly 2× the comparable L40S rate; L40S about $2/hour |
+| Isaac Sim synthetic data or Isaac Lab policy work | RTX PRO 6000 preferred; L40S fallback | RTX PRO 6000 is roughly 2× the comparable L40S rate; L40S about $3/hour |
 | Cosmos Reason Edge fine-tuning | 1× H100 | about $5/hour |
 | Cosmos Reason Nano LoRA training | 4× A100 80 GB | about $8/hour |
 | Cosmos video generation launchable | C2.5T | about $17/hour |
@@ -113,8 +115,8 @@ CSI has a Windows 11 workstation with an RTX PRO 5000 Blackwell GPU, Omniverse, 
 
 ## What to request in the team plan
 
-State the workload, expected hardware, estimated hours, the number of Brev credits you are requesting, and when the team needs it. For example:
+State the workload, expected hardware, estimated hours, the number of Brev credits you are requesting, and when the team needs it. If you request an RTX PRO 6000, budget for roughly twice the hourly cost of the equivalent L40S environment. For example:
 
-> Train an AOI baseline on the vial crops using an L40S for about 10 hours in week two (about $20–30 in Brev credits). We will run preprocessing locally and stop the Brev instance between training runs.
+> Train an AOI baseline on the vial crops using an RTX PRO 6000 for about 10 hours in week two (about $40–60 in Brev credits). We will record runtime and credits used, run preprocessing locally, and stop the Brev instance between training runs.
 
 If the request is uncertain, say what quick test will determine it. Sponsors can help adjust the choice before credits are spent.

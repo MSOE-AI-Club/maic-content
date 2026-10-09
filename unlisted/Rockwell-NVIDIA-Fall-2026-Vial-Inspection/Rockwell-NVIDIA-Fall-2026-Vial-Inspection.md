@@ -89,7 +89,7 @@ One strong baseline is a small [Visual ChangeNet](https://docs.nvidia.com/tao/ta
 
 The general approach:
 
-- **Compute:** if you use Brev, an L40S on an AWS environment is a good place to start. See the [Compute guide](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute).
+- **Compute:** if you use Brev, prefer an RTX PRO 6000 when available; its higher hourly rate may be offset by faster training. An L40S on an AWS environment remains a capable lower-cost fallback. See the [Compute guide](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Compute).
 - **Generate your data:** render good vials and each defect class from the digital twin, matching the real station's overhead camera pose, crop, and lighting. Visual ChangeNet trains on pairs of an inspection image and a golden image in the [TAO annotation format](https://docs.nvidia.com/tao/tao-toolkit/latest/text/data_annotation_format.html).
 - **Pick a golden image:** choose one confirmed-good vial crop and point your agent to it. It should match the inspection images' position, camera pose, crop, scale, and lighting, or the model may learn to flag imaging differences instead of defects. Position-specific or multiple golden images are worth exploring later.
 - **Train with an agent:** clone the [NVIDIA TAO Skill Bank](https://github.com/NVIDIA-TAO/tao-skill-bank) and point your coding agent at its Visual ChangeNet skill. The Skill Bank gives the agent model-specific instructions, data checks, and container steps, so you do not need to memorize TAO commands. Follow its README for setup; the TAO container and backbone may require your own NGC and Hugging Face accounts.
