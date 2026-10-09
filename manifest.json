@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T13:59:47.618Z",
+  "generated_at": "2026-10-09T14:12:25.750Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -370,6 +370,8 @@
     "competitions/Innovation Labs/Persistent-Spring-2026/metadata.json",
     "competitions/Innovation Labs/Persistent-Spring-2026-Finals/Persistent-Spring-2026-Finals.md",
     "competitions/Innovation Labs/Persistent-Spring-2026-Finals/metadata.json",
+    "competitions/Innovation Labs/Rockwell-NVIDIA-Fall-2026/Rockwell-NVIDIA-Fall-2026.md",
+    "competitions/Innovation Labs/Rockwell-NVIDIA-Fall-2026/metadata.json",
     "competitions/Innovation Labs/Xorbix-Fall-2025/Xorbix-Fall-2025.md",
     "competitions/Innovation Labs/Xorbix-Fall-2025/metadata.json",
     "competitions/Innovation Labs/Xorbix-Fall-2025-Finals/Xorbix-Fall-2025-Finals.md",
@@ -751,8 +753,6 @@
     "package.json",
     "scripts/generate-manifest.js",
     "scripts/validate-content.js",
-    "unlisted/Rockwell-NVIDIA-Fall-2026/Rockwell-NVIDIA-Fall-2026.md",
-    "unlisted/Rockwell-NVIDIA-Fall-2026/metadata.json",
     "unlisted/Rockwell-NVIDIA-Fall-2026-Coding-Agents/Rockwell-NVIDIA-Fall-2026-Coding-Agents.md",
     "unlisted/Rockwell-NVIDIA-Fall-2026-Coding-Agents/metadata.json",
     "unlisted/Rockwell-NVIDIA-Fall-2026-Compute/Rockwell-NVIDIA-Fall-2026-Compute.md",
