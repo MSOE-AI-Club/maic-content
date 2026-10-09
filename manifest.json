@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T19:42:57.973Z",
+  "generated_at": "2026-10-09T13:59:47.618Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -448,6 +448,8 @@
     "images/article_content/rockwell-nvidia-fall-2026/csi-testbed-timelapse.gif",
     "images/article_content/rockwell-nvidia-fall-2026/csi-testbed.webp",
     "images/article_content/rockwell-nvidia-fall-2026/fanuc-cell.webp",
+    "images/article_content/rockwell-nvidia-fall-2026/fanuc-grasping-overhead.jpg",
+    "images/article_content/rockwell-nvidia-fall-2026/fanuc-grasping-side.jpg",
     "images/article_content/rockwell-nvidia-fall-2026/fanuc-gripper.webp",
     "images/article_content/rockwell-nvidia-fall-2026/fluid-batch-scheduler.webp",
     "images/article_content/rockwell-nvidia-fall-2026/fluid-fill-blue.webp",
