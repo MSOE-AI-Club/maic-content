@@ -87,6 +87,7 @@ jobs:
           
           # Copy all content files to dist
           cp -r articles dist/ 2>/dev/null || true
+          cp -r competitions dist/ 2>/dev/null || true
           cp -r data dist/ 2>/dev/null || true
           cp -r images dist/ 2>/dev/null || true
           cp -r unlisted dist/ 2>/dev/null || true
