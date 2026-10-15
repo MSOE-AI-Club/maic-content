@@ -218,6 +218,7 @@ This year, teams will not be assigned one exact mentor or given a long directory
 
 - **More data, CSI visits, or physical testing:** Ping **Shamar Webster** in `#data-and-testbed-requests`. This includes requesting more production-line data, visiting CSI to collect your own data, and arranging a supervised test of your tool. Email fallback: [webste63@uwm.edu](mailto:webste63@uwm.edu).
 - **Questions about the line or datasets:** Ping **Brett Storoe, Dr. Derek Riley, or Tanner Cellio** in the relevant dataset channel. These are the first contacts for non-critical questions about the equipment, dataset context, or problem your team is trying to understand. Email fallbacks: [storoeb@msoe.edu](mailto:storoeb@msoe.edu) and [driley@nvidia.com](mailto:driley@nvidia.com).
+- **Questions about the FANUC robot (Dataset 3):** Email **Zhen Zeng** at [zhenzeng@uwm.edu](mailto:zhenzeng@uwm.edu), or ask in `#dataset-3-grasping-sorting`.
 - **Brev or compute:** Ping **Dan Schneider** in `#compute-questions`, or email [danschneider@nvidia.com](mailto:danschneider@nvidia.com).
 - **Website, signup, team, or Slack access:** Ping **Brett Storoe** in `#hackathon-general`, or email [storoeb@msoe.edu](mailto:storoeb@msoe.edu).
 

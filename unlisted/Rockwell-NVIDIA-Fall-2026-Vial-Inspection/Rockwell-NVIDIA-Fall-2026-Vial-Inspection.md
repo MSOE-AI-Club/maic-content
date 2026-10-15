@@ -58,7 +58,7 @@ The labeling tool lets you select an image and fixture, click a numbered positio
 
 <div style="border: 1px solid #64748b; border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
   <p><strong>Digital twin (datasets 1 and 2):</strong> <a href="https://drive.google.com/file/d/1nXRN_VZ_DKGS33jtELwn6z8WR8dbQfKe/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download the digital twin</a></p>
-  <p><strong>Sample data from the line:</strong> <a href="https://drive.google.com/drive/folders/1Vl5qMLvUZDeWYNaFvnN8JbIqesjOKkWN?usp=sharing" target="_blank" rel="noopener noreferrer">Open the Final Vial Inspection dataset</a></p>
+  <p><strong>Dataset and labeling tool:</strong> the download will be linked in <code>#dataset-1-vial-inspection</code> on Slack.</p>
   <p><strong>Everything in one place:</strong> <a href="https://drive.google.com/drive/folders/1GWuHV2WUNLztq_Fga6xBH7qFzhxDaac8?usp=sharing" target="_blank" rel="noopener noreferrer">Innovation Lab data folder</a></p>
   <p><strong>For MSOE students on Rosie:</strong> use the download link above until an on-Rosie path is published.</p>
 </div>
@@ -69,7 +69,7 @@ The sample images come from the real line. Look through them to understand the s
 
 That is how this problem has to be solved on a high-mix, low-volume (HMLV) line like CSI's, which makes many product variants in small batches and changes over often. A new product or recipe has no real images until the line has been commissioned and is running it. Collecting and labeling real examples afterwards is costly: it takes line time and operators, defects have to be produced on purpose, and the work repeats at every changeover. A digital twin can produce labeled images of a product, including rare defects, before it ever runs on the line.
 
-Need more real data? See [Collect and Test Your Own Data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection). We may also release a held-out set of real images for testing if there is interest.
+Need more real data? See [Collect and Test Your Own Data](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection). The dataset and labeling tool will be linked in `#dataset-1-vial-inspection` on Slack.
 
 The [Isaac Sim on Brev tutorial](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Resources) shows how to run a digital twin headless and copy rendered images back to your computer.
 

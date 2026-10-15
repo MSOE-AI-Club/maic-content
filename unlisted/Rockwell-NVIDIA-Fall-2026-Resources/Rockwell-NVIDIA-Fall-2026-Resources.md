@@ -63,6 +63,8 @@ This tutorial covers Isaac Sim on Brev without Cosmos 3. The launchable runs hea
 
 ### Extra: robot arm digital twin
 
+[Download the FANUC digital twin](https://drive.google.com/file/d/1e3ulDy26I2mJelyvLFrgGXjCd__CWjKG/view?usp=sharing). It is calibrated to the cameras on the grasping cell. Questions about the robot go to [zhenzeng@uwm.edu](mailto:zhenzeng@uwm.edu).
+
 1. Copy the FANUC digital twin zip to the Isaac Sim instance. Use your own file path and the instance name shown in Brev:
 
    ```bash

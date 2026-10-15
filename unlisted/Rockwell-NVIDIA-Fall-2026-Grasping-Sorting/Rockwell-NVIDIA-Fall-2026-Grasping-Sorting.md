@@ -25,10 +25,9 @@ The first target is a repeatable grasp and sort. Define how success will be meas
 
 ## Get the data and digital twin
 
-<div style="border: 1px solid #f59e0b; background: rgba(245, 158, 11, 0.12); border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
-  <p><strong>Robotic digital twin:</strong> the download will be released within the next 24 hours.</p>
-  <p><strong>Dataset, camera samples, calibration files, and finger CAD:</strong> access details will be posted here as they are finalized.</p>
-  <p><strong>For MSOE students on Rosie:</strong> the Rosie location and access instructions will be posted with the project files.</p>
+<div style="border: 1px solid #64748b; border-radius: 8px; padding: 12px 16px; margin: 16px 0;">
+  <p><strong>Robotic digital twin:</strong> <a href="https://drive.google.com/file/d/1e3ulDy26I2mJelyvLFrgGXjCd__CWjKG/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download the digital twin</a>. It is calibrated to the cameras on this cell.</p>
+  <p><strong>Questions about the robot:</strong> email <a href="mailto:zhenzeng@uwm.edu">zhenzeng@uwm.edu</a>.</p>
 </div>
 
 ## Run the twin on Brev
