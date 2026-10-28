@@ -96,7 +96,7 @@ These four guides cover what every team needs beyond the datasets. Read them bef
 | Wednesday, October 14 | Team plan due | Submit by 11:59 PM CT through the [team plan submission form](https://dashboard.all-ai-network.org/s/V28NHK?d=1ff0683a-39d7-4302-a363-0835ca390c98). |
 | Sunday, November 1 | Final submission due | Submit by 11:59 PM CT through the [final submission form](https://dashboard.all-ai-network.org/s/V28NHK): an approximately five-minute video, a one-page executive summary, and links to supporting material. |
 | Wednesday, November 4 | Finals invitations accepted | Judges invite teams to give an oral presentation or present a poster at the finals. Accept your invitation by November 4. |
-| Thursday, November 5 | Finals | MSOE Diercks Hall, 4:30–8:00 PM. Oral presentations in the auditorium, then posters and networking in the atrium. |
+| Thursday, November 5 | Finals | MSOE Diercks Hall, 4:00–7:30 PM. Six finalist teams present in the auditorium, and many more teams present posters in the atrium. |
 
 </details>
 
@@ -166,7 +166,7 @@ Include links to additional reference material that supports the claims in your 
 
 ### After you submit
 
-Judges will review every submission and invite teams to the finals, either for an **oral presentation** or for the **poster session**. Teams must accept their invitation by **Wednesday, November 4**. See **Judging** below for the finals schedule.
+Judges will review every submission and invite teams to the finals: **six finalist teams** for oral presentations, and **many more teams** for the poster session. Teams must accept their invitation by **Wednesday, November 4**. See **Judging** below for the finals schedule.
 
 </details>
 
@@ -235,17 +235,18 @@ Judging criteria include, but are not limited to:
 
 ### How finalists are chosen
 
-Judges review the final submissions and invite teams to present at the finals, either as an **oral presentation** or in the **poster session**. Teams must accept their invitation by **Wednesday, November 4**. Judges select award winners from both the oral and poster presentations.
+Judges review the final submissions and invite teams to the finals. **Six teams will be selected as finalists** to give an oral presentation, and **many more teams will be selected to present posters**. Teams must accept their invitation by **Wednesday, November 4**. Judges select award winners from both the oral and poster presentations.
 
 ### Finals: Thursday, November 5, MSOE Diercks Hall
 
 | Time | What happens | Where |
 | --- | --- | --- |
-| 4:00 PM | Poster teams set up | Diercks Hall atrium |
-| 4:30 PM | Final oral presentations begin | Diercks Hall auditorium |
-| 6:15 PM | Oral presentations conclude | Diercks Hall auditorium |
-| 6:30 PM | Poster presentations and networking begin | Diercks Hall atrium |
-| 8:00 PM | Evening concludes | |
+| 4:00–4:30 PM | Teams set up posters | Atrium |
+| 4:30–5:00 PM | Poster session, part 1, as guests arrive | Atrium |
+| 5:00–6:15 PM | Finalist presentations and oral awards | Auditorium |
+| 6:15–6:50 PM | Poster session, part 2, with snacks (poster scores due 6:40) | Atrium |
+| 6:50–7:00 PM | Poster awards and group photo | Atrium |
+| 7:00–7:30 PM | Optional networking, then teardown | Atrium |
 
 </details>
 
