@@ -94,8 +94,9 @@ These four guides cover what every team needs beyond the datasets. Read them bef
 | --- | --- | --- |
 | Thursday, October 8 | Kickoff | Rockwell Automation HQ, 1201 S 2nd St, Milwaukee, 4:00–6:00 PM. Transportation is provided from both campuses. |
 | Wednesday, October 14 | Team plan due | Submit by 11:59 PM CT through the [team plan submission form](https://dashboard.all-ai-network.org/s/V28NHK?d=1ff0683a-39d7-4302-a363-0835ca390c98). |
-| Sunday, November 1 | Final submission due | About a five-minute video, a one-page summary, your repository, and references. |
-| Thursday, November 5 | Finals | MSOE Diercks Hall, 5:00–8:00 PM. More details to come. |
+| Sunday, November 1 | Final submission due | Submit by 11:59 PM CT through the [final submission form](https://dashboard.all-ai-network.org/s/V28NHK): an approximately five-minute video, a one-page executive summary, and links to supporting material. |
+| Wednesday, November 4 | Finals invitations accepted | Judges invite teams to give an oral presentation or present a poster at the finals. Accept your invitation by November 4. |
+| Thursday, November 5 | Finals | MSOE Diercks Hall, 4:30–8:00 PM. Oral presentations in the auditorium, then posters and networking in the atrium. |
 
 </details>
 
@@ -137,25 +138,35 @@ Plans may change once teams examine the data. Keep the first submission short an
 <details style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
   <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">Final submission</summary>
 
-**[Submit your final project here](https://dashboard.all-ai-network.org/s/V28NHK)** by 11:59 PM CT on Sunday, November 1.
+**[Submit your final project here](https://dashboard.all-ai-network.org/s/V28NHK)** by 11:59 PM CT on Sunday, November 1. Only submissions made through the website are considered by the judges.
 
-Each team submits:
+You have worked hard on your project, and this is your chance to put your best foot forward. A complete submission helps the judges see your work at its best and get back to you quickly. For the strongest submission, include the following three items.
 
-- a video of about five minutes;
-- a one-page project summary;
-- a link to the team repository;
-- references and credits for data, models, code, and tools.
+### 1. Video (about five minutes)
 
-### What judges expect
+Showcase your project. The video should:
 
-Your video, summary, and finals presentation should:
+- **Demonstrate the solution operating on the hardware in the CSI**, either the production line or the FANUC robot. See the [data collection guide](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection) to schedule a supervised test.
+- **Identify the specific problem being solved** and why it matters.
+- **Explain how the solution would impact other manufacturers or generalize more broadly**, for example through reduced scrap, rework, downtime, or labor.
+- **Show measured results against a baseline**, and be clear about where the solution might fall short.
 
-- **Demonstrate the solution operating on real hardware**, either the UWM CSI production line or the FANUC robotic arm. See the [data collection guide](https://msoe-maic.com/library?article=Rockwell-NVIDIA-Fall-2026-Data-Collection) to schedule a supervised test.
-- **Identify the specific problem being solved**, such as a defect type, a failure mode, or a slow manual step, and why it matters on this line.
-- **Explain how the solution would impact other manufacturers.** Think about the business case: what the problem costs today (scrap, rework, downtime, or labor), what your solution would save or improve, and what it would take for a plant to adopt it (hardware, setup time, changeovers, and operator trust).
-- **Show measured results** against a baseline, and be clear about where the solution still fails.
+### 2. Executive summary (one page)
 
-The Nov. 5 finals include live presentations and prizes.
+A short summary of your project goals, the data you collected or generated, and your approach. It should answer:
+
+- What problem or problems are you solving in manufacturing?
+- How does your project use physical AI?
+- How did you use the physical equipment in the CSI?
+- What evidence did you collect that shows your solution solves the stated problem?
+
+### 3. Supporting material
+
+Include links to additional reference material that supports the claims in your video or executive summary, such as your team's GitHub repository.
+
+### After you submit
+
+Judges will review every submission and invite teams to the finals, either for an **oral presentation** or for the **poster session**. Teams must accept their invitation by **Wednesday, November 4**. See **Judging** below for the finals schedule.
 
 </details>
 
@@ -165,37 +176,76 @@ The Nov. 5 finals include live presentations and prizes.
 <div style="border-radius: 14px; padding: 2px; margin: 18px 0; background: linear-gradient(135deg, #76b900, #7c3aed, #cd163f);">
   <div style="border-radius: 12px; padding: 24px 20px; background: #0d0d10; text-align: center;">
     <div style="font-size: 0.95rem; letter-spacing: 0.15em; text-transform: uppercase; color: #a3a3a3;">Total prize pool</div>
-    <div style="font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin: 6px 0; background: linear-gradient(90deg, #76b900, #a855f7); -webkit-background-clip: text; background-clip: text; color: transparent;">$5,000 in cash</div>
+    <div style="font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin: 6px 0; background: linear-gradient(90deg, #76b900, #a855f7); -webkit-background-clip: text; background-clip: text; color: transparent;">$8,000 in cash</div>
+    <div style="color: #d4d4d4;">plus NVIDIA hardware and swag</div>
   </div>
 </div>
+
+| Award | Count | Each | Total |
+| --- | --- | --- | --- |
+| Overall winner (1st place) | 1 | $3,000 | $3,000 |
+| 1st runner-up (2nd place) | 1 | $1,500 | $1,500 |
+| 2nd runner-up (3rd place) | 1 | $1,000 | $1,000 |
+| Finalist award | 3 | $500 | $1,500 |
+| Poster award | 4 | $250 | $1,000 |
+| **Total** | | | **$8,000** |
 
 <div style="display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin: 18px 0;">
   <div style="border: 1px solid #76b900; border-radius: 12px; padding: 20px; text-align: center; background: rgba(118, 185, 0, 0.08);">
     <div style="font-size: 1.6rem; font-weight: 800; color: #76b900;">RTX 5080</div>
-    <div style="color: #d4d4d4;">NVIDIA GeForce graphics card</div>
+    <div style="color: #d4d4d4;">for the overall winner</div>
   </div>
   <div style="border: 1px solid #76b900; border-radius: 12px; padding: 20px; text-align: center; background: rgba(118, 185, 0, 0.08);">
     <div style="font-size: 1.6rem; font-weight: 800; color: #76b900;">RTX 5070</div>
-    <div style="color: #d4d4d4;">NVIDIA GeForce graphics card</div>
+    <div style="color: #d4d4d4;">for the 1st runner-up</div>
   </div>
   <div style="border: 1px solid #a855f7; border-radius: 12px; padding: 20px; text-align: center; background: rgba(168, 85, 247, 0.08);">
-    <div style="font-size: 1.6rem; font-weight: 800; color: #c084fc;">Sponsor swag</div>
-    <div style="color: #d4d4d4;">from Rockwell Automation and NVIDIA</div>
+    <div style="font-size: 1.6rem; font-weight: 800; color: #c084fc;">NVIDIA swag</div>
+    <div style="color: #d4d4d4;">for placing teams, details to come</div>
   </div>
 </div>
 
-**Details to come** on how the cash is split between first, second, and third place, and on the additional award categories and prizes.
+- **Finalist award ($500 each):** reaching the final round is a win on its own. Each finalist team that does not place in the top three receives $500, so every team on the finals stage is paid.
+- **Poster awards ($250 each):** open only to poster teams. One judge from each sponsor (Rockwell Automation, NVIDIA, OpenAI, and MSOE/UWM) selects one poster.
+- **NVIDIA hardware and swag** are awarded in addition to the cash.
 
 </details>
 
 <details style="border: 1px solid #64748b; border-radius: 10px; padding: 14px 18px; margin: 22px 0;">
   <summary style="cursor: pointer; font-size: 1.5rem; font-weight: 700;">Judging</summary>
 
-Projects will be reviewed by judges representing **Rockwell Automation, NVIDIA, MSOE, and UWM**.
+### Judges
 
-Judges will look for the expectations listed under **Final submission**: a solution operating on the CSI line or robotic arm, a specific problem, a clear business case for other manufacturers, and measured results.
+- Dr. Tomasz Kornuta
+- Poonam Chitale
+- Rockwell Automation representatives
+- Joe Hamann
+- Dr. Chris GauthierDickey
 
-The detailed judging criteria, category weights, and award categories are still being finalized. More information will be shared when it is available.
+### Criteria
+
+Judging criteria include, but are not limited to:
+
+- alignment with a grounded manufacturing problem;
+- effectiveness and validation of the solution;
+- physical operation and reliability;
+- engineering practicality;
+- value to the manufacturing industry and generalizability of the solution;
+- broader impacts.
+
+### How finalists are chosen
+
+Judges review the final submissions and invite teams to present at the finals, either as an **oral presentation** or in the **poster session**. Teams must accept their invitation by **Wednesday, November 4**. Judges select award winners from both the oral and poster presentations.
+
+### Finals: Thursday, November 5, MSOE Diercks Hall
+
+| Time | What happens | Where |
+| --- | --- | --- |
+| 4:00 PM | Poster teams set up | Diercks Hall atrium |
+| 4:30 PM | Final oral presentations begin | Diercks Hall auditorium |
+| 6:15 PM | Oral presentations conclude | Diercks Hall auditorium |
+| 6:30 PM | Poster presentations and networking begin | Diercks Hall atrium |
+| 8:00 PM | Evening concludes | |
 
 </details>
 
