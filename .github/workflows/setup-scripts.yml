@@ -2,8 +2,8 @@ name: Setup scripts
 
 # Runs the member setup scripts on fresh GitHub runners in non-interactive mode.
 # The runners cannot reach Rosie or open a browser, so the VPN, Rosie, and GitHub
-# steps are skipped. Every other step must finish and the check must show no [X]
-# except GlobalProtect.
+# steps are skipped. Every other step must finish, and the check must show no
+# "missing" row except GlobalProtect.
 
 on:
   push:
@@ -35,10 +35,11 @@ jobs:
           set +e
           bash setup/mac.sh | tee check.txt
           set -e
-          if grep -E '^\s*\[X\]' check.txt | grep -v GlobalProtect | grep -v 'required tools are missing'; then
+          # A missing row ends in "missing". GlobalProtect needs an admin click, so CI skips it.
+          if grep -E ' missing$' check.txt | grep -v GlobalProtect; then
             echo 'A required tool is missing after setup.'; exit 1
           fi
-          grep -q 'maic env' check.txt
+          grep -Eq 'maic packages +torch' check.txt
 
   windows:
     runs-on: windows-latest
@@ -57,9 +58,11 @@ jobs:
         env:
           MAIC_SETUP_CHECK: '1'
         run: |
-          # The script prints with Write-Host (stream 6). Redirect it, or $out is empty.
-          $out = Get-Content -Raw .\setup\windows.ps1 | Invoke-Expression 6>&1 | Out-String
+          # Run it in a child PowerShell: its stdout keeps each row on one line.
+          # (6>&1 in this shell splits every Write-Host -NoNewline piece onto its own line.)
+          $out = powershell -NoProfile -Command 'Get-Content -Raw .\setup\windows.ps1 | Invoke-Expression' | Out-String
           Write-Host $out
-          $bad = ($out -split "`n") | Where-Object { $_ -match '^\s*\[X\]' -and $_ -notmatch 'GlobalProtect' -and $_ -notmatch 'required tools are missing' }
+          # A missing row ends in "missing". GlobalProtect needs an admin click, so CI skips it.
+          $bad = ($out -split "`r?`n") | Where-Object { $_ -match ' missing\s*$' -and $_ -notmatch 'GlobalProtect' }
           if ($bad) { Write-Host 'A required tool is missing after setup.'; exit 1 }
-          if ($out -notmatch 'maic env') { exit 1 }
+          if ($out -notmatch 'maic packages +torch') { Write-Host 'The ~\maic packages do not import.'; exit 1 }
