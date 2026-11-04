@@ -89,6 +89,8 @@ fail() { line '    %s✗%s %s\n' "$C_RED" "$C_RESET" "$*"; }
 note() { line '    %s\n' "$*"; }
 dim()  { line '    %s%s%s\n' "$C_GRAY" "$*" "$C_RESET"; }
 have() { command -v "$1" >/dev/null 2>&1; }
+# tilde PATH -> the path with ~ for $HOME. (bash 3.2 expands ~ in ${x/#$HOME/~}.)
+tilde() { case $1 in "$HOME"/*) printf '~%s' "${1#"$HOME"}" ;; *) printf '%s' "$1" ;; esac; }
 
 # Prompts read from the terminal, so both "bash -c" and "curl | bash" work.
 ask() {
@@ -478,13 +480,13 @@ step_git() {
 step_ssh_key() {
     mkdir -p "$HOME/.ssh" && chmod 700 "$HOME/.ssh"
     if pick_key; then
-        detail "${KEY/#$HOME/~} (already there)"
+        detail "$(tilde "$KEY") (already there)"
         return 0
     fi
     # No passphrase: ssh rosie and git push work with zero prompts.
     local comment="${GIT_EMAIL:-$USER@maic}"
     ssh-keygen -t ed25519 -N '' -C "$comment" -f "$KEY" -q || return 1
-    detail "made ${KEY/#$HOME/~}"
+    detail "made $(tilde "$KEY")"
     return 0
 }
 
@@ -909,7 +911,7 @@ detect_all() {
         [ -n "$(git config --global user.name)" ] && [ -n "$(git config --global user.email)" ]; then
         ST_git='done'
     fi
-    if pick_key; then ST_sshkey='done'; INFO_sshkey="${KEY/#$HOME/~}"; fi
+    if pick_key; then ST_sshkey='done'; INFO_sshkey=$(tilde "$KEY"); fi
     [ -d "$GP_APP" ] && ST_vpn='done'
     if rosie_entry && [ -n "$RE_IS_ROSIE" ] && [ -n "$RE_USER" ]; then
         if ! rosie_probe; then
@@ -1055,7 +1057,7 @@ show_report() {
     row 'GlobalProtect' "$([ -d "$GP_APP" ] && echo installed)" "$(need vpn)"
     row 'Git' "$(xcode-select -p >/dev/null 2>&1 && git --version 2>/dev/null | sed 's/^git version //; s/ (.*//')" "$(need git)"
     pick_key || true
-    row 'SSH key' "$([ -f "$KEY" ] && echo "${KEY/#$HOME/~}")" "$(need sshkey)"
+    row 'SSH key' "$([ -f "$KEY" ] && tilde "$KEY")" "$(need sshkey)"
     local ruser=''
     rosie_entry && [ -n "$RE_IS_ROSIE" ] && ruser=$RE_USER
     row 'Rosie config' "$([ -n "$ruser" ] && echo "user $ruser")" "$(need rosie)"
@@ -1179,6 +1181,6 @@ if [ ${#NEXT[@]} -gt 0 ]; then
     line '\n  %sNext%s\n' "$C_WHITE" "$C_RESET"
     for n in "${NEXT[@]}"; do line '    %s\n' "$n"; done
 fi
-line '\n  %sLog: %s%s\n\n' "$C_GRAY" "${LOG/#$HOME/~}" "$C_RESET"
+line '\n  %sLog: %s%s\n\n' "$C_GRAY" "$(tilde "$LOG")" "$C_RESET"
 [ ${#FAILED[@]} -gt 0 ] && exit 1
 exit 0
