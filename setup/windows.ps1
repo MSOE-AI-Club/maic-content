@@ -8,11 +8,12 @@ Installs and configures: GlobalProtect VPN, Git, an SSH key, the Rosie SSH confi
 passwordless Rosie login, Jernel on Rosie, the GitHub SSH key, uv, Python 3.12,
 a ~\maic environment with the data-science packages, VS Code, and its extensions.
 It assumes a brand-new laptop. Anything already installed is skipped. Safe to run again.
+At the start it asks if you have a Rosie account, then shows a menu: pick what to set up.
 
 Options (set before the paste line):
   $env:MAIC_SETUP_CHECK = 1   only report what is installed, change nothing
-  $env:MAIC_SETUP_YES = 1     no prompts; skips the steps that need a person
-                              (VPN install, Rosie password, GitHub browser)
+  $env:MAIC_SETUP_YES = 1     no prompts and no menu (runs every part); skips the steps
+                              that need a person (VPN install, Rosie password, GitHub browser)
   $env:MAIC_SETUP_USER = name your MSOE username, so the script does not ask
 
 Read it first: open the URL above in a browser. It is plain text.
@@ -40,6 +41,7 @@ $Cfg = @{
     Article       = 'https://msoe-maic.com/library/?nav=Articles&article=005_MAIC_Setup'
     Log           = Join-Path $HOME 'maic-setup.log'
     PasteLine     = 'irm https://msoe-ai-club.github.io/maic-content/setup/windows.ps1 | iex'
+    RosieHelp     = 'https://msoe-maic.com/library/?nav=Articles&article=1-getting-rosie-access'
 }
 $Arm = ($env:PROCESSOR_ARCHITECTURE -eq 'ARM64')
 $Cfg.GpMsiUrl   = if ($Arm) { "https://$($Cfg.VpnPortal)/global-protect/msi/GlobalProtectARM64.msi" } else { "https://$($Cfg.VpnPortal)/global-protect/msi/GlobalProtect64.msi" }
@@ -60,29 +62,78 @@ $State = @{
     Code           = ''      # path of code.cmd
     Missing        = $false
     NotDone        = $false
+    NotPicked      = $false
+    RosieKey       = ''      # the key Rosie gets: from an existing Rosie entry, else $Cfg.Key
+    RosieAccess    = ''      # yes or no, from the question at the start
+    Status         = @{}     # part -> done, todo, or unknown
+    Info           = @{}     # part -> short note for the menu
+    Selected       = @{}     # part -> $true when picked
+    StepN          = 0
+    StepTotal      = 0
+    StepLabel      = ''
+    LiveOn         = $false  # a live line is on the screen
+    InStep         = $false
+    Detail         = ''      # short text for the result line of the running step
+    SkipReason     = ''
+    AddedNote      = ''
+    # Spinners and menus need a real console. CI and pipes get plain lines.
+    Tty            = $false
+}
+try { $State.Tty = -not [Console]::IsOutputRedirected -and -not [Console]::IsInputRedirected } catch { }
+
+
+# ---------- output ----------
+# Windows Terminal draws these symbols. The old console font may not, so it gets plain ones.
+$Fancy = [bool]$env:WT_SESSION
+if ($Fancy) {
+    $G = @{ Ok = [string][char]0x2713; No = [string][char]0x2717; Skip = [string][char]0x2013; Dot = [string][char]0x00B7
+            Ptr = [string][char]0x203A; Bar = [string][char]0x2501; BarOff = [string][char]0x2501; Sep = [string][char]0x00B7
+            Keys = [string][char]0x2191 + [string][char]0x2193 }
+    $SpinFrames = @(0x280B, 0x2819, 0x2839, 0x2838, 0x283C, 0x2834, 0x2826, 0x2827, 0x2807, 0x280F) | ForEach-Object { [string][char]$_ }
+} else {
+    $G = @{ Ok = '+'; No = 'x'; Skip = '-'; Dot = '.'; Ptr = '>'; Bar = '='; BarOff = '-'; Sep = '-'; Keys = 'Up/Down' }
+    $SpinFrames = @('|', '/', '-', '\')
 }
 
-# ---------- theme: MAIC blue -> cyan -> purple ----------
-function Say($msg)  { Write-Host "==> $msg" -ForegroundColor Magenta }
-function Ok($msg)   { Write-Host "  [OK] $msg" -ForegroundColor Cyan }
-function Warn($msg) { Write-Host "  [!]  $msg" -ForegroundColor Yellow }
-function Fail($msg) { Write-Host "  [X]  $msg" -ForegroundColor Red }
-function Note($msg) { Write-Host "  $msg" }
+function Clear-Live {
+    if (-not $State.LiveOn) { return }
+    try { [Console]::Write("`r" + (' ' * [Math]::Max(20, [Console]::WindowWidth - 1)) + "`r") } catch { }
+    $State.LiveOn = $false
+}
+function Say($msg)  { Clear-Live; Write-Host ''; Write-Host "  $msg" -ForegroundColor White; Write-Host '' }
+function Ok($msg) {
+    # Inside a step, Ok sets the short detail shown on the step's result line.
+    if ($State.InStep) { if (-not $State.Detail) { $State.Detail = "$msg" }; return }
+    Clear-Live
+    Write-Host "  $($G.Ok) " -NoNewline -ForegroundColor Cyan
+    Write-Host $msg
+}
+function Set-Detail($msg) { $State.Detail = "$msg" }
+function Warn($msg) { Clear-Live; Write-Host '    ! ' -NoNewline -ForegroundColor Yellow; Write-Host $msg }
+function Fail($msg) { Clear-Live; Write-Host "    $($G.No) " -NoNewline -ForegroundColor Red; Write-Host $msg }
+function Note($msg) { Clear-Live; Write-Host "    $msg" }
+function Dim($msg)  { Clear-Live; Write-Host "    $msg" -ForegroundColor DarkGray }
 function Have($cmd) { [bool](Get-Command $cmd -ErrorAction SilentlyContinue) }
+function Short-Path($path) { return ("$path" -replace [regex]::Escape($HOME), '~') }
 
+function Read-Line($prompt) {
+    # Inside a step the prompt sits under the step; elsewhere at the left edge.
+    Clear-Live
+    $indent = if ($State.InStep) { '    ' } else { '  ' }
+    return "$(Read-Host "$indent$prompt")"
+}
 function Ask($question, $default = '') {
     if ($State.Yes) { return $default }
-    $answer = "$(Read-Host "  $question")".Trim()
+    $answer = (Read-Line $question).Trim()
     if ($answer) { return $answer } else { return $default }
 }
 function Confirm-Step($question) {
     if ($State.Yes) { return $true }
-    $reply = Read-Host "  $question [Y/n]"
-    return -not ($reply -match '^[nN]')
+    return -not ((Read-Line "$question [Y/n]") -match '^[nN]')
 }
 function Pause-Step($msg) {
     if ($State.Yes) { return }
-    Read-Host "  $msg Press Enter when done" | Out-Null
+    Read-Line $msg | Out-Null
 }
 
 # The MAIC logo: a network-shaped brain. Columns go blue -> cyan -> purple.
@@ -116,10 +167,116 @@ function Show-Logo {
         Write-Host ''
     }
     Write-Host ''
-    Write-Host '   MSOE AI Club' -NoNewline -ForegroundColor Cyan
-    Write-Host '  |  ' -NoNewline -ForegroundColor DarkGray
-    Write-Host 'Member setup (Windows)' -ForegroundColor Magenta
+    Write-Host '  MSOE AI Club' -NoNewline -ForegroundColor Cyan
+    Write-Host " $($G.Sep) " -NoNewline -ForegroundColor DarkGray
+    Write-Host 'Member setup for Windows' -ForegroundColor Magenta
     Write-Host ''
+}
+
+
+# ---------- ROSIE banner ----------
+# The letters use box characters. They are made from char codes here, because
+# `irm | iex` in Windows PowerShell 5.1 can read the script with the wrong encoding.
+$RosieLetters = @(
+    '######]  ######] #######]##]#######]',
+    '##[==##]##[===##]##[====}##|##[====}',
+    '######[}##|   ##|#######]##|#####]  ',
+    '##[==##]##|   ##|{====##|##|##[==}  ',
+    '##|  ##|{######[}#######|##|#######]',
+    '{=}  {=} {=====} {======}{=}{======}'
+)
+$RosieRose = @('.-""-.', '/ @ @  \', '( @(@)@  )', '\_@_@_/', '__\ | /__', '\__\|/__/')
+$RosiePad = @('    ', '   ', '  ', '   ', '  ', '  ')
+$BoxMap = [ordered]@{ '#' = [char]0x2588; ']' = [char]0x2557; '[' = [char]0x2554; '}' = [char]0x255D; '{' = [char]0x255A; '=' = [char]0x2550; '|' = [char]0x2551 }
+
+function Show-Rosie {
+    Write-Host ''
+    for ($i = 0; $i -lt $RosieLetters.Count; $i++) {
+        $line = $RosieLetters[$i]
+        foreach ($k in $BoxMap.Keys) { $line = $line.Replace($k, [string]$BoxMap[$k]) }
+        Write-Host "  $line" -NoNewline -ForegroundColor White
+        $color = if ($i -lt 4) { 'Red' } else { 'Green' }
+        Write-Host ($RosiePad[$i] + $RosieRose[$i]) -ForegroundColor $color
+    }
+    Write-Host ''
+}
+
+function Format-Elapsed($start) {
+    $t = [int]((Get-Date) - $start).TotalSeconds
+    if ($t -ge 60) { return ('{0}m {1:00}s' -f [Math]::Floor($t / 60), ($t % 60)) }
+    return "${t}s"
+}
+
+function Write-Live($frame, $what) {
+    # The live line of the running step: spinner, step, overall bar, count, and
+    # what is happening. [Console]::Write goes to the screen only, not the log.
+    if (-not $State.Tty -or $State.StepTotal -lt 1) { return }
+    try {
+        $width = [Math]::Max(60, [Console]::WindowWidth - 1)
+        $fill = [int][Math]::Floor(($State.StepN - 1) * 16 / $State.StepTotal)
+        [Console]::Write("`r  ")
+        [Console]::ForegroundColor = 'Cyan'; [Console]::Write("$frame ")
+        [Console]::ResetColor(); [Console]::Write($State.StepLabel.PadRight(20) + ' ')
+        [Console]::ForegroundColor = 'Cyan'; [Console]::Write($G.Bar * $fill)
+        [Console]::ForegroundColor = 'DarkGray'; [Console]::Write($G.BarOff * (16 - $fill))
+        $room = $width - 41
+        $tail = " $($State.StepN)/$($State.StepTotal)  $what"
+        if ($tail.Length -gt $room) { $tail = $tail.Substring(0, $room) }
+        [Console]::Write($tail.PadRight($room))
+        [Console]::ResetColor()
+        $State.LiveOn = $true
+    } catch { }
+}
+
+function Wait-ProcessSpin($what, $proc) {
+    # A spinner on the live line until the process ends. Returns its exit code.
+    $null = $proc.Handle   # keeps ExitCode readable after the process ends
+    $start = Get-Date; $i = 0
+    try {
+        while (-not $proc.HasExited) {
+            Write-Live $SpinFrames[$i % $SpinFrames.Count] "$what $($G.Sep) $(Format-Elapsed $start)"
+            $i++; Start-Sleep -Milliseconds 120
+        }
+    } catch { $proc.WaitForExit() }
+    Write-Live $G.Dot ''
+    try { return $proc.ExitCode } catch { return 0 }
+}
+
+function Invoke-Spin($what, [scriptblock]$body, $argList = @()) {
+    # Runs $body in a background job with a spinner. $body must end with an exit
+    # code (for example $LASTEXITCODE). Returns $true when the code is 0.
+    $start = Get-Date; $i = 0
+    $job = Start-Job -ScriptBlock $body -ArgumentList $argList
+    while ($job.State -eq 'Running' -or $job.State -eq 'NotStarted') {
+        Write-Live $SpinFrames[$i % $SpinFrames.Count] "$what $($G.Sep) $(Format-Elapsed $start)"
+        $i++; Start-Sleep -Milliseconds 120
+    }
+    Write-Live $G.Dot ''
+    $out = @(Receive-Job $job 2>&1)
+    Remove-Job $job -Force
+    $code = $out | Where-Object { $_ -is [int] } | Select-Object -Last 1
+    if ($null -eq $code) { $code = if ($job.State -eq 'Completed') { 0 } else { 1 } }
+    if ($code -ne 0) {
+        Fail "Failed while $what. Last lines:"
+        $out | Where-Object { $_ -isnot [int] } | Select-Object -Last 6 | ForEach-Object { Dim "  $_" }
+        return $false
+    }
+    return $true
+}
+
+function Invoke-Quiet($what, $exe, [string[]]$argList, $dir = $PWD.Path) {
+    # Runs a program with its output in temp files and a spinner on the live line.
+    $o = Join-Path $env:TEMP "maic-setup-$([guid]::NewGuid().ToString('N')).out"
+    $e = "$o.err"
+    $p = Start-Process -FilePath $exe -ArgumentList $argList -WorkingDirectory $dir -NoNewWindow -PassThru `
+        -RedirectStandardOutput $o -RedirectStandardError $e
+    $code = Wait-ProcessSpin $what $p
+    if ($code -ne 0) {
+        Fail "Failed while $what. Last lines:"
+        @(Get-Content $o, $e -ErrorAction SilentlyContinue) | Select-Object -Last 6 | ForEach-Object { Dim "  $_" }
+    }
+    Remove-Item $o, $e -Force -ErrorAction SilentlyContinue
+    return ($code -eq 0)
 }
 
 # ---------- helpers ----------
@@ -135,45 +292,77 @@ function Update-SessionPath {
     $env:Path = (@($new) + $current) -join ';'
 }
 
+function Write-Result($glyph, $glyphColor, $label, $text, $textColor) {
+    Write-Host "  $glyph " -NoNewline -ForegroundColor $glyphColor
+    Write-Host ("$label".PadRight(20) + ' ') -NoNewline
+    Write-Host $text -ForegroundColor $textColor
+}
+
 function Run-Step($label, [scriptblock]$body) {
-    Say $label
+    # While the step runs, one live line shows a spinner and the overall bar.
+    # When it ends, that line becomes one result line, for example: Git  2.47.1
+    $State.StepN++; $State.StepLabel = $label; $State.Detail = ''; $State.SkipReason = ''
+    $State.InStep = $true
+    Write-Live $G.Dot ''
     $result = $false
     try {
         $result = & $body |
-            ForEach-Object { if ($_ -is [bool]) { $_ } else { Write-Host "  $_" } } |
+            ForEach-Object { if ($_ -is [bool]) { $_ } else { Dim "$_" } } |
             Select-Object -Last 1
     } catch { Fail $_.Exception.Message }
-    if (-not $result) {
-        Fail "$label did not finish. See the messages above."
+    $State.InStep = $false
+    Clear-Live
+    if ($State.SkipReason) { Write-Result $G.Skip 'Yellow' $label $State.SkipReason 'Yellow' }
+    elseif ($result) { Write-Result $G.Ok 'Cyan' $label $State.Detail 'DarkGray' }
+    else {
+        Write-Result $G.No 'Red' $label 'did not finish' 'Red'
         $State.Failed += $label
     }
 }
 function Skip-Step($label, $reason) {
-    Warn "$label skipped: $reason"
-    $State.Skipped += $label
+    # The result line shows the reason.
+    $State.SkipReason = "skipped: $reason"
+    $State.Skipped += $(if ($State.StepLabel) { $State.StepLabel } else { $label })
 }
 
-function Install-Winget($id, $label, [switch]$UserScope) {
+function Install-Winget($id, $what, [switch]$UserScope) {
     if (-not (Have 'winget')) { return $false }
-    Note "Installing $label with winget."
     $wingetArgs = @('install', '--exact', '--id', $id, '--silent', '--accept-package-agreements', '--accept-source-agreements')
     if ($UserScope) { $wingetArgs += @('--scope', 'user') }
-    # Start-Process gives winget the real console, so its progress bar works.
-    $process = Start-Process -FilePath 'winget' -NoNewWindow -Wait -PassThru -ArgumentList $wingetArgs
-    if ($process.ExitCode -ne 0) { Warn "winget exit code $($process.ExitCode)" }
+    $p = Start-Process -FilePath 'winget' -WindowStyle Hidden -PassThru -ArgumentList $wingetArgs
+    $code = Wait-ProcessSpin $what $p
+    if ($code -ne 0) { Dim "winget exit code $code" }
     Update-SessionPath
     return $true
 }
 
-function Download($url, $dest, $label) {
-    Note "Downloading $label."
+function Download($url, $dest, $what = 'downloading') {
+    # Shows the percent on the live line. curl.exe comes with Windows 10 and 11.
+    $total = 0
     try {
+        $head = Invoke-WebRequest -Uri $url -Method Head -UseBasicParsing -MaximumRedirection 10
+        $total = [int64](@($head.Headers['Content-Length'])[0])
+    } catch { }
+    $curl = Join-Path $env:SystemRoot 'System32\curl.exe'
+    if (Test-Path $curl) {
+        $p = Start-Process -FilePath $curl -NoNewWindow -PassThru -ArgumentList '-fsSL', '-o', "`"$dest`"", "`"$url`""
+        $null = $p.Handle
+        $i = 0
+        while (-not $p.HasExited) {
+            $have = 0
+            if (Test-Path $dest) { $have = (Get-Item $dest).Length }
+            $pct = if ($total -gt 0) { " $([int]($have * 100 / $total))%" } else { '' }
+            Write-Live $SpinFrames[$i % $SpinFrames.Count] "$what$pct $($G.Sep) $([int]($have / 1MB)) MB"
+            $i++; Start-Sleep -Milliseconds 150
+        }
+        Write-Live $G.Dot ''
+        if ($p.ExitCode -eq 0 -and (Test-Path $dest)) { return $true }
+    }
+    try {
+        Write-Live $G.Dot $what
         Invoke-WebRequest -Uri $url -OutFile $dest -UseBasicParsing
         return $true
-    } catch {
-        Fail "Could not download $url"
-        return $false
-    }
+    } catch { return $false }
 }
 
 function Find-Ssh {
@@ -206,27 +395,67 @@ function Test-RosieReachable { return (Test-Port $Cfg.RosieHost 22 5) }
 
 function Test-RosieLogin {
     if (-not $State.Ssh) { return $false }
-    & $State.Ssh -o BatchMode=yes -o ConnectTimeout=10 rosie true 2>$null | Out-Null
+    & $State.Ssh -n -o BatchMode=yes -o ConnectTimeout=10 rosie true 2>$null | Out-Null
     return ($LASTEXITCODE -eq 0)
 }
 
 function Test-GitHubLogin {
     if (-not $State.Ssh) { return $false }
-    $out = & $State.Ssh -o BatchMode=yes -o ConnectTimeout=10 -o StrictHostKeyChecking=accept-new -T git@github.com 2>&1
+    $out = & $State.Ssh -n -o BatchMode=yes -o ConnectTimeout=10 -o StrictHostKeyChecking=accept-new -T git@github.com 2>&1
     return ("$out" -match 'successfully authenticated')
 }
 
 function Get-RosieUser {
-    # The User from an existing Host rosie block, without @ad.msoe.edu.
-    if (-not (Test-Path $Cfg.SshConfig)) { return '' }
-    $inBlock = $false
-    foreach ($line in Get-Content $Cfg.SshConfig) {
-        $parts = $line.Trim() -split '\s+'
-        if ($parts.Count -lt 2) { continue }
-        if ($parts[0] -ieq 'Host') { $inBlock = @($parts[1..($parts.Count - 1)] | Where-Object { $_ -ieq 'rosie' }).Count -gt 0; continue }
-        if ($inBlock -and $parts[0] -ieq 'User') { return ($parts[1] -replace '@.*$', '') }
-    }
+    # The user of an existing Host rosie block, without @ad.msoe.edu.
+    $e = Get-RosieEntry
+    if ($e -and $e.IsRosie) { return $e.User }
     return ''
+}
+
+function Select-Key {
+    # Use a key the member already has (with its .pub), so no second key is made.
+    foreach ($name in @('id_ed25519', 'id_ecdsa', 'id_rsa')) {
+        $k = Join-Path $Cfg.SshDir $name
+        if ((Test-Path $k) -and (Test-Path "$k.pub")) { $Cfg.Key = $k; return $true }
+    }
+    $Cfg.Key = Join-Path $Cfg.SshDir 'id_ed25519'
+    return $false
+}
+
+function Get-RosieEntry {
+    # An existing Rosie entry in ~\.ssh\config: a Host block named rosie, or any
+    # block for dh-mgmt2.hpc.msoe.edu. Returns $null or @{Alias; User; Key; IsRosie}.
+    if (-not (Test-Path $Cfg.SshConfig)) { return $null }
+    $found = @(); $cur = $null
+    foreach ($line in Get-Content $Cfg.SshConfig) {
+        $parts = @($line.Trim() -split '\s+')
+        if ($parts.Count -lt 2 -or $parts[0].StartsWith('#')) { continue }
+        $word = $parts[0].ToLower()
+        if ($word -eq 'host' -or $word -eq 'match') {
+            if ($cur -and $cur.Match) { $found += $cur }
+            $cur = $null
+            if ($word -eq 'match') { continue }
+            $names = @($parts[1..($parts.Count - 1)])
+            $cur = @{ Alias = $names[0]; User = ''; Key = ''; IsRosie = $false; Match = $false }
+            foreach ($n in $names) {
+                if ($n -ieq 'rosie') { $cur.IsRosie = $true; $cur.Match = $true; $cur.Alias = $n }
+                elseif ($n -ieq $Cfg.RosieHost) { $cur.Match = $true }
+            }
+            continue
+        }
+        if (-not $cur) { continue }
+        if ($word -eq 'hostname' -and $parts[1] -ieq $Cfg.RosieHost) { $cur.Match = $true }
+        if ($word -eq 'user' -and -not $cur.User) { $cur.User = ($parts[1] -replace '@.*$', '') }
+        if ($word -eq 'identityfile' -and -not $cur.Key) { $cur.Key = $parts[1] }
+    }
+    if ($cur -and $cur.Match) { $found += $cur }
+    if ($found.Count -eq 0) { return $null }
+    $pick = @($found | Where-Object { $_.IsRosie }) + @($found) | Select-Object -First 1
+    if ($pick.Key) {
+        $k = $pick.Key -replace '^~[/\\]', ($HOME + '\')
+        $pick.Key = if (Test-Path $k) { $k } else { '' }
+    }
+    return $pick
 }
 
 function Find-Code {
@@ -264,8 +493,8 @@ function Write-NoBom($path, $text) {
 
 function Step-Git {
     if (-not (Have 'git')) {
-        Note 'Windows may show "Do you want to allow this app to make changes". Click Yes.'
-        $done = Install-Winget 'Git.Git' 'Git'
+        Note 'If Windows asks "Do you want to allow this app to make changes", click Yes.'
+        $done = Install-Winget 'Git.Git' 'installing'
         if (-not $done -or -not (Have 'git')) {
             # Per-user install, no admin needed.
             $tmp = Join-Path $env:TEMP 'maic-setup-git.exe'
@@ -273,37 +502,36 @@ function Step-Git {
                 $release = Invoke-RestMethod 'https://api.github.com/repos/git-for-windows/git/releases/latest' -UseBasicParsing
                 $asset = $release.assets | Where-Object { $_.name -match '^Git-.*-64-bit\.exe$' } | Select-Object -First 1
                 if (-not $asset) { throw 'no 64-bit installer in the latest release' }
-                if (-not (Download $asset.browser_download_url $tmp 'Git for Windows')) { return $false }
-                Start-Process -FilePath $tmp -ArgumentList '/VERYSILENT', '/NORESTART', '/CURRENTUSER', '/NOCANCEL' -Wait
+                if (-not (Download $asset.browser_download_url $tmp)) { return $false }
+                $p = Start-Process -FilePath $tmp -ArgumentList '/VERYSILENT', '/NORESTART', '/CURRENTUSER', '/NOCANCEL' -PassThru
+                Wait-ProcessSpin 'installing' $p | Out-Null
                 Update-SessionPath
             } catch { Fail "Git install: $($_.Exception.Message)" }
         }
     }
     if (-not (Have 'git')) {
-        Note 'Install by hand: https://git-scm.com/download/win'
+        Fail 'Install Git by hand: https://git-scm.com/download/win'
         return $false
     }
-    Ok (git --version)
+    Set-Detail ((git --version) -replace '^git version ', '' -replace '\.windows.*$', '')
 
     $name = git config --global user.name
     $email = git config --global user.email
     if (-not $name) {
-        $name = Ask 'Your name (for git commits):'
+        $name = Ask 'Your name:'
         if ($name) { git config --global user.name $name }
     }
     if (-not $email) {
         for ($i = 0; $i -lt 3 -and -not $email; $i++) {
-            $answer = Ask 'Your email (for git commits, use the email on your GitHub account):'
+            $answer = Ask 'Your email (the one on your GitHub account):'
             if (-not $answer) { break }
             if ($answer -match '^[^@\s]+@[^@\s]+$') { $email = $answer }
-            else { Warn 'That is not an email address (example: name@example.com).' }
+            else { Warn 'That is not an email address.' }
         }
         if ($email) { git config --global user.email $email }
     }
-    if ($name -and $email) { Ok "git identity: $name <$email>" }
-    else {
-        Warn 'git identity is not set. Later run: git config --global user.name "Your Name"'
-        Warn 'and: git config --global user.email "you@example.com"'
+    if (-not ($name -and $email)) {
+        Warn 'No name or email, so git cannot save commits yet. Run setup again to add them.'
     }
     $State.GitEmail = "$email"
     if (-not (git config --global init.defaultBranch)) { git config --global init.defaultBranch main }
@@ -312,19 +540,17 @@ function Step-Git {
 
 function Step-SshKey {
     if (-not (Find-Ssh)) {
-        Fail 'No ssh.exe found. Windows OpenSSH is missing and Git is not installed.'
-        Note 'Settings > System > Optional features > Add a feature > OpenSSH Client.'
+        Fail 'No ssh.exe. Add it: Settings > System > Optional features > Add a feature > OpenSSH Client.'
         return $false
     }
-    if ($State.SshFromGit) { Warn 'Windows OpenSSH is missing. Using the ssh that comes with Git.' }
     New-Item -ItemType Directory -Force -Path $Cfg.SshDir | Out-Null
-    if (Test-Path $Cfg.Key) { Ok "SSH key exists: $($Cfg.Key)"; return $true }
+    if (Select-Key) { Set-Detail "$(Short-Path $Cfg.Key) (already there)"; return $true }
     # No passphrase: ssh rosie and git push work with zero prompts.
     $comment = if ($State.GitEmail) { $State.GitEmail } else { "$env:USERNAME@maic" }
     # '""' passes an empty passphrase. Windows PowerShell drops a plain "".
     & $State.SshKeygen -t ed25519 -N '""' -C $comment -f $Cfg.Key -q
     if (-not (Test-Path $Cfg.Key)) { return $false }
-    Ok "Made SSH key $($Cfg.Key) (no passphrase)"
+    Set-Detail "made $(Short-Path $Cfg.Key)"
     return $true
 }
 
@@ -335,140 +561,167 @@ function Install-RosieCommand {
     New-Item -ItemType Directory -Force -Path $dir | Out-Null
     $cmd = Join-Path $dir 'rosie.cmd'
     [IO.File]::WriteAllText($cmd, "@echo off`r`nrem Added by the MAIC setup script: ""rosie"" means ""ssh rosie"".`r`nssh rosie %*`r`n")
-    Ok 'Command "rosie" ready (same as "ssh rosie")'
 }
 
 function Step-RosieConfig {
-    $existing = Get-RosieUser
-    if ($existing) {
-        $State.RosieUser = $existing
-        Ok "~\.ssh\config already has Host rosie (user $existing). Not changed."
+    Select-Key | Out-Null
+    $State.RosieKey = $Cfg.Key
+    $entry = Get-RosieEntry
+    if ($entry -and $entry.IsRosie -and $entry.User) {
+        $State.RosieUser = $entry.User
+        if ($entry.Key) { $State.RosieKey = $entry.Key }
+        Set-Detail "user $($entry.User) (already there)"
         Install-RosieCommand
         return $true
     }
     $user = ''
+    if ($entry -and $entry.User) {
+        # An entry for dh-mgmt2 under another name: reuse its user and key.
+        $user = $entry.User
+        if ($entry.Key) { $State.RosieKey = $entry.Key }
+    }
     for ($i = 0; $i -lt 3 -and -not $user; $i++) {
-        $answer = Ask 'Your MSOE username (the part before @msoe.edu):' "$env:MAIC_SETUP_USER"
+        $answer = Ask 'Your MSOE username (before @msoe.edu):' "$env:MAIC_SETUP_USER"
         if (-not $answer) { break }
         $answer = ($answer.ToLower() -replace '@.*$', '') -replace '\s', ''
         if ($answer -match '^[a-z0-9._-]+$') { $user = $answer }
         else { Warn 'Use only letters, numbers, dots, or dashes.' }
     }
     if (-not $user) {
-        if ($State.Yes) { Warn 'No MSOE username (MAIC_SETUP_YES). Rosie config not written.'; return $true }
+        if ($State.Yes) { Skip-Step 'Rosie SSH config' 'no MSOE username'; return $true }
         return $false
     }
     $State.RosieUser = $user
+    $keyPath = ($State.RosieKey -replace [regex]::Escape($HOME), '~') -replace '\\', '/'
     $block = @"
 
 # Added by the MAIC setup script. Rosie is MSOE's supercomputer.
 Host rosie ROSIE
     HostName $($Cfg.RosieHost)
     User $user@ad.msoe.edu
-    IdentityFile ~/.ssh/id_ed25519
+    IdentityFile $keyPath
     StrictHostKeyChecking accept-new
 
 # Compute nodes, reached through the login node (for example: ssh dh-node1)
 Host dh-node*
     HostName %h
     User $user@ad.msoe.edu
-    IdentityFile ~/.ssh/id_ed25519
+    IdentityFile $keyPath
     ProxyJump rosie
     StrictHostKeyChecking accept-new
 "@ -replace "`r`n", "`n"
     $current = if (Test-Path $Cfg.SshConfig) { [IO.File]::ReadAllText($Cfg.SshConfig) } else { '' }
     if ($current -and -not $current.EndsWith("`n")) { $current += "`n" }
     Write-NoBom $Cfg.SshConfig ($current + $block)
-    Ok "Wrote Host rosie to ~\.ssh\config (user $user@ad.msoe.edu)"
+    Set-Detail "user $user, added to ~\.ssh\config"
     Install-RosieCommand
     return $true
 }
 
 function Step-Vpn {
     # Rosie is only reachable from campus Wi-Fi or the GlobalProtect VPN.
-    if (Test-Path $Cfg.GpExe) {
-        Ok 'GlobalProtect is installed'
-    } else {
-        if ($State.Yes) { Skip-Step 'GlobalProtect VPN' 'install needs an admin click (MAIC_SETUP_YES is set)'; return $true }
-        $msi = Join-Path $env:TEMP 'maic-setup-GlobalProtect.msi'
-        if (-not (Download $Cfg.GpMsiUrl $msi 'GlobalProtect (about 65 MB)')) {
-            Note "Install by hand: https://$($Cfg.VpnPortal)/global-protect/getsoftwarepage.esp"
-            return $false
-        }
-        Note 'Installing. Windows asks "Do you want to allow this app to make changes". Click Yes.'
-        try {
-            # PORTAL presets vpn.msoe.edu so the app opens ready to connect.
-            $p = Start-Process -FilePath 'msiexec.exe' -Verb RunAs -Wait -PassThru -ArgumentList '/i', "`"$msi`"", "PORTAL=$($Cfg.VpnPortal)", '/qn', '/norestart'
-            if ($p.ExitCode -ne 0 -and $p.ExitCode -ne 3010) { Warn "msiexec exit code $($p.ExitCode)" }
-        } catch { Fail "GlobalProtect install: $($_.Exception.Message)" }
-        if (-not (Test-Path $Cfg.GpExe)) {
-            Note "Install by hand: https://$($Cfg.VpnPortal)/global-protect/getsoftwarepage.esp"
-            return $false
-        }
-        Ok 'GlobalProtect installed'
+    if (Test-Path $Cfg.GpExe) { Set-Detail 'installed'; return $true }
+    if ($State.Yes) { Skip-Step 'GlobalProtect VPN' 'the install needs an admin click'; return $true }
+    $msi = Join-Path $env:TEMP 'maic-setup-GlobalProtect.msi'
+    if (-not (Download $Cfg.GpMsiUrl $msi)) {
+        Fail "Download failed. Install by hand: https://$($Cfg.VpnPortal)/global-protect/getsoftwarepage.esp"
+        return $false
     }
+    Note 'Windows asks "Do you want to allow this app to make changes". Click Yes.'
+    try {
+        # PORTAL presets vpn.msoe.edu so the app opens ready to connect.
+        $p = Start-Process -FilePath 'msiexec.exe' -Verb RunAs -PassThru -ArgumentList '/i', "`"$msi`"", "PORTAL=$($Cfg.VpnPortal)", '/qn', '/norestart'
+        $code = Wait-ProcessSpin 'installing' $p
+        if ($code -ne 0 -and $code -ne 3010) { Dim "msiexec exit code $code" }
+    } catch { Fail "GlobalProtect install: $($_.Exception.Message)" }
+    if (-not (Test-Path $Cfg.GpExe)) {
+        Fail "Install by hand: https://$($Cfg.VpnPortal)/global-protect/getsoftwarepage.esp"
+        return $false
+    }
+    Set-Detail 'installed'
+    return $true
+}
 
-    if (Test-RosieReachable) { $State.RosieReachable = $true; Ok 'Rosie is reachable (campus network or VPN is on)'; return $true }
-    if ($State.Yes) { Skip-Step 'Rosie connection' 'not on campus or VPN (MAIC_SETUP_YES is set)'; return $true }
+function Step-RosieConnect {
+    Write-Live $G.Dot 'checking'
+    if (Test-RosieReachable) { $State.RosieReachable = $true; Set-Detail 'reachable'; return $true }
+    if ($State.Yes) { Skip-Step 'Rosie connection' 'not on campus or VPN'; return $true }
+    if (-not (Test-Path $Cfg.GpExe)) { Warn 'GlobalProtect is not installed. Off campus, Rosie needs it.' }
     try { Start-Process -FilePath $Cfg.GpExe } catch { }
+    Note "Off campus? Connect GlobalProtect (taskbar icon) to $($Cfg.VpnPortal)."
     for ($try = 1; $try -le 3; $try++) {
-        Note "In the GlobalProtect window (taskbar icon), connect to $($Cfg.VpnPortal) with your MSOE login."
-        Pause-Step 'Connect now.'
-        if (Test-RosieReachable) { $State.RosieReachable = $true; Ok 'Rosie is reachable'; return $true }
-        Warn "Rosie did not answer (try $try of 3). Is GlobalProtect connected?"
+        Pause-Step 'Press Enter when GlobalProtect says Connected'
+        Write-Live $G.Dot 'checking'
+        if (Test-RosieReachable) { $State.RosieReachable = $true; Set-Detail 'reachable'; return $true }
+        if ($try -lt 3) { Warn 'Rosie did not answer yet. Is GlobalProtect connected?' }
     }
-    Skip-Step 'Rosie connection' 'Rosie is not reachable. Connect GlobalProtect, then paste the setup line again.'
+    Skip-Step 'Rosie connection' 'Rosie did not answer'
     return $true
 }
 
 function Step-RosieKey {
     if (-not $State.RosieUser) { Skip-Step 'Rosie login' 'no MSOE username'; return $true }
     if (-not $State.RosieReachable) { Skip-Step 'Rosie login' 'Rosie is not reachable'; return $true }
-    if (Test-RosieLogin) { Ok 'Rosie accepts your SSH key. No password needed.'; return $true }
-    if ($State.Yes) { Skip-Step 'Rosie login' 'needs your MSOE password (MAIC_SETUP_YES is set)'; return $true }
-    Note 'Type your MSOE password ONE time to copy the key to Rosie (nothing shows while typing).'
-    $pub = (Get-Content "$($Cfg.Key).pub" -Raw).Trim()
-    # Windows has no ssh-copy-id. Append the key once, over one password login.
-    $remote = 'read -r k; mkdir -p ~/.ssh && chmod 700 ~/.ssh && touch ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys; grep -qsF "$k" ~/.ssh/authorized_keys || echo "$k" >> ~/.ssh/authorized_keys'
+    Write-Live $G.Dot 'checking'
+    if (Test-RosieLogin) { Set-Detail 'no password needed'; return $true }
+    if ($State.Yes) { Skip-Step 'Rosie login' 'needs your MSOE password'; return $true }
+    Note 'Type your MSOE password one time (the letters stay hidden).'
+    Note 'After this, Rosie lets you in with your key, no password.'
+    $rk = if ($State.RosieKey) { $State.RosieKey } else { $Cfg.Key }
+    $pub = (Get-Content "$rk.pub" -Raw).Trim()
+    $b64 = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes($pub + "`n"))
+    # Windows has no ssh-copy-id, so add the key over one password login. The key
+    # goes in the command as base64: ssh keeps the keyboard for the password (no
+    # stdin pipe), and Windows PowerShell 5.1 breaks double quotes in native
+    # arguments, so the command has none.
+    $remote = "umask 077; mkdir -p ~/.ssh; touch ~/.ssh/authorized_keys; echo $b64 | base64 -d > ~/.ssh/maic-key.tmp; " +
+        "grep -qxFf ~/.ssh/maic-key.tmp ~/.ssh/authorized_keys || { sed -i -e '`$a\' ~/.ssh/authorized_keys; cat ~/.ssh/maic-key.tmp >> ~/.ssh/authorized_keys; }; " +
+        "rm -f ~/.ssh/maic-key.tmp; chmod 700 ~/.ssh; chmod 600 ~/.ssh/authorized_keys"
     for ($try = 1; $try -le 3; $try++) {
-        $pub | & $State.Ssh -o StrictHostKeyChecking=accept-new rosie $remote
-        if (Test-RosieLogin) { Ok 'Rosie accepts your SSH key. No password needed from now on.'; return $true }
-        Warn "That did not work (try $try of 3). Check the password and the username $($State.RosieUser)."
+        Clear-Live
+        & $State.Ssh -o StrictHostKeyChecking=accept-new -o PreferredAuthentications=keyboard-interactive,password rosie $remote
+        if (Test-RosieLogin) { Set-Detail 'no password needed from now on'; return $true }
+        if ($try -lt 3) { Warn "That did not work. Check your password (user $($State.RosieUser))." }
     }
+    Note 'Test it by hand: ssh rosie. If that fails too, your Rosie account is the problem: ask the eboard.'
     return $false
 }
 
 function Step-Jernel {
     if (-not $State.RosieReachable -or -not (Test-RosieLogin)) { Skip-Step 'Jernel on Rosie' 'Rosie login is not set up'; return $true }
+    Write-Live $G.Dot 'checking'
     $bin = $Cfg.JernelBin
     # Same line as /data/ai_club/util/setup, added only once.
-    $remote = "if grep -qsF '$bin' ~/.bashrc; then echo present; else printf '\nexport PATH=\`"$bin/:`$PATH\`" # MAIC tools (jernel). Added by the MAIC setup script.\n' >> ~/.bashrc && echo added; fi; test -x '$bin/jernel' && echo jernel-ok"
-    $result = "$(& $State.Ssh -o BatchMode=yes rosie $remote 2>$null)"
-    if ($result -match 'present') { Ok 'Jernel PATH line already in ~/.bashrc on Rosie' }
-    elseif ($result -match 'added') { Ok 'Added the Jernel PATH line to ~/.bashrc on Rosie' }
+    # No double quotes: Windows PowerShell 5.1 breaks them in native arguments.
+    $remote = "if grep -qsF '$bin' ~/.bashrc; then echo present; else printf '\nexport PATH=$bin/:`$PATH # MAIC tools (jernel). Added by the MAIC setup script.\n' >> ~/.bashrc && echo added; fi; test -x '$bin/jernel' && echo jernel-ok"
+    $result = "$(& $State.Ssh -n -o BatchMode=yes rosie $remote 2>$null)"
+    if ($result -match 'present') { Set-Detail 'on your PATH (already there)' }
+    elseif ($result -match 'added') { Set-Detail 'added to your PATH on Rosie' }
     else { return $false }
-    if ($result -notmatch 'jernel-ok') { Warn "$bin/jernel was not found on Rosie. Ask an eboard member." }
+    if ($result -notmatch 'jernel-ok') { Warn "$bin/jernel is missing on Rosie. Ask the eboard." }
     return $true
 }
 
 function Step-GitHub {
-    if (Test-GitHubLogin) { Ok 'GitHub accepts your SSH key'; return $true }
-    if ($State.Yes) { Skip-Step 'GitHub SSH key' 'needs a browser (MAIC_SETUP_YES is set)'; return $true }
+    Select-Key | Out-Null
+    Write-Live $G.Dot 'checking'
+    if (Test-GitHubLogin) { Set-Detail 'key accepted'; return $true }
+    if ($State.Yes) { Skip-Step 'GitHub SSH key' 'needs a browser'; return $true }
     if (-not (Confirm-Step 'Do you have a GitHub account?')) {
-        Note 'Make one with any email, then come back here.'
+        Note 'Make one in the browser page that opens (any email works).'
         Start-Process 'https://github.com/signup'
-        Pause-Step 'Finish the sign-up.'
+        Pause-Step 'Press Enter when you have an account'
     }
     $pub = (Get-Content "$($Cfg.Key).pub" -Raw).Trim()
     for ($try = 1; $try -le 3; $try++) {
-        try { Set-Clipboard -Value $pub; Note 'Your public key is on the clipboard.' } catch { }
-        Note 'In the browser page that opens: Title = "MAIC laptop", Key = paste (Ctrl+V), click "Add SSH key".'
-        Note 'If the clipboard is empty, copy this line:'
-        Write-Host ''; Write-Host "  $pub"; Write-Host ''
+        try { Set-Clipboard -Value $pub } catch { }
+        Note 'Your key is copied. In the page that opens:'
+        Note '  Title: MAIC laptop   Key: press Ctrl+V   then click "Add SSH key"'
         Start-Process 'https://github.com/settings/ssh/new'
-        Pause-Step 'Add the key on GitHub.'
-        if (Test-GitHubLogin) { Ok 'GitHub accepts your SSH key'; return $true }
-        Warn "GitHub did not accept the key yet (try $try of 3)."
+        Pause-Step 'Press Enter after you click "Add SSH key"'
+        Write-Live $G.Dot 'checking'
+        if (Test-GitHubLogin) { Set-Detail 'key accepted'; return $true }
+        if ($try -lt 3) { Warn 'GitHub does not accept the key yet.' }
     }
     Note 'Guide: https://msoe-maic.com/library/?nav=Articles&article=GitHub-SSH-Keys'
     return $false
@@ -476,29 +729,36 @@ function Step-GitHub {
 
 function Step-Uv {
     if (-not (Have 'uv')) {
-        Note 'Installing uv (Python package manager).'
-        powershell -NoProfile -ExecutionPolicy Bypass -Command "irm $($Cfg.UvInstall) | iex" | Out-Null
+        Invoke-Spin 'installing uv' {
+            param($url)
+            powershell -NoProfile -ExecutionPolicy Bypass -Command "irm $url | iex"
+            $LASTEXITCODE
+        } @($Cfg.UvInstall) | Out-Null
         Update-SessionPath
-        if (-not (Have 'uv')) { Fail "Could not install uv from $($Cfg.UvInstall) (offline, or the network blocks astral.sh)."; return $false }
+        if (-not (Have 'uv')) { Fail 'Could not reach astral.sh. Check your internet connection.'; return $false }
     }
-    Ok "uv $((uv --version) -replace '^uv ', '')"
     $v = $Cfg.PythonVersion
     uv python find $v *> $null
-    if ($LASTEXITCODE -eq 0 -and (Get-PythonCommand)) { Ok "Python $v is installed"; return $true }
-    Note "Installing Python $v."
-    # --default also gives `python` and `python3` commands.
-    uv python install $v --default *> $null
-    if ($LASTEXITCODE -ne 0) { uv python install $v --default --preview *> $null }
-    if ($LASTEXITCODE -ne 0) { uv python install $v *> $null }
-    uv python update-shell *> $null
-    Update-SessionPath
-    uv python find $v *> $null
-    if ($LASTEXITCODE -ne 0) { return $false }
-    if (-not (Get-PythonCommand)) {
-        Warn '"python" opens the Microsoft Store. Turn off the python.exe and python3.exe app execution aliases'
-        Warn 'in Settings > Apps > Advanced app settings > App execution aliases. The ~\maic environment still works.'
+    if (-not ($LASTEXITCODE -eq 0 -and (Get-PythonCommand))) {
+        # --default also gives `python` and `python3` commands.
+        Invoke-Spin "installing Python $v" {
+            param($v)
+            uv python install $v --default 2>&1
+            if ($LASTEXITCODE -ne 0) { uv python install $v --default --preview 2>&1 }
+            if ($LASTEXITCODE -ne 0) { uv python install $v 2>&1 }
+            $code = $LASTEXITCODE
+            uv python update-shell 2>&1 | Out-Null
+            $code
+        } @($v) | Out-Null
+        Update-SessionPath
+        uv python find $v *> $null
+        if ($LASTEXITCODE -ne 0) { return $false }
+        if (-not (Get-PythonCommand)) {
+            Warn '"python" opens the Microsoft Store. Turn off its app execution aliases in'
+            Note 'Settings > Apps > Advanced app settings > App execution aliases. ~\maic still works.'
+        }
     }
-    Ok "Python $v installed"
+    Set-Detail "$v, with uv $(((uv --version) -replace '^uv ', '') -replace ' .*$', '')"
     return $true
 }
 
@@ -510,43 +770,49 @@ function Step-Env {
         if (-not (Test-Path 'pyproject.toml')) {
             uv init --bare --name maic --python $Cfg.PythonVersion *> $null
             if ($LASTEXITCODE -ne 0) { return $false }
-            Ok "Made $($Cfg.MaicDir)\pyproject.toml"
         }
-        Note "Installing $($Cfg.Packages -join ' ')"
-        Note 'torch is the big one (a few hundred MB). This can take a few minutes.'
-        uv add @($Cfg.Packages) 2>&1 | Where-Object { "$_" -notmatch '^(Resolved|Prepared|Installed|Audited| \+|Using)' } | ForEach-Object { "$_" }
-        $py = Get-MaicPython
-        if (-not $py) { return $false }
-        & $py -c 'import torch, pandas, sklearn, matplotlib' *> $null
-        if ($LASTEXITCODE -ne 0) { Fail 'Packages did not import. Run: cd ~\maic; uv sync'; return $false }
-        Ok "~\maic environment is ready ($(& $py --version))"
+        $toml = Get-Content 'pyproject.toml' -Raw
+        $missing = @($Cfg.Packages | Where-Object { $toml -notmatch ('"' + [regex]::Escape($_)) })
+        if ($missing.Count -gt 0 -or -not (Test-EnvOk)) {
+            # torch is a few hundred MB, so this is the longest wait.
+            $uvExe = (Get-Command uv).Source
+            if (-not (Invoke-Quiet 'downloading (torch is big)' $uvExe (@('add') + $Cfg.Packages) $Cfg.MaicDir)) { return $false }
+            $py = Get-MaicPython
+            if (-not $py) { return $false }
+            & $py -c 'import torch, pandas, sklearn, matplotlib' *> $null
+            if ($LASTEXITCODE -ne 0) { Fail 'The packages do not import. Run: cd ~\maic; uv sync'; return $false }
+        }
         $kernel = Join-Path $env:APPDATA 'jupyter\kernels\maic\kernel.json'
         if (-not (Test-Path $kernel)) {
-            uv run python -m ipykernel install --user --name maic --display-name "MAIC (Python $($Cfg.PythonVersion))" *> $null
-            if ($LASTEXITCODE -ne 0) { return $false }
+            $okKernel = Invoke-Spin 'adding the Jupyter kernel' {
+                param($dir, $v)
+                Set-Location $dir
+                uv run python -m ipykernel install --user --name maic --display-name "MAIC (Python $v)" 2>&1
+                $LASTEXITCODE
+            } @($Cfg.MaicDir, $Cfg.PythonVersion)
+            if (-not $okKernel) { return $false }
         }
-        Ok 'Jupyter kernel "MAIC (Python 3.12)" is registered'
+        Set-Detail '~\maic, with torch, pandas, and Jupyter'
         return $true
     } finally { Pop-Location }
 }
 
 function Step-VsCode {
-    if (Find-Code) {
-        Ok "VS Code is installed ($(Split-Path (Split-Path $State.Code)))"
-        return $true
-    }
-    $done = Install-Winget 'Microsoft.VisualStudioCode' 'VS Code' -UserScope
-    if (-not $done -or -not (Find-Code)) {
-        $exe = Join-Path $env:TEMP 'maic-setup-VSCode.exe'
-        if (-not (Download $Cfg.VsCodeUrl $exe 'VS Code (about 100 MB)')) {
-            Note 'Install by hand: https://code.visualstudio.com/download'
-            return $false
+    if (-not (Find-Code)) {
+        $done = Install-Winget 'Microsoft.VisualStudioCode' 'installing' -UserScope
+        if (-not $done -or -not (Find-Code)) {
+            $exe = Join-Path $env:TEMP 'maic-setup-VSCode.exe'
+            if (-not (Download $Cfg.VsCodeUrl $exe)) {
+                Fail 'Download failed. Install by hand: https://code.visualstudio.com/download'
+                return $false
+            }
+            $p = Start-Process -FilePath $exe -ArgumentList '/VERYSILENT', '/NORESTART', '/MERGETASKS=!runcode,addtopath' -PassThru
+            Wait-ProcessSpin 'installing' $p | Out-Null
+            Update-SessionPath
         }
-        Start-Process -FilePath $exe -ArgumentList '/VERYSILENT', '/NORESTART', '/MERGETASKS=!runcode,addtopath' -Wait
-        Update-SessionPath
+        if (-not (Find-Code)) { return $false }
     }
-    if (-not (Find-Code)) { return $false }
-    Ok "VS Code installed ($(Split-Path (Split-Path $State.Code)))"
+    Set-Detail "$(& $State.Code --version 2>$null | Select-Object -First 1), and the code command"
     return $true
 }
 
@@ -554,12 +820,16 @@ function Step-Extensions {
     if (-not $State.Code -and -not (Find-Code)) { return $false }
     $installed = @(& $State.Code --list-extensions 2>$null | ForEach-Object { "$_".ToLower() })
     foreach ($ext in $Cfg.Extensions) {
-        if ($installed -contains $ext) { Ok "$ext already installed"; continue }
-        & $State.Code --install-extension $ext --force *> $null
+        if ($installed -contains $ext) { continue }
+        Invoke-Spin "installing $ext" {
+            param($code, $ext)
+            & $code --install-extension $ext --force 2>&1
+            $LASTEXITCODE
+        } @($State.Code, $ext) | Out-Null
         $installed = @(& $State.Code --list-extensions 2>$null | ForEach-Object { "$_".ToLower() })
-        if ($installed -contains $ext) { Ok "Installed $ext" }
-        else { Fail "Could not install $ext. In VS Code: Extensions view, search `"$ext`"."; return $false }
+        if ($installed -notcontains $ext) { Fail "In VS Code, open Extensions and install `"$ext`"."; return $false }
     }
+    Set-Detail 'Remote SSH, Python, Jupyter'
     return $true
 }
 
@@ -575,7 +845,7 @@ function Step-Settings {
     if ((Test-Path $path) -and (Get-Item $path).Length -gt 0) {
         try { $data = Get-Content $path -Raw | ConvertFrom-Json }
         catch {
-            Warn 'settings.json has comments or is not valid JSON. Not changed.'
+            Warn 'settings.json has comments, so it was not changed.'
             Note 'Add by hand: "remote.SSH.connectTimeout": 120'
             return $true
         }
@@ -587,22 +857,183 @@ function Step-Settings {
     }
     if ($added.Count -gt 0) {
         Write-NoBom $path (($data | ConvertTo-Json -Depth 30) + "`n")
-        Ok "VS Code settings added: $($added -join ', ')"
-    } else { Ok 'VS Code settings already set' }
+        Set-Detail 'Rosie timeout and the ~\maic Python'
+    } else { Set-Detail 'already set' }
     return $true
 }
 
-# ---------- report ----------
-function Report-Row($label, $value, $required) {
-    if ($value) {
-        Write-Host ("  [OK] {0,-18} {1}" -f $label, $value) -ForegroundColor Cyan
-    } elseif ($required) {
-        Write-Host ("  [X]  {0,-18} missing" -f $label) -ForegroundColor Red
-        $State.Missing = $true
-    } else {
-        Write-Host ("  [-]  {0,-18} not done" -f $label) -ForegroundColor Yellow
-        $State.NotDone = $true
+# ---------- menu ----------
+# Menu parts, in run order. Each part runs one or more steps.
+$Parts = @('git', 'sshkey', 'vpn', 'rosie', 'github', 'python', 'env', 'vscode')
+$PartLabel = @{
+    git = 'Git'; sshkey = 'SSH key'; vpn = 'GlobalProtect VPN'; rosie = 'Rosie'; github = 'GitHub key'
+    python = "Python $($Cfg.PythonVersion)"; env = 'ML packages (torch, pandas)'; vscode = 'VS Code'
+}
+$PartNeeds = @{ rosie = @('sshkey', 'vpn'); github = @('sshkey'); env = @('python') }
+$PartSteps = @{
+    git    = ,@('Git', { Step-Git })
+    sshkey = ,@('SSH key', { Step-SshKey })
+    vpn    = ,@('GlobalProtect', { Step-Vpn })
+    rosie  = @(@('Rosie SSH config', { Step-RosieConfig }), @('Rosie connection', { Step-RosieConnect }),
+               @('Rosie login', { Step-RosieKey }), @('Jernel on Rosie', { Step-Jernel }))
+    github = ,@('GitHub key', { Step-GitHub })
+    python = ,@('Python', { Step-Uv })
+    env    = ,@('ML packages', { Step-Env })
+    vscode = @(@('VS Code', { Step-VsCode }), @('VS Code extensions', { Step-Extensions }), @('VS Code settings', { Step-Settings }))
+}
+
+function Test-EnvOk {
+    $py = Get-MaicPython
+    if (-not $py) { return $false }
+    & $py -c 'import torch, pandas, sklearn, matplotlib' *> $null
+    return ($LASTEXITCODE -eq 0 -and (Test-Path (Join-Path $env:APPDATA 'jupyter\kernels\maic\kernel.json')))
+}
+
+function Test-VsCodeOk {
+    if (-not (Find-Code)) { return $false }
+    $installed = @(& $State.Code --list-extensions 2>$null | ForEach-Object { "$_".ToLower() })
+    foreach ($ext in $Cfg.Extensions) { if ($installed -notcontains $ext) { return $false } }
+    $path = Join-Path $env:APPDATA 'Code\User\settings.json'
+    return ((Test-Path $path) -and ((Get-Content $path -Raw) -match 'remote\.SSH\.connectTimeout'))
+}
+
+function Write-Tick { if ($State.Tty) { try { [Console]::ForegroundColor = 'DarkGray'; [Console]::Write('.'); [Console]::ResetColor() } catch { } } }
+
+function Get-AllStatus {
+    # Each check prints one gray dot, so the member sees it is working.
+    if ($State.Tty) { try { [Console]::ForegroundColor = 'DarkGray'; [Console]::Write('  Checking your laptop '); [Console]::ResetColor() } catch { } }
+    foreach ($p in $Parts) { $State.Status[$p] = 'todo'; $State.Info[$p] = '' }
+    Find-Ssh | Out-Null
+    if ((Have 'git') -and (git config --global user.name) -and (git config --global user.email)) { $State.Status.git = 'done' }
+    Write-Tick
+    if (Select-Key) { $State.Status.sshkey = 'done' }
+    Write-Tick
+    if (Test-Path $Cfg.GpExe) { $State.Status.vpn = 'done' }
+    $entry = Get-RosieEntry
+    if ($entry -and $entry.IsRosie -and $entry.User) {
+        $State.RosieUser = $entry.User
+        if (-not (Test-RosieReachable)) { $State.Status.rosie = 'unknown'; $State.Info.rosie = 'cannot check: VPN off' }
+        elseif (Test-RosieLogin) {
+            $j = "$(& $State.Ssh -n -o BatchMode=yes rosie "grep -qsF '$($Cfg.JernelBin)' ~/.bashrc && echo ok" 2>$null)"
+            if ($j -match 'ok') { $State.Status.rosie = 'done' }
+        }
     }
+    Write-Tick
+    if (Test-GitHubLogin) { $State.Status.github = 'done' }
+    if (Have 'uv') { uv python find $Cfg.PythonVersion *> $null; if ($LASTEXITCODE -eq 0) { $State.Status.python = 'done' } }
+    Write-Tick
+    if (Test-EnvOk) { $State.Status.env = 'done' }
+    Write-Tick
+    if (Test-VsCodeOk) { $State.Status.vscode = 'done' }
+    if ($State.Tty) { try { [Console]::Write("`r" + (' ' * 40) + "`r") } catch { } }
+}
+
+function Set-DefaultSelection {
+    foreach ($p in $Parts) { $State.Selected[$p] = ($State.Yes -or $State.Status[$p] -ne 'done') }
+    if ($State.RosieAccess -eq 'no') {
+        $State.Selected.rosie = $false
+        if ($State.Status.vpn -ne 'done') { $State.Selected.vpn = $false }
+    }
+}
+
+function Write-Pad($text, $color, $width) {
+    # Write-Host with a fixed width, so a redraw covers the old text.
+    if ($text.Length -gt $width) { $text = $text.Substring(0, $width) }
+    Write-Host $text.PadRight($width) -NoNewline -ForegroundColor $color
+}
+
+function Show-Menu($cur) {
+    for ($i = 0; $i -lt $Parts.Count; $i++) {
+        $p = $Parts[$i]
+        $sel = $State.Selected[$p]
+        $statusColor = 'DarkGray'
+        switch ($State.Status[$p]) {
+            'done'    { if ($sel) { $status = 'done, will run again'; $statusColor = 'Yellow' } else { $status = 'done' } }
+            'unknown' { $status = $State.Info[$p]; $statusColor = 'Yellow' }
+            default   { $status = '' }
+        }
+        if ($p -eq 'rosie' -and $State.RosieAccess -eq 'no') { $status = 'needs a Rosie account'; $statusColor = 'DarkGray' }
+        $here = ($i -eq $cur)
+        Write-Host '  ' -NoNewline
+        Write-Pad $(if ($here) { $G.Ptr } else { ' ' }) 'Magenta' 2
+        Write-Pad $(if ($sel) { '[x]' } else { '[ ]' }) $(if ($sel) { 'Cyan' } else { 'DarkGray' }) 4
+        Write-Pad $PartLabel[$p] $(if ($here) { 'White' } else { 'Gray' }) 31
+        Write-Pad $status $statusColor 24
+        Write-Host ''
+    }
+    Write-Host ''
+    Write-Host "  $($G.Keys) move   space pick   enter start   q quit" -ForegroundColor DarkGray
+}
+
+function Select-Parts {
+    # Arrow keys and Space. Returns $false when the member quits.
+    # On Enter the menu is erased, so the screen shows only what happens next.
+    Write-Host ''
+    Write-Host '  Pick what to set up' -ForegroundColor White
+    Write-Host ''
+    $headTop = [Console]::CursorTop - 3
+    $cur = 0
+    $lines = $Parts.Count + 2
+    Show-Menu $cur
+    $top = [Console]::CursorTop - $lines
+    try { [Console]::CursorVisible = $false } catch { }
+    try {
+        while ($true) {
+            $k = [Console]::ReadKey($true)
+            switch ($k.Key) {
+                'UpArrow'   { $cur = ($cur + $Parts.Count - 1) % $Parts.Count }
+                'DownArrow' { $cur = ($cur + 1) % $Parts.Count }
+                'K'         { $cur = ($cur + $Parts.Count - 1) % $Parts.Count }
+                'J'         { $cur = ($cur + 1) % $Parts.Count }
+                'Spacebar'  { $p = $Parts[$cur]; $State.Selected[$p] = -not $State.Selected[$p] }
+                'A'         { foreach ($p in $Parts) { $State.Selected[$p] = $true } }
+                'N'         { foreach ($p in $Parts) { $State.Selected[$p] = $false } }
+                'Q'         { return $false }
+                'Escape'    { return $false }
+                'Enter'     {
+                    # Erase the header and the menu, then put the cursor back at the top.
+                    $headTop = [Math]::Max(0, $headTop)
+                    $width = [Math]::Max(40, [Console]::WindowWidth - 1)
+                    [Console]::SetCursorPosition(0, $headTop)
+                    for ($r = 0; $r -lt $lines + 3; $r++) { [Console]::Write((' ' * $width) + "`n") }
+                    [Console]::SetCursorPosition(0, $headTop)
+                    return $true
+                }
+            }
+            [Console]::SetCursorPosition(0, [Math]::Max(0, $top))
+            Show-Menu $cur
+            $top = [Console]::CursorTop - $lines
+            $headTop = $top - 3
+        }
+    } finally { try { [Console]::CursorVisible = $true } catch { } }
+}
+
+function Add-NeededParts {
+    # A picked part also picks the parts it needs that are not done yet.
+    $State.AddedNote = ''
+    foreach ($p in $Parts) {
+        if (-not $State.Selected[$p] -or -not $PartNeeds.ContainsKey($p)) { continue }
+        foreach ($dep in $PartNeeds[$p]) {
+            if (-not $State.Selected[$dep] -and $State.Status[$dep] -ne 'done') {
+                $State.Selected[$dep] = $true
+                $State.AddedNote += " Added $($PartLabel[$dep]) ($($PartLabel[$p]) needs it)."
+            }
+        }
+    }
+}
+
+# ---------- report (MAIC_SETUP_CHECK) ----------
+function Get-Need($part) {
+    # Required in check mode or when picked; else 'skip'.
+    if ($State.Check -or $State.Selected[$part]) { return $true }
+    return 'skip'
+}
+
+function Report-Row($label, $value, $required) {
+    if ($value) { Write-Result $G.Ok 'Cyan' $label $value 'DarkGray' }
+    elseif ($required -is [string] -and $required -eq 'skip') { Write-Result $G.Dot 'DarkGray' $label 'not picked' 'DarkGray' }
+    elseif ($required -eq $true) { Write-Result $G.No 'Red' $label 'missing' 'Red'; $State.Missing = $true }
+    else { Write-Result $G.Skip 'Yellow' $label 'not done' 'Yellow'; $State.NotDone = $true }
 }
 
 function Show-Report {
@@ -610,44 +1041,38 @@ function Show-Report {
     Update-SessionPath
     Find-Ssh | Out-Null
     Say 'What you have'
-    Report-Row 'GlobalProtect' $(if (Test-Path $Cfg.GpExe) { 'installed' }) $true
-    Report-Row 'Git' $(if (Have 'git') { (git --version) -replace 'git version ', '' }) $true
-    Report-Row 'ssh' $(if ($State.Ssh) { if ($State.SshFromGit) { 'from Git' } else { 'Windows OpenSSH' } }) $true
-    Report-Row 'SSH key' $(if (Test-Path $Cfg.Key) { $Cfg.Key }) $true
+    Report-Row 'GlobalProtect' $(if (Test-Path $Cfg.GpExe) { 'installed' }) (Get-Need 'vpn')
+    Report-Row 'Git' $(if (Have 'git') { (git --version) -replace '^git version ', '' -replace '\.windows.*$', '' }) (Get-Need 'git')
+    Select-Key | Out-Null
+    Report-Row 'SSH key' $(if ($State.Ssh -and (Test-Path $Cfg.Key)) { Short-Path $Cfg.Key }) (Get-Need 'sshkey')
     $ruser = Get-RosieUser
-    Report-Row 'Rosie config' $(if ($ruser) { "rosie -> $ruser@ad.msoe.edu" }) $true
+    Report-Row 'Rosie config' $(if ($ruser) { "user $ruser" }) (Get-Need 'rosie')
     if (-not $ruser) {
         Report-Row 'Rosie login' '' $false
-        Note '     (not tested: no Rosie config yet)'
         Report-Row 'Jernel' '' $false
     } elseif (Test-RosieReachable) {
         Report-Row 'Rosie login' $(if (Test-RosieLogin) { 'no password needed' }) $false
-        $j = "$(& $State.Ssh -o BatchMode=yes rosie "grep -qsF '$($Cfg.JernelBin)' ~/.bashrc && echo ok" 2>$null)"
-        Report-Row 'Jernel' $(if ($j -match 'ok') { 'ok' }) $false
+        $j = "$(& $State.Ssh -n -o BatchMode=yes rosie "grep -qsF '$($Cfg.JernelBin)' ~/.bashrc && echo ok" 2>$null)"
+        Report-Row 'Jernel' $(if ($j -match 'ok') { 'on your PATH' }) $false
     } else {
         Report-Row 'Rosie login' '' $false
-        Note '     (not tested: Rosie is not reachable. Connect GlobalProtect first.)'
         Report-Row 'Jernel' '' $false
+        Dim '  Rosie did not answer, so these were not tested. Connect GlobalProtect first.'
     }
-    Report-Row 'GitHub login' $(if (Test-GitHubLogin) { 'key accepted' }) $false
-    Report-Row 'uv' $(if (Have 'uv') { (uv --version) -replace '^uv ', '' }) $true
+    Report-Row 'GitHub key' $(if (Test-GitHubLogin) { 'accepted' }) $false
     $pyOk = ''
-    if (Have 'uv') { uv python find $Cfg.PythonVersion *> $null; if ($LASTEXITCODE -eq 0) { $pyOk = 'installed' } }
-    Report-Row "Python $($Cfg.PythonVersion)" $pyOk $true
-    Report-Row 'python command' (Get-PythonCommand) $false
+    if (Have 'uv') {
+        uv python find $Cfg.PythonVersion *> $null
+        if ($LASTEXITCODE -eq 0) { $pyOk = "uv $(((uv --version) -replace '^uv ', '') -replace ' .*$', '')" }
+    }
+    Report-Row "Python $($Cfg.PythonVersion)" $pyOk (Get-Need 'python')
     $py = Get-MaicPython
     $envOk = ''
-    if ($py) { $envOk = "$(& $py -c 'import torch, pandas; print("torch", torch.__version__, "pandas", pandas.__version__)' 2>$null)" }
-    Report-Row '~\maic env' $envOk $true
-    Report-Row 'MAIC kernel' $(if (Test-Path (Join-Path $env:APPDATA 'jupyter\kernels\maic\kernel.json')) { 'registered' }) $true
-    Report-Row 'VS Code' $(if (Find-Code) { "$(& $State.Code --version 2>$null | Select-Object -First 1)" }) $true
-    if ($State.Code) {
-        $installed = @(& $State.Code --list-extensions 2>$null | ForEach-Object { "$_".ToLower() })
-        $missing = @($Cfg.Extensions | Where-Object { $installed -notcontains $_ })
-        Report-Row 'Extensions' $(if ($missing.Count -eq 0) { $Cfg.Extensions -join ' ' }) $true
-        if ($missing.Count -gt 0) { Note "     missing: $($missing -join ' ')" }
-    } else { Report-Row 'Extensions' '' $true }
-    Note "Log: $($Cfg.Log)"
+    if ($py) { $envOk = "$(& $py -c 'import torch, pandas; print(''torch'', torch.__version__.split(''+'')[0])' 2>$null)" }
+    Report-Row '~\maic packages' $envOk (Get-Need 'env')
+    Report-Row 'Jupyter kernel' $(if (Test-Path (Join-Path $env:APPDATA 'jupyter\kernels\maic\kernel.json')) { 'MAIC' }) (Get-Need 'env')
+    Report-Row 'VS Code' $(if (Find-Code) { "$(& $State.Code --version 2>$null | Select-Object -First 1)" }) (Get-Need 'vscode')
+    Report-Row 'VS Code extensions' $(if (Test-VsCodeOk) { 'Remote SSH, Python, Jupyter' }) (Get-Need 'vscode')
 }
 
 # ---------- main ----------
@@ -661,57 +1086,89 @@ function Invoke-MaicSetup {
             Show-Report
             Write-Host ''
             if ($State.Missing) {
-                Fail 'Some required tools are missing. To install them, paste:'
-                Note $Cfg.PasteLine
+                Write-Host '  Some tools are missing.' -NoNewline -ForegroundColor Red
+                Write-Host ' To install them, paste:'
+                Write-Host "  $($Cfg.PasteLine)"
                 return
             }
-            if ($State.NotDone) { Warn 'Some optional steps are not done (see [-] above).' }
-            Ok 'Ready.'
+            Write-Host '  Ready.' -ForegroundColor Cyan
             return
         }
 
-        $winVer = [Environment]::OSVersion.Version
-        Say "MAIC member setup (Windows $($winVer.Major).$($winVer.Build), $env:PROCESSOR_ARCHITECTURE)"
-        Note 'This installs: GlobalProtect VPN, Git, SSH key, Rosie SSH config, GitHub SSH key,'
-        Note "uv, Python $($Cfg.PythonVersion), a ~\maic environment (pandas, torch, ...), VS Code and extensions."
-        Note 'Tools you already have are skipped. It asks for: your name, email, MSOE username,'
-        Note 'your MSOE password one time (for Rosie), a GitHub browser step, and one or two "allow changes" clicks.'
-        Note "Estimated time: 10 to 25 minutes. Everything is logged to $($Cfg.Log)"
-        if (-not (Confirm-Step 'Continue?')) { return }
-
-        Run-Step 'Git'                 { Step-Git }
-        Run-Step 'SSH key'             { Step-SshKey }
-        Run-Step 'Rosie SSH config'    { Step-RosieConfig }
-        Run-Step 'GlobalProtect VPN'   { Step-Vpn }
-        Run-Step 'Rosie login'         { Step-RosieKey }
-        Run-Step 'Jernel on Rosie'     { Step-Jernel }
-        Run-Step 'GitHub SSH key'      { Step-GitHub }
-        Run-Step 'uv and Python'       { Step-Uv }
-        Run-Step '~\maic environment'  { Step-Env }
-        Run-Step 'VS Code'             { Step-VsCode }
-        Run-Step 'VS Code extensions'  { Step-Extensions }
-        Run-Step 'VS Code settings'    { Step-Settings }
-
+        Write-Host '  About 10 to 25 minutes on a new laptop.' -ForegroundColor DarkGray
         Write-Host ''
-        Show-Report
+
+        # 1. What is already done? Done parts start unselected in the menu.
+        Get-AllStatus
+
+        # 2. Rosie needs an account first. Ask before anything else.
+        if ($State.Status.rosie -eq 'done' -or $State.Yes) { $State.RosieAccess = 'yes' }
+        else {
+            Show-Rosie
+            Write-Host "  Rosie is MSOE's supercomputer. Setup can connect you to it,"
+            Write-Host '  but you need a Rosie account first.'
+            Write-Host ''
+            $reply = Read-Line 'Do you have a Rosie account? [y/N]'
+            if ($reply -match '^[yY]') { $State.RosieAccess = 'yes' }
+            else {
+                $State.RosieAccess = 'no'
+                Write-Host ''
+                Write-Host '  OK, Rosie is off for now.' -NoNewline -ForegroundColor Yellow
+                Write-Host ' How to get an account:'
+                Write-Host "  $($Cfg.RosieHelp)" -ForegroundColor DarkGray
+            }
+        }
+
+        # 3. The menu.
+        Set-DefaultSelection
+        if (-not $State.Yes -and $State.Tty) {
+            $go = $true
+            try { $go = Select-Parts } catch { Warn 'The menu needs a console window. Using the default choice.' }
+            if (-not $go) { Write-Host ''; Write-Host '  Nothing changed.'; return }
+        }
+        Add-NeededParts
+        $steps = @()
+        foreach ($p in $Parts) { if ($State.Selected[$p]) { $steps += $PartSteps[$p] } }
+        if ($steps.Count -eq 0) { Write-Host ''; Write-Host '  Nothing picked. Nothing changed.'; return }
+
+        # 4. Run the picked parts. Each step is one line; a live line shows progress.
+        $State.StepTotal = $steps.Count
+        $State.StepN = 0
+        Say 'Setting up'
+        if ($State.AddedNote) { Write-Host "  $($State.AddedNote.Trim())" -ForegroundColor DarkGray; Write-Host '' }
+        foreach ($st in $steps) { Run-Step $st[0] $st[1] }
+
+        # 5. One short ending.
         Write-Host ''
         if ($State.Failed.Count -gt 0) {
-            Fail ('Not ready. These steps did not finish: ' + ($State.Failed -join ', '))
-            Note 'Fix the error (the article lists each tool), then paste the line again. Done steps are skipped:'
-            Note $Cfg.PasteLine
-            Note "Article: $($Cfg.Article)"
-            return
-        }
-        if ($State.Skipped.Count -gt 0) {
-            Warn ('Almost ready. Skipped: ' + ($State.Skipped -join ', '))
-            Note 'Connect GlobalProtect (or come to campus), then paste the same line again to finish the Rosie steps:'
-            Note $Cfg.PasteLine
+            Write-Host "  $($G.No) Not finished:" -NoNewline -ForegroundColor Red
+            Write-Host " $($State.Failed -join ', ')"
+            Write-Host '    Fix the problem above, then paste the setup line again. Done parts are skipped.'
+        } elseif ($State.Skipped.Count -gt 0) {
+            Write-Host "  $($G.Skip) Almost ready." -NoNewline -ForegroundColor Yellow
+            Write-Host " Skipped: $($State.Skipped -join ', ')"
+            Write-Host '    Connect GlobalProtect (or come to campus), then paste the setup line again.'
         } else {
-            Ok 'Ready. Welcome to MAIC.'
+            Write-Host "  $($G.Ok) Ready. Welcome to MAIC." -ForegroundColor Cyan
         }
-        Note 'Open a NEW PowerShell window so the new commands (code, uv, python) are found.'
-        Note 'In VS Code: click the blue >< icon bottom-left, "Connect to Host", choose rosie.'
+        $next = @()
+        if ($State.Selected.python -or $State.Selected.vscode) { $next += 'Open a new PowerShell window, so code, uv, and python work.' }
+        $entry = Get-RosieEntry
+        if ($entry -and $entry.IsRosie -and ($State.Selected.vscode -or $State.Selected.rosie)) {
+            $next += 'To use Rosie in VS Code: click >< (bottom left), Connect to Host, rosie.'
+        }
+        if ($State.RosieAccess -eq 'no') { $next += 'For Rosie: get an account, then run setup again.' }
+        if ($next.Count -gt 0) {
+            Write-Host ''
+            Write-Host '  Next' -ForegroundColor White
+            foreach ($n in $next) { Write-Host "    $n" }
+        }
+        Write-Host ''
+        Write-Host "  Log: $(Short-Path $Cfg.Log)" -ForegroundColor DarkGray
+        Write-Host ''
     } finally {
+        Clear-Live
+        try { [Console]::CursorVisible = $true } catch { }
         # Remove every installer this script downloaded. Only ~\maic-setup.log stays.
         Get-ChildItem -Path $env:TEMP -Filter 'maic-setup-*' -File -ErrorAction SilentlyContinue |
             Remove-Item -Force -ErrorAction SilentlyContinue
