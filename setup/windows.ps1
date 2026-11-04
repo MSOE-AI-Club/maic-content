@@ -1095,9 +1095,6 @@ function Invoke-MaicSetup {
             return
         }
 
-        Write-Host '  About 10 to 25 minutes on a new laptop.' -ForegroundColor DarkGray
-        Write-Host ''
-
         # 1. What is already done? Done parts start unselected in the menu.
         Get-AllStatus
 

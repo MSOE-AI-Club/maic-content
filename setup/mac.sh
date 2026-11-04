@@ -1112,7 +1112,7 @@ if [ -n "$CHECK" ]; then
     exit 0
 fi
 
-line '  %sAbout 10 to 25 minutes on a new Mac.%s\n\n' "$C_GRAY" "$C_RESET"
+line '\n'
 
 # 1. What is already done? Done parts start unselected in the menu.
 spin_bg_start 'Checking your Mac '
