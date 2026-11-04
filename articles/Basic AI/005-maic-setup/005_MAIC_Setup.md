@@ -52,7 +52,7 @@ Read this section before you paste anything. The script stops to ask you questio
 
 ### What you need
 
-- **Rosie access.** The script sets up your Rosie login, so you need a Rosie account first. If you do not have one, read [ROSIE Pt1: Getting Access](/library?nav=Articles&article=1-getting-rosie-access) and come back when Dr. Retert's email arrives. You can still run the script now; it will skip the Rosie steps and you run it again later.
+- **Rosie access.** The script sets up your Rosie login, so you need a Rosie account first. It asks "Do you have a Rosie account?" before it does anything. If you do not have an account, answer **n**, then read [ROSIE Pt1: Getting Access](/library?nav=Articles&article=1-getting-rosie-access) and come back when Dr. Retert's email arrives. The script sets up everything else now and turns off the Rosie steps. Run it again later to add Rosie.
 - **Your MSOE password.** The script asks for it one time, to copy your key to Rosie.
 - **A GitHub account.** Make one at [github.com/signup](https://github.com/signup) with any email. The script opens this page for you if you say you have no account.
 - **Your laptop password.** On Windows, you click Yes on "Allow this app to make changes?". On a Mac, macOS asks for it to install GlobalProtect and the Command Line Tools.
@@ -62,7 +62,8 @@ Read this section before you paste anything. The script stops to ask you questio
 
 | When | Question | Why |
 | --- | --- | --- |
-| Start | Continue? | So you can read what it will do first. |
+| Start | Do you have a Rosie account? | Rosie steps need an account. Answer **n** if you have none; those steps are turned off. |
+| Start | The menu: pick what to set up | See **The menu** below. Press Enter to accept the default choice. |
 | Git | Your name and email | Git puts them on every commit. |
 | Rosie | Your MSOE username | The part before `@msoe.edu`. It goes in the SSH config. |
 | VPN | Connect GlobalProtect, then press Enter | Rosie is only reachable on campus or through the VPN. |
@@ -72,6 +73,27 @@ Read this section before you paste anything. The script stops to ask you questio
 | Mac only | Your Mac password | macOS asks for it to install GlobalProtect and the Command Line Tools. |
 
 It skips anything you already have. If a step fails, the script keeps going, prints what failed at the end, and tells you to paste the line again after you fix it.
+
+### The menu
+
+Before it installs anything, the script checks what you already have and shows a menu:
+
+```
+  Pick what to set up
+
+  › [x] Git
+    [ ] SSH key                        done
+    [x] GlobalProtect VPN
+    [x] Rosie
+    ...
+
+  ↑↓ move   space pick   enter start   q quit
+```
+
+- Parts marked **done** start unselected. Select one again to run it again.
+- Parts that are not done start selected. On a new laptop, press **Enter** to install everything.
+- If you pick a part that needs another part, the script picks that one too. For example, Rosie needs the SSH key and the VPN.
+- While a step runs, one line shows a spinner, a bar for the whole run, and what is happening (for example the download percent). When the step ends, that line becomes one short result, for example `✓ Git  2.47.1`.
 
 You can read the script before you run it: [windows.ps1](https://msoe-ai-club.github.io/maic-content/setup/windows.ps1) and [mac.sh](https://msoe-ai-club.github.io/maic-content/setup/mac.sh) are plain text.
 
@@ -99,8 +121,8 @@ When it ends, go to **After the Script** below.
 | --- | --- | --- | --- |
 | **GlobalProtect** | MSOE's VPN app | Rosie is only reachable from the campus network. GlobalProtect puts your laptop on that network from anywhere. | Windows: `C:\Program Files\Palo Alto Networks\GlobalProtect`. Mac: `/Applications/GlobalProtect.app`. Portal is preset to `vpn.msoe.edu`. |
 | **Git** | Version control | Every workshop repo is on GitHub. | Windows: Git for Windows (includes Git Bash). Mac: Apple's Command Line Tools. |
-| **SSH key** | A key pair that logs you in without a password | One key works for both Rosie and GitHub. | `~/.ssh/id_ed25519` (private, never share) and `~/.ssh/id_ed25519.pub` (public). No passphrase. |
-| **Rosie SSH config** | A short text block that names Rosie, plus a `rosie` command | Type `rosie` to log in. `ssh rosie` and VS Code's "Connect to Host: rosie" work because of it. | `~/.ssh/config`. The command: Windows `%LOCALAPPDATA%\Microsoft\WindowsApps\rosie.cmd`, Mac `~/.local/bin/rosie` |
+| **SSH key** | A key pair that logs you in without a password | One key works for both Rosie and GitHub. | `~/.ssh/id_ed25519` (private, never share) and `~/.ssh/id_ed25519.pub` (public). No passphrase. If you already have a key (`id_ed25519`, `id_ecdsa`, or `id_rsa`), the script uses it and makes no new one. |
+| **Rosie SSH config** | A short text block that names Rosie, plus a `rosie` command | Type `rosie` to log in. `ssh rosie` and VS Code's "Connect to Host: rosie" work because of it. | `~/.ssh/config`. If you already have an entry for `dh-mgmt2.hpc.msoe.edu`, the script reuses its user and key. The command: Windows `%LOCALAPPDATA%\Microsoft\WindowsApps\rosie.cmd`, Mac `~/.local/bin/rosie` |
 | **Rosie key copy** | Your public key in Rosie's `authorized_keys` | No password after this. | On Rosie: `~/.ssh/authorized_keys` |
 | **Jernel** | MAIC's command that starts a Jupyter kernel on a Rosie GPU node | Run notebooks in VS Code on Rosie's GPUs. See [Running VSCode Jupyter Notebooks on Rosie](/library?nav=Articles&article=6-jernel). | One PATH line in your Rosie `~/.bashrc` |
 | **GitHub SSH key** | Your public key on your GitHub account | `git clone`, `push`, and `pull` with no password. | github.com > Settings > SSH and GPG keys |
