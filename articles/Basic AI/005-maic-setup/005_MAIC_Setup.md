@@ -56,7 +56,7 @@ Read this section before you paste anything. The script stops to ask you questio
 - **Your MSOE password.** The script asks for it one time, to copy your key to Rosie.
 - **A GitHub account.** Make one at [github.com/signup](https://github.com/signup) with any email. The script opens this page for you if you say you have no account.
 - **Your laptop password.** On Windows, you click Yes on "Allow this app to make changes?". On a Mac, macOS asks for it to install GlobalProtect and the Command Line Tools.
-- **10 to 25 minutes and a good network.** Most of the time is downloads. Plug in your laptop. The script installs GlobalProtect and asks you to connect it before the Rosie steps.
+- **A good network.** Most of the time is downloads. Plug in your laptop. The script installs GlobalProtect and asks you to connect it before the Rosie steps.
 
 ### What it asks you
 
