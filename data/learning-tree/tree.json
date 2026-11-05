@@ -20,9 +20,7 @@
                         "3"
                     ],
                     "children": [
-                        "5",
-                        "10",
-                        "77"
+                        "85"
                     ]
                 },
                 {
@@ -81,6 +79,28 @@
                     ],
                     "children": [
                         "3"
+                    ]
+                },
+                {
+                    "id": "85",
+                    "filename": "maic-setup-85-4",
+                    "name": "MAIC Setup Script",
+                    "description": "One line to paste. It installs GlobalProtect, Git, VS Code, Python, and the Rosie and GitHub SSH keys, then you are ready for every workshop.",
+                    "category": "Introduction",
+                    "api_image_path": "images/tree-thumbnails/maic_setup.png",
+                    "link": "/library?nav=Articles&article=005_MAIC_Setup",
+                    "highlighted_path": "True",
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "parents": [
+                        "4"
+                    ],
+                    "children": [
+                        "5",
+                        "10",
+                        "77"
                     ]
                 }
             ]
@@ -186,7 +206,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -2500,
-                        "y": 10000
+                        "y": 10500
                     },
                     "parents": [
                         "36"
@@ -248,7 +268,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": -1800,
-                        "y": 12500
+                        "y": 13000
                     },
                     "parents": [
                         "37",
@@ -505,7 +525,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 750,
-                        "y": 14000
+                        "y": 14500
                     },
                     "parents": [
                         "71",
@@ -570,7 +590,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 3000,
-                        "y": 10400
+                        "y": 10900
                     },
                     "parents": [
                         "67"
@@ -732,7 +752,7 @@
                         "y": 0
                     },
                     "parents": [
-                        "4"
+                        "85"
                     ],
                     "children": [
                         "6"
@@ -1109,7 +1129,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 500,
-                        "y": 11500
+                        "y": 12000
                     },
                     "parents": [
                         "46",
@@ -1318,7 +1338,7 @@
                     "highlighted_path": "True",
                     "position": {
                         "x": 900,
-                        "y": 13000
+                        "y": 13500
                     },
                     "parents": [
                         "63",
@@ -1345,7 +1365,7 @@
                         "y": 0
                     },
                     "parents": [
-                        "4"
+                        "85"
                     ],
                     "children": [
                         "11"
@@ -1514,7 +1534,7 @@
                         "y": 0
                     },
                     "parents": [
-                        "4"
+                        "85"
                     ],
                     "children": [
                         "78"
@@ -3245,7 +3265,7 @@
         }
     ],
     "metadata": {
-        "total_nodes": 76,
+        "total_nodes": 80,
         "total_categories": 12,
         "generated_at": "2025-11-10"
     }
