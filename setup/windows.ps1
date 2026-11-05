@@ -120,7 +120,8 @@ function Read-Line($prompt) {
     # Inside a step the prompt sits under the step; elsewhere at the left edge.
     Clear-Live
     $indent = if ($State.InStep) { '    ' } else { '  ' }
-    return "$(Read-Host "$indent$prompt")"
+    # Read-Host adds ": " itself, so drop a colon at the end of the prompt.
+    return "$(Read-Host "$indent$($prompt.TrimEnd(':'))")"
 }
 function Ask($question, $default = '') {
     if ($State.Yes) { return $default }
