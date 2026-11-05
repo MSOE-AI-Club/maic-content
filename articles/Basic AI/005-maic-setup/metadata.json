@@ -1,0 +1,10 @@
+{
+    "title": "MAIC Setup Script: One Line to Get Ready",
+    "date": "28/10/2026",
+    "authors": "Owen Pacetti",
+    "summary": "Paste one line into PowerShell or Terminal. It installs GlobalProtect, Git, VS Code, Python, and the Rosie and GitHub SSH keys, so you are ready for every MAIC workshop. The article also lists each install on its own in case you only need one piece.",
+    "image": "./images/tree-thumbnails/maic_setup.png",
+    "type": "md",
+    "difficulty": "easy",
+    "categories": ["Tutorial", "AI-Club", "Getting Started", "Rosie", "VSCode", "Git"]
+}

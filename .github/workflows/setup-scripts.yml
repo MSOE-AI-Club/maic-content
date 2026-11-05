@@ -1,0 +1,68 @@
+name: Setup scripts
+
+# Runs the member setup scripts on fresh GitHub runners in non-interactive mode.
+# The runners cannot reach Rosie or open a browser, so the VPN, Rosie, and GitHub
+# steps are skipped. Every other step must finish, and the check must show no
+# "missing" row except GlobalProtect.
+
+on:
+  push:
+    branches: [main]
+    paths: ['setup/**', '.github/workflows/setup-scripts.yml']
+  pull_request:
+    paths: ['setup/**', '.github/workflows/setup-scripts.yml']
+  workflow_dispatch:
+
+jobs:
+  mac:
+    runs-on: macos-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: shellcheck
+        run: |
+          command -v shellcheck >/dev/null || brew install shellcheck
+          shellcheck -S warning -s bash setup/mac.sh
+      - name: Run setup (non-interactive)
+        env:
+          MAIC_SETUP_YES: '1'
+          MAIC_SETUP_USER: ci-test
+        run: bash setup/mac.sh
+      - name: Check
+        env:
+          MAIC_SETUP_CHECK: '1'
+        run: |
+          set +e
+          bash setup/mac.sh | tee check.txt
+          set -e
+          # A missing row ends in "missing". GlobalProtect needs an admin click, so CI skips it.
+          if grep -E ' missing$' check.txt | grep -v GlobalProtect; then
+            echo 'A required tool is missing after setup.'; exit 1
+          fi
+          grep -Eq 'maic packages +torch' check.txt
+
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run setup (non-interactive)
+        # Windows PowerShell 5.1, the one members have. Same path as `irm | iex`.
+        shell: powershell
+        env:
+          MAIC_SETUP_YES: '1'
+          MAIC_SETUP_USER: ci-test
+        run: Get-Content -Raw .\setup\windows.ps1 | Invoke-Expression
+      - name: Check
+        shell: powershell
+        env:
+          MAIC_SETUP_CHECK: '1'
+        run: |
+          # Run it in a child PowerShell: its stdout keeps each row on one line.
+          # (6>&1 in this shell splits every Write-Host -NoNewline piece onto its own line.)
+          $out = powershell -NoProfile -Command 'Get-Content -Raw .\setup\windows.ps1 | Invoke-Expression' | Out-String
+          Write-Host $out
+          # A missing row ends in "missing". GlobalProtect needs an admin click, so CI skips it.
+          $bad = ($out -split "`r?`n") | Where-Object { $_ -match ' missing\s*$' -and $_ -notmatch 'GlobalProtect' }
+          if ($bad) { Write-Host 'A required tool is missing after setup.'; exit 1 }
+          if ($out -notmatch 'maic packages +torch') { Write-Host 'The ~\maic packages do not import.'; exit 1 }
