@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T17:05:09.552Z",
+  "generated_at": "2026-11-19T22:55:01.330Z",
   "files": [
     ".manifestignore",
     ".vscode/settings.json",
@@ -360,6 +360,8 @@
     "articles/research/2024-2025/Reinforcement-Learning-Robotics/metadata.json",
     "articles/research/2024-2025/Soccer-Vision-Analysts/Research-25Soccer-Vision-Analysts.md",
     "articles/research/2024-2025/Soccer-Vision-Analysts/metadata.json",
+    "competitions/HacksGiving/ComForce-MKE-2026/HacksGiving-ComForce-MKE-2026.md",
+    "competitions/HacksGiving/ComForce-MKE-2026/metadata.json",
     "competitions/HacksGiving/Discovery-World-2024/HacksGiving with Discovery World.md",
     "competitions/HacksGiving/Discovery-World-2024/metadata.json",
     "competitions/Innovation Labs/Brady-Fall-2024/Brady-Fall-2024.md",
